@@ -42,3 +42,6 @@ next-env.d.ts
 
 # WSL
 *:Zone.Identifier
+
+# next-image-export-optimizer
+/nextImageExportOptimizer/
