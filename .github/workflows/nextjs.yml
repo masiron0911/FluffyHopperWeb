@@ -29,6 +29,13 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: Next.js image optimizer cache
+        uses: actions/cache@v4
+        with:
+          path: public/images
+          key: ${{ runner.os }}-nextjs-image-optimizer-cache-${{ github.sha }}
+          restore-keys: |
+            ${{ runner.os }}-nextjs-image-optimizer-cache-
       - name: Checkout
         uses: actions/checkout@v4
       - name: Detect package manager

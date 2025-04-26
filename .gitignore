@@ -44,4 +44,4 @@ next-env.d.ts
 *:Zone.Identifier
 
 # next-image-export-optimizer
-/nextImageExportOptimizer/
+nextImageExportOptimizer/
