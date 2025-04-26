@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import Image from "next/image"
+import Image from "next-image-export-optimizer"
 import { X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
@@ -16,7 +16,7 @@ export default function HomeGallery() {
   const [showScrollTop, setShowScrollTop] = useState(false)
 
   const galleryImages = [
-    { id: 1, src: "/character_img/hello.png?height=800&width=800&text=Gallery+1", alt: "ギャラリー画像 1" },
+    { id: 1, src: "/images/character_img/hello.png?height=800&width=800&text=Gallery+1", alt: "ギャラリー画像 1" },
     { id: 2, src: "/placeholder.svg?height=800&width=800&text=Gallery+2", alt: "ギャラリー画像 2" },
     { id: 3, src: "/placeholder.svg?height=800&width=800&text=Gallery+3", alt: "ギャラリー画像 3" },
     { id: 4, src: "/placeholder.svg?height=800&width=800&text=Gallery+4", alt: "ギャラリー画像 4" },
