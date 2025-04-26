@@ -6,6 +6,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
     path: isGithubPages ? `/${repoName}/` : '/',
+    loader: 'custom',
+    loaderFile: './custom-image-loader.ts',
   },
   typescript: {
     ignoreBuildErrors: true,
