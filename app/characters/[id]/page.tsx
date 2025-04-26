@@ -118,6 +118,7 @@ export default function CharacterDetail({ params }: PageProps) {
             width={120}
             height={40}
             className="h-10 w-auto"
+            basePath={process.env.NEXT_PUBLIC_BASE_PATH}
           />
         </Link>
         <nav className="hidden md:flex gap-6">
@@ -172,6 +173,7 @@ export default function CharacterDetail({ params }: PageProps) {
               width={1200}
               height={800}
               className="object-cover opacity-30"
+              basePath={process.env.NEXT_PUBLIC_BASE_PATH}
             />
           </div>
           <div className="relative z-1 h-full flex flex-col items-center justify-center text-center px-4">
@@ -182,6 +184,7 @@ export default function CharacterDetail({ params }: PageProps) {
                 width={160}
                 height={160}
                 className="object-cover"
+                basePath={process.env.NEXT_PUBLIC_BASE_PATH}
               />
             </div>
             <h1 className={`text-4xl md:text-5xl font-bold ${character.textColor} mb-2`}>{character.name}</h1>
@@ -278,6 +281,7 @@ export default function CharacterDetail({ params }: PageProps) {
                       width={150}
                       height={150}
                       className="object-cover w-full h-32"
+                      basePath={process.env.NEXT_PUBLIC_BASE_PATH}
                     />
                   </div>
                   <h3 className={`text-sm font-bold ${character.textColor} mb-1`}>{character.name}ぬいぐるみ</h3>
@@ -313,6 +317,7 @@ export default function CharacterDetail({ params }: PageProps) {
                 width={120}
                 height={40}
                 className="h-10 w-auto"
+                basePath={process.env.NEXT_PUBLIC_BASE_PATH}
               />
             </div>
             <div className="flex gap-4">

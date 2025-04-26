@@ -89,6 +89,7 @@ export default function News() {
             width={120}
             height={40}
             className="h-10 w-auto"
+            basePath={process.env.NEXT_PUBLIC_BASE_PATH}
           />
         </Link>
         <nav className="hidden md:flex gap-6">
@@ -146,6 +147,7 @@ export default function News() {
               width={1200}
               height={600}
               className="object-cover opacity-30"
+              basePath={process.env.NEXT_PUBLIC_BASE_PATH}
             />
           </div>
           <div className="relative z-1 h-full flex flex-col items-center justify-center text-center px-4">
@@ -170,6 +172,7 @@ export default function News() {
                       width={500}
                       height={300}
                       className="w-full h-48 md:h-full object-cover"
+                      basePath={process.env.NEXT_PUBLIC_BASE_PATH}
                     />
                   </div>
                   <div className="p-6 md:w-2/3">
@@ -239,6 +242,7 @@ export default function News() {
                 width={120}
                 height={40}
                 className="h-10 w-auto"
+                basePath={process.env.NEXT_PUBLIC_BASE_PATH}
               />
             </div>
             <div className="flex gap-4">
