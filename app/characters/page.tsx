@@ -16,6 +16,7 @@ export default function Characters() {
       bgColor: "bg-pink-100",
       textColor: "text-pink-700",
       borderColor: "border-pink-300",
+      imgSrc: "/character_img/hello.png?height=160&width=160",
     },
     {
       id: "soramame",
@@ -28,6 +29,7 @@ export default function Characters() {
       bgColor: "bg-blue-100",
       textColor: "text-blue-600",
       borderColor: "border-blue-300",
+      imgSrc: "/character_img/hello.png?height=160&width=160",
     },
     {
       id: "momoka",
@@ -40,6 +42,7 @@ export default function Characters() {
       bgColor: "bg-purple-100",
       textColor: "text-purple-700",
       borderColor: "border-purple-300",
+      imgSrc: "/character_img/batten.png?height=160&width=160",
     },
     {
       id: "piyo",
@@ -52,6 +55,7 @@ export default function Characters() {
       bgColor: "bg-yellow-100",
       textColor: "text-yellow-700",
       borderColor: "border-yellow-300",
+      imgSrc: "/character_img/hello.png?height=160&width=160",
     },
   ]
 
@@ -141,7 +145,7 @@ export default function Characters() {
                     className={`w-40 h-40 rounded-full overflow-hidden flex-shrink-0 border-4 ${character.borderColor}`}
                   >
                     <Image
-                      src="/placeholder.svg?height=160&width=160"
+                      src={character.imgSrc}
                       alt={character.name}
                       width={160}
                       height={160}
