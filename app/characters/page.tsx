@@ -1,5 +1,5 @@
 import Link from "next/link"
-import Image from "next/image"
+import Image from "next-image-export-optimizer"
 import { Instagram, Twitter, ShoppingBag } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
@@ -16,7 +16,7 @@ export default function Characters() {
       bgColor: "bg-pink-100",
       textColor: "text-pink-700",
       borderColor: "border-pink-300",
-      imgSrc: "/character_img/hello.png?height=160&width=160",
+      imgSrc: "/images/character_img/hello.png?height=160&width=160",
     },
     {
       id: "soramame",
@@ -29,7 +29,7 @@ export default function Characters() {
       bgColor: "bg-blue-100",
       textColor: "text-blue-600",
       borderColor: "border-blue-300",
-      imgSrc: "/character_img/hello.png?height=160&width=160",
+      imgSrc: "/images/character_img/hello.png?height=160&width=160",
     },
     {
       id: "momoka",
@@ -42,7 +42,7 @@ export default function Characters() {
       bgColor: "bg-purple-100",
       textColor: "text-purple-700",
       borderColor: "border-purple-300",
-      imgSrc: "/character_img/batten.png?height=160&width=160",
+      imgSrc: "/images/character_img/batten.png?height=160&width=160",
     },
     {
       id: "piyo",
@@ -55,7 +55,7 @@ export default function Characters() {
       bgColor: "bg-yellow-100",
       textColor: "text-yellow-700",
       borderColor: "border-yellow-300",
-      imgSrc: "/character_img/hello.png?height=160&width=160",
+      imgSrc: "/images/character_img/hello.png?height=160&width=160",
     },
   ]
 
@@ -150,6 +150,7 @@ export default function Characters() {
                       width={160}
                       height={160}
                       className="object-cover"
+                      basePath={process.env.NEXT_PUBLIC_BASE_PATH}
                     />
                   </div>
                   <div className="text-center md:text-left">
