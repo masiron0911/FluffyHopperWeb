@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
-    "build:gh": "NEXT_PUBLIC_GH_PAGES=true next build",
+    "build:gh": "GITHUB_ACTIONS=true next build",
     "start": "serve out",
     "lint": "next lint"
   },

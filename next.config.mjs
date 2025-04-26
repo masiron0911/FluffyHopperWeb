@@ -1,10 +1,11 @@
 const isGithubPages = process.env.GITHUB_ACTIONS || false;
-const repoName = 'FluffyHopperWeb'; // あなたのリポジトリ名（正確に書いてください！）
+const repoName = 'FluffyHopperWeb';
 
 const nextConfig = {
   output: 'export',
   images: {
     unoptimized: true,
+    path: isGithubPages ? `/${repoName}/` : '/',
   },
   typescript: {
     ignoreBuildErrors: true,
@@ -12,9 +13,9 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
-  assetPrefix: isGithubPages ? `/${repoName}/` : '/', // GitHub Actions上かどうかで切り替える
-  basePath: isGithubPages ? `/${repoName}` : '',      // 同じく
-  trailingSlash: true, // これはそのままでOK（static exportには推奨）
+  assetPrefix: isGithubPages ? `/${repoName}/` : '/',
+  basePath: isGithubPages ? `/${repoName}` : '',
+  trailingSlash: true, // static export
 }
 
 export default nextConfig;
