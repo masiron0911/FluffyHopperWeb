@@ -76,7 +76,7 @@ jobs:
       - name: Build with Next.js
         env:
           GITHUB_ACTIONS: true  # ここでGITHUB_ACTIONSを設定
-        run: ${{ steps.detect-package-manager.outputs.runner }} next build
+        run: ${{ steps.detect-package-manager.outputs.runner }} npm run build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
