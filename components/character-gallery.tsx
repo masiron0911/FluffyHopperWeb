@@ -48,6 +48,7 @@ export default function CharacterGallery({ images, textColor }: CharacterGallery
                     width={400}
                     height={400}
                     className="object-cover w-full h-full transition-transform duration-300 hover:scale-110"
+                    basePath={process.env.NEXT_PUBLIC_BASE_PATH}
                   />
                 </div>
               </div>
@@ -81,6 +82,7 @@ export default function CharacterGallery({ images, textColor }: CharacterGallery
                 width={800}
                 height={800}
                 className="w-full h-auto object-contain"
+                basePath={process.env.NEXT_PUBLIC_BASE_PATH}
               />
             </div>
           </div>
