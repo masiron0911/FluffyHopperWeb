@@ -20,10 +20,8 @@ const nextConfig = {
     NEXT_PUBLIC_BASE_PATH: isGithubPages ? `/${repoName}` : '',
   },
   typescript: {
-    ignoreBuildErrors: true,
   },
   eslint: {
-    ignoreDuringBuilds: true,
   },
   assetPrefix: isGithubPages ? `/${repoName}/` : '/',
   basePath: isGithubPages ? `/${repoName}` : '',
