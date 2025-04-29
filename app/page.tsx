@@ -1,9 +1,9 @@
-import Link from "next/link"
-import Image from "next-image-export-optimizer"
-import { Button } from "@/components/ui/button"
-import HomeGallery from "@/components/home-gallery"
-import Header from "@/components/layout/Header"
-import Footer from "@/components/layout/Footer"
+import Link from 'next/link';
+import Image from 'next-image-export-optimizer';
+import { Button } from '@/components/ui/button';
+import HomeGallery from '@/components/home-gallery';
+import Header from '@/components/layout/Header';
+import Footer from '@/components/layout/Footer';
 
 export default function Home() {
   return (
@@ -12,7 +12,7 @@ export default function Home() {
       <main>
         {/* ヒーローセクション */}
         <section className="relative h-[500px] overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-r from-pink-200 to-purple-200 flex items-center justify-center">
+          <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-r from-pink-200 to-purple-200">
             <Image
               src="/placeholder.svg?height=600&width=1200"
               alt="FluffyHopper キャラクターたち"
@@ -22,19 +22,19 @@ export default function Home() {
               basePath={process.env.NEXT_PUBLIC_BASE_PATH}
             />
           </div>
-          <div className="relative z-1 h-full flex flex-col items-center justify-center text-center px-4">
-            <h1 className="text-4xl md:text-6xl font-bold text-pink-700 mb-4">FluffyHopper</h1>
-            <p className="text-xl md:text-2xl text-pink-600 mb-8 max-w-2xl">もふもふぴょーん</p>
+          <div className="relative z-1 flex h-full flex-col items-center justify-center px-4 text-center">
+            <h1 className="mb-4 text-4xl font-bold text-pink-700 md:text-6xl">FluffyHopper</h1>
+            <p className="mb-8 max-w-2xl text-xl text-pink-600 md:text-2xl">もふもふぴょーん</p>
             <div className="flex gap-4">
               <Link href="/characters">
-                <Button className="rounded-full bg-pink-500 hover:bg-pink-600 text-white px-6 py-2">
+                <Button className="rounded-full bg-pink-500 px-6 py-2 text-white hover:bg-pink-600">
                   キャラクターを見る
                 </Button>
               </Link>
               <Link href="/goods">
                 <Button
                   variant="outline"
-                  className="rounded-full border-pink-500 text-pink-500 hover:bg-pink-100 px-6 py-2"
+                  className="rounded-full border-pink-500 px-6 py-2 text-pink-500 hover:bg-pink-100"
                 >
                   グッズを見る
                 </Button>
@@ -44,47 +44,71 @@ export default function Home() {
         </section>
 
         {/* お知らせセクション */}
-        <section className="py-8 px-4 md:px-8 bg-white">
-          <div className="max-w-6xl mx-auto">
-            <div className="flex items-center justify-between mb-6">
+        <section className="bg-white px-4 py-8 md:px-8">
+          <div className="mx-auto max-w-6xl">
+            <div className="mb-6 flex items-center justify-between">
               <h2 className="text-2xl font-bold text-pink-700">お知らせ</h2>
-              <Link href="/news" className="text-pink-500 hover:text-pink-700 text-sm flex items-center">
+              <Link
+                href="/news"
+                className="flex items-center text-sm text-pink-500 hover:text-pink-700"
+              >
                 もっと見る
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-4 w-4 ml-1"
+                  className="ml-1 h-4 w-4"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
                 >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9 5l7 7-7 7"
+                  />
                 </svg>
               </Link>
             </div>
 
             <div className="grid gap-4">
               {[
-                { date: "2023.12.15", tag: "新商品", title: "はなまるのクリスマス限定ぬいぐるみが登場！" },
-                { date: "2023.12.01", tag: "イベント", title: "FluffyHopperカフェが東京・原宿にオープン決定！" },
-                { date: "2023.11.20", tag: "お知らせ", title: "公式オンラインショップがリニューアルしました" },
-                { date: "2023.11.10", tag: "新キャラクター", title: "新キャラクター「ももか」が仲間入り！" },
+                {
+                  date: '2023.12.15',
+                  tag: '新商品',
+                  title: 'はなまるのクリスマス限定ぬいぐるみが登場！',
+                },
+                {
+                  date: '2023.12.01',
+                  tag: 'イベント',
+                  title: 'FluffyHopperカフェが東京・原宿にオープン決定！',
+                },
+                {
+                  date: '2023.11.20',
+                  tag: 'お知らせ',
+                  title: '公式オンラインショップがリニューアルしました',
+                },
+                {
+                  date: '2023.11.10',
+                  tag: '新キャラクター',
+                  title: '新キャラクター「ももか」が仲間入り！',
+                },
               ].map((news, index) => (
                 <Link
                   href="#"
                   key={index}
-                  className="flex flex-col sm:flex-row sm:items-center gap-2 p-4 rounded-xl hover:bg-pink-50 transition-colors"
+                  className="flex flex-col gap-2 rounded-xl p-4 transition-colors hover:bg-pink-50 sm:flex-row sm:items-center"
                 >
                   <div className="flex items-center gap-3">
-                    <span className="text-gray-500 text-sm whitespace-nowrap">{news.date}</span>
+                    <span className="text-sm whitespace-nowrap text-gray-500">{news.date}</span>
                     <span
-                      className={`px-2 py-0.5 rounded-full text-xs whitespace-nowrap ${
-                        news.tag === "新商品"
-                          ? "bg-pink-100 text-pink-700"
-                          : news.tag === "イベント"
-                            ? "bg-blue-100 text-blue-700"
-                            : news.tag === "お知らせ"
-                              ? "bg-green-100 text-green-700"
-                              : "bg-purple-100 text-purple-700"
+                      className={`rounded-full px-2 py-0.5 text-xs whitespace-nowrap ${
+                        news.tag === '新商品'
+                          ? 'bg-pink-100 text-pink-700'
+                          : news.tag === 'イベント'
+                            ? 'bg-blue-100 text-blue-700'
+                            : news.tag === 'お知らせ'
+                              ? 'bg-green-100 text-green-700'
+                              : 'bg-purple-100 text-purple-700'
                       }`}
                     >
                       {news.tag}
@@ -98,11 +122,11 @@ export default function Home() {
         </section>
 
         {/* ブランド紹介 */}
-        <section className="py-16 px-4 md:px-8 max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-pink-700 mb-4">FluffyHopperについて</h2>
-            <div className="w-24 h-1 bg-pink-300 mx-auto mb-6 rounded-full"></div>
-            <p className="text-lg text-pink-800 max-w-3xl mx-auto">
+        <section className="mx-auto max-w-6xl px-4 py-16 md:px-8">
+          <div className="mb-12 text-center">
+            <h2 className="mb-4 text-3xl font-bold text-pink-700">FluffyHopperについて</h2>
+            <div className="mx-auto mb-6 h-1 w-24 rounded-full bg-pink-300"></div>
+            <p className="mx-auto max-w-3xl text-lg text-pink-800">
               &quot;毎日にもふもふとぽかぽかを&quot; Fluffy=ふわふわ Hopper=ぴょんぴょん
               心がふわふわ温かく、はずむようなわくわく感をお届けできるブランドとなるように名付けました。
               イラストレーターましろよう・3D造形家サックザックによる共同ブランド。
@@ -115,16 +139,16 @@ export default function Home() {
         </section>
 
         {/* キャラクター紹介プレビュー */}
-        <section className="py-16 px-4 md:px-8 bg-gradient-to-b from-pink-100 to-purple-100">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-pink-700 mb-4">人気キャラクター</h2>
-              <div className="w-24 h-1 bg-pink-300 mx-auto mb-6 rounded-full"></div>
+        <section className="bg-gradient-to-b from-pink-100 to-purple-100 px-4 py-16 md:px-8">
+          <div className="mx-auto max-w-6xl">
+            <div className="mb-12 text-center">
+              <h2 className="mb-4 text-3xl font-bold text-pink-700">人気キャラクター</h2>
+              <div className="mx-auto mb-6 h-1 w-24 rounded-full bg-pink-300"></div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-              <div className="bg-white rounded-3xl p-6 shadow-md flex flex-col md:flex-row gap-6 items-center hover:shadow-lg transition-shadow">
-                <div className="w-40 h-40 rounded-full overflow-hidden flex-shrink-0 border-4 border-pink-200">
+            <div className="mb-8 grid grid-cols-1 gap-8 md:grid-cols-2">
+              <div className="flex flex-col items-center gap-6 rounded-3xl bg-white p-6 shadow-md transition-shadow hover:shadow-lg md:flex-row">
+                <div className="h-40 w-40 flex-shrink-0 overflow-hidden rounded-full border-4 border-pink-200">
                   <Image
                     src="/placeholder.svg?height=160&width=160"
                     alt="はなまる"
@@ -135,19 +159,20 @@ export default function Home() {
                   />
                 </div>
                 <div className="text-center md:text-left">
-                  <h3 className="text-2xl font-bold text-pink-700 mb-2">はなまる</h3>
-                  <p className="text-pink-600 mb-4">
-                    FluffyHopperの主役！好奇心旺盛で明るい性格の女の子うさぎ。 ピンク色の耳と花の模様が特徴です。
+                  <h3 className="mb-2 text-2xl font-bold text-pink-700">はなまる</h3>
+                  <p className="mb-4 text-pink-600">
+                    FluffyHopperの主役！好奇心旺盛で明るい性格の女の子うさぎ。
+                    ピンク色の耳と花の模様が特徴です。
                   </p>
                   <Link href="/characters/hanamaru">
-                    <Button className="rounded-full bg-pink-500 hover:bg-pink-600 text-white px-4 py-1 text-sm">
+                    <Button className="rounded-full bg-pink-500 px-4 py-1 text-sm text-white hover:bg-pink-600">
                       詳しく見る
                     </Button>
                   </Link>
                 </div>
               </div>
-              <div className="bg-white rounded-3xl p-6 shadow-md flex flex-col md:flex-row gap-6 items-center hover:shadow-lg transition-shadow">
-                <div className="w-40 h-40 rounded-full overflow-hidden flex-shrink-0 border-4 border-blue-200">
+              <div className="flex flex-col items-center gap-6 rounded-3xl bg-white p-6 shadow-md transition-shadow hover:shadow-lg md:flex-row">
+                <div className="h-40 w-40 flex-shrink-0 overflow-hidden rounded-full border-4 border-blue-200">
                   <Image
                     src="/placeholder.svg?height=160&width=160"
                     alt="そらまめ"
@@ -158,12 +183,12 @@ export default function Home() {
                   />
                 </div>
                 <div className="text-center md:text-left">
-                  <h3 className="text-2xl font-bold text-blue-600 mb-2">そらまめ</h3>
-                  <p className="text-blue-500 mb-4">
+                  <h3 className="mb-2 text-2xl font-bold text-blue-600">そらまめ</h3>
+                  <p className="mb-4 text-blue-500">
                     はなまるの親友。おっとりした性格の男の子うさぎ。 水色の耳と雲の模様が特徴です。
                   </p>
                   <Link href="/characters/soramame">
-                    <Button className="rounded-full bg-blue-500 hover:bg-blue-600 text-white px-4 py-1 text-sm">
+                    <Button className="rounded-full bg-blue-500 px-4 py-1 text-sm text-white hover:bg-blue-600">
                       詳しく見る
                     </Button>
                   </Link>
@@ -175,7 +200,7 @@ export default function Home() {
               <Link href="/characters">
                 <Button
                   variant="outline"
-                  className="rounded-full border-pink-500 text-pink-500 hover:bg-pink-100 px-6 py-2"
+                  className="rounded-full border-pink-500 px-6 py-2 text-pink-500 hover:bg-pink-100"
                 >
                   すべてのキャラクターを見る
                 </Button>
@@ -185,28 +210,33 @@ export default function Home() {
         </section>
 
         {/* グッズ紹介プレビュー */}
-        <section className="py-16 px-4 md:px-8 max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-pink-700 mb-4">人気グッズ</h2>
-            <div className="w-24 h-1 bg-pink-300 mx-auto mb-6 rounded-full"></div>
+        <section className="mx-auto max-w-6xl px-4 py-16 md:px-8">
+          <div className="mb-12 text-center">
+            <h2 className="mb-4 text-3xl font-bold text-pink-700">人気グッズ</h2>
+            <div className="mx-auto mb-6 h-1 w-24 rounded-full bg-pink-300"></div>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mb-8">
+          <div className="mb-8 grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-4">
             {[1, 2, 3, 4].map((item) => (
-              <div key={item} className="bg-white rounded-3xl p-4 shadow-md hover:shadow-lg transition-shadow">
-                <div className="rounded-2xl overflow-hidden mb-4">
+              <div
+                key={item}
+                className="rounded-3xl bg-white p-4 shadow-md transition-shadow hover:shadow-lg"
+              >
+                <div className="mb-4 overflow-hidden rounded-2xl">
                   <Image
                     src="/placeholder.svg?height=200&width=200"
                     alt={`グッズ ${item}`}
                     width={200}
                     height={200}
-                    className="object-cover w-full h-48"
+                    className="h-48 w-full object-cover"
                     basePath={process.env.NEXT_PUBLIC_BASE_PATH}
                   />
                 </div>
-                <h3 className="text-lg font-bold text-pink-700 mb-1">はなまるぬいぐるみ</h3>
-                <p className="text-pink-500 text-sm mb-3">¥2,800</p>
-                <Button className="w-full rounded-full bg-pink-500 hover:bg-pink-600 text-white">詳細を見る</Button>
+                <h3 className="mb-1 text-lg font-bold text-pink-700">はなまるぬいぐるみ</h3>
+                <p className="mb-3 text-sm text-pink-500">¥2,800</p>
+                <Button className="w-full rounded-full bg-pink-500 text-white hover:bg-pink-600">
+                  詳細を見る
+                </Button>
               </div>
             ))}
           </div>
@@ -215,7 +245,7 @@ export default function Home() {
             <Link href="/goods">
               <Button
                 variant="outline"
-                className="rounded-full border-pink-500 text-pink-500 hover:bg-pink-100 px-6 py-2"
+                className="rounded-full border-pink-500 px-6 py-2 text-pink-500 hover:bg-pink-100"
               >
                 すべてのグッズを見る
               </Button>
@@ -225,5 +255,5 @@ export default function Home() {
       </main>
       <Footer />
     </div>
-  )
+  );
 }
