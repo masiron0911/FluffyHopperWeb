@@ -17,21 +17,21 @@ export const characters: Record<string, Character> = {
     textColor: 'text-pink-700',
     borderColor: 'border-pink-300',
     buttonColor: 'bg-pink-500 hover:bg-pink-600',
-    imgSrc: '/images/character_img/hello.png?height=160&width=160',
+    imgSrc: '/images/character_img/hello.png',
     images: [
       {
         id: 1,
-        src: '/placeholder.svg?height=800&width=800&text=Character+Image+1',
+        src: '/placeholder.svg',
         alt: 'キャラクター画像 1',
       },
       {
         id: 2,
-        src: '/placeholder.svg?height=800&width=800&text=Character+Image+2',
+        src: '/placeholder.svg',
         alt: 'キャラクター画像 2',
       },
       {
         id: 3,
-        src: '/placeholder.svg?height=800&width=800&text=Character+Image+3',
+        src: '/placeholder.svg',
         alt: 'キャラクター画像 3',
       },
     ],
@@ -51,21 +51,21 @@ export const characters: Record<string, Character> = {
     textColor: 'text-blue-600',
     borderColor: 'border-blue-300',
     buttonColor: 'bg-blue-500 hover:bg-blue-600',
-    imgSrc: '/images/character_img/hello.png?height=160&width=160',
+    imgSrc: '/images/character_img/hello.png',
     images: [
       {
         id: 1,
-        src: '/placeholder.svg?height=800&width=800&text=Character+Image+1',
+        src: '/placeholder.svg',
         alt: 'キャラクター画像 1',
       },
       {
         id: 2,
-        src: '/placeholder.svg?height=800&width=800&text=Character+Image+2',
+        src: '/placeholder.svg',
         alt: 'キャラクター画像 2',
       },
       {
         id: 3,
-        src: '/placeholder.svg?height=800&width=800&text=Character+Image+3',
+        src: '/placeholder.svg',
         alt: 'キャラクター画像 3',
       },
     ],
@@ -85,21 +85,21 @@ export const characters: Record<string, Character> = {
     textColor: 'text-purple-700',
     borderColor: 'border-purple-300',
     buttonColor: 'bg-purple-500 hover:bg-purple-600',
-    imgSrc: '/images/character_img/batten.png?height=160&width=160',
+    imgSrc: '/images/character_img/batten.png',
     images: [
       {
         id: 1,
-        src: '/placeholder.svg?height=800&width=800&text=Character+Image+1',
+        src: '/placeholder.svg',
         alt: 'キャラクター画像 1',
       },
       {
         id: 2,
-        src: '/placeholder.svg?height=800&width=800&text=Character+Image+2',
+        src: '/placeholder.svg',
         alt: 'キャラクター画像 2',
       },
       {
         id: 3,
-        src: '/placeholder.svg?height=800&width=800&text=Character+Image+3',
+        src: '/placeholder.svg',
         alt: 'キャラクター画像 3',
       },
     ],
@@ -119,21 +119,21 @@ export const characters: Record<string, Character> = {
     textColor: 'text-yellow-700',
     borderColor: 'border-yellow-300',
     buttonColor: 'bg-yellow-500 hover:bg-yellow-600',
-    imgSrc: '/images/character_img/hello.png?height=160&width=160',
+    imgSrc: '/images/character_img/hello.png',
     images: [
       {
         id: 1,
-        src: '/placeholder.svg?height=800&width=800&text=Character+Image+1',
+        src: '/placeholder.svg',
         alt: 'キャラクター画像 1',
       },
       {
         id: 2,
-        src: '/placeholder.svg?height=800&width=800&text=Character+Image+2',
+        src: '/placeholder.svg',
         alt: 'キャラクター画像 2',
       },
       {
         id: 3,
-        src: '/placeholder.svg?height=800&width=800&text=Character+Image+3',
+        src: '/placeholder.svg',
         alt: 'キャラクター画像 3',
       },
     ],
