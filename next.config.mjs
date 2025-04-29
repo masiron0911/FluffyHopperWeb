@@ -23,7 +23,6 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
   eslint: {
-    ignoreDuringBuilds: true,
   },
   assetPrefix: isGithubPages ? `/${repoName}/` : '/',
   basePath: isGithubPages ? `/${repoName}` : '',

@@ -103,10 +103,10 @@ export default function Home() {
             <h2 className="text-3xl font-bold text-pink-700 mb-4">FluffyHopperについて</h2>
             <div className="w-24 h-1 bg-pink-300 mx-auto mb-6 rounded-full"></div>
             <p className="text-lg text-pink-800 max-w-3xl mx-auto">
-              "毎日にもふもふとぽかぽかを" Fluffy=ふわふわ Hopper=ぴょんぴょん
+              &quot;毎日にもふもふとぽかぽかを&quot; Fluffy=ふわふわ Hopper=ぴょんぴょん
               心がふわふわ温かく、はずむようなわくわく感をお届けできるブランドとなるように名付けました。
               イラストレーターましろよう・3D造形家サックザックによる共同ブランド。
-              オリジナルキャラクター"うさぎのはなまる"をはじめ、ほんわかやさしいタッチを活かしたラインナップを展開しています。
+              オリジナルキャラクター&quot;うさぎのはなまる&quot;をはじめ、ほんわかやさしいタッチを活かしたラインナップを展開しています。
             </p>
           </div>
 
