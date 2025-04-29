@@ -9,10 +9,10 @@ import Footer from "@/components/layout/Footer"
 
 // 正しい型定義を使用
 interface PageProps {
-  params: {
+  params: Promise<{
     id: string
-  }
-  searchParams?: { [key: string]: string | string[] | undefined }
+  }>
+  searchParams?: Promise<{ [key: string]: string | string[] | undefined }>
 }
 
 // 静的パスを生成
@@ -20,7 +20,8 @@ export async function generateStaticParams() {
   return [{ id: "hanamaru" }, { id: "soramame" }, { id: "momoka" }, { id: "piyo" }]
 }
 
-export default function CharacterDetail({ params }: PageProps) {
+export default async function CharacterDetail(props: PageProps) {
+  const params = await props.params;
   const characters = {
     hanamaru: {
       name: "はなまる",
