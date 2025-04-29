@@ -4,10 +4,7 @@ import { Heart, Star, Coffee } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { notFound } from 'next/navigation';
 import CharacterGallery from '@/components/character-gallery';
-import Header from '@/components/layout/Header';
-import Footer from '@/components/layout/Footer';
 
-// 正しい型定義を使用
 interface PageProps {
   params: Promise<{
     id: string;
@@ -15,7 +12,6 @@ interface PageProps {
   searchParams?: Promise<{ [key: string]: string | string[] | undefined }>;
 }
 
-// 静的パスを生成
 export async function generateStaticParams() {
   return [{ id: 'hanamaru' }, { id: 'soramame' }, { id: 'momoka' }, { id: 'piyo' }];
 }
@@ -161,163 +157,159 @@ export default async function CharacterDetail(props: PageProps) {
   }
 
   return (
-    <div className="min-h-screen bg-pink-50">
-      <Header />
-      <main>
-        {/* キャラクターヒーロー */}
-        <section className={`relative h-[400px] overflow-hidden ${character.bgColor}`}>
-          <div className="absolute inset-0 flex items-center justify-center">
+    <div>
+      {/* キャラクターヒーロー */}
+      <section className={`relative h-[400px] overflow-hidden ${character.bgColor}`}>
+        <div className="absolute inset-0 flex items-center justify-center">
+          <Image
+            src="/placeholder.svg?height=800&width=1200"
+            alt={character.name}
+            width={1200}
+            height={800}
+            className="object-cover opacity-30"
+            basePath={process.env.NEXT_PUBLIC_BASE_PATH}
+          />
+        </div>
+        <div className="relative z-1 flex h-full flex-col items-center justify-center px-4 text-center">
+          <div className="mb-4 h-40 w-40 overflow-hidden rounded-full border-4 border-white">
             <Image
-              src="/placeholder.svg?height=800&width=1200"
+              src="/placeholder.svg?height=160&width=160"
               alt={character.name}
-              width={1200}
-              height={800}
-              className="object-cover opacity-30"
+              width={160}
+              height={160}
+              className="object-cover"
               basePath={process.env.NEXT_PUBLIC_BASE_PATH}
             />
           </div>
-          <div className="relative z-1 flex h-full flex-col items-center justify-center px-4 text-center">
-            <div className="mb-4 h-40 w-40 overflow-hidden rounded-full border-4 border-white">
-              <Image
-                src="/placeholder.svg?height=160&width=160"
-                alt={character.name}
-                width={160}
-                height={160}
-                className="object-cover"
-                basePath={process.env.NEXT_PUBLIC_BASE_PATH}
-              />
-            </div>
-            <h1 className={`text-4xl font-bold md:text-5xl ${character.textColor} mb-2`}>
-              {character.name}
-            </h1>
-            <p className={`text-lg ${character.textColor} max-w-2xl opacity-80`}>
-              {character.description}
-            </p>
-          </div>
-        </section>
+          <h1 className={`text-4xl font-bold md:text-5xl ${character.textColor} mb-2`}>
+            {character.name}
+          </h1>
+          <p className={`text-lg ${character.textColor} max-w-2xl opacity-80`}>
+            {character.description}
+          </p>
+        </div>
+      </section>
 
-        {/* キャラクター詳細 */}
-        <section className="mx-auto max-w-4xl px-4 py-12 md:px-8">
-          <div className="rounded-3xl bg-white p-8 shadow-md">
-            <h2 className={`text-2xl font-bold ${character.textColor} mb-6`}>プロフィール</h2>
+      {/* キャラクター詳細 */}
+      <section className="mx-auto max-w-4xl px-4 py-12 md:px-8">
+        <div className="rounded-3xl bg-white p-8 shadow-md">
+          <h2 className={`text-2xl font-bold ${character.textColor} mb-6`}>プロフィール</h2>
 
-            <div className="mb-8 grid grid-cols-1 gap-8 md:grid-cols-2">
-              <div>
-                <div className="mb-6">
-                  <h3 className={`text-lg font-bold ${character.textColor} mb-2`}>性格</h3>
-                  <p className="text-gray-700">{character.personality}</p>
-                </div>
-                <div className="mb-6">
-                  <h3 className={`text-lg font-bold ${character.textColor} mb-2`}>誕生日</h3>
-                  <p className="text-gray-700">{character.birthday}</p>
-                </div>
-                <div>
-                  <h3 className={`text-lg font-bold ${character.textColor} mb-2`}>好きなもの</h3>
-                  <p className="text-gray-700">{character.favorites}</p>
-                </div>
+          <div className="mb-8 grid grid-cols-1 gap-8 md:grid-cols-2">
+            <div>
+              <div className="mb-6">
+                <h3 className={`text-lg font-bold ${character.textColor} mb-2`}>性格</h3>
+                <p className="text-gray-700">{character.personality}</p>
+              </div>
+              <div className="mb-6">
+                <h3 className={`text-lg font-bold ${character.textColor} mb-2`}>誕生日</h3>
+                <p className="text-gray-700">{character.birthday}</p>
               </div>
               <div>
-                <h3 className={`text-lg font-bold ${character.textColor} mb-2`}>自己紹介</h3>
-                <p className="mb-4 text-gray-700">{character.longDescription}</p>
-                <h3 className={`text-lg font-bold ${character.textColor} mb-2`}>お友達</h3>
-                <div className="flex flex-wrap gap-2">
-                  {character.friends.map((friend) => (
-                    <Link
-                      href={`/characters/${friend === 'はなまる' ? 'hanamaru' : friend === 'そらまめ' ? 'soramame' : friend === 'ももか' ? 'momoka' : 'piyo'}`}
-                      key={friend}
-                    >
-                      <span
-                        className={`inline-block rounded-full px-3 py-1 text-sm ${character.bgColor} ${character.textColor}`}
-                      >
-                        {friend}
-                      </span>
-                    </Link>
-                  ))}
-                </div>
+                <h3 className={`text-lg font-bold ${character.textColor} mb-2`}>好きなもの</h3>
+                <p className="text-gray-700">{character.favorites}</p>
               </div>
             </div>
-
-            <div className="mb-8 grid grid-cols-1 gap-4 sm:grid-cols-3">
-              <div className={`${character.bgColor} rounded-2xl p-4 text-center`}>
-                <Heart className={`mx-auto mb-2 ${character.textColor}`} size={32} />
-                <h3 className={`text-lg font-bold ${character.textColor} mb-1`}>性格</h3>
-                <p className={`${character.textColor} opacity-80`}>{character.personality}</p>
-              </div>
-              <div className={`${character.bgColor} rounded-2xl p-4 text-center`}>
-                <Star className={`mx-auto mb-2 ${character.textColor}`} size={32} />
-                <h3 className={`text-lg font-bold ${character.textColor} mb-1`}>特技</h3>
-                <p className={`${character.textColor} opacity-80`}>
-                  {character.name === 'はなまる'
-                    ? 'お料理'
-                    : character.name === 'そらまめ'
-                      ? '読書'
-                      : character.name === 'ももか'
-                        ? 'ファッション'
-                        : 'スポーツ'}
-                </p>
-              </div>
-              <div className={`${character.bgColor} rounded-2xl p-4 text-center`}>
-                <Coffee className={`mx-auto mb-2 ${character.textColor}`} size={32} />
-                <h3 className={`text-lg font-bold ${character.textColor} mb-1`}>好きな食べ物</h3>
-                <p className={`${character.textColor} opacity-80`}>
-                  {character.name === 'はなまる'
-                    ? 'いちご'
-                    : character.name === 'そらまめ'
-                      ? 'ミルクティー'
-                      : character.name === 'ももか'
-                        ? 'マカロン'
-                        : 'チョコレート'}
-                </p>
-              </div>
-            </div>
-
-            {/* キャラクター画像ギャラリー - クライアントコンポーネントとして分離 */}
-            <CharacterGallery images={character.images} textColor={character.textColor} />
-
-            <h2 className={`text-2xl font-bold ${character.textColor} mb-6`}>グッズ</h2>
-            <div className="mb-6 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-4">
-              {[1, 2, 3, 4].map((item) => (
-                <div
-                  key={item}
-                  className="rounded-2xl bg-gray-50 p-3 shadow-sm transition-shadow hover:shadow-md"
-                >
-                  <div className="mb-3 overflow-hidden rounded-xl">
-                    <Image
-                      src="/placeholder.svg?height=150&width=150"
-                      alt={`${character.name}グッズ ${item}`}
-                      width={150}
-                      height={150}
-                      className="h-32 w-full object-cover"
-                      basePath={process.env.NEXT_PUBLIC_BASE_PATH}
-                    />
-                  </div>
-                  <h3 className={`text-sm font-bold ${character.textColor} mb-1`}>
-                    {character.name}ぬいぐるみ
-                  </h3>
-                  <p className="mb-2 text-xs text-gray-500">¥2,800</p>
-                  <Button
-                    className={`w-full rounded-full py-1 text-xs ${character.buttonColor} text-white`}
+            <div>
+              <h3 className={`text-lg font-bold ${character.textColor} mb-2`}>自己紹介</h3>
+              <p className="mb-4 text-gray-700">{character.longDescription}</p>
+              <h3 className={`text-lg font-bold ${character.textColor} mb-2`}>お友達</h3>
+              <div className="flex flex-wrap gap-2">
+                {character.friends.map((friend) => (
+                  <Link
+                    href={`/characters/${friend === 'はなまる' ? 'hanamaru' : friend === 'そらまめ' ? 'soramame' : friend === 'ももか' ? 'momoka' : 'piyo'}`}
+                    key={friend}
                   >
-                    詳細を見る
-                  </Button>
-                </div>
-              ))}
-            </div>
-
-            <div className="flex justify-center">
-              <Link href="/goods">
-                <Button
-                  variant="outline"
-                  className={`rounded-full border-${character.color}-500 ${character.textColor} hover:bg-${character.color}-100 px-6 py-2`}
-                >
-                  すべてのグッズを見る
-                </Button>
-              </Link>
+                    <span
+                      className={`inline-block rounded-full px-3 py-1 text-sm ${character.bgColor} ${character.textColor}`}
+                    >
+                      {friend}
+                    </span>
+                  </Link>
+                ))}
+              </div>
             </div>
           </div>
-        </section>
-      </main>
-      <Footer />
+
+          <div className="mb-8 grid grid-cols-1 gap-4 sm:grid-cols-3">
+            <div className={`${character.bgColor} rounded-2xl p-4 text-center`}>
+              <Heart className={`mx-auto mb-2 ${character.textColor}`} size={32} />
+              <h3 className={`text-lg font-bold ${character.textColor} mb-1`}>性格</h3>
+              <p className={`${character.textColor} opacity-80`}>{character.personality}</p>
+            </div>
+            <div className={`${character.bgColor} rounded-2xl p-4 text-center`}>
+              <Star className={`mx-auto mb-2 ${character.textColor}`} size={32} />
+              <h3 className={`text-lg font-bold ${character.textColor} mb-1`}>特技</h3>
+              <p className={`${character.textColor} opacity-80`}>
+                {character.name === 'はなまる'
+                  ? 'お料理'
+                  : character.name === 'そらまめ'
+                    ? '読書'
+                    : character.name === 'ももか'
+                      ? 'ファッション'
+                      : 'スポーツ'}
+              </p>
+            </div>
+            <div className={`${character.bgColor} rounded-2xl p-4 text-center`}>
+              <Coffee className={`mx-auto mb-2 ${character.textColor}`} size={32} />
+              <h3 className={`text-lg font-bold ${character.textColor} mb-1`}>好きな食べ物</h3>
+              <p className={`${character.textColor} opacity-80`}>
+                {character.name === 'はなまる'
+                  ? 'いちご'
+                  : character.name === 'そらまめ'
+                    ? 'ミルクティー'
+                    : character.name === 'ももか'
+                      ? 'マカロン'
+                      : 'チョコレート'}
+              </p>
+            </div>
+          </div>
+
+          {/* キャラクター画像ギャラリー - クライアントコンポーネントとして分離 */}
+          <CharacterGallery images={character.images} textColor={character.textColor} />
+
+          <h2 className={`text-2xl font-bold ${character.textColor} mb-6`}>グッズ</h2>
+          <div className="mb-6 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-4">
+            {[1, 2, 3, 4].map((item) => (
+              <div
+                key={item}
+                className="rounded-2xl bg-gray-50 p-3 shadow-sm transition-shadow hover:shadow-md"
+              >
+                <div className="mb-3 overflow-hidden rounded-xl">
+                  <Image
+                    src="/placeholder.svg?height=150&width=150"
+                    alt={`${character.name}グッズ ${item}`}
+                    width={150}
+                    height={150}
+                    className="h-32 w-full object-cover"
+                    basePath={process.env.NEXT_PUBLIC_BASE_PATH}
+                  />
+                </div>
+                <h3 className={`text-sm font-bold ${character.textColor} mb-1`}>
+                  {character.name}ぬいぐるみ
+                </h3>
+                <p className="mb-2 text-xs text-gray-500">¥2,800</p>
+                <Button
+                  className={`w-full rounded-full py-1 text-xs ${character.buttonColor} text-white`}
+                >
+                  詳細を見る
+                </Button>
+              </div>
+            ))}
+          </div>
+
+          <div className="flex justify-center">
+            <Link href="/goods">
+              <Button
+                variant="outline"
+                className={`rounded-full border-${character.color}-500 ${character.textColor} hover:bg-${character.color}-100 px-6 py-2`}
+              >
+                すべてのグッズを見る
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

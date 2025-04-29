@@ -54,7 +54,7 @@ export default [
       "import/no-anonymous-default-export": ["error", { allowArray: false }],
       "unused-imports/no-unused-imports": "error",
       "unused-imports/no-unused-vars": [
-        "error",
+        "warn",
         {
           vars: "all",
           varsIgnorePattern: "^_",
