@@ -4,6 +4,8 @@ import { Button } from '@/components/ui/button';
 import HomeGallery from '@/components/home-gallery';
 import { newsItems } from '@/data/news';
 import { newsTagClassMap } from '@/constants/newsTagClassMap';
+import { characters } from '@/data/characters';
+import { CharacterId } from '@/types';
 
 export default function Home() {
   // ニュースの最新の4件のみ表示
@@ -11,6 +13,9 @@ export default function Home() {
     .sort((a, b) => Number(b[0]) - Number(a[0]))
     .slice(0, 4)
     .map(([id, item]) => ({ id, ...item }));
+
+  // 表示するキャラクターを設定
+  const featuredCharacters: CharacterId[] = ['hanamaru', 'soramame'];
 
   return (
     <div>
@@ -120,53 +125,42 @@ export default function Home() {
           </div>
 
           <div className="mb-8 grid grid-cols-1 gap-8 md:grid-cols-2">
-            <div className="flex flex-col items-center gap-6 rounded-3xl bg-white p-6 shadow-md transition-shadow hover:shadow-lg md:flex-row">
-              <div className="h-40 w-40 flex-shrink-0 overflow-hidden rounded-full border-4 border-pink-200">
-                <Image
-                  src="/placeholder.svg"
-                  alt="はなまる"
-                  width={160}
-                  height={160}
-                  className="object-cover"
-                  basePath={process.env.NEXT_PUBLIC_BASE_PATH}
-                />
-              </div>
-              <div className="text-center md:text-left">
-                <h3 className="mb-2 text-2xl font-bold text-pink-700">はなまる</h3>
-                <p className="mb-4 text-pink-600">
-                  FluffyHopperの主役！好奇心旺盛で明るい性格の女の子うさぎ。
-                  ピンク色の耳と花の模様が特徴です。
-                </p>
-                <Link href="/characters/hanamaru">
-                  <Button className="rounded-full bg-pink-500 px-4 py-1 text-sm text-white hover:bg-pink-600">
-                    詳しく見る
-                  </Button>
-                </Link>
-              </div>
-            </div>
-            <div className="flex flex-col items-center gap-6 rounded-3xl bg-white p-6 shadow-md transition-shadow hover:shadow-lg md:flex-row">
-              <div className="h-40 w-40 flex-shrink-0 overflow-hidden rounded-full border-4 border-blue-200">
-                <Image
-                  src="/placeholder.svg"
-                  alt="そらまめ"
-                  width={160}
-                  height={160}
-                  className="object-cover"
-                  basePath={process.env.NEXT_PUBLIC_BASE_PATH}
-                />
-              </div>
-              <div className="text-center md:text-left">
-                <h3 className="mb-2 text-2xl font-bold text-blue-600">そらまめ</h3>
-                <p className="mb-4 text-blue-500">
-                  はなまるの親友。おっとりした性格の男の子うさぎ。 水色の耳と雲の模様が特徴です。
-                </p>
-                <Link href="/characters/soramame">
-                  <Button className="rounded-full bg-blue-500 px-4 py-1 text-sm text-white hover:bg-blue-600">
-                    詳しく見る
-                  </Button>
-                </Link>
-              </div>
-            </div>
+            {featuredCharacters.map((key) => {
+              const character = characters[key];
+
+              return (
+                <div
+                  key={key}
+                  className="flex flex-col items-center gap-6 rounded-3xl bg-white p-6 shadow-md transition-shadow hover:shadow-lg md:flex-row"
+                >
+                  <div
+                    className={`h-40 w-40 flex-shrink-0 overflow-hidden rounded-full border-4 ${character.borderColor}`}
+                  >
+                    <Image
+                      src={character.imgSrc}
+                      alt={character.name}
+                      width={160}
+                      height={160}
+                      className="object-cover"
+                      basePath={process.env.NEXT_PUBLIC_BASE_PATH}
+                    />
+                  </div>
+                  <div className="text-center md:text-left">
+                    <h3 className={`mb-2 text-2xl font-bold ${character.textColor}`}>
+                      {character.name}
+                    </h3>
+                    <p className={`mb-4 ${character.textColor}`}>{character.description}</p>
+                    <Link href={`/characters/${key}`}>
+                      <Button
+                        className={`${character.buttonColor} rounded-full px-4 py-1 text-sm text-white hover:brightness-110`}
+                      >
+                        詳しく見る
+                      </Button>
+                    </Link>
+                  </div>
+                </div>
+              );
+            })}
           </div>
 
           <div className="text-center">
