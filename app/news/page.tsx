@@ -10,7 +10,7 @@ export default function News() {
       <section className="relative h-[250px] overflow-hidden">
         <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-r from-pink-200 to-purple-200">
           <Image
-            src="/placeholder.svg?height=600&width=1200"
+            src="/placeholder.svg"
             alt="FluffyHopper ニュース"
             width={1200}
             height={600}

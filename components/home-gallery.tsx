@@ -21,14 +21,14 @@ export default function HomeGallery() {
       src: '/images/character_img/hello.png?height=800&width=800&text=Gallery+1',
       alt: 'ギャラリー画像 1',
     },
-    { id: 2, src: '/placeholder.svg?height=800&width=800&text=Gallery+2', alt: 'ギャラリー画像 2' },
-    { id: 3, src: '/placeholder.svg?height=800&width=800&text=Gallery+3', alt: 'ギャラリー画像 3' },
-    { id: 4, src: '/placeholder.svg?height=800&width=800&text=Gallery+4', alt: 'ギャラリー画像 4' },
-    { id: 5, src: '/placeholder.svg?height=800&width=800&text=Gallery+5', alt: 'ギャラリー画像 5' },
-    { id: 6, src: '/placeholder.svg?height=800&width=800&text=Gallery+6', alt: 'ギャラリー画像 6' },
-    { id: 7, src: '/placeholder.svg?height=800&width=800&text=Gallery+7', alt: 'ギャラリー画像 7' },
-    { id: 8, src: '/placeholder.svg?height=800&width=800&text=Gallery+8', alt: 'ギャラリー画像 8' },
-    { id: 9, src: '/placeholder.svg?height=800&width=800&text=Gallery+9', alt: 'ギャラリー画像 9' },
+    { id: 2, src: '/placeholder.svg', alt: 'ギャラリー画像 2' },
+    { id: 3, src: '/placeholder.svg', alt: 'ギャラリー画像 3' },
+    { id: 4, src: '/placeholder.svg', alt: 'ギャラリー画像 4' },
+    { id: 5, src: '/placeholder.svg', alt: 'ギャラリー画像 5' },
+    { id: 6, src: '/placeholder.svg', alt: 'ギャラリー画像 6' },
+    { id: 7, src: '/placeholder.svg', alt: 'ギャラリー画像 7' },
+    { id: 8, src: '/placeholder.svg', alt: 'ギャラリー画像 8' },
+    { id: 9, src: '/placeholder.svg', alt: 'ギャラリー画像 9' },
   ];
 
   const openModal = (id: number) => {
@@ -128,7 +128,7 @@ export default function HomeGallery() {
           aria-label="ページトップへ戻る"
         >
           <Image
-            src="/placeholder.svg?height=60&width=60&text=↑"
+            src="/placeholder.svg"
             alt="トップへ戻る"
             width={60}
             height={60}

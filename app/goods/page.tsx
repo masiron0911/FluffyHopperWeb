@@ -113,7 +113,7 @@ export default function Goods() {
       <section className="relative h-[250px] overflow-hidden">
         <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-r from-pink-200 to-purple-200">
           <Image
-            src="/placeholder.svg?height=600&width=1200"
+            src="/placeholder.svg"
             alt="FluffyHopper グッズ"
             width={1200}
             height={600}
@@ -183,7 +183,7 @@ export default function Goods() {
             >
               <div className="mb-3 overflow-hidden rounded-2xl">
                 <Image
-                  src="/placeholder.svg?height=200&width=200"
+                  src="/placeholder.svg"
                   alt={item.name}
                   width={200}
                   height={200}
