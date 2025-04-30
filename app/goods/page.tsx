@@ -2,110 +2,15 @@ import Image from 'next-image-export-optimizer';
 import { Search } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
+import { goods } from '@/data/goods';
+import { characters } from '@/data/characters';
 
 export default function Goods() {
-  const categories = ['すべて', 'ぬいぐるみ', '文房具', 'アクセサリー', 'バッグ', 'ホームグッズ'];
-
-  const characters = ['すべて', 'はなまる', 'そらまめ', 'ももか', 'ぴよ'];
-
-  const goods = [
-    {
-      id: 1,
-      name: 'はなまるぬいぐるみ S',
-      price: '¥2,800',
-      character: 'はなまる',
-      category: 'ぬいぐるみ',
-      color: 'pink',
-    },
-    {
-      id: 2,
-      name: 'そらまめぬいぐるみ S',
-      price: '¥2,800',
-      character: 'そらまめ',
-      category: 'ぬいぐるみ',
-      color: 'blue',
-    },
-    {
-      id: 3,
-      name: 'はなまるマスコット',
-      price: '¥1,500',
-      character: 'はなまる',
-      category: 'ぬいぐるみ',
-      color: 'pink',
-    },
-    {
-      id: 4,
-      name: 'ぴよマスコット',
-      price: '¥1,500',
-      character: 'ぴよ',
-      category: 'ぬいぐるみ',
-      color: 'yellow',
-    },
-    {
-      id: 5,
-      name: 'FluffyHopperボールペン',
-      price: '¥650',
-      character: 'すべて',
-      category: '文房具',
-      color: 'pink',
-    },
-    {
-      id: 6,
-      name: 'はなまるメモ帳',
-      price: '¥480',
-      character: 'はなまる',
-      category: '文房具',
-      color: 'pink',
-    },
-    {
-      id: 7,
-      name: 'ももかミラー',
-      price: '¥1,200',
-      character: 'ももか',
-      category: 'アクセサリー',
-      color: 'purple',
-    },
-    {
-      id: 8,
-      name: 'そらまめトートバッグ',
-      price: '¥1,800',
-      character: 'そらまめ',
-      category: 'バッグ',
-      color: 'blue',
-    },
-    {
-      id: 9,
-      name: 'FluffyHopperマグカップ',
-      price: '¥1,500',
-      character: 'すべて',
-      category: 'ホームグッズ',
-      color: 'pink',
-    },
-    {
-      id: 10,
-      name: 'はなまるクッション',
-      price: '¥2,500',
-      character: 'はなまる',
-      category: 'ホームグッズ',
-      color: 'pink',
-    },
-    {
-      id: 11,
-      name: 'ぴよTシャツ',
-      price: '¥2,800',
-      character: 'ぴよ',
-      category: 'アパレル',
-      color: 'yellow',
-    },
-    {
-      id: 12,
-      name: 'ももかポーチ',
-      price: '¥1,600',
-      character: 'ももか',
-      category: 'バッグ',
-      color: 'purple',
-    },
+  const categoriesFilter = [
+    'すべて',
+    ...Array.from(new Set(Object.values(goods).map((item) => item.category))),
   ];
+  const charactersFilter = ['すべて', ...Object.values(characters).map((char) => char.name)];
 
   return (
     <div>
@@ -145,7 +50,7 @@ export default function Goods() {
               />
             </div>
             <div className="flex gap-2 overflow-x-auto pb-2 md:pb-0">
-              {categories.map((category, index) => (
+              {categoriesFilter.map((category, index) => (
                 <Button
                   key={index}
                   variant={index === 0 ? 'default' : 'outline'}
@@ -160,7 +65,7 @@ export default function Goods() {
           <div className="mt-4">
             <p className="mb-2 text-sm text-gray-500">キャラクター</p>
             <div className="flex gap-2 overflow-x-auto pb-2">
-              {characters.map((character, index) => (
+              {charactersFilter.map((character, index) => (
                 <Button
                   key={index}
                   variant={index === 0 ? 'default' : 'outline'}
@@ -176,9 +81,9 @@ export default function Goods() {
 
         {/* グッズ一覧 */}
         <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 md:gap-6">
-          {goods.map((item) => (
+          {Object.entries(goods).map(([id, item]) => (
             <div
-              key={item.id}
+              key={id}
               className="rounded-3xl bg-white p-4 shadow-md transition-shadow hover:shadow-lg"
             >
               <div className="mb-3 overflow-hidden rounded-2xl">
