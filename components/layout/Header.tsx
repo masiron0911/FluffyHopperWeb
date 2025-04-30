@@ -10,7 +10,7 @@ export default function Header() {
     <header className="sticky top-0 z-10 flex items-center justify-between bg-pink-200 px-6 py-4 shadow-sm">
       <Link href="/" className="flex items-center gap-2">
         <Image
-          src="/placeholder.svg?height=120&width=200"
+          src="/placeholder.svg"
           alt="FluffyHopper ロゴ"
           width={120}
           height={40}

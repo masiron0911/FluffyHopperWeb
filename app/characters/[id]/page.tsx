@@ -39,7 +39,7 @@ export default async function CharacterDetail(props: PageProps) {
       <section className={`relative h-[400px] overflow-hidden ${character.bgColor}`}>
         <div className="absolute inset-0 flex items-center justify-center">
           <Image
-            src="/placeholder.svg?height=800&width=1200"
+            src="/placeholder.svg"
             alt={character.name}
             width={1200}
             height={800}
@@ -50,7 +50,7 @@ export default async function CharacterDetail(props: PageProps) {
         <div className="relative z-1 flex h-full flex-col items-center justify-center px-4 text-center">
           <div className="mb-4 h-40 w-40 overflow-hidden rounded-full border-4 border-white">
             <Image
-              src="/placeholder.svg?height=160&width=160"
+              src="/placeholder.svg"
               alt={character.name}
               width={160}
               height={160}
@@ -154,7 +154,7 @@ export default async function CharacterDetail(props: PageProps) {
               >
                 <div className="mb-3 overflow-hidden rounded-xl">
                   <Image
-                    src="/placeholder.svg?height=150&width=150"
+                    src="/placeholder.svg"
                     alt={`${character.name}グッズ ${item}`}
                     width={150}
                     height={150}

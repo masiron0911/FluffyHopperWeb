@@ -14,7 +14,7 @@ export default function Home() {
       <section className="relative h-[500px] overflow-hidden">
         <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-r from-pink-200 to-purple-200">
           <Image
-            src="/placeholder.svg?height=600&width=1200"
+            src="/placeholder.svg"
             alt="FluffyHopper キャラクターたち"
             width={1200}
             height={600}
@@ -129,7 +129,7 @@ export default function Home() {
             <div className="flex flex-col items-center gap-6 rounded-3xl bg-white p-6 shadow-md transition-shadow hover:shadow-lg md:flex-row">
               <div className="h-40 w-40 flex-shrink-0 overflow-hidden rounded-full border-4 border-pink-200">
                 <Image
-                  src="/placeholder.svg?height=160&width=160"
+                  src="/placeholder.svg"
                   alt="はなまる"
                   width={160}
                   height={160}
@@ -153,7 +153,7 @@ export default function Home() {
             <div className="flex flex-col items-center gap-6 rounded-3xl bg-white p-6 shadow-md transition-shadow hover:shadow-lg md:flex-row">
               <div className="h-40 w-40 flex-shrink-0 overflow-hidden rounded-full border-4 border-blue-200">
                 <Image
-                  src="/placeholder.svg?height=160&width=160"
+                  src="/placeholder.svg"
                   alt="そらまめ"
                   width={160}
                   height={160}
@@ -203,7 +203,7 @@ export default function Home() {
             >
               <div className="mb-4 overflow-hidden rounded-2xl">
                 <Image
-                  src="/placeholder.svg?height=200&width=200"
+                  src="/placeholder.svg"
                   alt={`グッズ ${item}`}
                   width={200}
                   height={200}

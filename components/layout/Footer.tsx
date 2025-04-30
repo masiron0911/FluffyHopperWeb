@@ -10,7 +10,7 @@ export default function Footer() {
         <div className="mb-8 flex flex-col items-center justify-between md:flex-row">
           <div className="mb-4 flex items-center gap-2 md:mb-0">
             <Image
-              src="/placeholder.svg?height=120&width=200"
+              src="/placeholder.svg"
               alt="FluffyHopper ロゴ"
               width={120}
               height={40}
