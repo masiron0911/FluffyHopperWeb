@@ -1,5 +1,6 @@
 import type { characters } from '@/data/characters';
 import type { newsItems } from '@/data/news';
+import type { goods } from '@/data/goods';
 
 export type CharacterId = keyof typeof characters;
 export type CharacterName = (typeof characters)[keyof typeof characters]['name'];
@@ -33,4 +34,13 @@ export type NewsItem = {
   title: string;
   content: string;
   image: string;
+};
+
+export type GoodsCategory = (typeof goods)[keyof typeof goods]['category'];
+export type GoodsItem = {
+  name: string;
+  price: string;
+  character: string;
+  category: GoodsCategory;
+  color: string;
 };

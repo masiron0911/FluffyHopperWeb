@@ -1,0 +1,88 @@
+import type { GoodsItem } from '@/types';
+
+export const goods: Record<string, GoodsItem> = {
+  1: {
+    name: 'はなまるぬいぐるみ S',
+    price: '¥2,800',
+    character: 'はなまる',
+    category: 'ぬいぐるみ',
+    color: 'pink',
+  },
+  2: {
+    name: 'そらまめぬいぐるみ S',
+    price: '¥2,800',
+    character: 'そらまめ',
+    category: 'ぬいぐるみ',
+    color: 'blue',
+  },
+  3: {
+    name: 'はなまるマスコット',
+    price: '¥1,500',
+    character: 'はなまる',
+    category: 'ぬいぐるみ',
+    color: 'pink',
+  },
+  4: {
+    name: 'ぴよマスコット',
+    price: '¥1,500',
+    character: 'ぴよ',
+    category: 'ぬいぐるみ',
+    color: 'yellow',
+  },
+  5: {
+    name: 'FluffyHopperボールペン',
+    price: '¥650',
+    character: 'すべて',
+    category: '文房具',
+    color: 'pink',
+  },
+  6: {
+    name: 'はなまるメモ帳',
+    price: '¥480',
+    character: 'はなまる',
+    category: '文房具',
+    color: 'pink',
+  },
+  7: {
+    name: 'ももかミラー',
+    price: '¥1,200',
+    character: 'ももか',
+    category: 'アクセサリー',
+    color: 'purple',
+  },
+  8: {
+    name: 'そらまめトートバッグ',
+    price: '¥1,800',
+    character: 'そらまめ',
+    category: 'バッグ',
+    color: 'blue',
+  },
+  9: {
+    name: 'FluffyHopperマグカップ',
+    price: '¥1,500',
+    character: 'すべて',
+    category: 'ホームグッズ',
+    color: 'pink',
+  },
+  10: {
+    name: 'はなまるクッション',
+    price: '¥2,500',
+    character: 'はなまる',
+    category: 'ホームグッズ',
+    color: 'pink',
+  },
+  11: {
+    name: 'ぴよTシャツ',
+    price: '¥2,800',
+    character: 'ぴよ',
+    category: 'アパレル',
+    color: 'yellow',
+  },
+  12: {
+    name: 'ももかポーチ',
+    price: '¥1,600',
+    character: 'ももか',
+    category: 'バッグ',
+    color: 'purple',
+  },
+};
