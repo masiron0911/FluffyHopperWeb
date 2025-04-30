@@ -29,10 +29,9 @@ export default function Characters() {
       {/* キャラクター一覧 */}
       <section className="mx-auto max-w-6xl px-4 py-12 md:px-8">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-          {Object.keys(characters).map((key) => {
-            const character = characters[key];
+          {Object.entries(characters).map(([id, character]) => {
             return (
-              <Link href={`/characters/${character.id}`} key={character.id} className="block">
+              <Link href={`/characters/${id}`} key={id} className="block">
                 <div
                   className={`flex flex-col items-center gap-6 rounded-3xl p-6 shadow-md transition-shadow hover:shadow-lg md:flex-row ${character.bgColor}`}
                 >

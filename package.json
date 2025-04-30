@@ -7,7 +7,7 @@
     "build": "next build && next-image-export-optimizer",
     "start": "npx serve out",
     "lint": "next lint",
-    "format": "prettier --write app components lib data types",
+    "format": "prettier --write app components lib data types constants",
     "fix-next-async-request-api": "npx @next/codemod@canary next-async-request-api ."
   },
   "dependencies": {
