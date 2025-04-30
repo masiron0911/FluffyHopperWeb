@@ -1,4 +1,4 @@
-export interface Character {
+export type Character = {
   id: string;
   name: string;
   color: string;
@@ -18,4 +18,4 @@ export interface Character {
     src: string;
     alt: string;
   }[];
-}
+};
