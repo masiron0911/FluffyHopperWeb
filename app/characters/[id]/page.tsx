@@ -13,7 +13,7 @@ interface PageProps {
 }
 
 export async function generateStaticParams() {
-  return [{ id: 'hanamaru' }, { id: 'soramame' }, { id: 'momoka' }, { id: 'piyo' }];
+  return Object.keys(characters).map((id) => ({ id }));
 }
 
 export async function generateMetadata(props: PageProps): Promise<Metadata> {

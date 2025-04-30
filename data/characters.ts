@@ -2,7 +2,6 @@ import type { Character } from '@/types';
 
 export const characters: Record<string, Character> = {
   hanamaru: {
-    id: 'hanamaru',
     name: 'はなまる',
     color: 'pink',
     description:
@@ -37,7 +36,6 @@ export const characters: Record<string, Character> = {
     ],
   },
   soramame: {
-    id: 'soramame',
     name: 'そらまめ',
     color: 'blue',
     description: 'はなまるの親友。おっとりした性格の男の子うさぎ。水色の耳と雲の模様が特徴です。',
@@ -71,7 +69,6 @@ export const characters: Record<string, Character> = {
     ],
   },
   momoka: {
-    id: 'momoka',
     name: 'ももか',
     color: 'purple',
     description: 'おしゃれが大好きな女の子うさぎ。紫色の耳とハートの模様が特徴です。',
@@ -105,7 +102,6 @@ export const characters: Record<string, Character> = {
     ],
   },
   piyo: {
-    id: 'piyo',
     name: 'ぴよ',
     color: 'yellow',
     description: '元気いっぱいの男の子うさぎ。黄色の耳と星の模様が特徴です。',
