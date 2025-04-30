@@ -19,8 +19,6 @@ export async function generateStaticParams() {
 
 export default async function CharacterDetail(props: PageProps) {
   const params = await props.params;
-
-  // const character = characters[params.id as keyof typeof characters];
   const character = characters[params.id];
 
   if (!character) {

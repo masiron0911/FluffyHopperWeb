@@ -2,8 +2,12 @@ import Link from 'next/link';
 import Image from 'next-image-export-optimizer';
 import { Button } from '@/components/ui/button';
 import HomeGallery from '@/components/home-gallery';
+import { newsItems } from '@/data/news';
 
 export default function Home() {
+  // ニュースの最新の4件のみ表示
+  const latestNews = newsItems.slice(-4).reverse();
+
   return (
     <div>
       {/* ヒーローセクション */}
@@ -67,28 +71,7 @@ export default function Home() {
           </div>
 
           <div className="grid gap-4">
-            {[
-              {
-                date: '2023.12.15',
-                tag: '新商品',
-                title: 'はなまるのクリスマス限定ぬいぐるみが登場！',
-              },
-              {
-                date: '2023.12.01',
-                tag: 'イベント',
-                title: 'FluffyHopperカフェが東京・原宿にオープン決定！',
-              },
-              {
-                date: '2023.11.20',
-                tag: 'お知らせ',
-                title: '公式オンラインショップがリニューアルしました',
-              },
-              {
-                date: '2023.11.10',
-                tag: '新キャラクター',
-                title: '新キャラクター「ももか」が仲間入り！',
-              },
-            ].map((news, index) => (
+            {latestNews.map((news, index) => (
               <Link
                 href="#"
                 key={index}
