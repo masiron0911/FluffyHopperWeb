@@ -8,8 +8,7 @@ export default function Home() {
   // ニュースの最新の4件のみ表示
   const latestNews = Object.entries(newsItems)
     .sort((a, b) => Number(b[0]) - Number(a[0]))
-    .slice(-4)
-    .reverse()
+    .slice(0, 4)
     .map(([id, item]) => ({ id, ...item }));
 
   return (
@@ -77,7 +76,7 @@ export default function Home() {
           <div className="grid gap-4">
             {latestNews.map((news, index) => (
               <Link
-                href="#"
+                href={`/news/${news.id}`}
                 key={index}
                 className="flex flex-col gap-2 rounded-xl p-4 transition-colors hover:bg-pink-50 sm:flex-row sm:items-center"
               >

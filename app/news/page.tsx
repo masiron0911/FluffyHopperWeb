@@ -4,6 +4,9 @@ import { Button } from '@/components/ui/button';
 import { newsItems } from '@/data/news';
 
 export default function News() {
+  // 最新のお知らせ順にソート
+  const sortedNews = Object.entries(newsItems).sort((a, b) => Number(b[0]) - Number(a[0]));
+
   return (
     <div>
       {/* ヒーローセクション */}
@@ -29,7 +32,7 @@ export default function News() {
       {/* ニュース一覧 */}
       <section className="mx-auto max-w-6xl px-4 py-12 md:px-8">
         <div className="grid grid-cols-1 gap-8">
-          {Object.entries(newsItems).map(([id, news]) => {
+          {sortedNews.map(([id, news]) => {
             return (
               <div
                 key={id}
