@@ -9,6 +9,8 @@ export const characters: Record<string, Character> = {
     longDescription:
       'はなまるは、FluffyHopperの主役キャラクターです。いつも明るく元気いっぱいで、周りの友達を笑顔にするのが大好き。花が大好きで、いつも頭に小さな花の飾りをつけています。好奇心旺盛な性格で、新しいことに挑戦するのが大好きです。お料理やお菓子作りが得意で、みんなにおいしいものを振る舞うのが幸せだと感じています。',
     personality: '明るく元気',
+    speciality: 'お料理',
+    favoriteFood: 'いちご',
     birthday: '3月3日',
     favorites: 'いちご、お花、おしゃれ',
     friends: ['そらまめ', 'ももか', 'ぴよ'],
@@ -42,6 +44,8 @@ export const characters: Record<string, Character> = {
     longDescription:
       'そらまめは、はなまるの一番の親友です。のんびりとした性格で、いつも穏やかな笑顔を絶やしません。本を読んだり、星空を眺めたりするのが大好き。はなまるとは対照的な性格ですが、お互いを補い合う素敵な友情を育んでいます。空や雲が好きで、よく空を見上げては夢を描いています。',
     personality: 'のんびり優しい',
+    speciality: '読書',
+    favoriteFood: 'ミルクティー',
     birthday: '7月7日',
     favorites: '本、星空、お昼寝',
     friends: ['はなまる', 'ぴよ', 'ももか'],
@@ -75,6 +79,8 @@ export const characters: Record<string, Character> = {
     longDescription:
       'ももかは、おしゃれが大好きなトレンドリーダー。最新のファッションやアクセサリーに詳しく、いつもおしゃれな服を着こなしています。少し気取った性格に見えますが、実は友達思いで優しい心の持ち主。特にスイーツ作りが得意で、みんなでティーパーティーを開くのが大好きです。',
     personality: 'おしゃれでクール',
+    speciality: 'ファッション',
+    favoriteFood: 'マカロン',
     birthday: '2月14日',
     favorites: 'ファッション、スイーツ、音楽',
     friends: ['はなまる', 'そらまめ'],
@@ -108,6 +114,8 @@ export const characters: Record<string, Character> = {
     longDescription:
       'ぴよは、いつも元気いっぱいで活発な男の子うさぎ。スポーツが得意で、特にサッカーが大好き。冒険心が強く、新しい場所を探検するのが趣味です。少しやんちゃな面もありますが、困っている友達がいると真っ先に助けに行く勇敢な心の持ち主。お菓子が大好きで、特にチョコレートには目がありません。',
     personality: '活発でやんちゃ',
+    speciality: 'スポーツ',
+    favoriteFood: 'チョコレート',
     birthday: '5月5日',
     favorites: 'スポーツ、冒険、お菓子',
     friends: ['はなまる', 'そらまめ'],

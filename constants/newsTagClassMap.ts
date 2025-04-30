@@ -1,7 +1,7 @@
-import type { NewsItem } from '@/types';
+import type { NewsTag } from '@/types';
 
 // タグごとの配色設定
-export const newsTagClassMap: Record<NewsItem['tag'], string> = {
+export const newsTagClassMap: Record<NewsTag, string> = {
   新商品: 'bg-pink-100 text-pink-700',
   イベント: 'bg-blue-100 text-blue-700',
   お知らせ: 'bg-green-100 text-green-700',

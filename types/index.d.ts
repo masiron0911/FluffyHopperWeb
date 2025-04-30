@@ -1,12 +1,19 @@
+import type { characters } from '@/data/characters';
+import type { newsItems } from '@/data/news';
+
+export type CharacterId = keyof typeof characters;
+export type CharacterName = (typeof characters)[keyof typeof characters]['name'];
 export type Character = {
-  name: string;
+  name: CharacterName;
   color: string;
   description: string;
   longDescription: string;
   personality: string;
+  speciality: string;
+  favoriteFood: string;
   birthday: string;
   favorites: string;
-  friends: string[];
+  friends: CharacterName[];
   bgColor: string;
   textColor: string;
   borderColor: string;
@@ -19,9 +26,10 @@ export type Character = {
   }[];
 };
 
+export type NewsTag = (typeof newsItems)[keyof typeof newsItems]['tag'];
 export type NewsItem = {
   date: string;
-  tag: '新商品' | 'イベント' | 'お知らせ' | '新キャラクター' | 'コラボレーション';
+  tag: NewsTag;
   title: string;
   content: string;
   image: string;

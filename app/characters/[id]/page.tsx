@@ -6,9 +6,11 @@ import { notFound } from 'next/navigation';
 import CharacterGallery from '@/components/character-gallery';
 import { characters } from '@/data/characters';
 import type { Metadata } from 'next';
+import type { CharacterId } from '@/types';
+import { characterNameToIdMap } from '@/constants/characterIdMap';
 
 interface PageProps {
-  params: Promise<{ id: string }>;
+  params: Promise<{ id: CharacterId }>;
   searchParams?: Promise<{ [key: string]: string | string[] | undefined }>;
 }
 
@@ -92,18 +94,18 @@ export default async function CharacterDetail(props: PageProps) {
               <p className="mb-4 text-gray-700">{character.longDescription}</p>
               <h3 className={`text-lg font-bold ${character.textColor} mb-2`}>お友達</h3>
               <div className="flex flex-wrap gap-2">
-                {character.friends.map((friend) => (
-                  <Link
-                    href={`/characters/${friend === 'はなまる' ? 'hanamaru' : friend === 'そらまめ' ? 'soramame' : friend === 'ももか' ? 'momoka' : 'piyo'}`}
-                    key={friend}
-                  >
-                    <span
-                      className={`inline-block rounded-full px-3 py-1 text-sm ${character.bgColor} ${character.textColor}`}
-                    >
-                      {friend}
-                    </span>
-                  </Link>
-                ))}
+                {character.friends.map((friendName) => {
+                  const friendId = characterNameToIdMap[friendName];
+                  return (
+                    <Link href={`/characters/${friendId}`} key={friendName}>
+                      <span
+                        className={`inline-block rounded-full px-3 py-1 text-sm ${character.bgColor} ${character.textColor}`}
+                      >
+                        {friendName}
+                      </span>
+                    </Link>
+                  );
+                })}
               </div>
             </div>
           </div>
@@ -117,28 +119,12 @@ export default async function CharacterDetail(props: PageProps) {
             <div className={`${character.bgColor} rounded-2xl p-4 text-center`}>
               <Star className={`mx-auto mb-2 ${character.textColor}`} size={32} />
               <h3 className={`text-lg font-bold ${character.textColor} mb-1`}>特技</h3>
-              <p className={`${character.textColor} opacity-80`}>
-                {character.name === 'はなまる'
-                  ? 'お料理'
-                  : character.name === 'そらまめ'
-                    ? '読書'
-                    : character.name === 'ももか'
-                      ? 'ファッション'
-                      : 'スポーツ'}
-              </p>
+              <p className={`${character.textColor} opacity-80`}>{character.speciality}</p>
             </div>
             <div className={`${character.bgColor} rounded-2xl p-4 text-center`}>
               <Coffee className={`mx-auto mb-2 ${character.textColor}`} size={32} />
               <h3 className={`text-lg font-bold ${character.textColor} mb-1`}>好きな食べ物</h3>
-              <p className={`${character.textColor} opacity-80`}>
-                {character.name === 'はなまる'
-                  ? 'いちご'
-                  : character.name === 'そらまめ'
-                    ? 'ミルクティー'
-                    : character.name === 'ももか'
-                      ? 'マカロン'
-                      : 'チョコレート'}
-              </p>
+              <p className={`${character.textColor} opacity-80`}>{character.favoriteFood}</p>
             </div>
           </div>
 
