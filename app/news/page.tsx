@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Image from 'next-image-export-optimizer';
 import { Button } from '@/components/ui/button';
 import { newsItems } from '@/data/news';
+import { newsTagClassMap } from '@/constants/newsTagClassMap';
 
 export default function News() {
   // 最新のお知らせ順にソート
@@ -53,17 +54,7 @@ export default function News() {
                     <div className="mb-3 flex items-center gap-3">
                       <span className="text-sm text-gray-500">{news.date}</span>
                       <span
-                        className={`rounded-full px-2 py-0.5 text-xs ${
-                          news.tag === '新商品'
-                            ? 'bg-pink-100 text-pink-700'
-                            : news.tag === 'イベント'
-                              ? 'bg-blue-100 text-blue-700'
-                              : news.tag === 'お知らせ'
-                                ? 'bg-green-100 text-green-700'
-                                : news.tag === '新キャラクター'
-                                  ? 'bg-purple-100 text-purple-700'
-                                  : 'bg-yellow-100 text-yellow-700'
-                        }`}
+                        className={`rounded-full px-2 py-0.5 text-xs ${newsTagClassMap[news.tag]}`}
                       >
                         {news.tag}
                       </span>

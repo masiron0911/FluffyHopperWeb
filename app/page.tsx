@@ -3,6 +3,7 @@ import Image from 'next-image-export-optimizer';
 import { Button } from '@/components/ui/button';
 import HomeGallery from '@/components/home-gallery';
 import { newsItems } from '@/data/news';
+import { newsTagClassMap } from '@/constants/newsTagClassMap';
 
 export default function Home() {
   // ニュースの最新の4件のみ表示
@@ -82,17 +83,7 @@ export default function Home() {
               >
                 <div className="flex items-center gap-3">
                   <span className="text-sm whitespace-nowrap text-gray-500">{news.date}</span>
-                  <span
-                    className={`rounded-full px-2 py-0.5 text-xs whitespace-nowrap ${
-                      news.tag === '新商品'
-                        ? 'bg-pink-100 text-pink-700'
-                        : news.tag === 'イベント'
-                          ? 'bg-blue-100 text-blue-700'
-                          : news.tag === 'お知らせ'
-                            ? 'bg-green-100 text-green-700'
-                            : 'bg-purple-100 text-purple-700'
-                    }`}
-                  >
+                  <span className={`rounded-full px-2 py-0.5 text-xs ${newsTagClassMap[news.tag]}`}>
                     {news.tag}
                   </span>
                 </div>
