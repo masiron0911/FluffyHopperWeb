@@ -5,16 +5,24 @@ import { Button } from '@/components/ui/button';
 import { notFound } from 'next/navigation';
 import CharacterGallery from '@/components/character-gallery';
 import { characters } from '@/data/characters';
+import type { Metadata } from 'next';
 
 interface PageProps {
-  params: Promise<{
-    id: string;
-  }>;
+  params: Promise<{ id: string }>;
   searchParams?: Promise<{ [key: string]: string | string[] | undefined }>;
 }
 
 export async function generateStaticParams() {
   return [{ id: 'hanamaru' }, { id: 'soramame' }, { id: 'momoka' }, { id: 'piyo' }];
+}
+
+export async function generateMetadata(props: PageProps): Promise<Metadata> {
+  const params = await props.params;
+  const character = characters[params.id];
+
+  return {
+    title: `${character.name}`,
+  };
 }
 
 export default async function CharacterDetail(props: PageProps) {
