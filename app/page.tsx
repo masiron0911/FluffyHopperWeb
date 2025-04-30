@@ -6,7 +6,11 @@ import { newsItems } from '@/data/news';
 
 export default function Home() {
   // ニュースの最新の4件のみ表示
-  const latestNews = newsItems.slice(-4).reverse();
+  const latestNews = Object.entries(newsItems)
+    .sort((a, b) => Number(b[0]) - Number(a[0]))
+    .slice(-4)
+    .reverse()
+    .map(([id, item]) => ({ id, ...item }));
 
   return (
     <div>

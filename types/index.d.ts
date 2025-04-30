@@ -21,7 +21,6 @@ export type Character = {
 };
 
 export type NewsItem = {
-  id: number;
   date: string;
   tag: '新商品' | 'イベント' | 'お知らせ' | '新キャラクター' | 'コラボレーション';
   title: string;
