@@ -15,7 +15,7 @@ export default function Home() {
     .map(([id, item]) => ({ id, ...item }));
 
   // 表示するキャラクターを設定
-  const featuredCharacters: CharacterId[] = ['hanamaru', 'soramame'];
+  const featuredCharacters: CharacterId[] = ['hanamaru', 'manpuku'];
 
   return (
     <div>
