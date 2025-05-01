@@ -17,7 +17,7 @@ const compat = new FlatCompat({
 
 export default [
   {
-    ignores: [".next", "dist/**", "**/*.css.d.ts", "**/*.css.d.ts.map"],
+    ignores: ["**/.next/**/*", "*.config.*", "dist/**", "**/*.css.d.ts", "**/*.css.d.ts.map"],
   },
   ...typescriptEslint.configs.recommended,
   ...compat.extends(
