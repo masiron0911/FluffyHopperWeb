@@ -6,6 +6,7 @@ import { newsItems } from '@/data/news';
 import { newsTagClassMap } from '@/constants/newsTagClassMap';
 import { characters } from '@/data/characters';
 import { CharacterId } from '@/types';
+import { goods } from '@/data/goods';
 
 export default function Home() {
   // ニュースの最新の4件のみ表示
@@ -13,6 +14,10 @@ export default function Home() {
     .sort((a, b) => Number(b[0]) - Number(a[0]))
     .slice(0, 4)
     .map(([id, item]) => ({ id, ...item }));
+
+  // 人気のグッズを指定
+  const goodsIds = [1, 2, 3, 4];
+  const popularGoods = goodsIds.map((id) => goods[id]);
 
   // 表示するキャラクターを設定
   const featuredCharacters: CharacterId[] = ['hanamaru', 'manpuku'];
@@ -184,26 +189,28 @@ export default function Home() {
         </div>
 
         <div className="mb-8 grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-4">
-          {[1, 2, 3, 4].map((item) => (
+          {popularGoods.map((item) => (
             <div
-              key={item}
+              key={item.name}
               className="rounded-3xl bg-white p-4 shadow-md transition-shadow hover:shadow-lg"
             >
               <div className="mb-4 overflow-hidden rounded-2xl">
                 <Image
-                  src="/placeholder.svg"
-                  alt={`グッズ ${item}`}
+                  src={item.image}
+                  alt={`グッズ ${item.name}`}
                   width={200}
                   height={200}
                   className="h-48 w-full object-cover"
                   basePath={process.env.NEXT_PUBLIC_BASE_PATH}
                 />
               </div>
-              <h3 className="mb-1 text-lg font-bold text-pink-700">はなまるぬいぐるみ</h3>
-              <p className="mb-3 text-sm text-pink-500">¥2,800</p>
-              <Button className="w-full rounded-full bg-pink-500 text-white hover:bg-pink-600">
-                詳細を見る
-              </Button>
+              <h3 className="mb-1 text-lg font-bold text-pink-700">{item.name}</h3>
+              <p className="mb-3 text-sm text-pink-500">{item.price}</p>
+              <Link href={item.storeUrl} target="_blank" rel="noopener noreferrer">
+                <Button className="w-full rounded-full bg-pink-500 text-white hover:bg-pink-600">
+                  詳細を見る
+                </Button>
+              </Link>
             </div>
           ))}
         </div>

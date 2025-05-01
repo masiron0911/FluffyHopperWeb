@@ -1,88 +1,112 @@
 import type { GoodsItem } from '@/types';
 
 export const goods: Record<string, GoodsItem> = {
-  1: {
+  12: {
     name: 'はなまるぬいぐるみ S',
     price: '¥2,800',
     character: 'はなまる',
     category: 'ぬいぐるみ',
     color: 'pink',
+    image: '/placeholder.svg',
+    storeUrl: 'https://fluffyhopper.base.ec/',
   },
-  2: {
+  11: {
     name: 'そらまめぬいぐるみ S',
     price: '¥2,800',
     character: 'そらまめ',
     category: 'ぬいぐるみ',
     color: 'blue',
+    image: '/placeholder.svg',
+    storeUrl: 'https://fluffyhopper.base.ec/',
   },
-  3: {
+  10: {
     name: 'はなまるマスコット',
     price: '¥1,500',
     character: 'はなまる',
     category: 'ぬいぐるみ',
     color: 'pink',
+    image: '/placeholder.svg',
+    storeUrl: 'https://fluffyhopper.base.ec/',
   },
-  4: {
+  9: {
     name: 'ぴよマスコット',
     price: '¥1,500',
     character: 'ぴよ',
     category: 'ぬいぐるみ',
     color: 'yellow',
+    image: '/placeholder.svg',
+    storeUrl: 'https://fluffyhopper.base.ec/',
   },
-  5: {
+  8: {
     name: 'FluffyHopperボールペン',
     price: '¥650',
     character: 'すべて',
     category: '文房具',
     color: 'pink',
+    image: '/placeholder.svg',
+    storeUrl: 'https://fluffyhopper.base.ec/',
   },
-  6: {
+  7: {
     name: 'はなまるメモ帳',
     price: '¥480',
     character: 'はなまる',
     category: '文房具',
     color: 'pink',
+    image: '/placeholder.svg',
+    storeUrl: 'https://fluffyhopper.base.ec/',
   },
-  7: {
+  6: {
     name: 'ももかミラー',
     price: '¥1,200',
     character: 'ももか',
     category: 'アクセサリー',
     color: 'purple',
+    image: '/placeholder.svg',
+    storeUrl: 'https://fluffyhopper.base.ec/',
   },
-  8: {
+  5: {
     name: 'そらまめトートバッグ',
     price: '¥1,800',
     character: 'そらまめ',
     category: 'バッグ',
     color: 'blue',
+    image: '/placeholder.svg',
+    storeUrl: 'https://fluffyhopper.base.ec/',
   },
-  9: {
+  4: {
     name: 'FluffyHopperマグカップ',
     price: '¥1,500',
     character: 'すべて',
     category: 'ホームグッズ',
     color: 'pink',
+    image: '/placeholder.svg',
+    storeUrl: 'https://fluffyhopper.base.ec/',
   },
-  10: {
+  3: {
     name: 'はなまるクッション',
     price: '¥2,500',
     character: 'はなまる',
     category: 'ホームグッズ',
     color: 'pink',
+    image: '/placeholder.svg',
+    storeUrl: 'https://fluffyhopper.base.ec/',
   },
-  11: {
+  2: {
     name: 'ぴよTシャツ',
     price: '¥2,800',
     character: 'ぴよ',
     category: 'アパレル',
     color: 'yellow',
+    image: '/placeholder.svg',
+    storeUrl: 'https://fluffyhopper.base.ec/',
   },
-  12: {
+  1: {
     name: 'ももかポーチ',
     price: '¥1,600',
     character: 'ももか',
     category: 'バッグ',
     color: 'purple',
+    image: '/placeholder.svg',
+    storeUrl: 'https://fluffyhopper.base.ec/',
   },
 };

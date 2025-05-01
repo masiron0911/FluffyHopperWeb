@@ -43,4 +43,6 @@ export type GoodsItem = {
   character: string;
   category: GoodsCategory;
   color: string;
+  image: string;
+  storeUrl: string;
 };
