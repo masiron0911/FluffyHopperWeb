@@ -1,16 +1,41 @@
+'use client';
+
 import Image from 'next-image-export-optimizer';
 import { Search } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { goods } from '@/data/goods';
 import { characters } from '@/data/characters';
+import { useState } from 'react';
 
 export default function Goods() {
+  const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
+  const [selectedCharacters, setSelectedCharacters] = useState<string[]>([]);
+
+  const filteredGoods = Object.entries(goods).filter(([, item]) => {
+    const matchCategory =
+      selectedCategories.length === 0 || selectedCategories.includes(item.category);
+    const matchCharacter =
+      selectedCharacters.length === 0 || selectedCharacters.includes(item.character);
+    return matchCategory && matchCharacter;
+  });
+
+  const toggleCategory = (category: string) => {
+    setSelectedCategories((prev) =>
+      prev.includes(category) ? prev.filter((c) => c !== category) : [...prev, category],
+    );
+  };
+
+  const toggleCharacter = (character: string) => {
+    setSelectedCharacters((prev) =>
+      prev.includes(character) ? prev.filter((c) => c !== character) : [...prev, character],
+    );
+  };
+
   const categoriesFilter = [
-    'すべて',
     ...Array.from(new Set(Object.values(goods).map((item) => item.category))),
   ];
-  const charactersFilter = ['すべて', ...Object.values(characters).map((char) => char.name)];
+  const charactersFilter = [...Object.values(characters).map((char) => char.name)];
 
   return (
     <div>
@@ -50,38 +75,54 @@ export default function Goods() {
               />
             </div>
             <div className="flex gap-2 overflow-x-auto pb-2 md:pb-0">
-              {categoriesFilter.map((category, index) => (
-                <Button
-                  key={index}
-                  variant={index === 0 ? 'default' : 'outline'}
-                  className={`rounded-full whitespace-nowrap ${index === 0 ? 'bg-pink-500 hover:bg-pink-600' : 'border-pink-200 text-pink-700 hover:bg-pink-100'}`}
-                  size="sm"
-                >
-                  {category}
-                </Button>
-              ))}
+              {categoriesFilter.map((category, index) => {
+                const isSelected = selectedCategories.includes(category);
+                return (
+                  <Button
+                    key={index}
+                    onClick={() => toggleCategory(category)}
+                    className={`rounded-full whitespace-nowrap ${
+                      isSelected
+                        ? 'bg-pink-500 text-white'
+                        : 'border-pink-200 text-pink-700 hover:bg-pink-100'
+                    }`}
+                    size="sm"
+                    variant={isSelected ? 'default' : 'outline'}
+                  >
+                    {category}
+                  </Button>
+                );
+              })}
             </div>
           </div>
           <div className="mt-4">
             <p className="mb-2 text-sm text-gray-500">キャラクター</p>
             <div className="flex gap-2 overflow-x-auto pb-2">
-              {charactersFilter.map((character, index) => (
-                <Button
-                  key={index}
-                  variant={index === 0 ? 'default' : 'outline'}
-                  className={`rounded-full whitespace-nowrap ${index === 0 ? 'bg-pink-500 hover:bg-pink-600' : 'border-pink-200 text-pink-700 hover:bg-pink-100'}`}
-                  size="sm"
-                >
-                  {character}
-                </Button>
-              ))}
+              {charactersFilter.map((character, index) => {
+                const isSelected = selectedCharacters.includes(character);
+                return (
+                  <Button
+                    key={index}
+                    onClick={() => toggleCharacter(character)}
+                    className={`rounded-full whitespace-nowrap ${
+                      isSelected
+                        ? 'bg-pink-500 text-white'
+                        : 'border-pink-200 text-pink-700 hover:bg-pink-100'
+                    }`}
+                    size="sm"
+                    variant={isSelected ? 'default' : 'outline'}
+                  >
+                    {character}
+                  </Button>
+                );
+              })}
             </div>
           </div>
         </div>
 
         {/* グッズ一覧 */}
         <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 md:gap-6">
-          {Object.entries(goods).map(([id, item]) => (
+          {filteredGoods.map(([id, item]) => (
             <div
               key={id}
               className="rounded-3xl bg-white p-4 shadow-md transition-shadow hover:shadow-lg"
