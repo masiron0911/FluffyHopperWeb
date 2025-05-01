@@ -7,6 +7,7 @@ import { Input } from '@/components/ui/input';
 import { goods } from '@/data/goods';
 import { characters } from '@/data/characters';
 import { useState } from 'react';
+import Link from 'next/link';
 
 export default function Goods() {
   const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
@@ -141,11 +142,13 @@ export default function Goods() {
                 {item.name}
               </h3>
               <p className="mb-3 text-xs text-gray-500 md:text-sm">{item.price}</p>
-              <Button
-                className={`w-full rounded-full py-1 text-xs bg-${item.color}-500 hover:bg-${item.color}-600 text-white`}
-              >
-                詳細を見る
-              </Button>
+              <Link href={item.storeUrl} target="_blank" rel="noopener noreferrer">
+                <Button
+                  className={`w-full rounded-full py-1 text-xs bg-${item.color}-500 hover:bg-${item.color}-600 text-white`}
+                >
+                  詳細を見る
+                </Button>
+              </Link>
             </div>
           ))}
         </div>

@@ -19,7 +19,12 @@ export default function Footer() {
             />
           </div>
           <div className="flex gap-4">
-            <Link href="https://twitter.com" target="_blank" aria-label="Twitter">
+            <Link
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Twitter"
+            >
               <Button
                 variant="ghost"
                 size="icon"
@@ -28,7 +33,12 @@ export default function Footer() {
                 <Twitter size={20} />
               </Button>
             </Link>
-            <Link href="https://instagram.com" target="_blank" aria-label="Instagram">
+            <Link
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+            >
               <Button
                 variant="ghost"
                 size="icon"
@@ -37,7 +47,12 @@ export default function Footer() {
                 <Instagram size={20} />
               </Button>
             </Link>
-            <Link href="/shop" aria-label="ショップ">
+            <Link
+              href="https://fluffyhopper.base.ec/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="ショップ"
+            >
               <Button
                 variant="ghost"
                 size="icon"
