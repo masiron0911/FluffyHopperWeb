@@ -7,7 +7,7 @@ import { Button } from '@/components/ui/button';
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-10 flex items-center justify-between bg-amber-100 px-6 py-4 shadow-sm">
+    <header className="sticky top-0 z-10 flex items-center justify-between bg-amber-50 px-6 py-4 shadow-sm">
       <Link href="/" className="flex items-center gap-2">
         <Image
           src="/placeholder.svg"
