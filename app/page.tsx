@@ -26,19 +26,19 @@ export default function Home() {
     <div>
       {/* ヒーローセクション */}
       <section className="relative h-[500px] overflow-hidden">
-        <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-r from-pink-200 to-purple-200">
+        <div className="absolute inset-0 flex items-center justify-center">
           <Image
-            src="/placeholder.svg"
+            src="images/character_img/shopcard2024.png"
             alt="FluffyHopper キャラクターたち"
             width={1200}
             height={600}
-            className="object-cover opacity-30"
+            className=""
             basePath={process.env.NEXT_PUBLIC_BASE_PATH}
           />
         </div>
         <div className="relative z-1 flex h-full flex-col items-center justify-center px-4 text-center">
-          <h1 className="mb-4 text-4xl font-bold text-pink-700 md:text-6xl">FluffyHopper</h1>
-          <p className="mb-8 max-w-2xl text-xl text-pink-600 md:text-2xl">もふもふぴょーん</p>
+          <h1 className="mb-4 text-4xl font-bold text-pink-700 md:text-6xl"></h1>
+          <p className="mb-8 max-w-2xl text-xl text-pink-600 md:text-2xl"></p>
           <div className="flex gap-4">
             <Link href="/characters">
               <Button className="rounded-full bg-pink-500 px-6 py-2 text-white hover:bg-pink-600">
@@ -107,7 +107,7 @@ export default function Home() {
       {/* ブランド紹介 */}
       <section className="mx-auto max-w-6xl px-4 py-16 md:px-8">
         <div className="mb-12 text-center">
-          <h2 className="mb-4 text-3xl font-bold text-pink-700">FluffyHopperについて</h2>
+          <h2 className="mb-4 text-3xl font-bold text-pink-700">FluffyHopperのご紹介</h2>
           <div className="mx-auto mb-6 h-1 w-24 rounded-full bg-pink-300"></div>
           <p className="mx-auto max-w-3xl text-lg text-pink-800">
             &quot;毎日にもふもふとぽかぽかを&quot; Fluffy=ふわふわ Hopper=ぴょんぴょん

@@ -18,17 +18,49 @@ export default function HomeGallery() {
   const galleryImages = [
     {
       id: 1,
-      src: '/images/character_img/hello.png?height=800&width=800&text=Gallery+1',
+      src: '/images/illust_img/jyunkissa.png?height=800&width=800&text=Gallery+1',
       alt: 'ギャラリー画像 1',
     },
-    { id: 2, src: '/placeholder.svg', alt: 'ギャラリー画像 2' },
-    { id: 3, src: '/placeholder.svg', alt: 'ギャラリー画像 3' },
-    { id: 4, src: '/placeholder.svg', alt: 'ギャラリー画像 4' },
-    { id: 5, src: '/placeholder.svg', alt: 'ギャラリー画像 5' },
-    { id: 6, src: '/placeholder.svg', alt: 'ギャラリー画像 6' },
-    { id: 7, src: '/placeholder.svg', alt: 'ギャラリー画像 7' },
-    { id: 8, src: '/placeholder.svg', alt: 'ギャラリー画像 8' },
-    { id: 9, src: '/placeholder.svg', alt: 'ギャラリー画像 9' },
+    {
+      id: 2,
+      src: '/images/illust_img/starcandypot.png?height=800&width=800&text=Gallery+2',
+      alt: 'ギャラリー画像 2',
+    },
+    {
+      id: 3,
+      src: '/images/illust_img/taiwanyoichi.png?height=800&width=800&text=Gallery+3',
+      alt: 'ギャラリー画像 3',
+    },
+    {
+      id: 4,
+      src: '/images/illust_img/tenshinnohanashi.png?height=800&width=800&text=Gallery+4',
+      alt: 'ギャラリー画像 4',
+    },
+    {
+      id: 5,
+      src: '/images/illust_img/taiwanusagi.png?height=800&width=800&text=Gallery+5',
+      alt: 'ギャラリー画像 5',
+    },
+    {
+      id: 6,
+      src: '/images/illust_img/fruit.jpg?height=800&width=800&text=Gallery+6',
+      alt: 'ギャラリー画像 6',
+    },
+    {
+      id: 7,
+      src: '/images/illust_img/gorogoro.png?height=800&width=800&text=Gallery+7',
+      alt: 'ギャラリー画像 7',
+    },
+    {
+      id: 8,
+      src: '/images/illust_img/suyasuya.png?height=800&width=800&text=Gallery+8',
+      alt: 'ギャラリー画像 8',
+    },
+    {
+      id: 9,
+      src: '/images/illust_img/rakugaki.png?height=800&width=800&text=Gallery+9',
+      alt: 'ギャラリー画像 9',
+    },
   ];
 
   const openModal = (id: number) => {
