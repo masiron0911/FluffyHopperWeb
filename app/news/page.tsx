@@ -1,12 +1,21 @@
 import Link from 'next/link';
 import Image from 'next-image-export-optimizer';
 import { Button } from '@/components/ui/button';
-import { newsItems } from '@/data/news';
 import { newsTagClassMap } from '@/constants/newsTagClassMap';
+import { client } from '@/lib/strapi-client';
 
-export default function News() {
-  // 最新のお知らせ順にソート
-  const sortedNews = Object.entries(newsItems).sort((a, b) => Number(b[0]) - Number(a[0]));
+export default async function News() {
+  const res = await client.GET('/latest-informations', {
+    params: {
+      query: {
+        populate: '*',
+        sort: 'date:desc',
+        fields: '*',
+      },
+    },
+  });
+
+  const sortedNews = res.data?.data;
 
   return (
     <div>
@@ -33,17 +42,21 @@ export default function News() {
       {/* ニュース一覧 */}
       <section className="mx-auto max-w-6xl px-4 py-12 md:px-8">
         <div className="grid grid-cols-1 gap-8">
-          {sortedNews.map(([id, news]) => {
+          {sortedNews?.map((item) => {
             return (
               <div
-                key={id}
+                key={item.uid}
                 className="overflow-hidden rounded-3xl bg-white shadow-md transition-shadow hover:shadow-lg"
               >
                 <div className="flex flex-col md:flex-row">
                   <div className="md:w-1/3">
                     <Image
-                      src={news.image || '/placeholder.svg'}
-                      alt={news.title}
+                      src={
+                        item.image?.url
+                          ? `${process.env.NEXT_PUBLIC_STRAPI_URL}${item.image.url}`
+                          : '/placeholder.svg'
+                      }
+                      alt={item.title}
                       width={500}
                       height={300}
                       className="h-48 w-full object-cover md:h-full"
@@ -52,16 +65,16 @@ export default function News() {
                   </div>
                   <div className="p-6 md:w-2/3">
                     <div className="mb-3 flex items-center gap-3">
-                      <span className="text-sm text-gray-500">{news.date}</span>
+                      <span className="text-sm text-gray-500">{item.date}</span>
                       <span
-                        className={`rounded-full px-2 py-0.5 text-xs ${newsTagClassMap[news.tag]}`}
+                        className={`rounded-full px-2 py-0.5 text-xs ${newsTagClassMap[item.tag.name!]}`}
                       >
-                        {news.tag}
+                        {item.tag.name}
                       </span>
                     </div>
-                    <h2 className="mb-3 text-xl font-bold text-gray-800">{news.title}</h2>
-                    <p className="mb-4 text-gray-600">{news.content}</p>
-                    <Link href={`/news/${id}`}>
+                    <h2 className="mb-3 text-xl font-bold text-gray-800">{item.title}</h2>
+                    <p className="mb-4 text-gray-600">{item.content}</p>
+                    <Link href={`/news/${item.uid}`}>
                       <Button className="rounded-full bg-pink-500 px-4 py-1 text-sm text-white hover:bg-pink-600">
                         詳しく見る
                       </Button>

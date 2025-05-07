@@ -18,6 +18,7 @@ const nextConfig = {
     nextImageExportOptimizer_generateAndUseBlurImages: "true",
     nextImageExportOptimizer_remoteImageCacheTTL: "0",
     NEXT_PUBLIC_BASE_PATH: isGithubPages ? `/${repoName}` : '',
+    NEXT_PUBLIC_STRAPI_URL: 'https://strapi.se00sas.com',
   },
   typescript: {
   },
