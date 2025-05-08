@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "prebuild": "npx ts-node --project strapi/tsconfig.scripts.json -r tsconfig-paths/register strapi/generateRemoteImageList.ts",
-    "build": "next build && next-image-export-optimizer",
+    "build": "npm run prebuild && next build && next-image-export-optimizer",
     "start": "npx serve out",
     "lint": "next lint",
     "format": "prettier --write app components lib data types constants",
