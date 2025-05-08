@@ -60,7 +60,7 @@ export default async function News() {
                       width={500}
                       height={300}
                       className="h-48 w-full object-cover md:h-full"
-                      basePath={process.env.NEXT_PUBLIC_BASE_PATH}
+                      // basePath={process.env.NEXT_PUBLIC_BASE_PATH}
                     />
                   </div>
                   <div className="p-6 md:w-2/3">
