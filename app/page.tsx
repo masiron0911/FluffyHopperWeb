@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 import HomeGallery from '@/components/home-gallery';
 import { newsTagClassMap } from '@/constants/newsTagClassMap';
 import { characters } from '@/data/characters';
-import { CharacterId } from '@/types';
+import type { CharacterId } from '@/types';
 import { goods } from '@/data/goods';
 import { client } from '@/lib/strapi-client';
 
