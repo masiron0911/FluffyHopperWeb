@@ -2,18 +2,27 @@ import Link from 'next/link';
 import Image from 'next-image-export-optimizer';
 import { Button } from '@/components/ui/button';
 import HomeGallery from '@/components/home-gallery';
-import { newsItems } from '@/data/news';
 import { newsTagClassMap } from '@/constants/newsTagClassMap';
 import { characters } from '@/data/characters';
-import { CharacterId } from '@/types';
+import type { CharacterId } from '@/types';
 import { goods } from '@/data/goods';
+import { client } from '@/lib/strapi-client';
 
-export default function Home() {
-  // ニュースの最新の4件のみ表示
-  const latestNews = Object.entries(newsItems)
-    .sort((a, b) => Number(b[0]) - Number(a[0]))
-    .slice(0, 4)
-    .map(([id, item]) => ({ id, ...item }));
+export default async function Home() {
+  // お知らせ最新情報は4件取得
+  const res = await client.GET('/latest-informations', {
+    params: {
+      query: {
+        populate: '*',
+        sort: 'date:desc',
+        fields: '*',
+        pagination: {
+          limit: 4,
+        },
+      },
+    },
+  });
+  const latestNews = res.data?.data;
 
   // 人気のグッズを指定
   const goodsIds = [1, 2, 3, 4];
@@ -85,16 +94,18 @@ export default function Home() {
           </div>
 
           <div className="grid gap-4">
-            {latestNews.map((news, index) => (
+            {latestNews?.map((news, index) => (
               <Link
-                href={`/news/${news.id}`}
+                href={`/news/${news.uid}`}
                 key={index}
                 className="flex flex-col gap-2 rounded-xl p-4 transition-colors hover:bg-pink-50 sm:flex-row sm:items-center"
               >
                 <div className="flex items-center gap-3">
                   <span className="text-sm whitespace-nowrap text-gray-500">{news.date}</span>
-                  <span className={`rounded-full px-2 py-0.5 text-xs ${newsTagClassMap[news.tag]}`}>
-                    {news.tag}
+                  <span
+                    className={`rounded-full px-2 py-0.5 text-xs ${newsTagClassMap[news.tag.name!]}`}
+                  >
+                    {news.tag.name}
                   </span>
                 </div>
                 <h3 className="text-gray-800 hover:text-pink-700">{news.title}</h3>

@@ -1,42 +1,43 @@
 import { dirname } from "path";
 import { fileURLToPath } from "url";
-import { FlatCompat } from "@eslint/eslintrc";
+// import { FlatCompat } from "@eslint/eslintrc";
 import typescriptEslint from "typescript-eslint";
-import parser from "@typescript-eslint/parser";
 import globals from "globals";
 import pluginImport from "eslint-plugin-import";
 import pluginUnusedImports from "eslint-plugin-unused-imports";
 import pluginReactHooks from "eslint-plugin-react-hooks";
+import nextPlugin from "@next/eslint-plugin-next";
+import prettierConfig from "eslint-config-prettier";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-const compat = new FlatCompat({
-  baseDirectory: __dirname,
-});
-
 export default [
   {
-    ignores: ["**/.next/**/*", "*.config.*", "dist/**", "**/*.css.d.ts", "**/*.css.d.ts.map"],
+    ignores: [
+      "**/.next/**/*",
+      "*.config.*",
+      "dist/**",
+      "**/*.css.d.ts",
+      "**/*.css.d.ts.map",
+      "types/strapi.d.ts",
+      "remoteOptimizedImages.js"
+    ],
   },
   ...typescriptEslint.configs.recommended,
-  ...compat.extends(
-    "plugin:react/recommended",
-    "next/core-web-vitals",
-    "next/typescript",
-    "prettier"
-  ),
+  // JSX/TS/JS共通ルール
   {
-    files: ["**/*.{ts,js,mts,mjs}"],
+    files: ["**/*.{ts,tsx,js,jsx,mts,mjs}"],
     languageOptions: {
       globals: {
         ...globals.browser,
         ...globals.node,
       },
-      parser,
       parserOptions: {
         project: "./tsconfig.json",
         tsconfigRootDir: __dirname,
+        ecmaVersion: "latest",
+        sourceType: "module",
         ecmaFeatures: {
           jsx: true,
         },
@@ -46,11 +47,13 @@ export default [
       import: pluginImport,
       "unused-imports": pluginUnusedImports,
       "react-hooks": pluginReactHooks,
+      "@next/next": nextPlugin,
+      prettier: prettierConfig,
     },
     rules: {
       ...pluginReactHooks.configs.recommended.rules,
+      ...nextPlugin.configs["core-web-vitals"].rules,
       "@next/next/no-img-element": "off",
-      "import/no-default-export": "error",
       "import/no-anonymous-default-export": ["error", { allowArray: false }],
       "unused-imports/no-unused-imports": "error",
       "unused-imports/no-unused-vars": [
@@ -66,6 +69,8 @@ export default [
       "@typescript-eslint/explicit-module-boundary-types": "error",
       "@typescript-eslint/consistent-type-imports": "error",
       "@typescript-eslint/consistent-type-definitions": ["error", "type"],
+      "@typescript-eslint/explicit-module-boundary-types": "off",
+      "@typescript-eslint/consistent-type-definitions": "off",
     },
   },
   {

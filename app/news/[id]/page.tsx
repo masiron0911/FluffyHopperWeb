@@ -1,41 +1,79 @@
 import Image from 'next-image-export-optimizer';
 import { notFound } from 'next/navigation';
-import { newsItems } from '@/data/news';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
+import { client } from '@/lib/strapi-client';
 
 interface PageProps {
   params: Promise<{ id: string }>;
-  searchParams?: Promise<{ [key: string]: string | string[] | undefined }>;
+  searchParams?: Promise<{ [key: string]: string | string[] | undefined }> | undefined;
 }
 
 export async function generateStaticParams() {
-  return Object.keys(newsItems).map((id) => ({ id }));
+  const res = await client.GET('/latest-informations', {
+    params: {
+      query: {
+        fields: 'uid',
+      },
+    },
+  });
+  return (res.data?.data ?? []).map((item) => ({ id: item.uid }));
 }
 
 export async function generateMetadata(props: PageProps): Promise<Metadata> {
   const params = await props.params;
-  const newsItem = newsItems[params.id];
+  const res = await client.GET('/latest-informations', {
+    params: {
+      query: {
+        fields: 'title',
+        filters: {
+          uid: {
+            $eq: params.id,
+          },
+        },
+      },
+    },
+  });
+  const newsItem = res.data?.data?.[0];
 
   return {
-    title: `${newsItem.title}`,
+    title: `${newsItem?.title}`,
   };
 }
 
-export default async function NewsDetail({ params }: PageProps) {
-  const newsItem = newsItems[(await params).id];
+export default async function NewsDetail(props: PageProps) {
+  const params = await props.params;
+  const res = await client.GET('/latest-informations', {
+    params: {
+      query: {
+        fields: '*',
+        populate: '*',
+        filters: {
+          uid: {
+            $eq: params.id,
+          },
+        },
+      },
+    },
+  });
+  const newsItem = res.data?.data?.[0];
+
   if (!newsItem) notFound();
 
   return (
     <div className="mx-auto max-w-3xl px-4 py-12">
       <div className="mb-8 text-sm text-gray-500">
-        {newsItem.date} / {newsItem.tag}
+        {newsItem.date} / {newsItem.tag.name}
       </div>
       <h1 className="mb-6 text-3xl font-bold">{newsItem.title}</h1>
       <div className="mb-8">
         <Image
-          src={newsItem.image}
+          src={
+            newsItem.image?.url
+              ? `${process.env.NEXT_PUBLIC_STRAPI_URL}${newsItem.image.url}`
+              : '/placeholder.svg'
+          }
           alt={newsItem.title}
           width={800}
           height={450}
