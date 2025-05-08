@@ -28,13 +28,6 @@ export type Character = {
 };
 
 export type NewsTag = (typeof newsItems)[keyof typeof newsItems]['tag'];
-export type NewsItem = {
-  date: string;
-  tag: NewsTag;
-  title: string;
-  content: string;
-  image: string;
-};
 
 export type GoodsCategory = (typeof goods)[keyof typeof goods]['category'];
 export type GoodsItem = {
