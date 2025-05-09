@@ -14,11 +14,11 @@ export async function generateStaticParams() {
   const res = await client.GET('/latest-informations', {
     params: {
       query: {
-        fields: 'uid',
+        fields: 'slug',
       },
     },
   });
-  return (res.data?.data ?? []).map((item) => ({ id: item.uid }));
+  return (res.data?.data ?? []).map((item) => ({ id: item.slug }));
 }
 
 export async function generateMetadata(props: PageProps): Promise<Metadata> {

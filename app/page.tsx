@@ -96,7 +96,7 @@ export default async function Home() {
           <div className="grid gap-4">
             {latestNews?.map((news, index) => (
               <Link
-                href={`/news/${news.uid}`}
+                href={`/news/${news.slug}`}
                 key={index}
                 className="flex flex-col gap-2 rounded-xl p-4 transition-colors hover:bg-pink-50 sm:flex-row sm:items-center"
               >

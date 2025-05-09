@@ -164,6 +164,22 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
+  '/testesa': {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
+    };
+    get: operations['get/testesa'];
+    put: operations['put/testesa'];
+    post?: never;
+    delete: operations['delete/testesa'];
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
   '/upload': {
     parameters: {
       query?: never;
@@ -1745,7 +1761,7 @@ export interface components {
         content: string;
         /** @example string or id */
         image?: number | string;
-        uid: string;
+        slug: string;
         locale?: string;
         localizations?: (number | string)[];
       };
@@ -2007,7 +2023,7 @@ export interface components {
           documentId?: string;
         }[];
       };
-      uid: string;
+      slug: string;
       /** Format: date-time */
       createdAt?: string;
       /** Format: date-time */
@@ -2081,7 +2097,7 @@ export interface components {
             documentId?: string;
           }[];
         };
-        uid?: string;
+        slug?: string;
         /** Format: date-time */
         createdAt?: string;
         /** Format: date-time */
@@ -2272,8 +2288,10 @@ export interface components {
         category?: number | string;
         /** @example string or id */
         character?: number | string;
-        image?: (number | string)[];
+        /** @example string or id */
+        image?: number | string;
         storeUrl?: string;
+        slug: string;
         locale?: string;
         localizations?: (number | string)[];
       };
@@ -2556,8 +2574,9 @@ export interface components {
           id?: number;
           documentId?: string;
         }[];
-      }[];
+      };
       storeUrl?: string;
+      slug: string;
       /** Format: date-time */
       createdAt?: string;
       /** Format: date-time */
@@ -2632,8 +2651,9 @@ export interface components {
             id?: number;
             documentId?: string;
           }[];
-        }[];
+        };
         storeUrl?: string;
+        slug?: string;
         /** Format: date-time */
         createdAt?: string;
         /** Format: date-time */
@@ -2814,6 +2834,163 @@ export interface components {
     };
     ProductCategoryResponse: {
       data?: components['schemas']['ProductCategory'];
+      meta?: Record<string, never>;
+    };
+    TestesaRequest: {
+      data: {
+        dasdasd?: string;
+        locale?: string;
+        localizations?: (number | string)[];
+      };
+    };
+    TestesaListResponse: {
+      data?: components['schemas']['Testesa'][];
+      meta?: {
+        pagination?: {
+          page?: number;
+          pageSize?: number;
+          pageCount?: number;
+          total?: number;
+        };
+      };
+    };
+    Testesa: {
+      id?: number;
+      documentId?: string;
+      dasdasd?: string;
+      /** Format: date-time */
+      createdAt?: string;
+      /** Format: date-time */
+      updatedAt?: string;
+      /** Format: date-time */
+      publishedAt?: string;
+      createdBy?: {
+        id?: number;
+        documentId?: string;
+        firstname?: string;
+        lastname?: string;
+        username?: string;
+        /** Format: email */
+        email?: string;
+        resetPasswordToken?: string;
+        registrationToken?: string;
+        isActive?: boolean;
+        roles?: {
+          id?: number;
+          documentId?: string;
+          name?: string;
+          code?: string;
+          description?: string;
+          users?: {
+            id?: number;
+            documentId?: string;
+          }[];
+          permissions?: {
+            id?: number;
+            documentId?: string;
+            action?: string;
+            actionParameters?: unknown;
+            subject?: string;
+            properties?: unknown;
+            conditions?: unknown;
+            role?: {
+              id?: number;
+              documentId?: string;
+            };
+            /** Format: date-time */
+            createdAt?: string;
+            /** Format: date-time */
+            updatedAt?: string;
+            /** Format: date-time */
+            publishedAt?: string;
+            createdBy?: {
+              id?: number;
+              documentId?: string;
+            };
+            updatedBy?: {
+              id?: number;
+              documentId?: string;
+            };
+            locale?: string;
+            localizations?: {
+              id?: number;
+              documentId?: string;
+            }[];
+          }[];
+          /** Format: date-time */
+          createdAt?: string;
+          /** Format: date-time */
+          updatedAt?: string;
+          /** Format: date-time */
+          publishedAt?: string;
+          createdBy?: {
+            id?: number;
+            documentId?: string;
+          };
+          updatedBy?: {
+            id?: number;
+            documentId?: string;
+          };
+          locale?: string;
+          localizations?: {
+            id?: number;
+            documentId?: string;
+          }[];
+        }[];
+        blocked?: boolean;
+        preferedLanguage?: string;
+        /** Format: date-time */
+        createdAt?: string;
+        /** Format: date-time */
+        updatedAt?: string;
+        /** Format: date-time */
+        publishedAt?: string;
+        createdBy?: {
+          id?: number;
+          documentId?: string;
+        };
+        updatedBy?: {
+          id?: number;
+          documentId?: string;
+        };
+        locale?: string;
+        localizations?: {
+          id?: number;
+          documentId?: string;
+        }[];
+      };
+      updatedBy?: {
+        id?: number;
+        documentId?: string;
+      };
+      locale?: string;
+      localizations?: {
+        id?: number;
+        documentId?: string;
+        dasdasd?: string;
+        /** Format: date-time */
+        createdAt?: string;
+        /** Format: date-time */
+        updatedAt?: string;
+        /** Format: date-time */
+        publishedAt?: string;
+        createdBy?: {
+          id?: number;
+          documentId?: string;
+        };
+        updatedBy?: {
+          id?: number;
+          documentId?: string;
+        };
+        locale?: string;
+        localizations?: {
+          id?: number;
+          documentId?: string;
+        }[];
+      }[];
+    };
+    TestesaResponse: {
+      data?: components['schemas']['Testesa'];
       meta?: Record<string, never>;
     };
     UploadFile: {
@@ -4677,6 +4854,228 @@ export interface operations {
       path: {
         id: number;
       };
+      cookie?: never;
+    };
+    requestBody?: never;
+    responses: {
+      /** @description OK */
+      200: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': number;
+        };
+      };
+      /** @description Bad Request */
+      400: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Unauthorized */
+      401: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Forbidden */
+      403: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Not Found */
+      404: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Internal Server Error */
+      500: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+    };
+  };
+  'get/testesa': {
+    parameters: {
+      query?: {
+        /** @description Sort by attributes ascending (asc) or descending (desc) */
+        sort?: string;
+        /** @description Return page/pageSize (default: true) */
+        'pagination[withCount]'?: boolean;
+        /** @description Page number (default: 0) */
+        'pagination[page]'?: number;
+        /** @description Page size (default: 25) */
+        'pagination[pageSize]'?: number;
+        /** @description Offset value (default: 0) */
+        'pagination[start]'?: number;
+        /** @description Number of entities to return (default: 25) */
+        'pagination[limit]'?: number;
+        /** @description Fields to return (ex: title,author) */
+        fields?: string;
+        /** @description Relations to return */
+        populate?: string;
+        /** @description Filters to apply */
+        filters?: {
+          [key: string]: unknown;
+        };
+        /** @description Locale to apply */
+        locale?: string;
+      };
+      header?: never;
+      path?: never;
+      cookie?: never;
+    };
+    requestBody?: never;
+    responses: {
+      /** @description OK */
+      200: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['TestesaResponse'];
+        };
+      };
+      /** @description Bad Request */
+      400: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Unauthorized */
+      401: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Forbidden */
+      403: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Not Found */
+      404: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Internal Server Error */
+      500: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+    };
+  };
+  'put/testesa': {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
+    };
+    requestBody: {
+      content: {
+        'application/json': components['schemas']['TestesaRequest'];
+      };
+    };
+    responses: {
+      /** @description OK */
+      200: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['TestesaResponse'];
+        };
+      };
+      /** @description Bad Request */
+      400: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Unauthorized */
+      401: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Forbidden */
+      403: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Not Found */
+      404: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Internal Server Error */
+      500: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+    };
+  };
+  'delete/testesa': {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
       cookie?: never;
     };
     requestBody?: never;
