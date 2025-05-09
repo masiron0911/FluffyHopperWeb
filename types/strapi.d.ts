@@ -164,17 +164,17 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/testesa': {
+  '/top-display-content': {
     parameters: {
       query?: never;
       header?: never;
       path?: never;
       cookie?: never;
     };
-    get: operations['get/testesa'];
-    put: operations['put/testesa'];
+    get: operations['get/top-display-content'];
+    put: operations['put/top-display-content'];
     post?: never;
-    delete: operations['delete/testesa'];
+    delete: operations['delete/top-display-content'];
     options?: never;
     head?: never;
     patch?: never;
@@ -2836,15 +2836,15 @@ export interface components {
       data?: components['schemas']['ProductCategory'];
       meta?: Record<string, never>;
     };
-    TestesaRequest: {
+    TopDisplayContentRequest: {
       data: {
-        dasdasd?: string;
+        products?: (number | string)[];
         locale?: string;
         localizations?: (number | string)[];
       };
     };
-    TestesaListResponse: {
-      data?: components['schemas']['Testesa'][];
+    TopDisplayContentListResponse: {
+      data?: components['schemas']['TopDisplayContent'][];
       meta?: {
         pagination?: {
           page?: number;
@@ -2854,49 +2854,99 @@ export interface components {
         };
       };
     };
-    Testesa: {
+    TopDisplayContent: {
       id?: number;
       documentId?: string;
-      dasdasd?: string;
-      /** Format: date-time */
-      createdAt?: string;
-      /** Format: date-time */
-      updatedAt?: string;
-      /** Format: date-time */
-      publishedAt?: string;
-      createdBy?: {
+      products?: {
         id?: number;
         documentId?: string;
-        firstname?: string;
-        lastname?: string;
-        username?: string;
-        /** Format: email */
-        email?: string;
-        resetPasswordToken?: string;
-        registrationToken?: string;
-        isActive?: boolean;
-        roles?: {
+        name?: string;
+        price?: string;
+        category?: {
           id?: number;
           documentId?: string;
           name?: string;
-          code?: string;
-          description?: string;
-          users?: {
+          /** Format: date-time */
+          createdAt?: string;
+          /** Format: date-time */
+          updatedAt?: string;
+          /** Format: date-time */
+          publishedAt?: string;
+          createdBy?: {
             id?: number;
             documentId?: string;
-          }[];
-          permissions?: {
-            id?: number;
-            documentId?: string;
-            action?: string;
-            actionParameters?: unknown;
-            subject?: string;
-            properties?: unknown;
-            conditions?: unknown;
-            role?: {
+            firstname?: string;
+            lastname?: string;
+            username?: string;
+            /** Format: email */
+            email?: string;
+            resetPasswordToken?: string;
+            registrationToken?: string;
+            isActive?: boolean;
+            roles?: {
               id?: number;
               documentId?: string;
-            };
+              name?: string;
+              code?: string;
+              description?: string;
+              users?: {
+                id?: number;
+                documentId?: string;
+              }[];
+              permissions?: {
+                id?: number;
+                documentId?: string;
+                action?: string;
+                actionParameters?: unknown;
+                subject?: string;
+                properties?: unknown;
+                conditions?: unknown;
+                role?: {
+                  id?: number;
+                  documentId?: string;
+                };
+                /** Format: date-time */
+                createdAt?: string;
+                /** Format: date-time */
+                updatedAt?: string;
+                /** Format: date-time */
+                publishedAt?: string;
+                createdBy?: {
+                  id?: number;
+                  documentId?: string;
+                };
+                updatedBy?: {
+                  id?: number;
+                  documentId?: string;
+                };
+                locale?: string;
+                localizations?: {
+                  id?: number;
+                  documentId?: string;
+                }[];
+              }[];
+              /** Format: date-time */
+              createdAt?: string;
+              /** Format: date-time */
+              updatedAt?: string;
+              /** Format: date-time */
+              publishedAt?: string;
+              createdBy?: {
+                id?: number;
+                documentId?: string;
+              };
+              updatedBy?: {
+                id?: number;
+                documentId?: string;
+              };
+              locale?: string;
+              localizations?: {
+                id?: number;
+                documentId?: string;
+              }[];
+            }[];
+            blocked?: boolean;
+            preferedLanguage?: string;
             /** Format: date-time */
             createdAt?: string;
             /** Format: date-time */
@@ -2916,7 +2966,21 @@ export interface components {
               id?: number;
               documentId?: string;
             }[];
+          };
+          updatedBy?: {
+            id?: number;
+            documentId?: string;
+          };
+          locale?: string;
+          localizations?: {
+            id?: number;
+            documentId?: string;
           }[];
+        };
+        character?: {
+          id?: number;
+          documentId?: string;
+          name?: string;
           /** Format: date-time */
           createdAt?: string;
           /** Format: date-time */
@@ -2936,9 +3000,133 @@ export interface components {
             id?: number;
             documentId?: string;
           }[];
-        }[];
-        blocked?: boolean;
-        preferedLanguage?: string;
+        };
+        image?: {
+          id?: number;
+          documentId?: string;
+          name?: string;
+          alternativeText?: string;
+          caption?: string;
+          width?: number;
+          height?: number;
+          formats?: unknown;
+          hash?: string;
+          ext?: string;
+          mime?: string;
+          /** Format: float */
+          size?: number;
+          url?: string;
+          previewUrl?: string;
+          provider?: string;
+          provider_metadata?: unknown;
+          related?: {
+            id?: number;
+            documentId?: string;
+          }[];
+          folder?: {
+            id?: number;
+            documentId?: string;
+            name?: string;
+            pathId?: number;
+            parent?: {
+              id?: number;
+              documentId?: string;
+            };
+            children?: {
+              id?: number;
+              documentId?: string;
+            }[];
+            files?: {
+              id?: number;
+              documentId?: string;
+              name?: string;
+              alternativeText?: string;
+              caption?: string;
+              width?: number;
+              height?: number;
+              formats?: unknown;
+              hash?: string;
+              ext?: string;
+              mime?: string;
+              /** Format: float */
+              size?: number;
+              url?: string;
+              previewUrl?: string;
+              provider?: string;
+              provider_metadata?: unknown;
+              related?: {
+                id?: number;
+                documentId?: string;
+              }[];
+              folder?: {
+                id?: number;
+                documentId?: string;
+              };
+              folderPath?: string;
+              /** Format: date-time */
+              createdAt?: string;
+              /** Format: date-time */
+              updatedAt?: string;
+              /** Format: date-time */
+              publishedAt?: string;
+              createdBy?: {
+                id?: number;
+                documentId?: string;
+              };
+              updatedBy?: {
+                id?: number;
+                documentId?: string;
+              };
+              locale?: string;
+              localizations?: {
+                id?: number;
+                documentId?: string;
+              }[];
+            }[];
+            path?: string;
+            /** Format: date-time */
+            createdAt?: string;
+            /** Format: date-time */
+            updatedAt?: string;
+            /** Format: date-time */
+            publishedAt?: string;
+            createdBy?: {
+              id?: number;
+              documentId?: string;
+            };
+            updatedBy?: {
+              id?: number;
+              documentId?: string;
+            };
+            locale?: string;
+            localizations?: {
+              id?: number;
+              documentId?: string;
+            }[];
+          };
+          folderPath?: string;
+          /** Format: date-time */
+          createdAt?: string;
+          /** Format: date-time */
+          updatedAt?: string;
+          /** Format: date-time */
+          publishedAt?: string;
+          createdBy?: {
+            id?: number;
+            documentId?: string;
+          };
+          updatedBy?: {
+            id?: number;
+            documentId?: string;
+          };
+          locale?: string;
+          localizations?: {
+            id?: number;
+            documentId?: string;
+          }[];
+        };
+        storeUrl?: string;
+        slug?: string;
         /** Format: date-time */
         createdAt?: string;
         /** Format: date-time */
@@ -2958,6 +3146,16 @@ export interface components {
           id?: number;
           documentId?: string;
         }[];
+      }[];
+      /** Format: date-time */
+      createdAt?: string;
+      /** Format: date-time */
+      updatedAt?: string;
+      /** Format: date-time */
+      publishedAt?: string;
+      createdBy?: {
+        id?: number;
+        documentId?: string;
       };
       updatedBy?: {
         id?: number;
@@ -2967,7 +3165,10 @@ export interface components {
       localizations?: {
         id?: number;
         documentId?: string;
-        dasdasd?: string;
+        products?: {
+          id?: number;
+          documentId?: string;
+        }[];
         /** Format: date-time */
         createdAt?: string;
         /** Format: date-time */
@@ -2989,8 +3190,8 @@ export interface components {
         }[];
       }[];
     };
-    TestesaResponse: {
-      data?: components['schemas']['Testesa'];
+    TopDisplayContentResponse: {
+      data?: components['schemas']['TopDisplayContent'];
       meta?: Record<string, never>;
     };
     UploadFile: {
@@ -4914,7 +5115,7 @@ export interface operations {
       };
     };
   };
-  'get/testesa': {
+  'get/top-display-content': {
     parameters: {
       query?: {
         /** @description Sort by attributes ascending (asc) or descending (desc) */
@@ -4952,7 +5153,7 @@ export interface operations {
           [name: string]: unknown;
         };
         content: {
-          'application/json': components['schemas']['TestesaResponse'];
+          'application/json': components['schemas']['TopDisplayContentResponse'];
         };
       };
       /** @description Bad Request */
@@ -5002,7 +5203,7 @@ export interface operations {
       };
     };
   };
-  'put/testesa': {
+  'put/top-display-content': {
     parameters: {
       query?: never;
       header?: never;
@@ -5011,7 +5212,7 @@ export interface operations {
     };
     requestBody: {
       content: {
-        'application/json': components['schemas']['TestesaRequest'];
+        'application/json': components['schemas']['TopDisplayContentRequest'];
       };
     };
     responses: {
@@ -5021,7 +5222,7 @@ export interface operations {
           [name: string]: unknown;
         };
         content: {
-          'application/json': components['schemas']['TestesaResponse'];
+          'application/json': components['schemas']['TopDisplayContentResponse'];
         };
       };
       /** @description Bad Request */
@@ -5071,7 +5272,7 @@ export interface operations {
       };
     };
   };
-  'delete/testesa': {
+  'delete/top-display-content': {
     parameters: {
       query?: never;
       header?: never;

@@ -25,7 +25,6 @@ export default function Goods({ goods, characters, productCategories }: Props) {
   const [selectedCharacters, setSelectedCharacters] = useState<string[]>([]);
 
   const filteredGoods = goods?.filter((item) => {
-    console.log(item);
     const categoryName = item.category?.name ?? '';
     const characterName = item.character?.name ?? '';
 
