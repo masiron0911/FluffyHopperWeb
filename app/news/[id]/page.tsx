@@ -3,7 +3,7 @@ import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { client } from '@/lib/strapi-client';
+import { client, detectImageFilepath } from '@/lib/strapi-client';
 
 interface PageProps {
   params: Promise<{ id: string }>;
@@ -69,11 +69,7 @@ export default async function NewsDetail(props: PageProps) {
       <h1 className="mb-6 text-3xl font-bold">{newsItem.title}</h1>
       <div className="mb-8">
         <Image
-          src={
-            newsItem.image?.url
-              ? `${process.env.NEXT_PUBLIC_STRAPI_URL}${newsItem.image.url}`
-              : '/placeholder.svg'
-          }
+          src={newsItem.image?.url ? detectImageFilepath(newsItem.image.url) : '/placeholder.svg'}
           alt={newsItem.title}
           width={800}
           height={450}
