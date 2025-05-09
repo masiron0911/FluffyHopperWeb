@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Image from 'next-image-export-optimizer';
 import { Button } from '@/components/ui/button';
 import { newsTagClassMap } from '@/constants/newsTagClassMap';
-import { client } from '@/lib/strapi-client';
+import { client, detectImageFilepath } from '@/lib/strapi-client';
 
 export default async function News() {
   const res = await client.GET('/latest-informations', {
@@ -52,15 +52,13 @@ export default async function News() {
                   <div className="md:w-1/3">
                     <Image
                       src={
-                        item.image?.url
-                          ? `${process.env.NEXT_PUBLIC_STRAPI_URL}${item.image.url}`
-                          : '/placeholder.svg'
+                        item.image?.url ? detectImageFilepath(item.image.url) : '/placeholder.svg'
                       }
                       alt={item.title}
                       width={500}
                       height={300}
                       className="h-48 w-full object-cover md:h-full"
-                      // basePath={process.env.NEXT_PUBLIC_BASE_PATH}
+                      basePath={process.env.NEXT_PUBLIC_BASE_PATH}
                     />
                   </div>
                   <div className="p-6 md:w-2/3">

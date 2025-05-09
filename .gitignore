@@ -47,3 +47,7 @@ next-env.d.ts
 nextImageExportOptimizer/
 /remoteImagesForOptimization/
 remoteOptimizedImages.js
+next-image-export-optimizer-hashes.json
+
+# StrapiImage
+/public/images/remote-origin/

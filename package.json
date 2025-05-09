@@ -4,11 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "prebuild": "npx ts-node --project strapi/tsconfig.scripts.json -r tsconfig-paths/register strapi/generateRemoteImageList.ts",
+    "prebuild": "npx ts-node --project strapi/tsconfig.scripts.json -r tsconfig-paths/register strapi/download-remote-images.ts",
     "build": "next build && next-image-export-optimizer",
     "start": "npx serve out",
     "lint": "next lint",
-    "format": "prettier --write app components lib data types constants",
+    "format": "prettier --write app components lib data types constants strapi",
     "fix-next-async-request-api": "npx @next/codemod@canary next-async-request-api .",
     "types:generate": "openapi-typescript ./strapi/full_documentation.json -o ./types/strapi.d.ts"
   },
@@ -37,6 +37,7 @@
     "@types/react-dom": "^19",
     "@typescript-eslint/parser": "^8.31.1",
     "autoprefixer": "^10.4.21",
+    "crypto": "^1.0.1",
     "eslint": "^9.26.0",
     "eslint-config-next": "^15.3.2",
     "eslint-config-prettier": "^10.1.2",

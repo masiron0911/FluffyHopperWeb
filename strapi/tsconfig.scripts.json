@@ -1,13 +1,12 @@
 {
-    "extends": "../tsconfig.json",
-    "compilerOptions": {
-      "module": "CommonJS",
-      "moduleResolution": "Node",
-      "baseUrl": ".",  // これがないと tsconfig-paths が効かない
-      "paths": {
-        "@/*": ["../*"]
-      }
-    },
-    "include": ["./**/*.ts"]
-  }
-  
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "baseUrl": ".", // これがないと tsconfig-paths が効かない
+    "paths": {
+      "@/*": ["../*"]
+    }
+  },
+  "include": ["./**/*.ts"]
+}
