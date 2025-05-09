@@ -5,8 +5,7 @@ import HomeGallery from '@/components/home-gallery';
 import { newsTagClassMap } from '@/constants/newsTagClassMap';
 import { characters } from '@/data/characters';
 import type { CharacterId } from '@/types';
-import { goods } from '@/data/goods';
-import { client } from '@/lib/strapi-client';
+import { client, detectImageFilepath } from '@/lib/strapi-client';
 
 export default async function Home() {
   // お知らせ最新情報は4件取得
@@ -24,9 +23,18 @@ export default async function Home() {
   });
   const latestNews = res.data?.data;
 
-  // 人気のグッズを指定
-  const goodsIds = [1, 2, 3, 4];
-  const popularGoods = goodsIds.map((id) => goods[id]);
+  const resProducts = await client.GET('/top-display-content', {
+    params: {
+      query: {
+        'populate[products][populate]': 'image',
+        fields: '*',
+        pagination: {
+          limit: 4,
+        },
+      },
+    },
+  });
+  const popularGoods = resProducts.data?.data?.products;
 
   // 表示するキャラクターを設定
   const featuredCharacters: CharacterId[] = ['hanamaru', 'manpuku'];
@@ -96,7 +104,7 @@ export default async function Home() {
           <div className="grid gap-4">
             {latestNews?.map((news, index) => (
               <Link
-                href={`/news/${news.uid}`}
+                href={`/news/${news.slug}`}
                 key={index}
                 className="flex flex-col gap-2 rounded-xl p-4 transition-colors hover:bg-pink-50 sm:flex-row sm:items-center"
               >
@@ -200,14 +208,14 @@ export default async function Home() {
         </div>
 
         <div className="mb-8 grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-4">
-          {popularGoods.map((item) => (
+          {popularGoods?.map((item) => (
             <div
               key={item.name}
               className="rounded-3xl bg-white p-4 shadow-md transition-shadow hover:shadow-lg"
             >
               <div className="mb-4 overflow-hidden rounded-2xl">
                 <Image
-                  src={item.image}
+                  src={item.image?.url ? detectImageFilepath(item.image?.url) : '/placeholder.svg'}
                   alt={`グッズ ${item.name}`}
                   width={200}
                   height={200}
@@ -217,7 +225,7 @@ export default async function Home() {
               </div>
               <h3 className="mb-1 text-lg font-bold text-pink-700">{item.name}</h3>
               <p className="mb-3 text-sm text-pink-500">{item.price}</p>
-              <Link href={item.storeUrl} target="_blank" rel="noopener noreferrer">
+              <Link href={item.storeUrl!} target="_blank" rel="noopener noreferrer">
                 <Button className="w-full rounded-full bg-pink-500 text-white hover:bg-pink-600">
                   詳細を見る
                 </Button>

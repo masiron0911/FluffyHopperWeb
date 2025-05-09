@@ -45,7 +45,7 @@ export default async function News() {
           {sortedNews?.map((item) => {
             return (
               <div
-                key={item.uid}
+                key={item.slug}
                 className="overflow-hidden rounded-3xl bg-white shadow-md transition-shadow hover:shadow-lg"
               >
                 <div className="flex flex-col md:flex-row">
@@ -72,7 +72,7 @@ export default async function News() {
                     </div>
                     <h2 className="mb-3 text-xl font-bold text-gray-800">{item.title}</h2>
                     <p className="mb-4 text-gray-600">{item.content}</p>
-                    <Link href={`/news/${item.uid}`}>
+                    <Link href={`/news/${item.slug}`}>
                       <Button className="rounded-full bg-pink-500 px-4 py-1 text-sm text-white hover:bg-pink-600">
                         詳しく見る
                       </Button>
