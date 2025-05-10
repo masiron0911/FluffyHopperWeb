@@ -14,6 +14,7 @@ export async function generateStaticParams() {
   const res = await client.GET('/latest-informations', {
     params: {
       query: {
+        sort: 'date:desc',
         fields: 'slug',
       },
     },
@@ -28,7 +29,7 @@ export async function generateMetadata(props: PageProps): Promise<Metadata> {
       query: {
         fields: 'title',
         filters: {
-          uid: {
+          slug: {
             $eq: params.id,
           },
         },
@@ -47,10 +48,10 @@ export default async function NewsDetail(props: PageProps) {
   const res = await client.GET('/latest-informations', {
     params: {
       query: {
-        fields: '*',
+        fields: 'title,date,content,slug',
         populate: '*',
         filters: {
-          uid: {
+          slug: {
             $eq: params.id,
           },
         },

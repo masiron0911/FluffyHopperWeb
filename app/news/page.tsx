@@ -10,7 +10,7 @@ export default async function News() {
       query: {
         populate: '*',
         sort: 'date:desc',
-        fields: '*',
+        fields: 'title,date,content,slug',
       },
     },
   });

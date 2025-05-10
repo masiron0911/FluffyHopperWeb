@@ -14,7 +14,7 @@ export default async function Home() {
       query: {
         populate: '*',
         sort: 'date:desc',
-        fields: '*',
+        fields: 'title,date,content,slug',
         pagination: {
           limit: 4,
         },
