@@ -84,7 +84,7 @@ export default function HomeGallery({ topDisplayContents }: Props) {
           onClick={closeModal}
         >
           <div
-            className="relative max-h-[90vh] w-full max-w-4xl overflow-hidden rounded-2xl bg-white"
+            className="relative max-h-[90vh] max-w-4xl overflow-hidden rounded-2xl bg-white"
             onClick={(e) => e.stopPropagation()}
           >
             <Button
@@ -101,9 +101,7 @@ export default function HomeGallery({ topDisplayContents }: Props) {
                   selectedImage?.url ? detectImageFilepath(selectedImage?.url) : '/placeholder.svg'
                 }
                 alt={selectedImage!.name!}
-                width={800}
-                height={800}
-                className="h-auto w-full object-contain"
+                className="max-h-[90vh] w-full object-contain"
                 basePath={process.env.NEXT_PUBLIC_BASE_PATH}
               />
             </div>
