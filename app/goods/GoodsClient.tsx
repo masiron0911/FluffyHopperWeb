@@ -5,9 +5,8 @@ import { Search } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { useState } from 'react';
-import Link from 'next/link';
 import type { paths } from '@/types/strapi';
-import { detectImageFilepath } from '@/lib/strapi-client';
+import { ProductCard } from '@/components/ui/productCard';
 
 type Product = paths['/products']['get']['responses']['200']['content']['application/json'];
 type Character = paths['/characters']['get']['responses']['200']['content']['application/json'];
@@ -137,30 +136,12 @@ export default function Goods({ goods, characters, productCategories }: Props) {
         {/* グッズ一覧 */}
         <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 md:gap-6">
           {filteredGoods?.map((item) => (
-            <div
-              key={item.slug}
-              className="rounded-3xl bg-white p-4 shadow-md transition-shadow hover:shadow-lg"
-            >
-              <div className="mb-3 overflow-hidden rounded-2xl">
-                <Image
-                  src={item.image?.url ? detectImageFilepath(item.image?.url) : '/placeholder.svg'}
-                  alt={item.name}
-                  width={200}
-                  height={200}
-                  className="aspect-square w-full object-cover"
-                  basePath={process.env.NEXT_PUBLIC_BASE_PATH}
-                />
-              </div>
-              <h3 className={`mb-1 text-sm font-bold text-pink-700 md:text-base`}>{item.name}</h3>
-              <p className="mb-3 text-xs text-gray-500 md:text-sm">{item.price}</p>
-              <Link href={item.storeUrl!} target="_blank" rel="noopener noreferrer">
-                <Button
-                  className={`w-full rounded-full bg-pink-500 py-1 text-xs text-white hover:bg-pink-600`}
-                >
-                  詳細を見る
-                </Button>
-              </Link>
-            </div>
+            <ProductCard
+              name={item.name!}
+              price={item.price!}
+              imageUrl={item.image!.url!}
+              storeUrl={item.storeUrl!}
+            />
           ))}
         </div>
 

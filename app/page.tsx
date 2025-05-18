@@ -5,7 +5,8 @@ import HomeGallery from '@/components/home-gallery';
 import { newsTagClassMap } from '@/constants/newsTagClassMap';
 import { characters } from '@/data/characters';
 import type { CharacterId } from '@/types';
-import { client, detectImageFilepath } from '@/lib/strapi-client';
+import { client } from '@/lib/strapi-client';
+import { ProductCard } from '@/components/ui/productCard';
 
 export default async function Home() {
   // お知らせ最新情報は4件取得
@@ -191,28 +192,12 @@ export default async function Home() {
 
         <div className="mb-8 grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-4">
           {popularGoods?.map((item) => (
-            <div
-              key={item.name}
-              className="rounded-3xl bg-white p-4 shadow-md transition-shadow hover:shadow-lg"
-            >
-              <div className="mb-4 overflow-hidden rounded-2xl">
-                <Image
-                  src={item.image?.url ? detectImageFilepath(item.image?.url) : '/placeholder.svg'}
-                  alt={`グッズ ${item.name}`}
-                  width={200}
-                  height={200}
-                  className="h-48 w-full object-cover"
-                  basePath={process.env.NEXT_PUBLIC_BASE_PATH}
-                />
-              </div>
-              <h3 className="mb-1 text-lg font-bold text-pink-700">{item.name}</h3>
-              <p className="mb-3 text-sm text-pink-500">{item.price}</p>
-              <Link href={item.storeUrl!} target="_blank" rel="noopener noreferrer">
-                <Button className="w-full rounded-full bg-pink-500 text-white hover:bg-pink-600">
-                  詳細を見る
-                </Button>
-              </Link>
-            </div>
+            <ProductCard
+              name={item.name!}
+              price={item.price!}
+              imageUrl={item.image!.url!}
+              storeUrl={item.storeUrl!}
+            />
           ))}
         </div>
 
