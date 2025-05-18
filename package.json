@@ -10,7 +10,8 @@
     "lint": "next lint",
     "format": "prettier --write app components lib data types constants strapi",
     "fix-next-async-request-api": "npx @next/codemod@canary next-async-request-api .",
-    "types:generate": "openapi-typescript ./strapi/full_documentation.json -o ./types/strapi.d.ts"
+    "types:generate": "openapi-typescript ./strapi/full_documentation.json -o ./types/strapi.d.ts",
+    "clean": "rm -rf .next/cache/fetch-cache"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.2.0",

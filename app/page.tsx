@@ -23,10 +23,11 @@ export default async function Home() {
   });
   const latestNews = res.data?.data;
 
-  const resProducts = await client.GET('/top-display-content', {
+  const resDisplayContents = await client.GET('/top-display-content', {
     params: {
       query: {
         'populate[products][populate]': 'image',
+        populate: 'galleryImages',
         fields: '*',
         pagination: {
           limit: 4,
@@ -34,7 +35,7 @@ export default async function Home() {
       },
     },
   });
-  const popularGoods = resProducts.data?.data?.products;
+  const popularGoods = resDisplayContents.data?.data?.products;
 
   // 表示するキャラクターを設定
   const featuredCharacters: CharacterId[] = ['hanamaru', 'manpuku'];
@@ -118,7 +119,7 @@ export default async function Home() {
         </div>
 
         {/* ギャラリーをクライアントコンポーネントとして分離 */}
-        <HomeGallery />
+        <HomeGallery topDisplayContents={resDisplayContents.data?.data} />
       </section>
 
       {/* キャラクター紹介プレビュー */}

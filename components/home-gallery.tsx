@@ -4,67 +4,24 @@ import { useState, useEffect } from 'react';
 import Image from 'next-image-export-optimizer';
 import { X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import type { paths } from '@/types/strapi';
+import { detectImageFilepath } from '@/lib/strapi-client';
 
-interface GalleryImage {
-  id: number;
-  src: string;
-  alt: string;
-}
+type TopDisplayContents =
+  paths['/top-display-content']['get']['responses']['200']['content']['application/json'];
+type Props = {
+  topDisplayContents: TopDisplayContents['data'];
+};
 
-export default function HomeGallery() {
-  const [selectedImage, setSelectedImage] = useState<GalleryImage | null>(null);
+export default function HomeGallery({ topDisplayContents }: Props) {
+  const galleryImages = topDisplayContents?.galleryImages;
+  const _galleryImagesOne = galleryImages?.[0];
+
+  const [selectedImage, setSelectedImage] = useState<typeof _galleryImagesOne | null>(null);
   const [showScrollTop, setShowScrollTop] = useState(false);
 
-  const galleryImages = [
-    {
-      id: 1,
-      src: '/images/illust_img/jyunkissa.png?height=800&width=800&text=Gallery+1',
-      alt: 'ギャラリー画像 1',
-    },
-    {
-      id: 2,
-      src: '/images/illust_img/starcandypot.png?height=800&width=800&text=Gallery+2',
-      alt: 'ギャラリー画像 2',
-    },
-    {
-      id: 3,
-      src: '/images/illust_img/taiwanyoichi.png?height=800&width=800&text=Gallery+3',
-      alt: 'ギャラリー画像 3',
-    },
-    {
-      id: 4,
-      src: '/images/illust_img/tenshinnohanashi.png?height=800&width=800&text=Gallery+4',
-      alt: 'ギャラリー画像 4',
-    },
-    {
-      id: 5,
-      src: '/images/illust_img/taiwanusagi.png?height=800&width=800&text=Gallery+5',
-      alt: 'ギャラリー画像 5',
-    },
-    {
-      id: 6,
-      src: '/images/illust_img/fruit.jpg?height=800&width=800&text=Gallery+6',
-      alt: 'ギャラリー画像 6',
-    },
-    {
-      id: 7,
-      src: '/images/illust_img/gorogoro.png?height=800&width=800&text=Gallery+7',
-      alt: 'ギャラリー画像 7',
-    },
-    {
-      id: 8,
-      src: '/images/illust_img/suyasuya.png?height=800&width=800&text=Gallery+8',
-      alt: 'ギャラリー画像 8',
-    },
-    {
-      id: 9,
-      src: '/images/illust_img/rakugaki.png?height=800&width=800&text=Gallery+9',
-      alt: 'ギャラリー画像 9',
-    },
-  ];
-
   const openModal = (id: number) => {
-    const image = galleryImages.find((img) => img.id === id) || null;
+    const image = galleryImages?.find((img) => img.id === id) || null;
     if (image) {
       setSelectedImage(image);
       document.body.style.overflow = 'hidden'; // スクロールを無効化
@@ -100,16 +57,16 @@ export default function HomeGallery() {
   return (
     <>
       <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:gap-6">
-        {galleryImages.map((image) => (
+        {galleryImages?.map((image) => (
           <div
             key={image.id}
             className="block cursor-pointer overflow-hidden rounded-2xl shadow-md transition-all duration-300 hover:shadow-lg"
-            onClick={() => openModal(image.id)}
+            onClick={() => openModal(image.id!)}
           >
             <div className="relative aspect-square overflow-hidden">
               <Image
-                src={image.src || '/placeholder.svg'}
-                alt={image.alt}
+                src={image?.url ? detectImageFilepath(image?.url) : '/placeholder.svg'}
+                alt={image.name!}
                 width={400}
                 height={400}
                 className="h-full w-full object-cover transition-transform duration-300 hover:scale-110"
@@ -140,8 +97,10 @@ export default function HomeGallery() {
             </Button>
             <div className="relative h-full w-full">
               <Image
-                src={selectedImage.src || '/placeholder.svg'}
-                alt={selectedImage.alt}
+                src={
+                  selectedImage?.url ? detectImageFilepath(selectedImage?.url) : '/placeholder.svg'
+                }
+                alt={selectedImage!.name!}
                 width={800}
                 height={800}
                 className="h-auto w-full object-contain"
