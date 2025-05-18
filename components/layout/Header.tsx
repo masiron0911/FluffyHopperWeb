@@ -6,6 +6,10 @@ import { Instagram, Twitter, ShoppingBag } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 export default function Header() {
+  const fontSize = 'font-medium';
+  const textColor = 'text-amber-800';
+  const textColorHover = 'text-amber-950';
+
   return (
     <header className="sticky top-0 z-10 flex items-center justify-between bg-amber-50 px-6 py-4 shadow-sm">
       <Link href="/" className="flex items-center gap-2">
@@ -19,13 +23,13 @@ export default function Header() {
         />
       </Link>
       <nav className="hidden gap-6 md:flex">
-        <Link href="/" className="font-medium text-pink-700 hover:text-pink-900">
+        <Link href="/" className={`${fontSize} ${textColor} hover:${textColorHover}`}>
           ホーム
         </Link>
-        <Link href="/characters" className="font-medium text-pink-700 hover:text-pink-900">
+        <Link href="/characters" className={`${fontSize} ${textColor} hover:${textColorHover}`}>
           キャラクター
         </Link>
-        <Link href="/goods" className="font-medium text-pink-700 hover:text-pink-900">
+        <Link href="/goods" className={`${fontSize} ${textColor} hover:${textColorHover}`}>
           グッズ
         </Link>
       </nav>
@@ -39,7 +43,7 @@ export default function Header() {
           <Button
             variant="ghost"
             size="icon"
-            className="rounded-full bg-white text-pink-500 hover:bg-pink-100 hover:text-pink-700"
+            className={`rounded-full bg-white ${textColor} hover:bg-amber-100 hover:${textColorHover}`}
           >
             <Twitter size={20} />
           </Button>

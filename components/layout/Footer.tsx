@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 
 export default function Footer() {
   return (
-    <footer className="bg-pink-200 px-4 py-8 md:px-8">
+    <footer className="bg-amber-50 px-4 py-8 md:px-8">
       <div className="mx-auto max-w-6xl">
         <div className="mb-8 flex flex-col items-center justify-between md:flex-row">
           <div className="mb-4 flex items-center gap-2 md:mb-0">
@@ -63,18 +63,18 @@ export default function Footer() {
             </Link>
           </div>
         </div>
-        <div className="flex flex-col items-center justify-between text-pink-700 md:flex-row">
+        <div className="flex flex-col items-center justify-between text-amber-800 md:flex-row">
           <nav className="mb-4 flex gap-6 md:mb-0">
-            <Link href="/" className="hover:text-pink-900">
+            <Link href="/" className="hover:text-amber-950">
               ホーム
             </Link>
-            <Link href="/characters" className="hover:text-pink-900">
+            <Link href="/characters" className="hover:text-amber-950">
               キャラクター
             </Link>
-            <Link href="/goods" className="hover:text-pink-900">
+            <Link href="/goods" className="hover:text-amber-950">
               グッズ
             </Link>
-            <Link href="/contact" className="hover:text-pink-900">
+            <Link href="/contact" className="hover:text-amber-950">
               お問い合わせ
             </Link>
           </nav>
