@@ -23,10 +23,11 @@ export default async function Home() {
   });
   const latestNews = res.data?.data;
 
-  const resProducts = await client.GET('/top-display-content', {
+  const resDisplayContents = await client.GET('/top-display-content', {
     params: {
       query: {
         'populate[products][populate]': 'image',
+        populate: 'galleryImages',
         fields: '*',
         pagination: {
           limit: 4,
@@ -34,7 +35,7 @@ export default async function Home() {
       },
     },
   });
-  const popularGoods = resProducts.data?.data?.products;
+  const popularGoods = resDisplayContents.data?.data?.products;
 
   // 表示するキャラクターを設定
   const featuredCharacters: CharacterId[] = ['hanamaru', 'manpuku'];
@@ -52,25 +53,6 @@ export default async function Home() {
             className=""
             basePath={process.env.NEXT_PUBLIC_BASE_PATH}
           />
-        </div>
-        <div className="relative z-1 flex h-full flex-col items-center justify-center px-4 text-center">
-          <h1 className="mb-4 text-4xl font-bold text-pink-700 md:text-6xl"></h1>
-          <p className="mb-8 max-w-2xl text-xl text-pink-600 md:text-2xl"></p>
-          <div className="flex gap-4">
-            <Link href="/characters">
-              <Button className="rounded-full bg-pink-500 px-6 py-2 text-white hover:bg-pink-600">
-                キャラクターを見る
-              </Button>
-            </Link>
-            <Link href="/goods">
-              <Button
-                variant="outline"
-                className="rounded-full border-pink-500 px-6 py-2 text-pink-500 hover:bg-pink-100"
-              >
-                グッズを見る
-              </Button>
-            </Link>
-          </div>
         </div>
       </section>
 
@@ -137,7 +119,7 @@ export default async function Home() {
         </div>
 
         {/* ギャラリーをクライアントコンポーネントとして分離 */}
-        <HomeGallery />
+        <HomeGallery topDisplayContents={resDisplayContents.data?.data} />
       </section>
 
       {/* キャラクター紹介プレビュー */}

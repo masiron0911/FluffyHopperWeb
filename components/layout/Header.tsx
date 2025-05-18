@@ -35,7 +35,7 @@ export default function Header() {
       </nav>
       <div className="flex gap-3">
         <Link
-          href="https://twitter.com"
+          href="https://x.com/FluffyHopper_JP"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Twitter"
@@ -49,7 +49,7 @@ export default function Header() {
           </Button>
         </Link>
         <Link
-          href="https://instagram.com"
+          href="https://www.instagram.com/fluffyhopperjp/"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Instagram"

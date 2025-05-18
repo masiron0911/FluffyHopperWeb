@@ -20,7 +20,7 @@ export default function Footer() {
           </div>
           <div className="flex gap-4">
             <Link
-              href="https://twitter.com"
+              href="https://x.com/FluffyHopper_JP"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Twitter"
@@ -34,7 +34,7 @@ export default function Footer() {
               </Button>
             </Link>
             <Link
-              href="https://instagram.com"
+              href="https://www.instagram.com/fluffyhopperjp/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"
@@ -74,7 +74,12 @@ export default function Footer() {
             <Link href="/goods" className="hover:text-amber-950">
               グッズ
             </Link>
-            <Link href="/contact" className="hover:text-amber-950">
+            <Link
+              href="https://docs.google.com/forms/d/e/1FAIpQLSdVGFhgjRMqLOtFvHOlF1zVI5q2eA-NhnvSHOJvjwqW1dkYTw/viewform"
+              className="hover:text-amber-950"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               お問い合わせ
             </Link>
           </nav>
