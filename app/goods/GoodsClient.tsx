@@ -55,7 +55,7 @@ export default function Goods({ goods, characters, productCategories }: Props) {
       <section className="relative h-[250px] overflow-hidden">
         <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-r from-pink-200 to-purple-200">
           <Image
-            src="/placeholder.svg"
+            src="/images/goods/2024_designfesta.jpg"
             alt="FluffyHopper グッズ"
             width={1200}
             height={600}
