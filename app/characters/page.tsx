@@ -10,7 +10,7 @@ export default function Characters() {
       <section className="relative h-[300px] overflow-hidden">
         <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-r from-pink-200 to-purple-200">
           <Image
-            src="/placeholder.svg"
+            src="/images/character_img/suyasuya.png"
             alt="FluffyHopper キャラクターたち"
             width={1200}
             height={600}

@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Image from 'next-image-export-optimizer';
 import { X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -18,7 +18,6 @@ export default function HomeGallery({ topDisplayContents }: Props) {
   const _galleryImagesOne = galleryImages?.[0];
 
   const [selectedImage, setSelectedImage] = useState<typeof _galleryImagesOne | null>(null);
-  const [showScrollTop, setShowScrollTop] = useState(false);
 
   const openModal = (id: number) => {
     const image = galleryImages?.find((img) => img.id === id) || null;
@@ -32,27 +31,6 @@ export default function HomeGallery({ topDisplayContents }: Props) {
     setSelectedImage(null);
     document.body.style.overflow = 'auto'; // スクロールを有効化
   };
-
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    });
-  };
-
-  useEffect(() => {
-    const handleScroll = () => {
-      // 200px以上スクロールしたらボタンを表示
-      if (window.scrollY > 200) {
-        setShowScrollTop(true);
-      } else {
-        setShowScrollTop(false);
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   return (
     <>
@@ -84,7 +62,7 @@ export default function HomeGallery({ topDisplayContents }: Props) {
           onClick={closeModal}
         >
           <div
-            className="relative max-h-[90vh] w-full max-w-4xl overflow-hidden rounded-2xl bg-white"
+            className="relative max-h-[90vh] max-w-4xl overflow-hidden rounded-2xl bg-white"
             onClick={(e) => e.stopPropagation()}
           >
             <Button
@@ -101,32 +79,12 @@ export default function HomeGallery({ topDisplayContents }: Props) {
                   selectedImage?.url ? detectImageFilepath(selectedImage?.url) : '/placeholder.svg'
                 }
                 alt={selectedImage!.name!}
-                width={800}
-                height={800}
-                className="h-auto w-full object-contain"
+                className="max-h-[90vh] w-full object-contain"
                 basePath={process.env.NEXT_PUBLIC_BASE_PATH}
               />
             </div>
           </div>
         </div>
-      )}
-
-      {/* トップに戻るボタン */}
-      {showScrollTop && (
-        <button
-          onClick={scrollToTop}
-          className="fixed right-6 bottom-6 z-40 flex h-14 w-14 items-center justify-center overflow-hidden rounded-full bg-pink-500 shadow-lg transition-all duration-300 hover:bg-pink-600"
-          aria-label="ページトップへ戻る"
-        >
-          <Image
-            src="/placeholder.svg"
-            alt="トップへ戻る"
-            width={60}
-            height={60}
-            className="h-10 w-10 object-contain"
-            basePath={process.env.NEXT_PUBLIC_BASE_PATH}
-          />
-        </button>
       )}
     </>
   );
