@@ -19,6 +19,7 @@ export default function HomeGallery({ topDisplayContents }: Props) {
 
   const [selectedImage, setSelectedImage] = useState<typeof _galleryImagesOne | null>(null);
   const [showScrollTop, setShowScrollTop] = useState(false);
+  const [fadeIn, setFadeIn] = useState(false);
 
   const openModal = (id: number) => {
     const image = galleryImages?.find((img) => img.id === id) || null;
@@ -47,12 +48,21 @@ export default function HomeGallery({ topDisplayContents }: Props) {
         setShowScrollTop(true);
       } else {
         setShowScrollTop(false);
+        setFadeIn(false);
       }
     };
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  useEffect(() => {
+    if (showScrollTop) {
+      // マウント後にフェードイン開始
+      const timeout = setTimeout(() => setFadeIn(true), 10); // 微妙な遅延でCSS適用
+      return () => clearTimeout(timeout);
+    }
+  }, [showScrollTop]);
 
   return (
     <>
@@ -113,15 +123,15 @@ export default function HomeGallery({ topDisplayContents }: Props) {
       {showScrollTop && (
         <button
           onClick={scrollToTop}
-          className="fixed right-6 bottom-6 z-40 flex h-14 w-14 items-center justify-center overflow-hidden rounded-full bg-pink-500 shadow-lg transition-all duration-300 hover:bg-pink-600"
+          className="fixed right-0 bottom-6 z-40 flex w-24 items-center justify-center overflow-hidden transition-all duration-300 hover:opacity-50"
           aria-label="ページトップへ戻る"
         >
           <Image
-            src="/placeholder.svg"
+            src="/images/scroll_top.png"
             alt="トップへ戻る"
-            width={60}
-            height={60}
-            className="h-10 w-10 object-contain"
+            className={`object-contain transition-opacity duration-500 ${
+              fadeIn ? 'opacity-100' : 'opacity-0'
+            }`}
             basePath={process.env.NEXT_PUBLIC_BASE_PATH}
           />
         </button>
