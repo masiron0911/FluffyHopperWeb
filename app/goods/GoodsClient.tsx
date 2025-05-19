@@ -24,13 +24,15 @@ export default function Goods({ goods, characters, productCategories }: Props) {
   const [selectedCharacters, setSelectedCharacters] = useState<string[]>([]);
 
   const filteredGoods = goods?.filter((item) => {
-    const categoryName = item.category?.name ?? '';
-    const characterName = item.character?.name ?? '';
+    const categoryNames = item.categories?.map((cat) => cat.name) ?? [];
+    const characterNames = item.characters?.map((char) => char.name) ?? [];
 
     const matchCategory =
-      selectedCategories.length === 0 || selectedCategories.includes(categoryName);
+      selectedCategories.length === 0 ||
+      categoryNames.some((name) => selectedCategories.includes(name!));
     const matchCharacter =
-      selectedCharacters.length === 0 || selectedCharacters.includes(characterName);
+      selectedCharacters.length === 0 ||
+      characterNames.some((name) => selectedCharacters.includes(name!));
     return matchCategory && matchCharacter;
   });
 
