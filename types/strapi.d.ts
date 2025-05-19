@@ -2284,10 +2284,8 @@ export interface components {
       data: {
         name: string;
         price?: string;
-        /** @example string or id */
-        category?: number | string;
-        /** @example string or id */
-        character?: number | string;
+        categories?: (number | string)[];
+        characters?: (number | string)[];
         /** @example string or id */
         image?: number | string;
         storeUrl?: string;
@@ -2312,7 +2310,7 @@ export interface components {
       documentId?: string;
       name: string;
       price?: string;
-      category?: {
+      categories?: {
         id?: number;
         documentId?: string;
         name?: string;
@@ -2426,8 +2424,8 @@ export interface components {
           id?: number;
           documentId?: string;
         }[];
-      };
-      character?: {
+      }[];
+      characters?: {
         id?: number;
         documentId?: string;
         name?: string;
@@ -2450,7 +2448,7 @@ export interface components {
           id?: number;
           documentId?: string;
         }[];
-      };
+      }[];
       image?: {
         id?: number;
         documentId?: string;
@@ -2597,14 +2595,14 @@ export interface components {
         documentId?: string;
         name?: string;
         price?: string;
-        category?: {
+        categories?: {
           id?: number;
           documentId?: string;
-        };
-        character?: {
+        }[];
+        characters?: {
           id?: number;
           documentId?: string;
-        };
+        }[];
         image?: {
           id?: number;
           documentId?: string;
@@ -2863,7 +2861,7 @@ export interface components {
         documentId?: string;
         name?: string;
         price?: string;
-        category?: {
+        categories?: {
           id?: number;
           documentId?: string;
           name?: string;
@@ -2977,8 +2975,8 @@ export interface components {
             id?: number;
             documentId?: string;
           }[];
-        };
-        character?: {
+        }[];
+        characters?: {
           id?: number;
           documentId?: string;
           name?: string;
@@ -3001,7 +2999,7 @@ export interface components {
             id?: number;
             documentId?: string;
           }[];
-        };
+        }[];
         image?: {
           id?: number;
           documentId?: string;
