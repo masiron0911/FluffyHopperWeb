@@ -7,6 +7,7 @@ import { characters } from '@/data/characters';
 import type { CharacterId } from '@/types';
 import { client } from '@/lib/strapi-client';
 import { ProductCard } from '@/components/ui/productCard';
+import { ScrollToTopButton } from '@/components/ui/ScrollToTopButton';
 
 export default async function Home() {
   // お知らせ最新情報は4件取得
@@ -212,6 +213,7 @@ export default async function Home() {
           </Link>
         </div>
       </section>
+      <ScrollToTopButton />
     </div>
   );
 }

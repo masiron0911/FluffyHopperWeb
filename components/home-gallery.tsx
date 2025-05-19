@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Image from 'next-image-export-optimizer';
 import { X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -18,8 +18,6 @@ export default function HomeGallery({ topDisplayContents }: Props) {
   const _galleryImagesOne = galleryImages?.[0];
 
   const [selectedImage, setSelectedImage] = useState<typeof _galleryImagesOne | null>(null);
-  const [showScrollTop, setShowScrollTop] = useState(false);
-  const [fadeIn, setFadeIn] = useState(false);
 
   const openModal = (id: number) => {
     const image = galleryImages?.find((img) => img.id === id) || null;
@@ -33,36 +31,6 @@ export default function HomeGallery({ topDisplayContents }: Props) {
     setSelectedImage(null);
     document.body.style.overflow = 'auto'; // スクロールを有効化
   };
-
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    });
-  };
-
-  useEffect(() => {
-    const handleScroll = () => {
-      // 200px以上スクロールしたらボタンを表示
-      if (window.scrollY > 200) {
-        setShowScrollTop(true);
-      } else {
-        setShowScrollTop(false);
-        setFadeIn(false);
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  useEffect(() => {
-    if (showScrollTop) {
-      // マウント後にフェードイン開始
-      const timeout = setTimeout(() => setFadeIn(true), 10); // 微妙な遅延でCSS適用
-      return () => clearTimeout(timeout);
-    }
-  }, [showScrollTop]);
 
   return (
     <>
@@ -117,24 +85,6 @@ export default function HomeGallery({ topDisplayContents }: Props) {
             </div>
           </div>
         </div>
-      )}
-
-      {/* トップに戻るボタン */}
-      {showScrollTop && (
-        <button
-          onClick={scrollToTop}
-          className="fixed right-0 bottom-6 z-40 flex w-24 items-center justify-center overflow-hidden transition-all duration-300 hover:opacity-50"
-          aria-label="ページトップへ戻る"
-        >
-          <Image
-            src="/images/scroll_top.png"
-            alt="トップへ戻る"
-            className={`object-contain transition-opacity duration-500 ${
-              fadeIn ? 'opacity-100' : 'opacity-0'
-            }`}
-            basePath={process.env.NEXT_PUBLIC_BASE_PATH}
-          />
-        </button>
       )}
     </>
   );
