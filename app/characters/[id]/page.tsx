@@ -8,11 +8,16 @@ import { characters } from '@/data/characters';
 import type { Metadata } from 'next';
 import type { CharacterId } from '@/types';
 import { characterNameToIdMap } from '@/constants/characterIdMap';
+import { client } from '@/lib/strapi-client';
+import type { paths } from '@/types/strapi';
+import { ProductCard } from '@/components/ui/productCard';
 
 interface PageProps {
   params: Promise<{ id: CharacterId }>;
   searchParams?: Promise<{ [key: string]: string | string[] | undefined }>;
 }
+
+type Product = paths['/products']['get']['responses']['200']['content']['application/json']['data'];
 
 export async function generateStaticParams() {
   return Object.keys(characters).map((id) => ({ id }));
@@ -34,6 +39,26 @@ export default async function CharacterDetail(props: PageProps) {
   if (!character) {
     notFound();
   }
+
+  const resProduct = await client.GET('/products', {
+    params: {
+      query: {
+        populate: '*',
+        fields: '*',
+        pagination: {
+          limit: 4,
+        },
+        filters: {
+          characters: {
+            name: {
+              $eq: character.name,
+            },
+          },
+        },
+      },
+    },
+  });
+  const goods: Product = resProduct?.data?.data;
 
   return (
     <div>
@@ -123,31 +148,13 @@ export default async function CharacterDetail(props: PageProps) {
 
           <h2 className={`text-2xl font-bold ${character.textColor} mb-6`}>グッズ</h2>
           <div className="mb-6 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-4">
-            {[1, 2, 3, 4].map((item) => (
-              <div
-                key={item}
-                className="rounded-2xl bg-gray-50 p-3 shadow-sm transition-shadow hover:shadow-md"
-              >
-                <div className="mb-3 overflow-hidden rounded-xl">
-                  <Image
-                    src="/placeholder.svg"
-                    alt={`${character.name}グッズ ${item}`}
-                    width={150}
-                    height={150}
-                    className="h-32 w-full object-cover"
-                    basePath={process.env.NEXT_PUBLIC_BASE_PATH}
-                  />
-                </div>
-                <h3 className={`text-sm font-bold ${character.textColor} mb-1`}>
-                  {character.name}ぬいぐるみ
-                </h3>
-                <p className="mb-2 text-xs text-gray-500">¥2,800</p>
-                <Button
-                  className={`w-full rounded-full py-1 text-xs ${character.buttonColor} text-white`}
-                >
-                  詳細を見る
-                </Button>
-              </div>
+            {goods?.map((item) => (
+              <ProductCard
+                name={item.name!}
+                price={item.price!}
+                imageUrl={item.image!.url!}
+                storeUrl={item.storeUrl!}
+              />
             ))}
           </div>
 

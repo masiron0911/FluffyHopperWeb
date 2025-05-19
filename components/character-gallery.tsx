@@ -81,7 +81,7 @@ export default function CharacterGallery({ images, textColor }: CharacterGallery
                 alt={selectedImage.alt}
                 width={800}
                 height={800}
-                className="h-auto w-full object-contain"
+                className="max-h-[90vh] w-full object-contain"
                 basePath={process.env.NEXT_PUBLIC_BASE_PATH}
               />
             </div>
