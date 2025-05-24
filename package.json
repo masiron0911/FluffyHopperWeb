@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "npm run prebuild && next dev --turbopack",
     "prebuild": "npx ts-node --project strapi/tsconfig.scripts.json -r tsconfig-paths/register strapi/download-remote-images.ts",
     "build": "next build && next-image-export-optimizer",
     "start": "npx serve out",

@@ -150,6 +150,7 @@ export default async function CharacterDetail(props: PageProps) {
           <div className="mb-6 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-4">
             {goods?.map((item) => (
               <ProductCard
+                key={item.id}
                 name={item.name!}
                 price={item.price!}
                 imageUrl={item.image!.url!}

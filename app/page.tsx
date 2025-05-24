@@ -194,6 +194,7 @@ export default async function Home() {
         <div className="mb-8 grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-4">
           {popularGoods?.map((item) => (
             <ProductCard
+              key={item.id}
               name={item.name!}
               price={item.price!}
               imageUrl={item.image!.url!}

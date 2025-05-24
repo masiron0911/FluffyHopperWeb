@@ -46,6 +46,8 @@ export function ScrollToTopButton() {
       <Image
         src="/images/scroll_top.png"
         alt="トップへ戻る"
+        width="500"
+        height="1000"
         className={`object-contain transition-opacity duration-500 ${fadeIn ? 'opacity-100' : 'opacity-0'}`}
         basePath={process.env.NEXT_PUBLIC_BASE_PATH}
       />
