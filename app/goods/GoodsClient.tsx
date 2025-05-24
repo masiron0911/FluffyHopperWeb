@@ -4,7 +4,7 @@ import Image from 'next-image-export-optimizer';
 import { Search } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import type { paths } from '@/types/strapi';
 import { ProductCard } from '@/components/ui/productCard';
 
@@ -19,9 +19,12 @@ type Props = {
   productCategories: ProductCategory['data'];
 };
 
+const ITEMS_PER_PAGE = 12;
+
 export default function Goods({ goods, characters, productCategories }: Props) {
   const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
   const [selectedCharacters, setSelectedCharacters] = useState<string[]>([]);
+  const [currentPage, setCurrentPage] = useState(1);
 
   const filteredGoods = goods?.filter((item) => {
     const categoryNames = item.categories?.map((cat) => cat.name) ?? [];
@@ -50,6 +53,15 @@ export default function Goods({ goods, characters, productCategories }: Props) {
 
   const categoriesFilter = productCategories?.map((item) => item.name);
   const charactersFilter = characters?.map((char) => char.name);
+
+  const totalPages = Math.ceil(filteredGoods!.length / ITEMS_PER_PAGE);
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [selectedCategories, selectedCharacters]);
+  const paginatedGoods = filteredGoods!.slice(
+    (currentPage - 1) * ITEMS_PER_PAGE,
+    currentPage * ITEMS_PER_PAGE,
+  );
 
   return (
     <div>
@@ -137,7 +149,7 @@ export default function Goods({ goods, characters, productCategories }: Props) {
 
         {/* グッズ一覧 */}
         <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 md:gap-6">
-          {filteredGoods?.map((item) => (
+          {paginatedGoods?.map((item) => (
             <ProductCard
               key={item.id}
               name={item.name!}
@@ -150,28 +162,25 @@ export default function Goods({ goods, characters, productCategories }: Props) {
 
         {/* ページネーション */}
         <div className="mt-12 flex justify-center">
-          <div className="flex gap-2">
-            <Button
-              variant="outline"
-              size="icon"
-              className="rounded-full border-pink-200 text-pink-700 hover:bg-pink-100"
-            >
-              1
-            </Button>
-            <Button
-              variant="outline"
-              size="icon"
-              className="rounded-full border-pink-200 text-pink-700 hover:bg-pink-100"
-            >
-              2
-            </Button>
-            <Button
-              variant="outline"
-              size="icon"
-              className="rounded-full border-pink-200 text-pink-700 hover:bg-pink-100"
-            >
-              3
-            </Button>
+          <div className="flex flex-wrap gap-2">
+            {Array.from({ length: totalPages }, (_, index) => {
+              const pageNumber = index + 1;
+              const isActive = pageNumber === currentPage;
+
+              return (
+                <Button
+                  key={pageNumber}
+                  variant={isActive ? 'default' : 'outline'}
+                  size="icon"
+                  onClick={() => setCurrentPage(pageNumber)}
+                  className={`rounded-full border-pink-200 ${
+                    isActive ? 'bg-pink-500 text-white' : 'text-pink-700 hover:bg-pink-100'
+                  }`}
+                >
+                  {pageNumber}
+                </Button>
+              );
+            })}
           </div>
         </div>
       </section>
