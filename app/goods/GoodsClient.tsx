@@ -139,6 +139,7 @@ export default function Goods({ goods, characters, productCategories }: Props) {
         <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 md:gap-6">
           {filteredGoods?.map((item) => (
             <ProductCard
+              key={item.id}
               name={item.name!}
               price={item.price!}
               imageUrl={item.image!.url!}

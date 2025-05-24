@@ -79,6 +79,9 @@ export default function HomeGallery({ topDisplayContents }: Props) {
                   selectedImage?.url ? detectImageFilepath(selectedImage?.url) : '/placeholder.svg'
                 }
                 alt={selectedImage!.name!}
+                width={selectedImage?.width}
+                height={selectedImage?.height}
+                sizes="100vw"
                 className="max-h-[90vh] w-full object-contain"
                 basePath={process.env.NEXT_PUBLIC_BASE_PATH}
               />
