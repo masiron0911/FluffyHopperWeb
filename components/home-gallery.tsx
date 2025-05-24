@@ -2,10 +2,15 @@
 
 import { useState } from 'react';
 import Image from 'next-image-export-optimizer';
-import { X } from 'lucide-react';
+import { X, ChevronLeft, ChevronRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import type { paths } from '@/types/strapi';
 import { detectImageFilepath } from '@/lib/strapi-client';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Keyboard } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 type TopDisplayContents =
   paths['/top-display-content']['get']['responses']['200']['content']['application/json'];
@@ -14,32 +19,27 @@ type Props = {
 };
 
 export default function HomeGallery({ topDisplayContents }: Props) {
-  const galleryImages = topDisplayContents?.galleryImages;
-  const _galleryImagesOne = galleryImages?.[0];
+  const galleryImages = topDisplayContents?.galleryImages ?? [];
+  const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
 
-  const [selectedImage, setSelectedImage] = useState<typeof _galleryImagesOne | null>(null);
-
-  const openModal = (id: number) => {
-    const image = galleryImages?.find((img) => img.id === id) || null;
-    if (image) {
-      setSelectedImage(image);
-      document.body.style.overflow = 'hidden'; // スクロールを無効化
-    }
+  const openModal = (index: number) => {
+    setSelectedIndex(index);
+    document.body.style.overflow = 'hidden';
   };
 
   const closeModal = () => {
-    setSelectedImage(null);
-    document.body.style.overflow = 'auto'; // スクロールを有効化
+    setSelectedIndex(null);
+    document.body.style.overflow = 'auto';
   };
 
   return (
     <>
       <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:gap-6">
-        {galleryImages?.map((image) => (
+        {galleryImages?.map((image, index) => (
           <div
             key={image.id}
             className="block cursor-pointer overflow-hidden rounded-2xl shadow-md transition-all duration-300 hover:shadow-lg"
-            onClick={() => openModal(image.id!)}
+            onClick={() => openModal(index)}
           >
             <div className="relative aspect-square overflow-hidden">
               <Image
@@ -56,36 +56,59 @@ export default function HomeGallery({ topDisplayContents }: Props) {
       </div>
 
       {/* 画像拡大モーダル */}
-      {selectedImage !== null && (
+      {selectedIndex !== null && (
         <div
           className="bg-opacity-80 fixed inset-0 z-50 flex items-center justify-center bg-black p-4 md:p-8"
           onClick={closeModal}
         >
           <div
-            className="relative max-h-[90vh] max-w-4xl overflow-hidden rounded-2xl bg-white"
+            className="relative w-full max-w-5xl rounded-2xl bg-amber-50 p-4"
             onClick={(e) => e.stopPropagation()}
           >
             <Button
               variant="ghost"
               size="icon"
-              className="absolute top-2 right-2 z-10 rounded-full bg-white text-gray-700 hover:bg-gray-100"
+              className="absolute top-2 right-2 z-10 rounded-full bg-amber-100 text-amber-800 shadow-md hover:bg-gray-100"
               onClick={closeModal}
             >
               <X size={24} />
             </Button>
-            <div className="relative h-full w-full">
-              <Image
-                src={
-                  selectedImage?.url ? detectImageFilepath(selectedImage?.url) : '/placeholder.svg'
-                }
-                alt={selectedImage!.name!}
-                width={selectedImage?.width}
-                height={selectedImage?.height}
-                sizes="100vw"
-                className="max-h-[90vh] w-full object-contain"
-                basePath={process.env.NEXT_PUBLIC_BASE_PATH}
-              />
-            </div>
+            <Swiper
+              initialSlide={selectedIndex!}
+              navigation={{
+                nextEl: '.custom-next',
+                prevEl: '.custom-prev',
+              }}
+              pagination={{ clickable: true }}
+              loop={true}
+              keyboard={{
+                enabled: true,
+              }}
+              modules={[Navigation, Pagination, Keyboard]}
+              className="h-[80vh] w-full"
+            >
+              {galleryImages.map((image) => (
+                <SwiperSlide key={image.id}>
+                  <div className="flex h-full w-full items-center justify-center pb-10 select-none">
+                    <Image
+                      src={image?.url ? detectImageFilepath(image?.url) : '/placeholder.svg'}
+                      alt={image.name!}
+                      width={image?.width}
+                      height={image?.height}
+                      className="max-h-full max-w-full object-contain"
+                      basePath={process.env.NEXT_PUBLIC_BASE_PATH}
+                    />
+                  </div>
+                </SwiperSlide>
+              ))}
+              {/* カスタムナビゲーションボタン */}
+              <div className="custom-prev absolute top-1/2 left-2 z-10 hidden -translate-y-1/2 cursor-pointer rounded-full bg-amber-100 p-2 shadow-md hover:bg-gray-200 md:block">
+                <ChevronLeft className="text-amber-800" size={24} />
+              </div>
+              <div className="custom-next absolute top-1/2 right-2 z-10 hidden -translate-y-1/2 cursor-pointer rounded-full bg-amber-100 p-2 shadow-md hover:bg-gray-200 md:block">
+                <ChevronRight className="text-amber-800" size={24} />
+              </div>
+            </Swiper>
           </div>
         </div>
       )}

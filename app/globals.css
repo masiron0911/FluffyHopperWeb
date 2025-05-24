@@ -1,5 +1,8 @@
 @import 'tailwindcss';
 @import 'tw-animate-css';
+@import 'swiper/css';
+@import 'swiper/css/navigation';
+@import 'swiper/css/pagination';
 
 @custom-variant dark (&:is(.dark *));
 
@@ -121,4 +124,8 @@
     @apply bg-background text-foreground;
     font-family: var(--font-m-plus-rounded);
   }
+}
+
+.swiper-pagination > .swiper-pagination-bullet-active {
+  background-color: #92400e;
 }
