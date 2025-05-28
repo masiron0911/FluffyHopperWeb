@@ -48,10 +48,10 @@ export default async function Home() {
       <section className="relative h-[500px] overflow-hidden">
         <div className="absolute inset-0 flex items-center justify-center">
           <Image
-            src="images/character_img/shopcard2024.png"
+            src="images/character_img/omatsuri2025.png"
             alt="FluffyHopper キャラクターたち"
-            width={1200}
-            height={600}
+            width={1600}
+            height={800}
             className=""
             basePath={process.env.NEXT_PUBLIC_BASE_PATH}
           />
