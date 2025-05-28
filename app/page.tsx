@@ -62,10 +62,10 @@ export default async function Home() {
       <section className="bg-white px-4 py-8 md:px-8">
         <div className="mx-auto max-w-6xl">
           <div className="mb-6 flex items-center justify-between">
-            <h2 className="text-2xl font-bold text-pink-700">お知らせ</h2>
+            <h2 className="text-2xl font-bold text-amber-700">お知らせ</h2>
             <Link
               href="/news"
-              className="flex items-center text-sm text-pink-500 hover:text-pink-700"
+              className="flex items-center text-sm text-amber-500 hover:text-amber-700"
             >
               もっと見る
               <svg
@@ -90,7 +90,7 @@ export default async function Home() {
               <Link
                 href={`/news/${news.slug}`}
                 key={index}
-                className="flex flex-col gap-2 rounded-xl p-4 transition-colors hover:bg-pink-50 sm:flex-row sm:items-center"
+                className="flex flex-col gap-2 rounded-xl p-4 transition-colors hover:bg-amber-50 sm:flex-row sm:items-center"
               >
                 <div className="flex items-center gap-3">
                   <span className="text-sm whitespace-nowrap text-gray-500">{news.date}</span>
@@ -100,7 +100,7 @@ export default async function Home() {
                     {news.tag.name}
                   </span>
                 </div>
-                <h3 className="text-gray-800 hover:text-pink-700">{news.title}</h3>
+                <h3 className="text-gray-800 hover:text-amber-700">{news.title}</h3>
               </Link>
             ))}
           </div>
@@ -110,9 +110,9 @@ export default async function Home() {
       {/* ブランド紹介 */}
       <section className="mx-auto max-w-6xl px-4 py-16 md:px-8">
         <div className="mb-12 text-center">
-          <h2 className="mb-4 text-3xl font-bold text-pink-700">FluffyHopperのご紹介</h2>
-          <div className="mx-auto mb-6 h-1 w-24 rounded-full bg-pink-300"></div>
-          <p className="mx-auto max-w-3xl text-lg text-pink-800">
+          <h2 className="mb-4 text-3xl font-bold text-amber-700">FluffyHopperのご紹介</h2>
+          <div className="mx-auto mb-6 h-1 w-24 rounded-full bg-amber-300"></div>
+          <p className="mx-auto max-w-3xl text-lg text-amber-800">
             &quot;毎日にもふもふとぽかぽかを&quot; Fluffy=ふわふわ Hopper=ぴょんぴょん
             心がふわふわ温かく、はずむようなわくわく感をお届けできるブランドとなるように名付けました。
             イラストレーターましろよう・3D造形家サックザックによる共同ブランド。
@@ -125,11 +125,11 @@ export default async function Home() {
       </section>
 
       {/* キャラクター紹介プレビュー */}
-      <section className="bg-gradient-to-b from-pink-100 to-purple-100 px-4 py-16 md:px-8">
+      <section className="bg-gradient-to-b from-amber-100 to-orange-100 px-4 py-16 md:px-8">
         <div className="mx-auto max-w-6xl">
           <div className="mb-12 text-center">
-            <h2 className="mb-4 text-3xl font-bold text-pink-700">人気キャラクター</h2>
-            <div className="mx-auto mb-6 h-1 w-24 rounded-full bg-pink-300"></div>
+            <h2 className="mb-4 text-3xl font-bold text-amber-700">人気キャラクター</h2>
+            <div className="mx-auto mb-6 h-1 w-24 rounded-full bg-amber-300"></div>
           </div>
 
           <div className="mb-8 grid grid-cols-1 gap-8 md:grid-cols-2">
@@ -175,7 +175,7 @@ export default async function Home() {
             <Link href="/characters">
               <Button
                 variant="outline"
-                className="rounded-full border-pink-500 px-6 py-2 text-pink-500 hover:bg-pink-100"
+                className="rounded-full border-amber-500 px-6 py-2 text-amber-500 hover:bg-amber-100"
               >
                 すべてのキャラクターを見る
               </Button>
@@ -187,8 +187,8 @@ export default async function Home() {
       {/* グッズ紹介プレビュー */}
       <section className="mx-auto max-w-6xl px-4 py-16 md:px-8">
         <div className="mb-12 text-center">
-          <h2 className="mb-4 text-3xl font-bold text-pink-700">人気グッズ</h2>
-          <div className="mx-auto mb-6 h-1 w-24 rounded-full bg-pink-300"></div>
+          <h2 className="mb-4 text-3xl font-bold text-amber-700">人気グッズ</h2>
+          <div className="mx-auto mb-6 h-1 w-24 rounded-full bg-amber-300"></div>
         </div>
 
         <div className="mb-8 grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-4">
@@ -207,7 +207,7 @@ export default async function Home() {
           <Link href="/goods">
             <Button
               variant="outline"
-              className="rounded-full border-pink-500 px-6 py-2 text-pink-500 hover:bg-pink-100"
+              className="rounded-full border-amber-500 px-6 py-2 text-amber-500 hover:bg-amber-100"
             >
               すべてのグッズを見る
             </Button>

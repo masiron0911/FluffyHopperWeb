@@ -14,10 +14,10 @@ export default function Header() {
     <header className="sticky top-0 z-10 flex items-center justify-between bg-amber-50 px-6 py-4 shadow-sm">
       <Link href="/" className="flex items-center gap-2">
         <Image
-          src="/placeholder.svg"
+          src="/images/character_img/logo-clear.png"
           alt="FluffyHopper ロゴ"
-          width={120}
-          height={40}
+          width={180}
+          height={80}
           className="h-10 w-auto"
           basePath={process.env.NEXT_PUBLIC_BASE_PATH}
         />
@@ -57,7 +57,7 @@ export default function Header() {
           <Button
             variant="ghost"
             size="icon"
-            className="rounded-full bg-white text-pink-500 hover:bg-pink-100 hover:text-pink-700"
+            className={`rounded-full bg-white ${textColor} hover:bg-amber-100 hover:${textColorHover}`}
           >
             <Instagram size={20} />
           </Button>
@@ -71,7 +71,7 @@ export default function Header() {
           <Button
             variant="ghost"
             size="icon"
-            className="rounded-full bg-white text-pink-500 hover:bg-pink-100 hover:text-pink-700"
+            className={`rounded-full bg-white ${textColor} hover:bg-amber-100 hover:${textColorHover}`}
           >
             <ShoppingBag size={20} />
           </Button>

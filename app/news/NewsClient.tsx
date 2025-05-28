@@ -29,7 +29,7 @@ export default function News({ latestInformations }: Props) {
     <div>
       {/* ヒーローセクション */}
       <section className="relative h-[250px] overflow-hidden">
-        <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-r from-pink-200 to-purple-200">
+        <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-r from-amber-200 to-orange-200">
           <Image
             src="/placeholder.svg"
             alt="FluffyHopper ニュース"
@@ -40,8 +40,8 @@ export default function News({ latestInformations }: Props) {
           />
         </div>
         <div className="relative z-1 flex h-full flex-col items-center justify-center px-4 text-center">
-          <h1 className="mb-4 text-4xl font-bold text-pink-700 md:text-5xl">お知らせ</h1>
-          <p className="max-w-2xl text-lg text-pink-600 md:text-xl">
+          <h1 className="mb-4 text-4xl font-bold text-amber-700 md:text-5xl">お知らせ</h1>
+          <p className="max-w-2xl text-lg text-amber-600 md:text-xl">
             FluffyHopperの最新情報をお届けします！
           </p>
         </div>
@@ -81,7 +81,7 @@ export default function News({ latestInformations }: Props) {
                     <h2 className="mb-3 text-xl font-bold text-gray-800">{item.title}</h2>
                     <p className="mb-4 text-gray-600">{item.content}</p>
                     <Link href={`/news/${item.slug}`}>
-                      <Button className="rounded-full bg-pink-500 px-4 py-1 text-sm text-white hover:bg-pink-600">
+                      <Button className="rounded-full bg-amber-500 px-4 py-1 text-sm text-white hover:bg-amber-600">
                         詳しく見る
                       </Button>
                     </Link>
@@ -106,8 +106,8 @@ export default function News({ latestInformations }: Props) {
                   onClick={() => setCurrentPage(page)}
                   className={`rounded-full ${
                     isActive
-                      ? 'bg-pink-500 text-white'
-                      : 'border-pink-200 text-pink-700 hover:bg-pink-100'
+                      ? 'bg-amber-500 text-white'
+                      : 'border-amber-200 text-amber-700 hover:bg-amber-100'
                   }`}
                 >
                   {page}

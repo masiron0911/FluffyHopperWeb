@@ -10,7 +10,7 @@ export default function Footer() {
         <div className="mb-8 flex flex-col items-center justify-between md:flex-row">
           <div className="mb-4 flex items-center gap-2 md:mb-0">
             <Image
-              src="/placeholder.svg"
+              src="/images/character_img/logo-clear.png"
               alt="FluffyHopper ロゴ"
               width={120}
               height={40}
@@ -28,7 +28,7 @@ export default function Footer() {
               <Button
                 variant="ghost"
                 size="icon"
-                className="rounded-full bg-white text-pink-500 hover:bg-pink-100 hover:text-pink-700"
+                className="rounded-full bg-white text-amber-500 hover:bg-amber-100 hover:text-amber-700"
               >
                 <Twitter size={20} />
               </Button>
@@ -42,7 +42,7 @@ export default function Footer() {
               <Button
                 variant="ghost"
                 size="icon"
-                className="rounded-full bg-white text-pink-500 hover:bg-pink-100 hover:text-pink-700"
+                className="rounded-full bg-white text-amber-500 hover:bg-amber-100 hover:text-amber-700"
               >
                 <Instagram size={20} />
               </Button>
@@ -56,7 +56,7 @@ export default function Footer() {
               <Button
                 variant="ghost"
                 size="icon"
-                className="rounded-full bg-white text-pink-500 hover:bg-pink-100 hover:text-pink-700"
+                className="rounded-full bg-white text-amber-500 hover:bg-amber-100 hover:text-amber-700"
               >
                 <ShoppingBag size={20} />
               </Button>

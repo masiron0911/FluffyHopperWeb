@@ -8,7 +8,7 @@ export default function Characters() {
     <div>
       {/* ヒーローセクション */}
       <section className="relative h-[300px] overflow-hidden">
-        <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-r from-pink-200 to-purple-200">
+        <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-r from-amber-200 to-orange-200">
           <Image
             src="/images/character_img/suyasuya.png"
             alt="FluffyHopper キャラクターたち"
@@ -19,8 +19,8 @@ export default function Characters() {
           />
         </div>
         <div className="relative z-1 flex h-full flex-col items-center justify-center px-4 text-center">
-          <h1 className="mb-4 text-4xl font-bold text-pink-700 md:text-5xl">キャラクター紹介</h1>
-          <p className="max-w-2xl text-lg text-pink-600 md:text-xl">
+          <h1 className="mb-4 text-4xl font-bold text-amber-700 md:text-5xl">キャラクター紹介</h1>
+          <p className="max-w-2xl text-lg text-amber-600 md:text-xl">
             FluffyHopperの愛らしいキャラクターたちをご紹介します！
           </p>
         </div>

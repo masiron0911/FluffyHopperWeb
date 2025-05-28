@@ -3,7 +3,7 @@ import type { Character } from '@/types';
 export const characters: Record<string, Character> = {
   hanamaru: {
     name: 'はなまる',
-    color: 'pink',
+    color: 'amber',
     description: 'おいしいものとお昼寝が大好きな黒目の白うさぎ。',
     longDescription:
       'おいしいものとお昼寝が大好きな黒目の白うさぎ。7つ子きょうだいの6番目。小さいことは気にしないマイペースな性格。りすのまんぷくと仲良くお散歩するのが日課。',
@@ -13,10 +13,10 @@ export const characters: Record<string, Character> = {
     birthday: '5月5日',
     favorites: 'おひるね・おさんぽ',
     friends: ['まんぷく', 'ばってん'],
-    bgColor: 'bg-pink-100',
-    textColor: 'text-pink-700',
-    borderColor: 'border-pink-300',
-    buttonColor: 'bg-pink-500 hover:bg-pink-600',
+    bgColor: 'bg-amber-100',
+    textColor: 'text-amber-700',
+    borderColor: 'border-amber-300',
+    buttonColor: 'bg-amber-500 hover:bg-amber-600',
     imgSrc: '/images/character_img/hanamaru.png',
     images: [
       {
@@ -38,7 +38,7 @@ export const characters: Record<string, Character> = {
   },
   manpuku: {
     name: 'まんぷく',
-    color: 'blue',
+    color: 'orange',
     description: 'どんぐりの隠し場所を探しているうちに迷子になってしまったシマリス。',
     longDescription:
       'どんぐりの隠し場所を探しているうちに迷子になってしまったシマリスのまんぷく。どんぐりをつまみ食いしていたはなまると出会い、一緒に美味しいものめぐりをしている。',
@@ -48,10 +48,10 @@ export const characters: Record<string, Character> = {
     birthday: '3月3日',
     favorites: 'おいしいお店さがし',
     friends: ['はなまる', 'ばってん'],
-    bgColor: 'bg-blue-100',
-    textColor: 'text-blue-600',
-    borderColor: 'border-blue-300',
-    buttonColor: 'bg-blue-500 hover:bg-blue-600',
+    bgColor: 'bg-orange-100',
+    textColor: 'text-orange-600',
+    borderColor: 'border-orange-300',
+    buttonColor: 'bg-orange-500 hover:bg-orange-600',
     imgSrc: '/images/character_img/manpuku.png',
     images: [
       {

@@ -26,11 +26,11 @@ export function ProductCard({ name, price, imageUrl, storeUrl }: Props) {
           basePath={process.env.NEXT_PUBLIC_BASE_PATH}
         />
       </div>
-      <h3 className="mb-1 text-lg font-bold text-pink-700">{name}</h3>
+      <h3 className="mb-1 text-lg font-bold text-amber-700">{name}</h3>
       <div>
-        <p className="mb-3 text-sm text-pink-500">{price}</p>
+        <p className="mb-3 text-sm text-amber-500">{price}</p>
         <Link href={storeUrl!} target="_blank" rel="noopener noreferrer">
-          <Button className="w-full rounded-full bg-pink-500 text-white hover:bg-pink-600">
+          <Button className="w-full rounded-full bg-amber-500 text-white hover:bg-amber-600">
             詳細を見る
           </Button>
         </Link>

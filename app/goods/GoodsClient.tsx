@@ -67,7 +67,7 @@ export default function Goods({ goods, characters, productCategories }: Props) {
     <div>
       {/* ヒーローセクション */}
       <section className="relative h-[250px] overflow-hidden">
-        <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-r from-pink-200 to-purple-200">
+        <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-r from-amber-200 to-orange-200">
           <Image
             src="/images/goods/2024_designfesta.jpg"
             alt="FluffyHopper グッズ"
@@ -78,8 +78,8 @@ export default function Goods({ goods, characters, productCategories }: Props) {
           />
         </div>
         <div className="relative z-1 flex h-full flex-col items-center justify-center px-4 text-center">
-          <h1 className="mb-4 text-4xl font-bold text-pink-700 md:text-5xl">グッズ紹介</h1>
-          <p className="max-w-2xl text-lg text-pink-600 md:text-xl">
+          <h1 className="mb-4 text-4xl font-bold text-amber-700 md:text-5xl">グッズ紹介</h1>
+          <p className="max-w-2xl text-lg text-amber-600 md:text-xl">
             FluffyHopperのかわいいグッズをご紹介します！
           </p>
         </div>
@@ -97,7 +97,7 @@ export default function Goods({ goods, characters, productCategories }: Props) {
               <Input
                 type="text"
                 placeholder="グッズを検索"
-                className="rounded-full border-pink-200 pl-10 focus:border-pink-500 focus:ring-pink-500"
+                className="rounded-full border-amber-200 pl-10 focus:border-amber-500 focus:ring-amber-500"
               />
             </div>
             <div className="flex gap-2 overflow-x-auto pb-2 md:pb-0">
@@ -110,8 +110,8 @@ export default function Goods({ goods, characters, productCategories }: Props) {
                     onClick={() => toggleCategory(categoryName)}
                     className={`rounded-full whitespace-nowrap ${
                       isSelected
-                        ? 'bg-pink-500 text-white'
-                        : 'border-pink-200 text-pink-700 hover:bg-pink-100'
+                        ? 'bg-amber-500 text-white'
+                        : 'border-amber-200 text-amber-700 hover:bg-amber-100'
                     }`}
                     size="sm"
                     variant={isSelected ? 'default' : 'outline'}
@@ -133,8 +133,8 @@ export default function Goods({ goods, characters, productCategories }: Props) {
                     onClick={() => toggleCharacter(character)}
                     className={`rounded-full whitespace-nowrap ${
                       isSelected
-                        ? 'bg-pink-500 text-white'
-                        : 'border-pink-200 text-pink-700 hover:bg-pink-100'
+                        ? 'bg-amber-500 text-white'
+                        : 'border-amber-200 text-amber-700 hover:bg-amber-100'
                     }`}
                     size="sm"
                     variant={isSelected ? 'default' : 'outline'}
@@ -173,8 +173,8 @@ export default function Goods({ goods, characters, productCategories }: Props) {
                   variant={isActive ? 'default' : 'outline'}
                   size="icon"
                   onClick={() => setCurrentPage(pageNumber)}
-                  className={`rounded-full border-pink-200 ${
-                    isActive ? 'bg-pink-500 text-white' : 'text-pink-700 hover:bg-pink-100'
+                  className={`rounded-full border-amber-200 ${
+                    isActive ? 'bg-amber-500 text-white' : 'text-amber-700 hover:bg-amber-100'
                   }`}
                 >
                   {pageNumber}
