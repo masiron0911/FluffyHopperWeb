@@ -40,7 +40,7 @@ export function ScrollToTopButton() {
   return (
     <button
       onClick={scrollToTop}
-      className="fixed right-0 bottom-6 z-40 flex max-w-40 items-center justify-center overflow-hidden transition-all duration-300 hover:opacity-50"
+      className="fixed right-0 bottom-6 z-40 hidden max-w-40 items-center justify-center overflow-hidden transition-all duration-300 hover:opacity-50 md:block"
       aria-label="ページトップへ戻る"
     >
       <Image
