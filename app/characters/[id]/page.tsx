@@ -60,6 +60,21 @@ export default async function CharacterDetail(props: PageProps) {
   });
   const goods: Product = resProduct?.data?.data;
 
+  const resCharacter = await client.GET('/characters', {
+    params: {
+      query: {
+        populate: 'galleryImages',
+        fields: '*',
+        filters: {
+          name: {
+            $eq: character.name,
+          },
+        },
+      },
+    },
+  });
+  const characterContents = resCharacter?.data?.data;
+
   return (
     <div>
       {/* キャラクターヒーロー */}
@@ -144,7 +159,11 @@ export default async function CharacterDetail(props: PageProps) {
           </div>
 
           {/* キャラクター画像ギャラリー - クライアントコンポーネントとして分離 */}
-          <CharacterGallery images={character.images} textColor={character.textColor} />
+          <CharacterGallery
+            characterContents={characterContents}
+            characterName={character.name}
+            textColor={character.textColor}
+          />
 
           <h2 className={`text-2xl font-bold ${character.textColor} mb-6`}>グッズ</h2>
           <div className="mb-6 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-4">
