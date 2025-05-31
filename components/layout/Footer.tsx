@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import Image from 'next-image-export-optimizer';
-import { Instagram, X, ShoppingBag } from '@mui/icons-material';
-import { Button } from '@/components/ui/button';
+import { SocialIcons } from '@/components/ui/SocialIcons';
 
 export default function Footer() {
   return (
@@ -19,48 +18,7 @@ export default function Footer() {
             />
           </div>
           <div className="flex gap-4">
-            <Link
-              href="https://x.com/FluffyHopper_JP"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Twitter"
-            >
-              <Button
-                variant="ghost"
-                size="icon"
-                className="rounded-full bg-white text-amber-500 hover:bg-amber-100 hover:text-amber-700"
-              >
-                <X sx={{ fontSize: 20 }} />
-              </Button>
-            </Link>
-            <Link
-              href="https://www.instagram.com/fluffyhopperjp/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Instagram"
-            >
-              <Button
-                variant="ghost"
-                size="icon"
-                className="rounded-full bg-white text-amber-500 hover:bg-amber-100 hover:text-amber-700"
-              >
-                <Instagram sx={{ fontSize: 20 }} />
-              </Button>
-            </Link>
-            <Link
-              href="https://fluffyhopper.base.ec/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="ショップ"
-            >
-              <Button
-                variant="ghost"
-                size="icon"
-                className="rounded-full bg-white text-amber-500 hover:bg-amber-100 hover:text-amber-700"
-              >
-                <ShoppingBag sx={{ fontSize: 20 }} />
-              </Button>
-            </Link>
+            <SocialIcons textColor="text-amber-500" textColorHover="bg-amber-100" fontSize={20} />
           </div>
         </div>
         <div className="flex flex-col items-center justify-between text-amber-800 md:flex-row">
