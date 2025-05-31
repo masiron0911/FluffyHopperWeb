@@ -26,7 +26,6 @@ export function SwiperSlider({ slides }: SwiperSliderProps) {
       effect="fade"
       fadeEffect={{ crossFade: true }}
       speed={1000}
-      loop
       modules={[Autoplay, Pagination, Navigation, EffectFade]}
       className="h-full w-full"
     >
