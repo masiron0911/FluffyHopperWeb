@@ -50,7 +50,7 @@ export default function Header() {
       <div className="md:hidden">
         <IconButton
           onClick={toggleDrawer}
-          className="!hover:bg-amber-100 !hover:text-amber-950 !text-amber-800"
+          className="!hover:bg-amber-100 !hover:text-amber-950 !min-h-0 !min-w-0 !p-0 !text-amber-800"
         >
           <AnimatePresence mode="wait" initial={false}>
             {drawerOpen ? (
@@ -83,7 +83,7 @@ export default function Header() {
         open={drawerOpen}
         onClose={toggleDrawer}
         className="w-dvw"
-        slotProps={{ paper: { sx: { top: '84px' } } }}
+        slotProps={{ paper: { sx: { top: '72px' } } }}
       >
         <div className="flex h-full w-screen flex-col gap-4 bg-amber-50 p-4">
           <Link
