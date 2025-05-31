@@ -8,6 +8,7 @@ import type { CharacterId } from '@/types';
 import { client } from '@/lib/strapi-client';
 import { ProductCard } from '@/components/ui/productCard';
 import { ScrollToTopButton } from '@/components/ui/ScrollToTopButton';
+import { SwiperSlider } from '@/components/ui/autoplay-swiper';
 
 export default async function Home() {
   // お知らせ最新情報は4件取得
@@ -47,13 +48,25 @@ export default async function Home() {
       {/* ヒーローセクション */}
       <section className="relative overflow-visible">
         <div className="flex items-center justify-center">
-          <Image
-            src="images/character_img/omatsuri2025.png"
-            alt="FluffyHopper キャラクターたち"
-            width={1366}
-            height={683}
-            className=""
-            basePath={process.env.NEXT_PUBLIC_BASE_PATH}
+          <SwiperSlider
+            slides={[
+              <Image
+                src="images/character_img/omatsuri2025.png"
+                alt="FluffyHopper キャラクターたち"
+                width={1600}
+                height={800}
+                className=""
+                basePath={process.env.NEXT_PUBLIC_BASE_PATH}
+              />,
+              <Image
+                src="images/character_img/shopcard2024_resize.png"
+                alt="FluffyHopper キャラクターたち"
+                width={1600}
+                height={800}
+                className=""
+                basePath={process.env.NEXT_PUBLIC_BASE_PATH}
+              />,
+            ]}
           />
         </div>
       </section>

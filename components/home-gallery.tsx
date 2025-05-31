@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Image from 'next-image-export-optimizer';
-import { X, ChevronLeft, ChevronRight } from 'lucide-react';
+import { Close, ChevronLeft, ChevronRight } from '@mui/icons-material';
 import { Button } from '@/components/ui/button';
 import type { paths } from '@/types/strapi';
 import { detectImageFilepath } from '@/lib/strapi-client';
@@ -71,7 +71,7 @@ export default function HomeGallery({ topDisplayContents }: Props) {
               className="absolute top-2 right-2 z-10 rounded-full bg-amber-100 text-amber-800 shadow-md hover:bg-gray-100"
               onClick={closeModal}
             >
-              <X size={24} />
+              <Close sx={{ fontSize: 24 }} />
             </Button>
             <Swiper
               initialSlide={selectedIndex!}
@@ -103,10 +103,10 @@ export default function HomeGallery({ topDisplayContents }: Props) {
               ))}
               {/* カスタムナビゲーションボタン */}
               <div className="custom-prev absolute top-1/2 left-2 z-10 hidden -translate-y-1/2 cursor-pointer rounded-full bg-amber-100 p-2 shadow-md hover:bg-gray-200 md:block">
-                <ChevronLeft className="text-amber-800" size={24} />
+                <ChevronLeft className="text-amber-800" sx={{ fontSize: 24 }} />
               </div>
               <div className="custom-next absolute top-1/2 right-2 z-10 hidden -translate-y-1/2 cursor-pointer rounded-full bg-amber-100 p-2 shadow-md hover:bg-gray-200 md:block">
-                <ChevronRight className="text-amber-800" size={24} />
+                <ChevronRight className="text-amber-800" sx={{ fontSize: 24 }} />
               </div>
             </Swiper>
           </div>

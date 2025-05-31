@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next-image-export-optimizer';
-import { Search } from 'lucide-react';
+import { Search } from '@mui/icons-material';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { useEffect, useState } from 'react';
@@ -92,7 +92,7 @@ export default function Goods({ goods, characters, productCategories }: Props) {
             <div className="relative flex-1">
               <Search
                 className="absolute top-1/2 left-3 -translate-y-1/2 transform text-gray-400"
-                size={18}
+                sx={{ fontSize: 18 }}
               />
               <Input
                 type="text"

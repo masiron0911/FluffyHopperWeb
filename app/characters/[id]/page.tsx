@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next-image-export-optimizer';
-import { Heart, Star, Coffee } from 'lucide-react';
+import { FavoriteBorder, StarBorder, Coffee } from '@mui/icons-material';
 import { Button } from '@/components/ui/button';
 import { notFound } from 'next/navigation';
 import CharacterGallery from '@/components/character-gallery';
@@ -142,17 +142,20 @@ export default async function CharacterDetail(props: PageProps) {
 
           <div className="mb-8 grid grid-cols-1 gap-4 sm:grid-cols-3">
             <div className={`${character.bgColor} rounded-2xl p-4 text-center`}>
-              <Heart className={`mx-auto mb-2 ${character.textColor}`} size={32} />
+              <FavoriteBorder
+                className={`mx-auto mb-2 ${character.textColor}`}
+                sx={{ fontSize: 32 }}
+              />
               <h3 className={`text-lg font-bold ${character.textColor} mb-1`}>性格</h3>
               <p className={`${character.textColor} opacity-80`}>{character.personality}</p>
             </div>
             <div className={`${character.bgColor} rounded-2xl p-4 text-center`}>
-              <Star className={`mx-auto mb-2 ${character.textColor}`} size={32} />
+              <StarBorder className={`mx-auto mb-2 ${character.textColor}`} sx={{ fontSize: 32 }} />
               <h3 className={`text-lg font-bold ${character.textColor} mb-1`}>特技</h3>
               <p className={`${character.textColor} opacity-80`}>{character.speciality}</p>
             </div>
             <div className={`${character.bgColor} rounded-2xl p-4 text-center`}>
-              <Coffee className={`mx-auto mb-2 ${character.textColor}`} size={32} />
+              <Coffee className={`mx-auto mb-2 ${character.textColor}`} sx={{ fontSize: 32 }} />
               <h3 className={`text-lg font-bold ${character.textColor} mb-1`}>好きな食べ物</h3>
               <p className={`${character.textColor} opacity-80`}>{character.favoriteFood}</p>
             </div>

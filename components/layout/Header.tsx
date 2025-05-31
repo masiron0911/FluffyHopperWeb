@@ -2,13 +2,22 @@
 
 import Link from 'next/link';
 import Image from 'next-image-export-optimizer';
-import { Instagram, Twitter, ShoppingBag } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import { Close, Menu, ChevronRight } from '@mui/icons-material';
+// import { Button } from '@/components/ui/button';
+import { Drawer, IconButton } from '@mui/material';
+import { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { SocialIcons } from '@/components/ui/SocialIcons';
 
 export default function Header() {
-  const fontSize = 'font-medium';
+  const fontWeight = 'font-medium';
   const textColor = 'text-amber-800';
   const textColorHover = 'text-amber-950';
+
+  const [drawerOpen, setDrawerOpen] = useState(false);
+  const toggleDrawer = () => {
+    setDrawerOpen((prev) => !prev);
+  };
 
   return (
     <header className="sticky top-0 z-10 flex items-center justify-between bg-amber-50 px-6 py-4 shadow-sm">
@@ -23,60 +32,89 @@ export default function Header() {
         />
       </Link>
       <nav className="hidden gap-6 md:flex">
-        <Link href="/" className={`${fontSize} ${textColor} hover:${textColorHover}`}>
+        <Link href="/" className={`${fontWeight} ${textColor} hover:${textColorHover}`}>
           ホーム
         </Link>
-        <Link href="/characters" className={`${fontSize} ${textColor} hover:${textColorHover}`}>
+        <Link href="/characters" className={`${fontWeight} ${textColor} hover:${textColorHover}`}>
           キャラクター
         </Link>
-        <Link href="/goods" className={`${fontSize} ${textColor} hover:${textColorHover}`}>
+        <Link href="/goods" className={`${fontWeight} ${textColor} hover:${textColorHover}`}>
           グッズ
         </Link>
       </nav>
-      <div className="flex gap-3">
-        <Link
-          href="https://x.com/FluffyHopper_JP"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Twitter"
-        >
-          <Button
-            variant="ghost"
-            size="icon"
-            className={`rounded-full bg-white ${textColor} hover:bg-amber-100 hover:${textColorHover}`}
-          >
-            <Twitter size={20} />
-          </Button>
-        </Link>
-        <Link
-          href="https://www.instagram.com/fluffyhopperjp/"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Instagram"
-        >
-          <Button
-            variant="ghost"
-            size="icon"
-            className={`rounded-full bg-white ${textColor} hover:bg-amber-100 hover:${textColorHover}`}
-          >
-            <Instagram size={20} />
-          </Button>
-        </Link>
-        <Link
-          href="https://fluffyhopper.base.ec/"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="ショップ"
-        >
-          <Button
-            variant="ghost"
-            size="icon"
-            className={`rounded-full bg-white ${textColor} hover:bg-amber-100 hover:${textColorHover}`}
-          >
-            <ShoppingBag size={20} />
-          </Button>
-        </Link>
+      <div className="hidden gap-3 md:flex">
+        <SocialIcons textColor={textColor} textColorHover={textColorHover} fontSize={20} />
       </div>
+
+      {/* モバイル用メニューボタン */}
+      <div className="md:hidden">
+        <IconButton
+          onClick={toggleDrawer}
+          className="!hover:bg-amber-100 !hover:text-amber-950 !text-amber-800"
+        >
+          <AnimatePresence mode="wait" initial={false}>
+            {drawerOpen ? (
+              <motion.div
+                key="close"
+                initial={{ rotate: -90, opacity: 0 }}
+                animate={{ rotate: 0, opacity: 1 }}
+                exit={{ rotate: 90, opacity: 0 }}
+                transition={{ duration: 0.2 }}
+              >
+                <Close sx={{ fontSize: 40 }} />
+              </motion.div>
+            ) : (
+              <motion.div
+                key="menu"
+                initial={{ rotate: 90, opacity: 0 }}
+                animate={{ rotate: 0, opacity: 1 }}
+                exit={{ rotate: -90, opacity: 0 }}
+                transition={{ duration: 0.2 }}
+              >
+                <Menu sx={{ fontSize: 40 }} />
+              </motion.div>
+            )}
+          </AnimatePresence>
+        </IconButton>
+      </div>
+
+      <Drawer
+        anchor="right"
+        open={drawerOpen}
+        onClose={toggleDrawer}
+        className="w-dvw"
+        slotProps={{ paper: { sx: { top: '84px' } } }}
+      >
+        <div className="flex h-full w-screen flex-col gap-4 bg-amber-50 p-4">
+          <Link
+            href="/"
+            onClick={toggleDrawer}
+            className={`text-lg ${fontWeight} ${textColor} flex flex-row items-center gap-1`}
+          >
+            <ChevronRight sx={{ fontSize: 20 }} />
+            ホーム
+          </Link>
+          <Link
+            href="/characters"
+            onClick={toggleDrawer}
+            className={`text-lg ${fontWeight} ${textColor} flex flex-row items-center gap-1`}
+          >
+            <ChevronRight sx={{ fontSize: 20 }} />
+            キャラクター
+          </Link>
+          <Link
+            href="/goods"
+            onClick={toggleDrawer}
+            className={`text-lg ${fontWeight} ${textColor} flex flex-row items-center gap-1`}
+          >
+            <ChevronRight sx={{ fontSize: 20 }} />
+            グッズ
+          </Link>
+          <div className="flex items-center justify-center gap-6 pt-12">
+            <SocialIcons textColor={textColor} textColorHover={textColorHover} fontSize={24} />
+          </div>
+        </div>
+      </Drawer>
     </header>
   );
 }
