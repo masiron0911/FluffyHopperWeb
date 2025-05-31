@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import Image from 'next-image-export-optimizer';
-import { Instagram, Twitter, ShoppingBag } from 'lucide-react';
+import { Instagram, X, ShoppingBag } from '@mui/icons-material';
 import { Button } from '@/components/ui/button';
 
 export default function Header() {
@@ -45,7 +45,7 @@ export default function Header() {
             size="icon"
             className={`rounded-full bg-white ${textColor} hover:bg-amber-100 hover:${textColorHover}`}
           >
-            <Twitter size={20} />
+            <X sx={{ fontSize: 20 }} />
           </Button>
         </Link>
         <Link
@@ -59,7 +59,7 @@ export default function Header() {
             size="icon"
             className={`rounded-full bg-white ${textColor} hover:bg-amber-100 hover:${textColorHover}`}
           >
-            <Instagram size={20} />
+            <Instagram sx={{ fontSize: 20 }} />
           </Button>
         </Link>
         <Link
@@ -73,7 +73,7 @@ export default function Header() {
             size="icon"
             className={`rounded-full bg-white ${textColor} hover:bg-amber-100 hover:${textColorHover}`}
           >
-            <ShoppingBag size={20} />
+            <ShoppingBag sx={{ fontSize: 20 }} />
           </Button>
         </Link>
       </div>
