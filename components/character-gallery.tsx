@@ -37,10 +37,10 @@ export default function CharacterGallery({ characterContents, characterName, tex
 
   return (
     <>
-      <section className="mx-auto max-w-4xl px-2 py-4 sm:px-4 sm:py-8 md:px-8">
-        <div className="rounded-3xl bg-white p-4 shadow-md sm:p-8">
-          <h2 className={`text-2xl font-bold ${textColor} mb-4`}>ギャラリー</h2>
-          <div className="grid grid-cols-3 gap-2 sm:gap-4">
+      <h2 className={`text-2xl font-bold ${textColor}`}>ギャラリー</h2>
+      <section className="mx-auto max-w-4xl py-2 md:px-8">
+        <div className="rounded-3xl bg-white p-4 shadow-md">
+          <div className="grid grid-cols-2 gap-2 sm:gap-4 md:grid-cols-3">
             {galleryImages?.map((image, index) => (
               <div
                 key={image.id}

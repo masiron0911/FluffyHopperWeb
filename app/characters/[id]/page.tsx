@@ -100,8 +100,8 @@ export default async function CharacterDetail(props: PageProps) {
       </section>
 
       {/* キャラクター詳細 */}
-      <section className="mx-auto max-w-4xl px-4 py-12 md:px-8">
-        <div className="rounded-3xl bg-white p-8 shadow-md">
+      <section className="mx-auto max-w-5xl px-2 py-4 md:px-8 md:py-12">
+        <div className="rounded-3xl bg-white p-4 shadow-md md:p-8">
           <h2 className={`text-2xl font-bold ${character.textColor} mb-6`}>プロフィール</h2>
 
           <div className="mb-8 grid grid-cols-1 gap-8 md:grid-cols-2">
@@ -140,7 +140,7 @@ export default async function CharacterDetail(props: PageProps) {
             </div>
           </div>
 
-          <div className="mb-8 grid grid-cols-1 gap-4 sm:grid-cols-3">
+          <div className="mb-8 grid auto-rows-fr grid-cols-2 gap-4 sm:grid-cols-3">
             <div className={`${character.bgColor} rounded-2xl p-4 text-center`}>
               <FavoriteBorder
                 className={`mx-auto mb-2 ${character.textColor}`}
@@ -154,7 +154,9 @@ export default async function CharacterDetail(props: PageProps) {
               <h3 className={`text-lg font-bold ${character.textColor} mb-1`}>特技</h3>
               <p className={`${character.textColor} opacity-80`}>{character.speciality}</p>
             </div>
-            <div className={`${character.bgColor} rounded-2xl p-4 text-center`}>
+            <div
+              className={`${character.bgColor} col-span-2 w-full max-w-[calc(50%-0.5rem)] justify-self-center rounded-2xl p-4 text-center sm:col-span-1 sm:max-w-full`}
+            >
               <Coffee className={`mx-auto mb-2 ${character.textColor}`} sx={{ fontSize: 32 }} />
               <h3 className={`text-lg font-bold ${character.textColor} mb-1`}>好きな食べ物</h3>
               <p className={`${character.textColor} opacity-80`}>{character.favoriteFood}</p>
@@ -168,8 +170,8 @@ export default async function CharacterDetail(props: PageProps) {
             textColor={character.textColor}
           />
 
-          <h2 className={`text-2xl font-bold ${character.textColor} mb-6`}>グッズ</h2>
-          <div className="mb-6 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-4">
+          <h2 className={`text-2xl font-bold ${character.textColor} mt-6`}>グッズ</h2>
+          <div className="mb-6 grid grid-cols-1 gap-4 py-2 sm:grid-cols-2 md:grid-cols-4">
             {goods?.map((item) => (
               <ProductCard
                 key={item.id}
