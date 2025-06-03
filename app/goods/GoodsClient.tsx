@@ -7,6 +7,7 @@ import { Input } from '@/components/ui/input';
 import { useEffect, useState } from 'react';
 import type { paths } from '@/types/strapi';
 import { ProductCard } from '@/components/ui/productCard';
+import { toKatakana } from '@/lib/utils';
 
 type Product = paths['/products']['get']['responses']['200']['content']['application/json'];
 type Character = paths['/characters']['get']['responses']['200']['content']['application/json'];
@@ -25,6 +26,9 @@ export default function Goods({ goods, characters, productCategories }: Props) {
   const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
   const [selectedCharacters, setSelectedCharacters] = useState<string[]>([]);
   const [currentPage, setCurrentPage] = useState(1);
+  const [searchQuery, setSearchQuery] = useState('');
+
+  const normalizedSearch = toKatakana(searchQuery.trim().toLowerCase());
 
   const filteredGoods = goods?.filter((item) => {
     const categoryNames = item.categories?.map((cat) => cat.name) ?? [];
@@ -36,7 +40,11 @@ export default function Goods({ goods, characters, productCategories }: Props) {
     const matchCharacter =
       selectedCharacters.length === 0 ||
       characterNames.some((name) => selectedCharacters.includes(name!));
-    return matchCategory && matchCharacter;
+
+    const normalizedName = toKatakana(item.name?.toLowerCase() ?? '');
+    const matchSearch = normalizedSearch === '' || normalizedName.includes(normalizedSearch);
+
+    return matchCategory && matchCharacter && matchSearch;
   });
 
   const toggleCategory = (category: string) => {
@@ -97,6 +105,8 @@ export default function Goods({ goods, characters, productCategories }: Props) {
               <Input
                 type="text"
                 placeholder="グッズを検索"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
                 className="rounded-full border-amber-200 pl-10 focus:border-amber-500 focus:ring-amber-500"
               />
             </div>
