@@ -3,7 +3,6 @@
 import Link from 'next/link';
 import Image from 'next-image-export-optimizer';
 import { Close, Menu, ChevronRight } from '@mui/icons-material';
-// import { Button } from '@/components/ui/button';
 import { Drawer, IconButton } from '@mui/material';
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -33,13 +32,13 @@ export default function Header() {
       </Link>
       <nav className="hidden gap-6 md:flex">
         <Link href="/" className={`${fontWeight} ${textColor} hover:${textColorHover}`}>
-          ホーム
+          <h1 className="font-bold">ホーム</h1>
         </Link>
         <Link href="/characters" className={`${fontWeight} ${textColor} hover:${textColorHover}`}>
-          キャラクター
+          <h1 className="font-bold">キャラクター</h1>
         </Link>
         <Link href="/goods" className={`${fontWeight} ${textColor} hover:${textColorHover}`}>
-          グッズ
+          <h1 className="font-bold">グッズ</h1>
         </Link>
       </nav>
       <div className="hidden gap-3 md:flex">

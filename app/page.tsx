@@ -125,11 +125,13 @@ export default async function Home() {
         <div className="mb-12 text-center">
           <h2 className="mb-4 text-3xl font-bold text-amber-700">FluffyHopperのご紹介</h2>
           <div className="mx-auto mb-6 h-1 w-24 rounded-full bg-amber-300"></div>
-          <p className="mx-auto max-w-3xl text-lg text-amber-800">
-            &quot;毎日にもふもふとぽかぽかを&quot; Fluffy=ふわふわ Hopper=ぴょんぴょん
+          <p className="mx-auto max-w-3xl text-base whitespace-pre-line text-amber-800 md:text-lg">
+            {`"毎日にもふもふとぽかぽかを" Fluffy=ふわふわ Hopper=ぴょんぴょん
             心がふわふわ温かく、はずむようなわくわく感をお届けできるブランドとなるように名付けました。
+
             イラストレーターましろよう・3D造形家サックザックによる共同ブランド。
-            オリジナルキャラクター&quot;うさぎのはなまる&quot;をはじめ、ほんわかやさしいタッチを活かしたラインナップを展開しています。
+            オリジナルキャラクター"うさぎのはなまる"をはじめ、
+            ほんわかやさしいタッチを活かしたラインナップを展開しています。`}
           </p>
         </div>
 
