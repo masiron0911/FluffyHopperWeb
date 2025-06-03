@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Image from 'next-image-export-optimizer';
 import { SocialIcons } from '@/components/ui/SocialIcons';
+import { Contacts } from '@mui/icons-material';
 
 export default function Footer() {
   return (
@@ -23,13 +24,13 @@ export default function Footer() {
         </div>
         <div className="flex flex-col items-center justify-between text-amber-800 md:flex-row">
           <nav className="mb-4 flex gap-6 md:mb-0">
-            <Link href="/" className="hover:text-amber-950">
+            <Link href="/" className="hidden hover:text-amber-950 md:flex">
               ホーム
             </Link>
-            <Link href="/characters" className="hover:text-amber-950">
+            <Link href="/characters" className="hidden hover:text-amber-950 md:flex">
               キャラクター
             </Link>
-            <Link href="/goods" className="hover:text-amber-950">
+            <Link href="/goods" className="hidden hover:text-amber-950 md:flex">
               グッズ
             </Link>
             <Link
@@ -38,7 +39,11 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              お問い合わせ
+              <h1 className="hidden md:flex">お問い合わせ</h1>
+              <h1 className="flex items-center md:hidden">
+                <Contacts sx={{ fontSize: 24 }} />
+                お問い合わせ
+              </h1>
             </Link>
           </nav>
           <p className="text-sm">© 2023 FluffyHopper All Rights Reserved.</p>
