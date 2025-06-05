@@ -31,7 +31,7 @@ export default function News({ latestInformations }: Props) {
       <section className="relative h-[250px] overflow-hidden">
         <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-r from-amber-200 to-orange-200">
           <Image
-            src="/placeholder.svg"
+            src="/images/character_img/osirase.png"
             alt="FluffyHopper ニュース"
             width={1200}
             height={600}
