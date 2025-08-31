@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
+import { NewsText } from '@/components/ui/NewsText';
 import { client, detectImageFilepath } from '@/lib/strapi-client';
 
 interface PageProps {
@@ -79,7 +80,7 @@ export default async function NewsDetail(props: PageProps) {
         />
       </div>
       <p className="text-lg leading-relaxed whitespace-pre-wrap text-gray-800">
-        {newsItem.content}
+        <NewsText text={newsItem.content} />
       </p>
       <div className="mt-12 flex justify-center">
         <Link href="/news">
