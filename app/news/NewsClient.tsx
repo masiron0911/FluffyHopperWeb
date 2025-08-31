@@ -7,6 +7,8 @@ import { newsTagClassMap } from '@/constants/newsTagClassMap';
 import { detectImageFilepath } from '@/lib/strapi-client';
 import type { paths } from '@/types/strapi';
 import { useState } from 'react';
+import { NewsText } from '@/components/ui/NewsText';
+import { type BlocksContent } from '@strapi/blocks-react-renderer';
 
 type LatestInformations =
   paths['/latest-informations']['get']['responses']['200']['content']['application/json'];
@@ -90,7 +92,9 @@ export default function News({ latestInformations }: Props) {
                       </span>
                     </div>
                     <h2 className="mb-3 text-xl font-bold text-gray-800">{item.title}</h2>
-                    <p className="mb-4 line-clamp-2 text-gray-600">{item.content}</p>
+                    <p className="mb-4 line-clamp-2 text-gray-600">
+                      <NewsText content={item.content as BlocksContent} />
+                    </p>
                     <div className="mt-auto text-center md:text-left">
                       <Link href={`/news/${item.slug}`}>
                         <Button className="min-w-[8rem] rounded-full bg-amber-500 px-4 py-1 text-sm text-white hover:bg-amber-600">
