@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { NewsText } from '@/components/ui/NewsText';
 import { client, detectImageFilepath } from '@/lib/strapi-client';
+import { type BlocksContent } from '@strapi/blocks-react-renderer';
 
 interface PageProps {
   params: Promise<{ id: string }>;
@@ -80,7 +81,7 @@ export default async function NewsDetail(props: PageProps) {
         />
       </div>
       <p className="text-lg leading-relaxed whitespace-pre-wrap text-gray-800">
-        <NewsText text={newsItem.content} />
+        <NewsText content={newsItem.content as BlocksContent} />
       </p>
       <div className="mt-12 flex justify-center">
         <Link href="/news">
