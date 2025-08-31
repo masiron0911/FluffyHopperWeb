@@ -40,7 +40,19 @@ export function NewsText({ content }: Props) {
           }
         },
         link: ({ children, url }) => (
-          <Link href={url} target="_blank" rel="noopener noreferrer" underline="hover">
+          <Link
+            href={url}
+            target="_blank"
+            rel="noopener noreferrer"
+            underline="hover"
+            sx={{
+              display: 'block', // 横幅いっぱいにする
+              maxWidth: '100%', // 親幅に合わせる
+              whiteSpace: 'nowrap', // 改行させない
+              overflow: 'hidden', // はみ出た部分を隠す
+              textOverflow: 'ellipsis', // 末尾に ... を表示
+            }}
+          >
             {children}
           </Link>
         ),
