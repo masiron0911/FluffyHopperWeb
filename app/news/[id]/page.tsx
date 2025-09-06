@@ -80,9 +80,9 @@ export default async function NewsDetail(props: PageProps) {
           basePath={process.env.NEXT_PUBLIC_BASE_PATH}
         />
       </div>
-      <p className="text-lg leading-relaxed whitespace-pre-wrap text-gray-800">
+      <div className="text-lg leading-relaxed whitespace-pre-wrap text-gray-800">
         <NewsText content={newsItem.content as BlocksContent} />
-      </p>
+      </div>
       <div className="mt-12 flex justify-center">
         <Link href="/news">
           <Button variant="outline" className="rounded-full px-6 py-2">

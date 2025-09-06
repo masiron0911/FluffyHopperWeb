@@ -9,6 +9,7 @@ import { client } from '@/lib/strapi-client';
 import { ProductCard } from '@/components/ui/productCard';
 import { ScrollToTopButton } from '@/components/ui/ScrollToTopButton';
 import { SwiperSlider } from '@/components/ui/autoplay-swiper';
+import { detectImageFilepath } from '@/lib/strapi-client';
 
 export default async function Home() {
   // お知らせ最新情報は4件取得
@@ -30,15 +31,14 @@ export default async function Home() {
     params: {
       query: {
         'populate[products][populate]': 'image',
-        populate: 'galleryImages',
+        'populate[galleryImages][populate]': '*',
+        'populate[topImages][populate]': '*',
         fields: '*',
-        pagination: {
-          limit: 4,
-        },
       },
     },
   });
   const popularGoods = resDisplayContents.data?.data?.products;
+  const topImages = resDisplayContents.data?.data?.topImages;
 
   // 表示するキャラクターを設定
   const featuredCharacters: CharacterId[] = ['hanamaru', 'manpuku'];
@@ -49,24 +49,19 @@ export default async function Home() {
       <section className="relative overflow-visible">
         <div className="flex items-center justify-center">
           <SwiperSlider
-            slides={[
-              <Image
-                src="images/character_img/omatsuri2025.png"
-                alt="FluffyHopper キャラクターたち"
-                width={1600}
-                height={800}
-                className=""
-                basePath={process.env.NEXT_PUBLIC_BASE_PATH}
-              />,
-              <Image
-                src="images/character_img/shopcard2024_resize.png"
-                alt="FluffyHopper キャラクターたち"
-                width={1600}
-                height={800}
-                className=""
-                basePath={process.env.NEXT_PUBLIC_BASE_PATH}
-              />,
-            ]}
+            slides={
+              topImages?.map((item) => (
+                <Image
+                  key={item.id}
+                  src={item.url ? detectImageFilepath(item.url) : '/placeholder.svg'}
+                  alt={item.name!}
+                  width={1600}
+                  height={800}
+                  className=""
+                  basePath={process.env.NEXT_PUBLIC_BASE_PATH}
+                />
+              )) || []
+            }
           />
         </div>
       </section>
