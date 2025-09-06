@@ -14,10 +14,13 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2025-08-31T19:16:02.389Z"
+    "x-generation-date": "2025-09-06T15:36:06.791Z"
   },
   "x-strapi-config": {
-    "plugins": ["upload", "users-permissions"]
+    "plugins": [
+      "upload",
+      "users-permissions"
+    ]
   },
   "servers": [
     {
@@ -99,7 +102,9 @@
             }
           }
         },
-        "tags": ["Character"],
+        "tags": [
+          "Character"
+        ],
         "parameters": [
           {
             "name": "sort",
@@ -269,7 +274,9 @@
             }
           }
         },
-        "tags": ["Character"],
+        "tags": [
+          "Character"
+        ],
         "parameters": [],
         "operationId": "post/characters",
         "requestBody": {
@@ -348,7 +355,9 @@
             }
           }
         },
-        "tags": ["Character"],
+        "tags": [
+          "Character"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -426,7 +435,9 @@
             }
           }
         },
-        "tags": ["Character"],
+        "tags": [
+          "Character"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -515,7 +526,9 @@
             }
           }
         },
-        "tags": ["Character"],
+        "tags": [
+          "Character"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -595,7 +608,9 @@
             }
           }
         },
-        "tags": ["Latest-information"],
+        "tags": [
+          "Latest-information"
+        ],
         "parameters": [
           {
             "name": "sort",
@@ -765,7 +780,9 @@
             }
           }
         },
-        "tags": ["Latest-information"],
+        "tags": [
+          "Latest-information"
+        ],
         "parameters": [],
         "operationId": "post/latest-informations",
         "requestBody": {
@@ -844,7 +861,9 @@
             }
           }
         },
-        "tags": ["Latest-information"],
+        "tags": [
+          "Latest-information"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -922,7 +941,9 @@
             }
           }
         },
-        "tags": ["Latest-information"],
+        "tags": [
+          "Latest-information"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -1011,7 +1032,9 @@
             }
           }
         },
-        "tags": ["Latest-information"],
+        "tags": [
+          "Latest-information"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -1091,7 +1114,9 @@
             }
           }
         },
-        "tags": ["Latest-information-tag"],
+        "tags": [
+          "Latest-information-tag"
+        ],
         "parameters": [
           {
             "name": "sort",
@@ -1261,7 +1286,9 @@
             }
           }
         },
-        "tags": ["Latest-information-tag"],
+        "tags": [
+          "Latest-information-tag"
+        ],
         "parameters": [],
         "operationId": "post/latest-information-tags",
         "requestBody": {
@@ -1340,7 +1367,9 @@
             }
           }
         },
-        "tags": ["Latest-information-tag"],
+        "tags": [
+          "Latest-information-tag"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -1418,7 +1447,9 @@
             }
           }
         },
-        "tags": ["Latest-information-tag"],
+        "tags": [
+          "Latest-information-tag"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -1507,7 +1538,9 @@
             }
           }
         },
-        "tags": ["Latest-information-tag"],
+        "tags": [
+          "Latest-information-tag"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -1587,7 +1620,9 @@
             }
           }
         },
-        "tags": ["Product"],
+        "tags": [
+          "Product"
+        ],
         "parameters": [
           {
             "name": "sort",
@@ -1757,7 +1792,9 @@
             }
           }
         },
-        "tags": ["Product"],
+        "tags": [
+          "Product"
+        ],
         "parameters": [],
         "operationId": "post/products",
         "requestBody": {
@@ -1836,7 +1873,9 @@
             }
           }
         },
-        "tags": ["Product"],
+        "tags": [
+          "Product"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -1914,7 +1953,9 @@
             }
           }
         },
-        "tags": ["Product"],
+        "tags": [
+          "Product"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -2003,7 +2044,9 @@
             }
           }
         },
-        "tags": ["Product"],
+        "tags": [
+          "Product"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -2083,7 +2126,9 @@
             }
           }
         },
-        "tags": ["Product-category"],
+        "tags": [
+          "Product-category"
+        ],
         "parameters": [
           {
             "name": "sort",
@@ -2253,7 +2298,9 @@
             }
           }
         },
-        "tags": ["Product-category"],
+        "tags": [
+          "Product-category"
+        ],
         "parameters": [],
         "operationId": "post/product-categories",
         "requestBody": {
@@ -2332,7 +2379,9 @@
             }
           }
         },
-        "tags": ["Product-category"],
+        "tags": [
+          "Product-category"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -2410,7 +2459,9 @@
             }
           }
         },
-        "tags": ["Product-category"],
+        "tags": [
+          "Product-category"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -2499,7 +2550,9 @@
             }
           }
         },
-        "tags": ["Product-category"],
+        "tags": [
+          "Product-category"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -2513,323 +2566,6 @@
           }
         ],
         "operationId": "delete/product-categories/{id}"
-      }
-    },
-    "/test": {
-      "get": {
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/TestResponse"
-                }
-              }
-            }
-          },
-          "400": {
-            "description": "Bad Request",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "401": {
-            "description": "Unauthorized",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "500": {
-            "description": "Internal Server Error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "tags": ["Test"],
-        "parameters": [
-          {
-            "name": "sort",
-            "in": "query",
-            "description": "Sort by attributes ascending (asc) or descending (desc)",
-            "deprecated": false,
-            "required": false,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "pagination[withCount]",
-            "in": "query",
-            "description": "Return page/pageSize (default: true)",
-            "deprecated": false,
-            "required": false,
-            "schema": {
-              "type": "boolean"
-            }
-          },
-          {
-            "name": "pagination[page]",
-            "in": "query",
-            "description": "Page number (default: 0)",
-            "deprecated": false,
-            "required": false,
-            "schema": {
-              "type": "integer"
-            }
-          },
-          {
-            "name": "pagination[pageSize]",
-            "in": "query",
-            "description": "Page size (default: 25)",
-            "deprecated": false,
-            "required": false,
-            "schema": {
-              "type": "integer"
-            }
-          },
-          {
-            "name": "pagination[start]",
-            "in": "query",
-            "description": "Offset value (default: 0)",
-            "deprecated": false,
-            "required": false,
-            "schema": {
-              "type": "integer"
-            }
-          },
-          {
-            "name": "pagination[limit]",
-            "in": "query",
-            "description": "Number of entities to return (default: 25)",
-            "deprecated": false,
-            "required": false,
-            "schema": {
-              "type": "integer"
-            }
-          },
-          {
-            "name": "fields",
-            "in": "query",
-            "description": "Fields to return (ex: title,author)",
-            "deprecated": false,
-            "required": false,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "populate",
-            "in": "query",
-            "description": "Relations to return",
-            "deprecated": false,
-            "required": false,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "filters",
-            "in": "query",
-            "description": "Filters to apply",
-            "deprecated": false,
-            "required": false,
-            "schema": {
-              "type": "object",
-              "additionalProperties": true
-            },
-            "style": "deepObject"
-          },
-          {
-            "name": "locale",
-            "in": "query",
-            "description": "Locale to apply",
-            "deprecated": false,
-            "required": false,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "operationId": "get/test"
-      },
-      "put": {
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/TestResponse"
-                }
-              }
-            }
-          },
-          "400": {
-            "description": "Bad Request",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "401": {
-            "description": "Unauthorized",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "500": {
-            "description": "Internal Server Error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "tags": ["Test"],
-        "parameters": [],
-        "operationId": "put/test",
-        "requestBody": {
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/TestRequest"
-              }
-            }
-          }
-        }
-      },
-      "delete": {
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "integer",
-                  "format": "int64"
-                }
-              }
-            }
-          },
-          "400": {
-            "description": "Bad Request",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "401": {
-            "description": "Unauthorized",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "500": {
-            "description": "Internal Server Error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "tags": ["Test"],
-        "parameters": [],
-        "operationId": "delete/test"
       }
     },
     "/top-display-content": {
@@ -2896,7 +2632,9 @@
             }
           }
         },
-        "tags": ["Top-display-content"],
+        "tags": [
+          "Top-display-content"
+        ],
         "parameters": [
           {
             "name": "sort",
@@ -3066,7 +2804,9 @@
             }
           }
         },
-        "tags": ["Top-display-content"],
+        "tags": [
+          "Top-display-content"
+        ],
         "parameters": [],
         "operationId": "put/top-display-content",
         "requestBody": {
@@ -3144,7 +2884,9 @@
             }
           }
         },
-        "tags": ["Top-display-content"],
+        "tags": [
+          "Top-display-content"
+        ],
         "parameters": [],
         "operationId": "delete/top-display-content"
       }
@@ -3168,14 +2910,18 @@
           }
         },
         "summary": "",
-        "tags": ["Upload - File"],
+        "tags": [
+          "Upload - File"
+        ],
         "requestBody": {
           "description": "Upload files",
           "required": true,
           "content": {
             "multipart/form-data": {
               "schema": {
-                "required": ["files"],
+                "required": [
+                  "files"
+                ],
                 "type": "object",
                 "properties": {
                   "path": {
@@ -3238,7 +2984,9 @@
           }
         },
         "summary": "",
-        "tags": ["Upload - File"],
+        "tags": [
+          "Upload - File"
+        ],
         "requestBody": {
           "description": "Upload files",
           "required": true,
@@ -3274,7 +3022,9 @@
     },
     "/upload/files": {
       "get": {
-        "tags": ["Upload - File"],
+        "tags": [
+          "Upload - File"
+        ],
         "responses": {
           "200": {
             "description": "Get a list of files",
@@ -3306,7 +3056,9 @@
             }
           }
         ],
-        "tags": ["Upload - File"],
+        "tags": [
+          "Upload - File"
+        ],
         "responses": {
           "200": {
             "description": "Get a specific file",
@@ -3333,7 +3085,9 @@
             }
           }
         ],
-        "tags": ["Upload - File"],
+        "tags": [
+          "Upload - File"
+        ],
         "responses": {
           "200": {
             "description": "Delete a file",
@@ -3362,7 +3116,9 @@
             }
           }
         ],
-        "tags": ["Users-Permissions - Auth"],
+        "tags": [
+          "Users-Permissions - Auth"
+        ],
         "summary": "Login with a provider",
         "description": "Redirects to provider login before being redirect to /auth/{provider}/callback",
         "responses": {
@@ -3384,7 +3140,9 @@
     },
     "/auth/local": {
       "post": {
-        "tags": ["Users-Permissions - Auth"],
+        "tags": [
+          "Users-Permissions - Auth"
+        ],
         "summary": "Local login",
         "description": "Returns a jwt token and user info",
         "requestBody": {
@@ -3435,7 +3193,9 @@
     },
     "/auth/local/register": {
       "post": {
-        "tags": ["Users-Permissions - Auth"],
+        "tags": [
+          "Users-Permissions - Auth"
+        ],
         "summary": "Register a user",
         "description": "Returns a jwt token and user info",
         "requestBody": {
@@ -3490,7 +3250,9 @@
     },
     "/auth/{provider}/callback": {
       "get": {
-        "tags": ["Users-Permissions - Auth"],
+        "tags": [
+          "Users-Permissions - Auth"
+        ],
         "summary": "Default Callback from provider auth",
         "parameters": [
           {
@@ -3529,7 +3291,9 @@
     },
     "/auth/forgot-password": {
       "post": {
-        "tags": ["Users-Permissions - Auth"],
+        "tags": [
+          "Users-Permissions - Auth"
+        ],
         "summary": "Send rest password email",
         "requestBody": {
           "required": true,
@@ -3559,7 +3323,9 @@
                   "properties": {
                     "ok": {
                       "type": "string",
-                      "enum": [true]
+                      "enum": [
+                        true
+                      ]
                     }
                   }
                 }
@@ -3581,7 +3347,9 @@
     },
     "/auth/reset-password": {
       "post": {
-        "tags": ["Users-Permissions - Auth"],
+        "tags": [
+          "Users-Permissions - Auth"
+        ],
         "summary": "Rest user password",
         "requestBody": {
           "required": true,
@@ -3635,7 +3403,9 @@
     },
     "/auth/change-password": {
       "post": {
-        "tags": ["Users-Permissions - Auth"],
+        "tags": [
+          "Users-Permissions - Auth"
+        ],
         "summary": "Update user's own password",
         "requestBody": {
           "required": true,
@@ -3643,7 +3413,11 @@
             "application/json": {
               "schema": {
                 "type": "object",
-                "required": ["password", "currentPassword", "passwordConfirmation"],
+                "required": [
+                  "password",
+                  "currentPassword",
+                  "passwordConfirmation"
+                ],
                 "properties": {
                   "password": {
                     "type": "string"
@@ -3685,7 +3459,9 @@
     },
     "/auth/email-confirmation": {
       "get": {
-        "tags": ["Users-Permissions - Auth"],
+        "tags": [
+          "Users-Permissions - Auth"
+        ],
         "summary": "Confirm user email",
         "parameters": [
           {
@@ -3716,7 +3492,9 @@
     },
     "/auth/send-email-confirmation": {
       "post": {
-        "tags": ["Users-Permissions - Auth"],
+        "tags": [
+          "Users-Permissions - Auth"
+        ],
         "summary": "Send confirmation email",
         "requestBody": {
           "required": true,
@@ -3746,7 +3524,9 @@
                     },
                     "sent": {
                       "type": "string",
-                      "enum": [true]
+                      "enum": [
+                        true
+                      ]
                     }
                   }
                 }
@@ -3768,7 +3548,9 @@
     },
     "/users-permissions/permissions": {
       "get": {
-        "tags": ["Users-Permissions - Users & Roles"],
+        "tags": [
+          "Users-Permissions - Users & Roles"
+        ],
         "summary": "Get default generated permissions",
         "responses": {
           "200": {
@@ -3837,7 +3619,9 @@
     },
     "/users-permissions/roles": {
       "get": {
-        "tags": ["Users-Permissions - Users & Roles"],
+        "tags": [
+          "Users-Permissions - Users & Roles"
+        ],
         "summary": "List roles",
         "responses": {
           "200": {
@@ -3896,7 +3680,9 @@
         }
       },
       "post": {
-        "tags": ["Users-Permissions - Users & Roles"],
+        "tags": [
+          "Users-Permissions - Users & Roles"
+        ],
         "summary": "Create a role",
         "requestBody": {
           "$ref": "#/components/requestBodies/Users-Permissions-RoleRequest"
@@ -3911,7 +3697,9 @@
                   "properties": {
                     "ok": {
                       "type": "string",
-                      "enum": [true]
+                      "enum": [
+                        true
+                      ]
                     }
                   }
                 }
@@ -3933,7 +3721,9 @@
     },
     "/users-permissions/roles/{id}": {
       "get": {
-        "tags": ["Users-Permissions - Users & Roles"],
+        "tags": [
+          "Users-Permissions - Users & Roles"
+        ],
         "summary": "Get a role",
         "parameters": [
           {
@@ -3998,7 +3788,9 @@
     },
     "/users-permissions/roles/{role}": {
       "put": {
-        "tags": ["Users-Permissions - Users & Roles"],
+        "tags": [
+          "Users-Permissions - Users & Roles"
+        ],
         "summary": "Update a role",
         "parameters": [
           {
@@ -4024,7 +3816,9 @@
                   "properties": {
                     "ok": {
                       "type": "string",
-                      "enum": [true]
+                      "enum": [
+                        true
+                      ]
                     }
                   }
                 }
@@ -4044,7 +3838,9 @@
         }
       },
       "delete": {
-        "tags": ["Users-Permissions - Users & Roles"],
+        "tags": [
+          "Users-Permissions - Users & Roles"
+        ],
         "summary": "Delete a role",
         "parameters": [
           {
@@ -4067,7 +3863,9 @@
                   "properties": {
                     "ok": {
                       "type": "string",
-                      "enum": [true]
+                      "enum": [
+                        true
+                      ]
                     }
                   }
                 }
@@ -4089,7 +3887,9 @@
     },
     "/users": {
       "get": {
-        "tags": ["Users-Permissions - Users & Roles"],
+        "tags": [
+          "Users-Permissions - Users & Roles"
+        ],
         "summary": "Get list of users",
         "responses": {
           "200": {
@@ -4130,7 +3930,9 @@
         }
       },
       "post": {
-        "tags": ["Users-Permissions - Users & Roles"],
+        "tags": [
+          "Users-Permissions - Users & Roles"
+        ],
         "summary": "Create a user",
         "requestBody": {
           "required": true,
@@ -4138,7 +3940,11 @@
             "application/json": {
               "schema": {
                 "type": "object",
-                "required": ["username", "email", "password"],
+                "required": [
+                  "username",
+                  "email",
+                  "password"
+                ],
                 "properties": {
                   "email": {
                     "type": "string"
@@ -4215,7 +4021,9 @@
     },
     "/users/{id}": {
       "get": {
-        "tags": ["Users-Permissions - Users & Roles"],
+        "tags": [
+          "Users-Permissions - Users & Roles"
+        ],
         "summary": "Get a user",
         "parameters": [
           {
@@ -4262,7 +4070,9 @@
         }
       },
       "put": {
-        "tags": ["Users-Permissions - Users & Roles"],
+        "tags": [
+          "Users-Permissions - Users & Roles"
+        ],
         "summary": "Update a user",
         "parameters": [
           {
@@ -4281,7 +4091,11 @@
             "application/json": {
               "schema": {
                 "type": "object",
-                "required": ["username", "email", "password"],
+                "required": [
+                  "username",
+                  "email",
+                  "password"
+                ],
                 "properties": {
                   "email": {
                     "type": "string"
@@ -4356,7 +4170,9 @@
         }
       },
       "delete": {
-        "tags": ["Users-Permissions - Users & Roles"],
+        "tags": [
+          "Users-Permissions - Users & Roles"
+        ],
         "summary": "Delete a user",
         "parameters": [
           {
@@ -4409,7 +4225,9 @@
     },
     "/users/me": {
       "get": {
-        "tags": ["Users-Permissions - Users & Roles"],
+        "tags": [
+          "Users-Permissions - Users & Roles"
+        ],
         "summary": "Get authenticated user info",
         "responses": {
           "200": {
@@ -4447,7 +4265,9 @@
     },
     "/users/count": {
       "get": {
-        "tags": ["Users-Permissions - Users & Roles"],
+        "tags": [
+          "Users-Permissions - Users & Roles"
+        ],
         "summary": "Get user count",
         "responses": {
           "200": {
@@ -4486,7 +4306,9 @@
     "schemas": {
       "Error": {
         "type": "object",
-        "required": ["error"],
+        "required": [
+          "error"
+        ],
         "properties": {
           "data": {
             "nullable": true,
@@ -4523,10 +4345,14 @@
       },
       "CharacterRequest": {
         "type": "object",
-        "required": ["data"],
+        "required": [
+          "data"
+        ],
         "properties": {
           "data": {
-            "required": ["name"],
+            "required": [
+              "name"
+            ],
             "type": "object",
             "properties": {
               "name": {
@@ -4604,7 +4430,9 @@
       },
       "Character": {
         "type": "object",
-        "required": ["name"],
+        "required": [
+          "name"
+        ],
         "properties": {
           "id": {
             "type": "number"
@@ -5468,10 +5296,18 @@
       },
       "LatestInformationRequest": {
         "type": "object",
-        "required": ["data"],
+        "required": [
+          "data"
+        ],
         "properties": {
           "data": {
-            "required": ["title", "date", "tag", "slug", "content"],
+            "required": [
+              "title",
+              "date",
+              "tag",
+              "slug",
+              "content"
+            ],
             "type": "object",
             "properties": {
               "title": {
@@ -5565,7 +5401,13 @@
       },
       "LatestInformation": {
         "type": "object",
-        "required": ["title", "date", "tag", "slug", "content"],
+        "required": [
+          "title",
+          "date",
+          "tag",
+          "slug",
+          "content"
+        ],
         "properties": {
           "id": {
             "type": "number"
@@ -6515,10 +6357,14 @@
       },
       "LatestInformationTagRequest": {
         "type": "object",
-        "required": ["data"],
+        "required": [
+          "data"
+        ],
         "properties": {
           "data": {
-            "required": ["name"],
+            "required": [
+              "name"
+            ],
             "type": "object",
             "properties": {
               "name": {
@@ -6582,7 +6428,9 @@
       },
       "LatestInformationTag": {
         "type": "object",
-        "required": ["name"],
+        "required": [
+          "name"
+        ],
         "properties": {
           "id": {
             "type": "number"
@@ -6965,10 +6813,15 @@
       },
       "ProductRequest": {
         "type": "object",
-        "required": ["data"],
+        "required": [
+          "data"
+        ],
         "properties": {
           "data": {
-            "required": ["name", "slug"],
+            "required": [
+              "name",
+              "slug"
+            ],
             "type": "object",
             "properties": {
               "name": {
@@ -7080,7 +6933,10 @@
       },
       "Product": {
         "type": "object",
-        "required": ["name", "slug"],
+        "required": [
+          "name",
+          "slug"
+        ],
         "properties": {
           "id": {
             "type": "number"
@@ -8252,10 +8108,14 @@
       },
       "ProductCategoryRequest": {
         "type": "object",
-        "required": ["data"],
+        "required": [
+          "data"
+        ],
         "properties": {
           "data": {
-            "required": ["name"],
+            "required": [
+              "name"
+            ],
             "type": "object",
             "properties": {
               "name": {
@@ -8319,7 +8179,9 @@
       },
       "ProductCategory": {
         "type": "object",
-        "required": ["name"],
+        "required": [
+          "name"
+        ],
         "properties": {
           "id": {
             "type": "number"
@@ -8700,463 +8562,16 @@
           }
         }
       },
-      "TestRequest": {
-        "type": "object",
-        "required": ["data"],
-        "properties": {
-          "data": {
-            "type": "object",
-            "properties": {
-              "news": {
-                "type": "string"
-              },
-              "news2": {},
-              "locale": {
-                "type": "string"
-              },
-              "localizations": {
-                "type": "array",
-                "items": {
-                  "oneOf": [
-                    {
-                      "type": "integer"
-                    },
-                    {
-                      "type": "string"
-                    }
-                  ],
-                  "example": "string or id"
-                }
-              }
-            }
-          }
-        }
-      },
-      "TestListResponse": {
-        "type": "object",
-        "properties": {
-          "data": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Test"
-            }
-          },
-          "meta": {
-            "type": "object",
-            "properties": {
-              "pagination": {
-                "type": "object",
-                "properties": {
-                  "page": {
-                    "type": "integer"
-                  },
-                  "pageSize": {
-                    "type": "integer",
-                    "minimum": 25
-                  },
-                  "pageCount": {
-                    "type": "integer",
-                    "maximum": 1
-                  },
-                  "total": {
-                    "type": "integer"
-                  }
-                }
-              }
-            }
-          }
-        }
-      },
-      "Test": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "number"
-          },
-          "documentId": {
-            "type": "string"
-          },
-          "news": {
-            "type": "string"
-          },
-          "news2": {},
-          "createdAt": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "updatedAt": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "publishedAt": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "createdBy": {
-            "type": "object",
-            "properties": {
-              "id": {
-                "type": "number"
-              },
-              "documentId": {
-                "type": "string"
-              },
-              "firstname": {
-                "type": "string"
-              },
-              "lastname": {
-                "type": "string"
-              },
-              "username": {
-                "type": "string"
-              },
-              "email": {
-                "type": "string",
-                "format": "email"
-              },
-              "resetPasswordToken": {
-                "type": "string"
-              },
-              "registrationToken": {
-                "type": "string"
-              },
-              "isActive": {
-                "type": "boolean"
-              },
-              "roles": {
-                "type": "array",
-                "items": {
-                  "type": "object",
-                  "properties": {
-                    "id": {
-                      "type": "number"
-                    },
-                    "documentId": {
-                      "type": "string"
-                    },
-                    "name": {
-                      "type": "string"
-                    },
-                    "code": {
-                      "type": "string"
-                    },
-                    "description": {
-                      "type": "string"
-                    },
-                    "users": {
-                      "type": "array",
-                      "items": {
-                        "type": "object",
-                        "properties": {
-                          "id": {
-                            "type": "number"
-                          },
-                          "documentId": {
-                            "type": "string"
-                          }
-                        }
-                      }
-                    },
-                    "permissions": {
-                      "type": "array",
-                      "items": {
-                        "type": "object",
-                        "properties": {
-                          "id": {
-                            "type": "number"
-                          },
-                          "documentId": {
-                            "type": "string"
-                          },
-                          "action": {
-                            "type": "string"
-                          },
-                          "actionParameters": {},
-                          "subject": {
-                            "type": "string"
-                          },
-                          "properties": {},
-                          "conditions": {},
-                          "role": {
-                            "type": "object",
-                            "properties": {
-                              "id": {
-                                "type": "number"
-                              },
-                              "documentId": {
-                                "type": "string"
-                              }
-                            }
-                          },
-                          "createdAt": {
-                            "type": "string",
-                            "format": "date-time"
-                          },
-                          "updatedAt": {
-                            "type": "string",
-                            "format": "date-time"
-                          },
-                          "publishedAt": {
-                            "type": "string",
-                            "format": "date-time"
-                          },
-                          "createdBy": {
-                            "type": "object",
-                            "properties": {
-                              "id": {
-                                "type": "number"
-                              },
-                              "documentId": {
-                                "type": "string"
-                              }
-                            }
-                          },
-                          "updatedBy": {
-                            "type": "object",
-                            "properties": {
-                              "id": {
-                                "type": "number"
-                              },
-                              "documentId": {
-                                "type": "string"
-                              }
-                            }
-                          },
-                          "locale": {
-                            "type": "string"
-                          },
-                          "localizations": {
-                            "type": "array",
-                            "items": {
-                              "type": "object",
-                              "properties": {
-                                "id": {
-                                  "type": "number"
-                                },
-                                "documentId": {
-                                  "type": "string"
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
-                    },
-                    "createdAt": {
-                      "type": "string",
-                      "format": "date-time"
-                    },
-                    "updatedAt": {
-                      "type": "string",
-                      "format": "date-time"
-                    },
-                    "publishedAt": {
-                      "type": "string",
-                      "format": "date-time"
-                    },
-                    "createdBy": {
-                      "type": "object",
-                      "properties": {
-                        "id": {
-                          "type": "number"
-                        },
-                        "documentId": {
-                          "type": "string"
-                        }
-                      }
-                    },
-                    "updatedBy": {
-                      "type": "object",
-                      "properties": {
-                        "id": {
-                          "type": "number"
-                        },
-                        "documentId": {
-                          "type": "string"
-                        }
-                      }
-                    },
-                    "locale": {
-                      "type": "string"
-                    },
-                    "localizations": {
-                      "type": "array",
-                      "items": {
-                        "type": "object",
-                        "properties": {
-                          "id": {
-                            "type": "number"
-                          },
-                          "documentId": {
-                            "type": "string"
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              },
-              "blocked": {
-                "type": "boolean"
-              },
-              "preferedLanguage": {
-                "type": "string"
-              },
-              "createdAt": {
-                "type": "string",
-                "format": "date-time"
-              },
-              "updatedAt": {
-                "type": "string",
-                "format": "date-time"
-              },
-              "publishedAt": {
-                "type": "string",
-                "format": "date-time"
-              },
-              "createdBy": {
-                "type": "object",
-                "properties": {
-                  "id": {
-                    "type": "number"
-                  },
-                  "documentId": {
-                    "type": "string"
-                  }
-                }
-              },
-              "updatedBy": {
-                "type": "object",
-                "properties": {
-                  "id": {
-                    "type": "number"
-                  },
-                  "documentId": {
-                    "type": "string"
-                  }
-                }
-              },
-              "locale": {
-                "type": "string"
-              },
-              "localizations": {
-                "type": "array",
-                "items": {
-                  "type": "object",
-                  "properties": {
-                    "id": {
-                      "type": "number"
-                    },
-                    "documentId": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "updatedBy": {
-            "type": "object",
-            "properties": {
-              "id": {
-                "type": "number"
-              },
-              "documentId": {
-                "type": "string"
-              }
-            }
-          },
-          "locale": {
-            "type": "string"
-          },
-          "localizations": {
-            "type": "array",
-            "items": {
-              "type": "object",
-              "properties": {
-                "id": {
-                  "type": "number"
-                },
-                "documentId": {
-                  "type": "string"
-                },
-                "news": {
-                  "type": "string"
-                },
-                "news2": {},
-                "createdAt": {
-                  "type": "string",
-                  "format": "date-time"
-                },
-                "updatedAt": {
-                  "type": "string",
-                  "format": "date-time"
-                },
-                "publishedAt": {
-                  "type": "string",
-                  "format": "date-time"
-                },
-                "createdBy": {
-                  "type": "object",
-                  "properties": {
-                    "id": {
-                      "type": "number"
-                    },
-                    "documentId": {
-                      "type": "string"
-                    }
-                  }
-                },
-                "updatedBy": {
-                  "type": "object",
-                  "properties": {
-                    "id": {
-                      "type": "number"
-                    },
-                    "documentId": {
-                      "type": "string"
-                    }
-                  }
-                },
-                "locale": {
-                  "type": "string"
-                },
-                "localizations": {
-                  "type": "array",
-                  "items": {
-                    "type": "object",
-                    "properties": {
-                      "id": {
-                        "type": "number"
-                      },
-                      "documentId": {
-                        "type": "string"
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      },
-      "TestResponse": {
-        "type": "object",
-        "properties": {
-          "data": {
-            "$ref": "#/components/schemas/Test"
-          },
-          "meta": {
-            "type": "object"
-          }
-        }
-      },
       "TopDisplayContentRequest": {
         "type": "object",
-        "required": ["data"],
+        "required": [
+          "data"
+        ],
         "properties": {
           "data": {
-            "required": ["galleryImages"],
+            "required": [
+              "galleryImages"
+            ],
             "type": "object",
             "properties": {
               "products": {
@@ -9174,6 +8589,20 @@
                 }
               },
               "galleryImages": {
+                "type": "array",
+                "items": {
+                  "oneOf": [
+                    {
+                      "type": "integer"
+                    },
+                    {
+                      "type": "string"
+                    }
+                  ],
+                  "example": "string or id"
+                }
+              },
+              "topImages": {
                 "type": "array",
                 "items": {
                   "oneOf": [
@@ -9245,7 +8674,9 @@
       },
       "TopDisplayContent": {
         "type": "object",
-        "required": ["galleryImages"],
+        "required": [
+          "galleryImages"
+        ],
         "properties": {
           "id": {
             "type": "number"
@@ -10328,6 +9759,138 @@
               }
             }
           },
+          "topImages": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "number"
+                },
+                "documentId": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "alternativeText": {
+                  "type": "string"
+                },
+                "caption": {
+                  "type": "string"
+                },
+                "width": {
+                  "type": "integer"
+                },
+                "height": {
+                  "type": "integer"
+                },
+                "formats": {},
+                "hash": {
+                  "type": "string"
+                },
+                "ext": {
+                  "type": "string"
+                },
+                "mime": {
+                  "type": "string"
+                },
+                "size": {
+                  "type": "number",
+                  "format": "float"
+                },
+                "url": {
+                  "type": "string"
+                },
+                "previewUrl": {
+                  "type": "string"
+                },
+                "provider": {
+                  "type": "string"
+                },
+                "provider_metadata": {},
+                "related": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "number"
+                      },
+                      "documentId": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                },
+                "folder": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "number"
+                    },
+                    "documentId": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "folderPath": {
+                  "type": "string"
+                },
+                "createdAt": {
+                  "type": "string",
+                  "format": "date-time"
+                },
+                "updatedAt": {
+                  "type": "string",
+                  "format": "date-time"
+                },
+                "publishedAt": {
+                  "type": "string",
+                  "format": "date-time"
+                },
+                "createdBy": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "number"
+                    },
+                    "documentId": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "updatedBy": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "number"
+                    },
+                    "documentId": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "locale": {
+                  "type": "string"
+                },
+                "localizations": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "number"
+                      },
+                      "documentId": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
           "createdAt": {
             "type": "string",
             "format": "date-time"
@@ -10391,6 +9954,138 @@
                   }
                 },
                 "galleryImages": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "number"
+                      },
+                      "documentId": {
+                        "type": "string"
+                      },
+                      "name": {
+                        "type": "string"
+                      },
+                      "alternativeText": {
+                        "type": "string"
+                      },
+                      "caption": {
+                        "type": "string"
+                      },
+                      "width": {
+                        "type": "integer"
+                      },
+                      "height": {
+                        "type": "integer"
+                      },
+                      "formats": {},
+                      "hash": {
+                        "type": "string"
+                      },
+                      "ext": {
+                        "type": "string"
+                      },
+                      "mime": {
+                        "type": "string"
+                      },
+                      "size": {
+                        "type": "number",
+                        "format": "float"
+                      },
+                      "url": {
+                        "type": "string"
+                      },
+                      "previewUrl": {
+                        "type": "string"
+                      },
+                      "provider": {
+                        "type": "string"
+                      },
+                      "provider_metadata": {},
+                      "related": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "id": {
+                              "type": "number"
+                            },
+                            "documentId": {
+                              "type": "string"
+                            }
+                          }
+                        }
+                      },
+                      "folder": {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "number"
+                          },
+                          "documentId": {
+                            "type": "string"
+                          }
+                        }
+                      },
+                      "folderPath": {
+                        "type": "string"
+                      },
+                      "createdAt": {
+                        "type": "string",
+                        "format": "date-time"
+                      },
+                      "updatedAt": {
+                        "type": "string",
+                        "format": "date-time"
+                      },
+                      "publishedAt": {
+                        "type": "string",
+                        "format": "date-time"
+                      },
+                      "createdBy": {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "number"
+                          },
+                          "documentId": {
+                            "type": "string"
+                          }
+                        }
+                      },
+                      "updatedBy": {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "number"
+                          },
+                          "documentId": {
+                            "type": "string"
+                          }
+                        }
+                      },
+                      "locale": {
+                        "type": "string"
+                      },
+                      "localizations": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "id": {
+                              "type": "number"
+                            },
+                            "documentId": {
+                              "type": "string"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "topImages": {
                   "type": "array",
                   "items": {
                     "type": "object",
