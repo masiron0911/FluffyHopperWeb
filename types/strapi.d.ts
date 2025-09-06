@@ -4,5791 +4,5791 @@
  */
 
 export interface paths {
-    "/characters": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get: operations["get/characters"];
-        put?: never;
-        post: operations["post/characters"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
+  '/characters': {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
     };
-    "/characters/{id}": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get: operations["get/characters/{id}"];
-        put: operations["put/characters/{id}"];
-        post?: never;
-        delete: operations["delete/characters/{id}"];
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
+    get: operations['get/characters'];
+    put?: never;
+    post: operations['post/characters'];
+    delete?: never;
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
+  '/characters/{id}': {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
     };
-    "/latest-informations": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get: operations["get/latest-informations"];
-        put?: never;
-        post: operations["post/latest-informations"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
+    get: operations['get/characters/{id}'];
+    put: operations['put/characters/{id}'];
+    post?: never;
+    delete: operations['delete/characters/{id}'];
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
+  '/latest-informations': {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
     };
-    "/latest-informations/{id}": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get: operations["get/latest-informations/{id}"];
-        put: operations["put/latest-informations/{id}"];
-        post?: never;
-        delete: operations["delete/latest-informations/{id}"];
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
+    get: operations['get/latest-informations'];
+    put?: never;
+    post: operations['post/latest-informations'];
+    delete?: never;
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
+  '/latest-informations/{id}': {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
     };
-    "/latest-information-tags": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get: operations["get/latest-information-tags"];
-        put?: never;
-        post: operations["post/latest-information-tags"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
+    get: operations['get/latest-informations/{id}'];
+    put: operations['put/latest-informations/{id}'];
+    post?: never;
+    delete: operations['delete/latest-informations/{id}'];
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
+  '/latest-information-tags': {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
     };
-    "/latest-information-tags/{id}": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get: operations["get/latest-information-tags/{id}"];
-        put: operations["put/latest-information-tags/{id}"];
-        post?: never;
-        delete: operations["delete/latest-information-tags/{id}"];
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
+    get: operations['get/latest-information-tags'];
+    put?: never;
+    post: operations['post/latest-information-tags'];
+    delete?: never;
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
+  '/latest-information-tags/{id}': {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
     };
-    "/products": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get: operations["get/products"];
-        put?: never;
-        post: operations["post/products"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
+    get: operations['get/latest-information-tags/{id}'];
+    put: operations['put/latest-information-tags/{id}'];
+    post?: never;
+    delete: operations['delete/latest-information-tags/{id}'];
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
+  '/products': {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
     };
-    "/products/{id}": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get: operations["get/products/{id}"];
-        put: operations["put/products/{id}"];
-        post?: never;
-        delete: operations["delete/products/{id}"];
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
+    get: operations['get/products'];
+    put?: never;
+    post: operations['post/products'];
+    delete?: never;
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
+  '/products/{id}': {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
     };
-    "/product-categories": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get: operations["get/product-categories"];
-        put?: never;
-        post: operations["post/product-categories"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
+    get: operations['get/products/{id}'];
+    put: operations['put/products/{id}'];
+    post?: never;
+    delete: operations['delete/products/{id}'];
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
+  '/product-categories': {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
     };
-    "/product-categories/{id}": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get: operations["get/product-categories/{id}"];
-        put: operations["put/product-categories/{id}"];
-        post?: never;
-        delete: operations["delete/product-categories/{id}"];
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
+    get: operations['get/product-categories'];
+    put?: never;
+    post: operations['post/product-categories'];
+    delete?: never;
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
+  '/product-categories/{id}': {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
     };
-    "/top-display-content": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get: operations["get/top-display-content"];
-        put: operations["put/top-display-content"];
-        post?: never;
-        delete: operations["delete/top-display-content"];
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
+    get: operations['get/product-categories/{id}'];
+    put: operations['put/product-categories/{id}'];
+    post?: never;
+    delete: operations['delete/product-categories/{id}'];
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
+  '/top-display-content': {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
     };
-    "/upload": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        /** @description Upload files */
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            /** @description Upload files */
-            requestBody: {
-                content: {
-                    "multipart/form-data": {
-                        /** @description The folder where the file(s) will be uploaded to (only supported on strapi-provider-upload-aws-s3). */
-                        path?: string;
-                        /** @description The ID of the entry which the file(s) will be linked to */
-                        refId?: string;
-                        /** @description The unique ID (uid) of the model which the file(s) will be linked to (api::restaurant.restaurant). */
-                        ref?: string;
-                        /** @description The field of the entry which the file(s) will be precisely linked to. */
-                        field?: string;
-                        files: string[];
-                    };
-                };
-            };
-            responses: {
-                /** @description response */
-                200: {
-                    headers: {
-                        [name: string]: unknown;
-                    };
-                    content: {
-                        "application/json": components["schemas"]["UploadFile"][];
-                    };
-                };
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
+    get: operations['get/top-display-content'];
+    put: operations['put/top-display-content'];
+    post?: never;
+    delete: operations['delete/top-display-content'];
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
+  '/upload': {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
     };
-    "/upload?id={id}": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
+    get?: never;
+    put?: never;
+    /** @description Upload files */
+    post: {
+      parameters: {
+        query?: never;
+        header?: never;
+        path?: never;
+        cookie?: never;
+      };
+      /** @description Upload files */
+      requestBody: {
+        content: {
+          'multipart/form-data': {
+            /** @description The folder where the file(s) will be uploaded to (only supported on strapi-provider-upload-aws-s3). */
+            path?: string;
+            /** @description The ID of the entry which the file(s) will be linked to */
+            refId?: string;
+            /** @description The unique ID (uid) of the model which the file(s) will be linked to (api::restaurant.restaurant). */
+            ref?: string;
+            /** @description The field of the entry which the file(s) will be precisely linked to. */
+            field?: string;
+            files: string[];
+          };
         };
-        get?: never;
-        put?: never;
-        /** @description Upload file information */
-        post: {
-            parameters: {
-                query: {
-                    /** @description File id */
-                    id: string;
-                };
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            /** @description Upload files */
-            requestBody: {
-                content: {
-                    "multipart/form-data": {
-                        fileInfo?: {
-                            name?: string;
-                            alternativeText?: string;
-                            caption?: string;
-                        };
-                        /** Format: binary */
-                        files?: string;
-                    };
-                };
-            };
-            responses: {
-                /** @description response */
-                200: {
-                    headers: {
-                        [name: string]: unknown;
-                    };
-                    content: {
-                        "application/json": components["schemas"]["UploadFile"][];
-                    };
-                };
-            };
+      };
+      responses: {
+        /** @description response */
+        200: {
+          headers: {
+            [name: string]: unknown;
+          };
+          content: {
+            'application/json': components['schemas']['UploadFile'][];
+          };
         };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
+      };
     };
-    "/upload/files": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: never;
-            responses: {
-                /** @description Get a list of files */
-                200: {
-                    headers: {
-                        [name: string]: unknown;
-                    };
-                    content: {
-                        "application/json": components["schemas"]["UploadFile"][];
-                    };
-                };
-            };
-        };
-        put?: never;
-        post?: never;
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
+    delete?: never;
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
+  '/upload?id={id}': {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
     };
-    "/upload/files/{id}": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
+    get?: never;
+    put?: never;
+    /** @description Upload file information */
+    post: {
+      parameters: {
+        query: {
+          /** @description File id */
+          id: string;
         };
-        get: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path: {
-                    id: string;
-                };
-                cookie?: never;
+        header?: never;
+        path?: never;
+        cookie?: never;
+      };
+      /** @description Upload files */
+      requestBody: {
+        content: {
+          'multipart/form-data': {
+            fileInfo?: {
+              name?: string;
+              alternativeText?: string;
+              caption?: string;
             };
-            requestBody?: never;
-            responses: {
-                /** @description Get a specific file */
-                200: {
-                    headers: {
-                        [name: string]: unknown;
-                    };
-                    content: {
-                        "application/json": components["schemas"]["UploadFile"];
-                    };
-                };
-            };
+            /** Format: binary */
+            files?: string;
+          };
         };
-        put?: never;
-        post?: never;
-        delete: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path: {
-                    id: string;
-                };
-                cookie?: never;
-            };
-            requestBody?: never;
-            responses: {
-                /** @description Delete a file */
-                200: {
-                    headers: {
-                        [name: string]: unknown;
-                    };
-                    content: {
-                        "application/json": components["schemas"]["UploadFile"];
-                    };
-                };
-            };
+      };
+      responses: {
+        /** @description response */
+        200: {
+          headers: {
+            [name: string]: unknown;
+          };
+          content: {
+            'application/json': components['schemas']['UploadFile'][];
+          };
         };
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
+      };
     };
-    "/connect/{provider}": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        /**
-         * Login with a provider
-         * @description Redirects to provider login before being redirect to /auth/{provider}/callback
-         */
-        get: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path: {
-                    /** @description Provider name */
-                    provider: string;
-                };
-                cookie?: never;
-            };
-            requestBody?: never;
-            responses: {
-                /** @description Redirect response */
-                301: {
-                    headers: {
-                        [name: string]: unknown;
-                    };
-                    content?: never;
-                };
-                /** @description Error */
-                default: {
-                    headers: {
-                        [name: string]: unknown;
-                    };
-                    content: {
-                        "application/json": components["schemas"]["Error"];
-                    };
-                };
-            };
-        };
-        put?: never;
-        post?: never;
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
+    delete?: never;
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
+  '/upload/files': {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
     };
-    "/auth/local": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
+    get: {
+      parameters: {
+        query?: never;
+        header?: never;
+        path?: never;
+        cookie?: never;
+      };
+      requestBody?: never;
+      responses: {
+        /** @description Get a list of files */
+        200: {
+          headers: {
+            [name: string]: unknown;
+          };
+          content: {
+            'application/json': components['schemas']['UploadFile'][];
+          };
         };
-        get?: never;
-        put?: never;
-        /**
-         * Local login
-         * @description Returns a jwt token and user info
-         */
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody: {
-                content: {
-                    /** @example {
-                     *       "identifier": "foobar",
-                     *       "password": "Test1234"
-                     *     } */
-                    "application/json": {
-                        identifier?: string;
-                        password?: string;
-                    };
-                };
-            };
-            responses: {
-                /** @description Connection */
-                200: {
-                    headers: {
-                        [name: string]: unknown;
-                    };
-                    content: {
-                        "application/json": components["schemas"]["Users-Permissions-UserRegistration"];
-                    };
-                };
-                /** @description Error */
-                default: {
-                    headers: {
-                        [name: string]: unknown;
-                    };
-                    content: {
-                        "application/json": components["schemas"]["Error"];
-                    };
-                };
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
+      };
     };
-    "/auth/local/register": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        /**
-         * Register a user
-         * @description Returns a jwt token and user info
-         */
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody: {
-                content: {
-                    /** @example {
-                     *       "username": "foobar",
-                     *       "email": "foo.bar@strapi.io",
-                     *       "password": "Test1234"
-                     *     } */
-                    "application/json": {
-                        username?: string;
-                        email?: string;
-                        password?: string;
-                    };
-                };
-            };
-            responses: {
-                /** @description Successful registration */
-                200: {
-                    headers: {
-                        [name: string]: unknown;
-                    };
-                    content: {
-                        "application/json": components["schemas"]["Users-Permissions-UserRegistration"];
-                    };
-                };
-                /** @description Error */
-                default: {
-                    headers: {
-                        [name: string]: unknown;
-                    };
-                    content: {
-                        "application/json": components["schemas"]["Error"];
-                    };
-                };
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
+    put?: never;
+    post?: never;
+    delete?: never;
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
+  '/upload/files/{id}': {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
     };
-    "/auth/{provider}/callback": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
+    get: {
+      parameters: {
+        query?: never;
+        header?: never;
+        path: {
+          id: string;
         };
-        /** Default Callback from provider auth */
-        get: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path: {
-                    /** @description Provider name */
-                    provider: string;
-                };
-                cookie?: never;
-            };
-            requestBody?: never;
-            responses: {
-                /** @description Returns a jwt token and user info */
-                200: {
-                    headers: {
-                        [name: string]: unknown;
-                    };
-                    content: {
-                        "application/json": components["schemas"]["Users-Permissions-UserRegistration"];
-                    };
-                };
-                /** @description Error */
-                default: {
-                    headers: {
-                        [name: string]: unknown;
-                    };
-                    content: {
-                        "application/json": components["schemas"]["Error"];
-                    };
-                };
-            };
+        cookie?: never;
+      };
+      requestBody?: never;
+      responses: {
+        /** @description Get a specific file */
+        200: {
+          headers: {
+            [name: string]: unknown;
+          };
+          content: {
+            'application/json': components['schemas']['UploadFile'];
+          };
         };
-        put?: never;
-        post?: never;
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
+      };
     };
-    "/auth/forgot-password": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
+    put?: never;
+    post?: never;
+    delete: {
+      parameters: {
+        query?: never;
+        header?: never;
+        path: {
+          id: string;
         };
-        get?: never;
-        put?: never;
-        /** Send rest password email */
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody: {
-                content: {
-                    /** @example {
-                     *       "email": "foo.bar@strapi.io"
-                     *     } */
-                    "application/json": {
-                        email?: string;
-                    };
-                };
-            };
-            responses: {
-                /** @description Returns ok */
-                200: {
-                    headers: {
-                        [name: string]: unknown;
-                    };
-                    content: {
-                        "application/json": {
-                            /** @enum {string} */
-                            ok?: true;
-                        };
-                    };
-                };
-                /** @description Error */
-                default: {
-                    headers: {
-                        [name: string]: unknown;
-                    };
-                    content: {
-                        "application/json": components["schemas"]["Error"];
-                    };
-                };
-            };
+        cookie?: never;
+      };
+      requestBody?: never;
+      responses: {
+        /** @description Delete a file */
+        200: {
+          headers: {
+            [name: string]: unknown;
+          };
+          content: {
+            'application/json': components['schemas']['UploadFile'];
+          };
         };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
+      };
     };
-    "/auth/reset-password": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        /** Rest user password */
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody: {
-                content: {
-                    /** @example {
-                     *       "password": "Test1234",
-                     *       "passwordConfirmation": "Test1234",
-                     *       "code": "zertyoaizndoianzodianzdonaizdoinaozdnia"
-                     *     } */
-                    "application/json": {
-                        password?: string;
-                        passwordConfirmation?: string;
-                        code?: string;
-                    };
-                };
-            };
-            responses: {
-                /** @description Returns a jwt token and user info */
-                200: {
-                    headers: {
-                        [name: string]: unknown;
-                    };
-                    content: {
-                        "application/json": components["schemas"]["Users-Permissions-UserRegistration"];
-                    };
-                };
-                /** @description Error */
-                default: {
-                    headers: {
-                        [name: string]: unknown;
-                    };
-                    content: {
-                        "application/json": components["schemas"]["Error"];
-                    };
-                };
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
+  '/connect/{provider}': {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
     };
-    "/auth/change-password": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
+    /**
+     * Login with a provider
+     * @description Redirects to provider login before being redirect to /auth/{provider}/callback
+     */
+    get: {
+      parameters: {
+        query?: never;
+        header?: never;
+        path: {
+          /** @description Provider name */
+          provider: string;
         };
-        get?: never;
-        put?: never;
-        /** Update user's own password */
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody: {
-                content: {
-                    "application/json": {
-                        password: string;
-                        currentPassword: string;
-                        passwordConfirmation: string;
-                    };
-                };
-            };
-            responses: {
-                /** @description Returns a jwt token and user info */
-                200: {
-                    headers: {
-                        [name: string]: unknown;
-                    };
-                    content: {
-                        "application/json": components["schemas"]["Users-Permissions-UserRegistration"];
-                    };
-                };
-                /** @description Error */
-                default: {
-                    headers: {
-                        [name: string]: unknown;
-                    };
-                    content: {
-                        "application/json": components["schemas"]["Error"];
-                    };
-                };
-            };
+        cookie?: never;
+      };
+      requestBody?: never;
+      responses: {
+        /** @description Redirect response */
+        301: {
+          headers: {
+            [name: string]: unknown;
+          };
+          content?: never;
         };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
+        /** @description Error */
+        default: {
+          headers: {
+            [name: string]: unknown;
+          };
+          content: {
+            'application/json': components['schemas']['Error'];
+          };
+        };
+      };
     };
-    "/auth/email-confirmation": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        /** Confirm user email */
-        get: {
-            parameters: {
-                query?: {
-                    /** @description confirmation token received by email */
-                    confirmation?: string;
-                };
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: never;
-            responses: {
-                /** @description Redirects to the configure email confirmation redirect url */
-                301: {
-                    headers: {
-                        [name: string]: unknown;
-                    };
-                    content?: never;
-                };
-                /** @description Error */
-                default: {
-                    headers: {
-                        [name: string]: unknown;
-                    };
-                    content: {
-                        "application/json": components["schemas"]["Error"];
-                    };
-                };
-            };
-        };
-        put?: never;
-        post?: never;
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
+    put?: never;
+    post?: never;
+    delete?: never;
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
+  '/auth/local': {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
     };
-    "/auth/send-email-confirmation": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
+    get?: never;
+    put?: never;
+    /**
+     * Local login
+     * @description Returns a jwt token and user info
+     */
+    post: {
+      parameters: {
+        query?: never;
+        header?: never;
+        path?: never;
+        cookie?: never;
+      };
+      requestBody: {
+        content: {
+          /** @example {
+           *       "identifier": "foobar",
+           *       "password": "Test1234"
+           *     } */
+          'application/json': {
+            identifier?: string;
+            password?: string;
+          };
         };
-        get?: never;
-        put?: never;
-        /** Send confirmation email */
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody: {
-                content: {
-                    "application/json": {
-                        email?: string;
-                    };
-                };
-            };
-            responses: {
-                /** @description Returns email and boolean to confirm email was sent */
-                200: {
-                    headers: {
-                        [name: string]: unknown;
-                    };
-                    content: {
-                        "application/json": {
-                            email?: string;
-                            /** @enum {string} */
-                            sent?: true;
-                        };
-                    };
-                };
-                /** @description Error */
-                default: {
-                    headers: {
-                        [name: string]: unknown;
-                    };
-                    content: {
-                        "application/json": components["schemas"]["Error"];
-                    };
-                };
-            };
+      };
+      responses: {
+        /** @description Connection */
+        200: {
+          headers: {
+            [name: string]: unknown;
+          };
+          content: {
+            'application/json': components['schemas']['Users-Permissions-UserRegistration'];
+          };
         };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
+        /** @description Error */
+        default: {
+          headers: {
+            [name: string]: unknown;
+          };
+          content: {
+            'application/json': components['schemas']['Error'];
+          };
+        };
+      };
     };
-    "/users-permissions/permissions": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        /** Get default generated permissions */
-        get: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: never;
-            responses: {
-                /** @description Returns the permissions tree */
-                200: {
-                    headers: {
-                        [name: string]: unknown;
-                    };
-                    content: {
-                        /** @example {
-                         *       "permissions": {
-                         *         "api::content-type.content-type": {
-                         *           "controllers": {
-                         *             "controllerA": {
-                         *               "find": {
-                         *                 "enabled": false,
-                         *                 "policy": ""
-                         *               },
-                         *               "findOne": {
-                         *                 "enabled": false,
-                         *                 "policy": ""
-                         *               },
-                         *               "create": {
-                         *                 "enabled": false,
-                         *                 "policy": ""
-                         *               }
-                         *             },
-                         *             "controllerB": {
-                         *               "find": {
-                         *                 "enabled": false,
-                         *                 "policy": ""
-                         *               },
-                         *               "findOne": {
-                         *                 "enabled": false,
-                         *                 "policy": ""
-                         *               },
-                         *               "create": {
-                         *                 "enabled": false,
-                         *                 "policy": ""
-                         *               }
-                         *             }
-                         *           }
-                         *         }
-                         *       }
-                         *     } */
-                        "application/json": {
-                            permissions?: components["schemas"]["Users-Permissions-PermissionsTree"];
-                        };
-                    };
-                };
-                /** @description Error */
-                default: {
-                    headers: {
-                        [name: string]: unknown;
-                    };
-                    content: {
-                        "application/json": components["schemas"]["Error"];
-                    };
-                };
-            };
-        };
-        put?: never;
-        post?: never;
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
+    delete?: never;
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
+  '/auth/local/register': {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
     };
-    "/users-permissions/roles": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
+    get?: never;
+    put?: never;
+    /**
+     * Register a user
+     * @description Returns a jwt token and user info
+     */
+    post: {
+      parameters: {
+        query?: never;
+        header?: never;
+        path?: never;
+        cookie?: never;
+      };
+      requestBody: {
+        content: {
+          /** @example {
+           *       "username": "foobar",
+           *       "email": "foo.bar@strapi.io",
+           *       "password": "Test1234"
+           *     } */
+          'application/json': {
+            username?: string;
+            email?: string;
+            password?: string;
+          };
         };
-        /** List roles */
-        get: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: never;
-            responses: {
-                /** @description Returns list of roles */
-                200: {
-                    headers: {
-                        [name: string]: unknown;
-                    };
-                    content: {
-                        /** @example {
-                         *       "roles": [
-                         *         {
-                         *           "id": 1,
-                         *           "name": "Public",
-                         *           "description": "Default role given to unauthenticated user.",
-                         *           "type": "public",
-                         *           "createdAt": "2022-05-19T17:35:35.097Z",
-                         *           "updatedAt": "2022-05-31T16:05:36.603Z",
-                         *           "nb_users": 0
-                         *         }
-                         *       ]
-                         *     } */
-                        "application/json": {
-                            roles?: (components["schemas"]["Users-Permissions-Role"] & {
-                                nb_users?: number;
-                            })[];
-                        };
-                    };
-                };
-                /** @description Error */
-                default: {
-                    headers: {
-                        [name: string]: unknown;
-                    };
-                    content: {
-                        "application/json": components["schemas"]["Error"];
-                    };
-                };
-            };
+      };
+      responses: {
+        /** @description Successful registration */
+        200: {
+          headers: {
+            [name: string]: unknown;
+          };
+          content: {
+            'application/json': components['schemas']['Users-Permissions-UserRegistration'];
+          };
         };
-        put?: never;
-        /** Create a role */
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody: components["requestBodies"]["Users-Permissions-RoleRequest"];
-            responses: {
-                /** @description Returns ok if the role was create */
-                200: {
-                    headers: {
-                        [name: string]: unknown;
-                    };
-                    content: {
-                        "application/json": {
-                            /** @enum {string} */
-                            ok?: true;
-                        };
-                    };
-                };
-                /** @description Error */
-                default: {
-                    headers: {
-                        [name: string]: unknown;
-                    };
-                    content: {
-                        "application/json": components["schemas"]["Error"];
-                    };
-                };
-            };
+        /** @description Error */
+        default: {
+          headers: {
+            [name: string]: unknown;
+          };
+          content: {
+            'application/json': components['schemas']['Error'];
+          };
         };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
+      };
     };
-    "/users-permissions/roles/{id}": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        /** Get a role */
-        get: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path: {
-                    /** @description role Id */
-                    id: string;
-                };
-                cookie?: never;
-            };
-            requestBody?: never;
-            responses: {
-                /** @description Returns the role */
-                200: {
-                    headers: {
-                        [name: string]: unknown;
-                    };
-                    content: {
-                        /** @example {
-                         *       "role": {
-                         *         "id": 1,
-                         *         "name": "Public",
-                         *         "description": "Default role given to unauthenticated user.",
-                         *         "type": "public",
-                         *         "createdAt": "2022-05-19T17:35:35.097Z",
-                         *         "updatedAt": "2022-05-31T16:05:36.603Z",
-                         *         "permissions": {
-                         *           "api::content-type.content-type": {
-                         *             "controllers": {
-                         *               "controllerA": {
-                         *                 "find": {
-                         *                   "enabled": true
-                         *                 }
-                         *               }
-                         *             }
-                         *           }
-                         *         }
-                         *       }
-                         *     } */
-                        "application/json": {
-                            role?: components["schemas"]["Users-Permissions-Role"];
-                        };
-                    };
-                };
-                /** @description Error */
-                default: {
-                    headers: {
-                        [name: string]: unknown;
-                    };
-                    content: {
-                        "application/json": components["schemas"]["Error"];
-                    };
-                };
-            };
-        };
-        put?: never;
-        post?: never;
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
+    delete?: never;
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
+  '/auth/{provider}/callback': {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
     };
-    "/users-permissions/roles/{role}": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
+    /** Default Callback from provider auth */
+    get: {
+      parameters: {
+        query?: never;
+        header?: never;
+        path: {
+          /** @description Provider name */
+          provider: string;
         };
-        get?: never;
-        /** Update a role */
-        put: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path: {
-                    /** @description role Id */
-                    role: string;
-                };
-                cookie?: never;
-            };
-            requestBody: components["requestBodies"]["Users-Permissions-RoleRequest"];
-            responses: {
-                /** @description Returns ok if the role was udpated */
-                200: {
-                    headers: {
-                        [name: string]: unknown;
-                    };
-                    content: {
-                        "application/json": {
-                            /** @enum {string} */
-                            ok?: true;
-                        };
-                    };
-                };
-                /** @description Error */
-                default: {
-                    headers: {
-                        [name: string]: unknown;
-                    };
-                    content: {
-                        "application/json": components["schemas"]["Error"];
-                    };
-                };
-            };
+        cookie?: never;
+      };
+      requestBody?: never;
+      responses: {
+        /** @description Returns a jwt token and user info */
+        200: {
+          headers: {
+            [name: string]: unknown;
+          };
+          content: {
+            'application/json': components['schemas']['Users-Permissions-UserRegistration'];
+          };
         };
-        post?: never;
-        /** Delete a role */
-        delete: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path: {
-                    /** @description role Id */
-                    role: string;
-                };
-                cookie?: never;
-            };
-            requestBody?: never;
-            responses: {
-                /** @description Returns ok if the role was delete */
-                200: {
-                    headers: {
-                        [name: string]: unknown;
-                    };
-                    content: {
-                        "application/json": {
-                            /** @enum {string} */
-                            ok?: true;
-                        };
-                    };
-                };
-                /** @description Error */
-                default: {
-                    headers: {
-                        [name: string]: unknown;
-                    };
-                    content: {
-                        "application/json": components["schemas"]["Error"];
-                    };
-                };
-            };
+        /** @description Error */
+        default: {
+          headers: {
+            [name: string]: unknown;
+          };
+          content: {
+            'application/json': components['schemas']['Error'];
+          };
         };
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
+      };
     };
-    "/users": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        /** Get list of users */
-        get: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: never;
-            responses: {
-                /** @description Returns an array of users */
-                200: {
-                    headers: {
-                        [name: string]: unknown;
-                    };
-                    content: {
-                        /** @example [
-                         *       {
-                         *         "id": 9,
-                         *         "username": "foao@strapi.io",
-                         *         "email": "foao@strapi.io",
-                         *         "provider": "local",
-                         *         "confirmed": false,
-                         *         "blocked": false,
-                         *         "createdAt": "2022-06-01T18:32:35.211Z",
-                         *         "updatedAt": "2022-06-01T18:32:35.217Z"
-                         *       }
-                         *     ] */
-                        "application/json": components["schemas"]["Users-Permissions-User"][];
-                    };
-                };
-                /** @description Error */
-                default: {
-                    headers: {
-                        [name: string]: unknown;
-                    };
-                    content: {
-                        "application/json": components["schemas"]["Error"];
-                    };
-                };
-            };
-        };
-        put?: never;
-        /** Create a user */
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody: {
-                content: {
-                    /** @example {
-                     *       "username": "foo",
-                     *       "email": "foo@strapi.io",
-                     *       "password": "foo-password"
-                     *     } */
-                    "application/json": {
-                        email: string;
-                        username: string;
-                        password: string;
-                    };
-                };
-            };
-            responses: {
-                /** @description Returns created user info */
-                201: {
-                    headers: {
-                        [name: string]: unknown;
-                    };
-                    content: {
-                        /** @example {
-                         *       "id": 1,
-                         *       "username": "foo",
-                         *       "email": "foo@strapi.io",
-                         *       "provider": "local",
-                         *       "confirmed": false,
-                         *       "blocked": false,
-                         *       "createdAt": "2022-05-19T17:35:35.096Z",
-                         *       "updatedAt": "2022-05-19T17:35:35.096Z",
-                         *       "role": {
-                         *         "id": 1,
-                         *         "name": "X",
-                         *         "description": "Default role given to authenticated user.",
-                         *         "type": "authenticated",
-                         *         "createdAt": "2022-05-19T17:35:35.096Z",
-                         *         "updatedAt": "2022-06-04T07:11:59.551Z"
-                         *       }
-                         *     } */
-                        "application/json": components["schemas"]["Users-Permissions-User"] & {
-                            role?: components["schemas"]["Users-Permissions-Role"];
-                        };
-                    };
-                };
-                /** @description Error */
-                default: {
-                    headers: {
-                        [name: string]: unknown;
-                    };
-                    content: {
-                        "application/json": components["schemas"]["Error"];
-                    };
-                };
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
+    put?: never;
+    post?: never;
+    delete?: never;
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
+  '/auth/forgot-password': {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
     };
-    "/users/{id}": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
+    get?: never;
+    put?: never;
+    /** Send rest password email */
+    post: {
+      parameters: {
+        query?: never;
+        header?: never;
+        path?: never;
+        cookie?: never;
+      };
+      requestBody: {
+        content: {
+          /** @example {
+           *       "email": "foo.bar@strapi.io"
+           *     } */
+          'application/json': {
+            email?: string;
+          };
         };
-        /** Get a user */
-        get: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path: {
-                    /** @description user Id */
-                    id: string;
-                };
-                cookie?: never;
+      };
+      responses: {
+        /** @description Returns ok */
+        200: {
+          headers: {
+            [name: string]: unknown;
+          };
+          content: {
+            'application/json': {
+              /** @enum {string} */
+              ok?: true;
             };
-            requestBody?: never;
-            responses: {
-                /** @description Returns a user */
-                200: {
-                    headers: {
-                        [name: string]: unknown;
-                    };
-                    content: {
-                        /** @example {
-                         *       "id": 1,
-                         *       "username": "foo",
-                         *       "email": "foo@strapi.io",
-                         *       "provider": "local",
-                         *       "confirmed": false,
-                         *       "blocked": false,
-                         *       "createdAt": "2022-05-19T17:35:35.096Z",
-                         *       "updatedAt": "2022-05-19T17:35:35.096Z"
-                         *     } */
-                        "application/json": components["schemas"]["Users-Permissions-User"];
-                    };
-                };
-                /** @description Error */
-                default: {
-                    headers: {
-                        [name: string]: unknown;
-                    };
-                    content: {
-                        "application/json": components["schemas"]["Error"];
-                    };
-                };
-            };
+          };
         };
-        /** Update a user */
-        put: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path: {
-                    /** @description user Id */
-                    id: string;
-                };
-                cookie?: never;
-            };
-            requestBody: {
-                content: {
-                    /** @example {
-                     *       "username": "foo",
-                     *       "email": "foo@strapi.io",
-                     *       "password": "foo-password"
-                     *     } */
-                    "application/json": {
-                        email: string;
-                        username: string;
-                        password: string;
-                    };
-                };
-            };
-            responses: {
-                /** @description Returns updated user info */
-                200: {
-                    headers: {
-                        [name: string]: unknown;
-                    };
-                    content: {
-                        /** @example {
-                         *       "id": 1,
-                         *       "username": "foo",
-                         *       "email": "foo@strapi.io",
-                         *       "provider": "local",
-                         *       "confirmed": false,
-                         *       "blocked": false,
-                         *       "createdAt": "2022-05-19T17:35:35.096Z",
-                         *       "updatedAt": "2022-05-19T17:35:35.096Z",
-                         *       "role": {
-                         *         "id": 1,
-                         *         "name": "X",
-                         *         "description": "Default role given to authenticated user.",
-                         *         "type": "authenticated",
-                         *         "createdAt": "2022-05-19T17:35:35.096Z",
-                         *         "updatedAt": "2022-06-04T07:11:59.551Z"
-                         *       }
-                         *     } */
-                        "application/json": components["schemas"]["Users-Permissions-User"] & {
-                            role?: components["schemas"]["Users-Permissions-Role"];
-                        };
-                    };
-                };
-                /** @description Error */
-                default: {
-                    headers: {
-                        [name: string]: unknown;
-                    };
-                    content: {
-                        "application/json": components["schemas"]["Error"];
-                    };
-                };
-            };
+        /** @description Error */
+        default: {
+          headers: {
+            [name: string]: unknown;
+          };
+          content: {
+            'application/json': components['schemas']['Error'];
+          };
         };
-        post?: never;
-        /** Delete a user */
-        delete: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path: {
-                    /** @description user Id */
-                    id: string;
-                };
-                cookie?: never;
-            };
-            requestBody?: never;
-            responses: {
-                /** @description Returns deleted user info */
-                200: {
-                    headers: {
-                        [name: string]: unknown;
-                    };
-                    content: {
-                        /** @example {
-                         *       "id": 1,
-                         *       "username": "foo",
-                         *       "email": "foo@strapi.io",
-                         *       "provider": "local",
-                         *       "confirmed": false,
-                         *       "blocked": false,
-                         *       "createdAt": "2022-05-19T17:35:35.096Z",
-                         *       "updatedAt": "2022-05-19T17:35:35.096Z"
-                         *     } */
-                        "application/json": components["schemas"]["Users-Permissions-User"];
-                    };
-                };
-                /** @description Error */
-                default: {
-                    headers: {
-                        [name: string]: unknown;
-                    };
-                    content: {
-                        "application/json": components["schemas"]["Error"];
-                    };
-                };
-            };
-        };
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
+      };
     };
-    "/users/me": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        /** Get authenticated user info */
-        get: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: never;
-            responses: {
-                /** @description Returns user info */
-                200: {
-                    headers: {
-                        [name: string]: unknown;
-                    };
-                    content: {
-                        /** @example {
-                         *       "id": 1,
-                         *       "username": "foo",
-                         *       "email": "foo@strapi.io",
-                         *       "provider": "local",
-                         *       "confirmed": false,
-                         *       "blocked": false,
-                         *       "createdAt": "2022-05-19T17:35:35.096Z",
-                         *       "updatedAt": "2022-05-19T17:35:35.096Z"
-                         *     } */
-                        "application/json": components["schemas"]["Users-Permissions-User"];
-                    };
-                };
-                /** @description Error */
-                default: {
-                    headers: {
-                        [name: string]: unknown;
-                    };
-                    content: {
-                        "application/json": components["schemas"]["Error"];
-                    };
-                };
-            };
-        };
-        put?: never;
-        post?: never;
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
+    delete?: never;
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
+  '/auth/reset-password': {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
     };
-    "/users/count": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
+    get?: never;
+    put?: never;
+    /** Rest user password */
+    post: {
+      parameters: {
+        query?: never;
+        header?: never;
+        path?: never;
+        cookie?: never;
+      };
+      requestBody: {
+        content: {
+          /** @example {
+           *       "password": "Test1234",
+           *       "passwordConfirmation": "Test1234",
+           *       "code": "zertyoaizndoianzodianzdonaizdoinaozdnia"
+           *     } */
+          'application/json': {
+            password?: string;
+            passwordConfirmation?: string;
+            code?: string;
+          };
         };
-        /** Get user count */
-        get: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: never;
-            responses: {
-                /** @description Returns a number */
-                200: {
-                    headers: {
-                        [name: string]: unknown;
-                    };
-                    content: {
-                        /** @example 1 */
-                        "application/json": number;
-                    };
-                };
-                /** @description Error */
-                default: {
-                    headers: {
-                        [name: string]: unknown;
-                    };
-                    content: {
-                        "application/json": components["schemas"]["Error"];
-                    };
-                };
-            };
+      };
+      responses: {
+        /** @description Returns a jwt token and user info */
+        200: {
+          headers: {
+            [name: string]: unknown;
+          };
+          content: {
+            'application/json': components['schemas']['Users-Permissions-UserRegistration'];
+          };
         };
-        put?: never;
-        post?: never;
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
+        /** @description Error */
+        default: {
+          headers: {
+            [name: string]: unknown;
+          };
+          content: {
+            'application/json': components['schemas']['Error'];
+          };
+        };
+      };
     };
+    delete?: never;
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
+  '/auth/change-password': {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
+    };
+    get?: never;
+    put?: never;
+    /** Update user's own password */
+    post: {
+      parameters: {
+        query?: never;
+        header?: never;
+        path?: never;
+        cookie?: never;
+      };
+      requestBody: {
+        content: {
+          'application/json': {
+            password: string;
+            currentPassword: string;
+            passwordConfirmation: string;
+          };
+        };
+      };
+      responses: {
+        /** @description Returns a jwt token and user info */
+        200: {
+          headers: {
+            [name: string]: unknown;
+          };
+          content: {
+            'application/json': components['schemas']['Users-Permissions-UserRegistration'];
+          };
+        };
+        /** @description Error */
+        default: {
+          headers: {
+            [name: string]: unknown;
+          };
+          content: {
+            'application/json': components['schemas']['Error'];
+          };
+        };
+      };
+    };
+    delete?: never;
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
+  '/auth/email-confirmation': {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
+    };
+    /** Confirm user email */
+    get: {
+      parameters: {
+        query?: {
+          /** @description confirmation token received by email */
+          confirmation?: string;
+        };
+        header?: never;
+        path?: never;
+        cookie?: never;
+      };
+      requestBody?: never;
+      responses: {
+        /** @description Redirects to the configure email confirmation redirect url */
+        301: {
+          headers: {
+            [name: string]: unknown;
+          };
+          content?: never;
+        };
+        /** @description Error */
+        default: {
+          headers: {
+            [name: string]: unknown;
+          };
+          content: {
+            'application/json': components['schemas']['Error'];
+          };
+        };
+      };
+    };
+    put?: never;
+    post?: never;
+    delete?: never;
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
+  '/auth/send-email-confirmation': {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
+    };
+    get?: never;
+    put?: never;
+    /** Send confirmation email */
+    post: {
+      parameters: {
+        query?: never;
+        header?: never;
+        path?: never;
+        cookie?: never;
+      };
+      requestBody: {
+        content: {
+          'application/json': {
+            email?: string;
+          };
+        };
+      };
+      responses: {
+        /** @description Returns email and boolean to confirm email was sent */
+        200: {
+          headers: {
+            [name: string]: unknown;
+          };
+          content: {
+            'application/json': {
+              email?: string;
+              /** @enum {string} */
+              sent?: true;
+            };
+          };
+        };
+        /** @description Error */
+        default: {
+          headers: {
+            [name: string]: unknown;
+          };
+          content: {
+            'application/json': components['schemas']['Error'];
+          };
+        };
+      };
+    };
+    delete?: never;
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
+  '/users-permissions/permissions': {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
+    };
+    /** Get default generated permissions */
+    get: {
+      parameters: {
+        query?: never;
+        header?: never;
+        path?: never;
+        cookie?: never;
+      };
+      requestBody?: never;
+      responses: {
+        /** @description Returns the permissions tree */
+        200: {
+          headers: {
+            [name: string]: unknown;
+          };
+          content: {
+            /** @example {
+             *       "permissions": {
+             *         "api::content-type.content-type": {
+             *           "controllers": {
+             *             "controllerA": {
+             *               "find": {
+             *                 "enabled": false,
+             *                 "policy": ""
+             *               },
+             *               "findOne": {
+             *                 "enabled": false,
+             *                 "policy": ""
+             *               },
+             *               "create": {
+             *                 "enabled": false,
+             *                 "policy": ""
+             *               }
+             *             },
+             *             "controllerB": {
+             *               "find": {
+             *                 "enabled": false,
+             *                 "policy": ""
+             *               },
+             *               "findOne": {
+             *                 "enabled": false,
+             *                 "policy": ""
+             *               },
+             *               "create": {
+             *                 "enabled": false,
+             *                 "policy": ""
+             *               }
+             *             }
+             *           }
+             *         }
+             *       }
+             *     } */
+            'application/json': {
+              permissions?: components['schemas']['Users-Permissions-PermissionsTree'];
+            };
+          };
+        };
+        /** @description Error */
+        default: {
+          headers: {
+            [name: string]: unknown;
+          };
+          content: {
+            'application/json': components['schemas']['Error'];
+          };
+        };
+      };
+    };
+    put?: never;
+    post?: never;
+    delete?: never;
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
+  '/users-permissions/roles': {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
+    };
+    /** List roles */
+    get: {
+      parameters: {
+        query?: never;
+        header?: never;
+        path?: never;
+        cookie?: never;
+      };
+      requestBody?: never;
+      responses: {
+        /** @description Returns list of roles */
+        200: {
+          headers: {
+            [name: string]: unknown;
+          };
+          content: {
+            /** @example {
+             *       "roles": [
+             *         {
+             *           "id": 1,
+             *           "name": "Public",
+             *           "description": "Default role given to unauthenticated user.",
+             *           "type": "public",
+             *           "createdAt": "2022-05-19T17:35:35.097Z",
+             *           "updatedAt": "2022-05-31T16:05:36.603Z",
+             *           "nb_users": 0
+             *         }
+             *       ]
+             *     } */
+            'application/json': {
+              roles?: (components['schemas']['Users-Permissions-Role'] & {
+                nb_users?: number;
+              })[];
+            };
+          };
+        };
+        /** @description Error */
+        default: {
+          headers: {
+            [name: string]: unknown;
+          };
+          content: {
+            'application/json': components['schemas']['Error'];
+          };
+        };
+      };
+    };
+    put?: never;
+    /** Create a role */
+    post: {
+      parameters: {
+        query?: never;
+        header?: never;
+        path?: never;
+        cookie?: never;
+      };
+      requestBody: components['requestBodies']['Users-Permissions-RoleRequest'];
+      responses: {
+        /** @description Returns ok if the role was create */
+        200: {
+          headers: {
+            [name: string]: unknown;
+          };
+          content: {
+            'application/json': {
+              /** @enum {string} */
+              ok?: true;
+            };
+          };
+        };
+        /** @description Error */
+        default: {
+          headers: {
+            [name: string]: unknown;
+          };
+          content: {
+            'application/json': components['schemas']['Error'];
+          };
+        };
+      };
+    };
+    delete?: never;
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
+  '/users-permissions/roles/{id}': {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
+    };
+    /** Get a role */
+    get: {
+      parameters: {
+        query?: never;
+        header?: never;
+        path: {
+          /** @description role Id */
+          id: string;
+        };
+        cookie?: never;
+      };
+      requestBody?: never;
+      responses: {
+        /** @description Returns the role */
+        200: {
+          headers: {
+            [name: string]: unknown;
+          };
+          content: {
+            /** @example {
+             *       "role": {
+             *         "id": 1,
+             *         "name": "Public",
+             *         "description": "Default role given to unauthenticated user.",
+             *         "type": "public",
+             *         "createdAt": "2022-05-19T17:35:35.097Z",
+             *         "updatedAt": "2022-05-31T16:05:36.603Z",
+             *         "permissions": {
+             *           "api::content-type.content-type": {
+             *             "controllers": {
+             *               "controllerA": {
+             *                 "find": {
+             *                   "enabled": true
+             *                 }
+             *               }
+             *             }
+             *           }
+             *         }
+             *       }
+             *     } */
+            'application/json': {
+              role?: components['schemas']['Users-Permissions-Role'];
+            };
+          };
+        };
+        /** @description Error */
+        default: {
+          headers: {
+            [name: string]: unknown;
+          };
+          content: {
+            'application/json': components['schemas']['Error'];
+          };
+        };
+      };
+    };
+    put?: never;
+    post?: never;
+    delete?: never;
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
+  '/users-permissions/roles/{role}': {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
+    };
+    get?: never;
+    /** Update a role */
+    put: {
+      parameters: {
+        query?: never;
+        header?: never;
+        path: {
+          /** @description role Id */
+          role: string;
+        };
+        cookie?: never;
+      };
+      requestBody: components['requestBodies']['Users-Permissions-RoleRequest'];
+      responses: {
+        /** @description Returns ok if the role was udpated */
+        200: {
+          headers: {
+            [name: string]: unknown;
+          };
+          content: {
+            'application/json': {
+              /** @enum {string} */
+              ok?: true;
+            };
+          };
+        };
+        /** @description Error */
+        default: {
+          headers: {
+            [name: string]: unknown;
+          };
+          content: {
+            'application/json': components['schemas']['Error'];
+          };
+        };
+      };
+    };
+    post?: never;
+    /** Delete a role */
+    delete: {
+      parameters: {
+        query?: never;
+        header?: never;
+        path: {
+          /** @description role Id */
+          role: string;
+        };
+        cookie?: never;
+      };
+      requestBody?: never;
+      responses: {
+        /** @description Returns ok if the role was delete */
+        200: {
+          headers: {
+            [name: string]: unknown;
+          };
+          content: {
+            'application/json': {
+              /** @enum {string} */
+              ok?: true;
+            };
+          };
+        };
+        /** @description Error */
+        default: {
+          headers: {
+            [name: string]: unknown;
+          };
+          content: {
+            'application/json': components['schemas']['Error'];
+          };
+        };
+      };
+    };
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
+  '/users': {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
+    };
+    /** Get list of users */
+    get: {
+      parameters: {
+        query?: never;
+        header?: never;
+        path?: never;
+        cookie?: never;
+      };
+      requestBody?: never;
+      responses: {
+        /** @description Returns an array of users */
+        200: {
+          headers: {
+            [name: string]: unknown;
+          };
+          content: {
+            /** @example [
+             *       {
+             *         "id": 9,
+             *         "username": "foao@strapi.io",
+             *         "email": "foao@strapi.io",
+             *         "provider": "local",
+             *         "confirmed": false,
+             *         "blocked": false,
+             *         "createdAt": "2022-06-01T18:32:35.211Z",
+             *         "updatedAt": "2022-06-01T18:32:35.217Z"
+             *       }
+             *     ] */
+            'application/json': components['schemas']['Users-Permissions-User'][];
+          };
+        };
+        /** @description Error */
+        default: {
+          headers: {
+            [name: string]: unknown;
+          };
+          content: {
+            'application/json': components['schemas']['Error'];
+          };
+        };
+      };
+    };
+    put?: never;
+    /** Create a user */
+    post: {
+      parameters: {
+        query?: never;
+        header?: never;
+        path?: never;
+        cookie?: never;
+      };
+      requestBody: {
+        content: {
+          /** @example {
+           *       "username": "foo",
+           *       "email": "foo@strapi.io",
+           *       "password": "foo-password"
+           *     } */
+          'application/json': {
+            email: string;
+            username: string;
+            password: string;
+          };
+        };
+      };
+      responses: {
+        /** @description Returns created user info */
+        201: {
+          headers: {
+            [name: string]: unknown;
+          };
+          content: {
+            /** @example {
+             *       "id": 1,
+             *       "username": "foo",
+             *       "email": "foo@strapi.io",
+             *       "provider": "local",
+             *       "confirmed": false,
+             *       "blocked": false,
+             *       "createdAt": "2022-05-19T17:35:35.096Z",
+             *       "updatedAt": "2022-05-19T17:35:35.096Z",
+             *       "role": {
+             *         "id": 1,
+             *         "name": "X",
+             *         "description": "Default role given to authenticated user.",
+             *         "type": "authenticated",
+             *         "createdAt": "2022-05-19T17:35:35.096Z",
+             *         "updatedAt": "2022-06-04T07:11:59.551Z"
+             *       }
+             *     } */
+            'application/json': components['schemas']['Users-Permissions-User'] & {
+              role?: components['schemas']['Users-Permissions-Role'];
+            };
+          };
+        };
+        /** @description Error */
+        default: {
+          headers: {
+            [name: string]: unknown;
+          };
+          content: {
+            'application/json': components['schemas']['Error'];
+          };
+        };
+      };
+    };
+    delete?: never;
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
+  '/users/{id}': {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
+    };
+    /** Get a user */
+    get: {
+      parameters: {
+        query?: never;
+        header?: never;
+        path: {
+          /** @description user Id */
+          id: string;
+        };
+        cookie?: never;
+      };
+      requestBody?: never;
+      responses: {
+        /** @description Returns a user */
+        200: {
+          headers: {
+            [name: string]: unknown;
+          };
+          content: {
+            /** @example {
+             *       "id": 1,
+             *       "username": "foo",
+             *       "email": "foo@strapi.io",
+             *       "provider": "local",
+             *       "confirmed": false,
+             *       "blocked": false,
+             *       "createdAt": "2022-05-19T17:35:35.096Z",
+             *       "updatedAt": "2022-05-19T17:35:35.096Z"
+             *     } */
+            'application/json': components['schemas']['Users-Permissions-User'];
+          };
+        };
+        /** @description Error */
+        default: {
+          headers: {
+            [name: string]: unknown;
+          };
+          content: {
+            'application/json': components['schemas']['Error'];
+          };
+        };
+      };
+    };
+    /** Update a user */
+    put: {
+      parameters: {
+        query?: never;
+        header?: never;
+        path: {
+          /** @description user Id */
+          id: string;
+        };
+        cookie?: never;
+      };
+      requestBody: {
+        content: {
+          /** @example {
+           *       "username": "foo",
+           *       "email": "foo@strapi.io",
+           *       "password": "foo-password"
+           *     } */
+          'application/json': {
+            email: string;
+            username: string;
+            password: string;
+          };
+        };
+      };
+      responses: {
+        /** @description Returns updated user info */
+        200: {
+          headers: {
+            [name: string]: unknown;
+          };
+          content: {
+            /** @example {
+             *       "id": 1,
+             *       "username": "foo",
+             *       "email": "foo@strapi.io",
+             *       "provider": "local",
+             *       "confirmed": false,
+             *       "blocked": false,
+             *       "createdAt": "2022-05-19T17:35:35.096Z",
+             *       "updatedAt": "2022-05-19T17:35:35.096Z",
+             *       "role": {
+             *         "id": 1,
+             *         "name": "X",
+             *         "description": "Default role given to authenticated user.",
+             *         "type": "authenticated",
+             *         "createdAt": "2022-05-19T17:35:35.096Z",
+             *         "updatedAt": "2022-06-04T07:11:59.551Z"
+             *       }
+             *     } */
+            'application/json': components['schemas']['Users-Permissions-User'] & {
+              role?: components['schemas']['Users-Permissions-Role'];
+            };
+          };
+        };
+        /** @description Error */
+        default: {
+          headers: {
+            [name: string]: unknown;
+          };
+          content: {
+            'application/json': components['schemas']['Error'];
+          };
+        };
+      };
+    };
+    post?: never;
+    /** Delete a user */
+    delete: {
+      parameters: {
+        query?: never;
+        header?: never;
+        path: {
+          /** @description user Id */
+          id: string;
+        };
+        cookie?: never;
+      };
+      requestBody?: never;
+      responses: {
+        /** @description Returns deleted user info */
+        200: {
+          headers: {
+            [name: string]: unknown;
+          };
+          content: {
+            /** @example {
+             *       "id": 1,
+             *       "username": "foo",
+             *       "email": "foo@strapi.io",
+             *       "provider": "local",
+             *       "confirmed": false,
+             *       "blocked": false,
+             *       "createdAt": "2022-05-19T17:35:35.096Z",
+             *       "updatedAt": "2022-05-19T17:35:35.096Z"
+             *     } */
+            'application/json': components['schemas']['Users-Permissions-User'];
+          };
+        };
+        /** @description Error */
+        default: {
+          headers: {
+            [name: string]: unknown;
+          };
+          content: {
+            'application/json': components['schemas']['Error'];
+          };
+        };
+      };
+    };
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
+  '/users/me': {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
+    };
+    /** Get authenticated user info */
+    get: {
+      parameters: {
+        query?: never;
+        header?: never;
+        path?: never;
+        cookie?: never;
+      };
+      requestBody?: never;
+      responses: {
+        /** @description Returns user info */
+        200: {
+          headers: {
+            [name: string]: unknown;
+          };
+          content: {
+            /** @example {
+             *       "id": 1,
+             *       "username": "foo",
+             *       "email": "foo@strapi.io",
+             *       "provider": "local",
+             *       "confirmed": false,
+             *       "blocked": false,
+             *       "createdAt": "2022-05-19T17:35:35.096Z",
+             *       "updatedAt": "2022-05-19T17:35:35.096Z"
+             *     } */
+            'application/json': components['schemas']['Users-Permissions-User'];
+          };
+        };
+        /** @description Error */
+        default: {
+          headers: {
+            [name: string]: unknown;
+          };
+          content: {
+            'application/json': components['schemas']['Error'];
+          };
+        };
+      };
+    };
+    put?: never;
+    post?: never;
+    delete?: never;
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
+  '/users/count': {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
+    };
+    /** Get user count */
+    get: {
+      parameters: {
+        query?: never;
+        header?: never;
+        path?: never;
+        cookie?: never;
+      };
+      requestBody?: never;
+      responses: {
+        /** @description Returns a number */
+        200: {
+          headers: {
+            [name: string]: unknown;
+          };
+          content: {
+            /** @example 1 */
+            'application/json': number;
+          };
+        };
+        /** @description Error */
+        default: {
+          headers: {
+            [name: string]: unknown;
+          };
+          content: {
+            'application/json': components['schemas']['Error'];
+          };
+        };
+      };
+    };
+    put?: never;
+    post?: never;
+    delete?: never;
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
 }
 export type webhooks = Record<string, never>;
 export interface components {
-    schemas: {
-        Error: {
-            data?: (Record<string, never> | Record<string, never>[]) | null;
-            error: {
-                status?: number;
-                name?: string;
-                message?: string;
-                details?: Record<string, never>;
-            };
+  schemas: {
+    Error: {
+      data?: (Record<string, never> | Record<string, never>[]) | null;
+      error: {
+        status?: number;
+        name?: string;
+        message?: string;
+        details?: Record<string, never>;
+      };
+    };
+    CharacterRequest: {
+      data: {
+        name: string;
+        galleryImages?: (number | string)[];
+        locale?: string;
+        localizations?: (number | string)[];
+      };
+    };
+    CharacterListResponse: {
+      data?: components['schemas']['Character'][];
+      meta?: {
+        pagination?: {
+          page?: number;
+          pageSize?: number;
+          pageCount?: number;
+          total?: number;
         };
-        CharacterRequest: {
-            data: {
-                name: string;
-                galleryImages?: (number | string)[];
-                locale?: string;
-                localizations?: (number | string)[];
-            };
-        };
-        CharacterListResponse: {
-            data?: components["schemas"]["Character"][];
-            meta?: {
-                pagination?: {
-                    page?: number;
-                    pageSize?: number;
-                    pageCount?: number;
-                    total?: number;
-                };
-            };
-        };
-        Character: {
+      };
+    };
+    Character: {
+      id?: number;
+      documentId?: string;
+      name: string;
+      galleryImages?: {
+        id?: number;
+        documentId?: string;
+        name?: string;
+        alternativeText?: string;
+        caption?: string;
+        width?: number;
+        height?: number;
+        formats?: unknown;
+        hash?: string;
+        ext?: string;
+        mime?: string;
+        /** Format: float */
+        size?: number;
+        url?: string;
+        previewUrl?: string;
+        provider?: string;
+        provider_metadata?: unknown;
+        related?: {
+          id?: number;
+          documentId?: string;
+        }[];
+        folder?: {
+          id?: number;
+          documentId?: string;
+          name?: string;
+          pathId?: number;
+          parent?: {
             id?: number;
             documentId?: string;
-            name: string;
-            galleryImages?: {
-                id?: number;
-                documentId?: string;
-                name?: string;
-                alternativeText?: string;
-                caption?: string;
-                width?: number;
-                height?: number;
-                formats?: unknown;
-                hash?: string;
-                ext?: string;
-                mime?: string;
-                /** Format: float */
-                size?: number;
-                url?: string;
-                previewUrl?: string;
-                provider?: string;
-                provider_metadata?: unknown;
-                related?: {
-                    id?: number;
-                    documentId?: string;
-                }[];
-                folder?: {
-                    id?: number;
-                    documentId?: string;
-                    name?: string;
-                    pathId?: number;
-                    parent?: {
-                        id?: number;
-                        documentId?: string;
-                    };
-                    children?: {
-                        id?: number;
-                        documentId?: string;
-                    }[];
-                    files?: {
-                        id?: number;
-                        documentId?: string;
-                        name?: string;
-                        alternativeText?: string;
-                        caption?: string;
-                        width?: number;
-                        height?: number;
-                        formats?: unknown;
-                        hash?: string;
-                        ext?: string;
-                        mime?: string;
-                        /** Format: float */
-                        size?: number;
-                        url?: string;
-                        previewUrl?: string;
-                        provider?: string;
-                        provider_metadata?: unknown;
-                        related?: {
-                            id?: number;
-                            documentId?: string;
-                        }[];
-                        folder?: {
-                            id?: number;
-                            documentId?: string;
-                        };
-                        folderPath?: string;
-                        /** Format: date-time */
-                        createdAt?: string;
-                        /** Format: date-time */
-                        updatedAt?: string;
-                        /** Format: date-time */
-                        publishedAt?: string;
-                        createdBy?: {
-                            id?: number;
-                            documentId?: string;
-                            firstname?: string;
-                            lastname?: string;
-                            username?: string;
-                            /** Format: email */
-                            email?: string;
-                            resetPasswordToken?: string;
-                            registrationToken?: string;
-                            isActive?: boolean;
-                            roles?: {
-                                id?: number;
-                                documentId?: string;
-                                name?: string;
-                                code?: string;
-                                description?: string;
-                                users?: {
-                                    id?: number;
-                                    documentId?: string;
-                                }[];
-                                permissions?: {
-                                    id?: number;
-                                    documentId?: string;
-                                    action?: string;
-                                    actionParameters?: unknown;
-                                    subject?: string;
-                                    properties?: unknown;
-                                    conditions?: unknown;
-                                    role?: {
-                                        id?: number;
-                                        documentId?: string;
-                                    };
-                                    /** Format: date-time */
-                                    createdAt?: string;
-                                    /** Format: date-time */
-                                    updatedAt?: string;
-                                    /** Format: date-time */
-                                    publishedAt?: string;
-                                    createdBy?: {
-                                        id?: number;
-                                        documentId?: string;
-                                    };
-                                    updatedBy?: {
-                                        id?: number;
-                                        documentId?: string;
-                                    };
-                                    locale?: string;
-                                    localizations?: {
-                                        id?: number;
-                                        documentId?: string;
-                                    }[];
-                                }[];
-                                /** Format: date-time */
-                                createdAt?: string;
-                                /** Format: date-time */
-                                updatedAt?: string;
-                                /** Format: date-time */
-                                publishedAt?: string;
-                                createdBy?: {
-                                    id?: number;
-                                    documentId?: string;
-                                };
-                                updatedBy?: {
-                                    id?: number;
-                                    documentId?: string;
-                                };
-                                locale?: string;
-                                localizations?: {
-                                    id?: number;
-                                    documentId?: string;
-                                }[];
-                            }[];
-                            blocked?: boolean;
-                            preferedLanguage?: string;
-                            /** Format: date-time */
-                            createdAt?: string;
-                            /** Format: date-time */
-                            updatedAt?: string;
-                            /** Format: date-time */
-                            publishedAt?: string;
-                            createdBy?: {
-                                id?: number;
-                                documentId?: string;
-                            };
-                            updatedBy?: {
-                                id?: number;
-                                documentId?: string;
-                            };
-                            locale?: string;
-                            localizations?: {
-                                id?: number;
-                                documentId?: string;
-                            }[];
-                        };
-                        updatedBy?: {
-                            id?: number;
-                            documentId?: string;
-                        };
-                        locale?: string;
-                        localizations?: {
-                            id?: number;
-                            documentId?: string;
-                        }[];
-                    }[];
-                    path?: string;
-                    /** Format: date-time */
-                    createdAt?: string;
-                    /** Format: date-time */
-                    updatedAt?: string;
-                    /** Format: date-time */
-                    publishedAt?: string;
-                    createdBy?: {
-                        id?: number;
-                        documentId?: string;
-                    };
-                    updatedBy?: {
-                        id?: number;
-                        documentId?: string;
-                    };
-                    locale?: string;
-                    localizations?: {
-                        id?: number;
-                        documentId?: string;
-                    }[];
-                };
-                folderPath?: string;
-                /** Format: date-time */
-                createdAt?: string;
-                /** Format: date-time */
-                updatedAt?: string;
-                /** Format: date-time */
-                publishedAt?: string;
-                createdBy?: {
-                    id?: number;
-                    documentId?: string;
-                };
-                updatedBy?: {
-                    id?: number;
-                    documentId?: string;
-                };
-                locale?: string;
-                localizations?: {
-                    id?: number;
-                    documentId?: string;
-                }[];
-            }[];
-            /** Format: date-time */
-            createdAt?: string;
-            /** Format: date-time */
-            updatedAt?: string;
-            /** Format: date-time */
-            publishedAt?: string;
-            createdBy?: {
-                id?: number;
-                documentId?: string;
-            };
-            updatedBy?: {
-                id?: number;
-                documentId?: string;
-            };
-            locale?: string;
-            localizations?: {
-                id?: number;
-                documentId?: string;
-                name?: string;
-                galleryImages?: {
-                    id?: number;
-                    documentId?: string;
-                    name?: string;
-                    alternativeText?: string;
-                    caption?: string;
-                    width?: number;
-                    height?: number;
-                    formats?: unknown;
-                    hash?: string;
-                    ext?: string;
-                    mime?: string;
-                    /** Format: float */
-                    size?: number;
-                    url?: string;
-                    previewUrl?: string;
-                    provider?: string;
-                    provider_metadata?: unknown;
-                    related?: {
-                        id?: number;
-                        documentId?: string;
-                    }[];
-                    folder?: {
-                        id?: number;
-                        documentId?: string;
-                    };
-                    folderPath?: string;
-                    /** Format: date-time */
-                    createdAt?: string;
-                    /** Format: date-time */
-                    updatedAt?: string;
-                    /** Format: date-time */
-                    publishedAt?: string;
-                    createdBy?: {
-                        id?: number;
-                        documentId?: string;
-                    };
-                    updatedBy?: {
-                        id?: number;
-                        documentId?: string;
-                    };
-                    locale?: string;
-                    localizations?: {
-                        id?: number;
-                        documentId?: string;
-                    }[];
-                }[];
-                /** Format: date-time */
-                createdAt?: string;
-                /** Format: date-time */
-                updatedAt?: string;
-                /** Format: date-time */
-                publishedAt?: string;
-                createdBy?: {
-                    id?: number;
-                    documentId?: string;
-                };
-                updatedBy?: {
-                    id?: number;
-                    documentId?: string;
-                };
-                locale?: string;
-                localizations?: {
-                    id?: number;
-                    documentId?: string;
-                }[];
-            }[];
-        };
-        CharacterResponse: {
-            data?: components["schemas"]["Character"];
-            meta?: Record<string, never>;
-        };
-        LatestInformationRequest: {
-            data: {
-                title: string;
-                /** Format: date */
-                date: string;
-                /** @example string or id */
-                tag: number | string;
-                /** @example string or id */
-                image?: number | string;
-                slug: string;
-                content: unknown;
-                locale?: string;
-                localizations?: (number | string)[];
-            };
-        };
-        LatestInformationListResponse: {
-            data?: components["schemas"]["LatestInformation"][];
-            meta?: {
-                pagination?: {
-                    page?: number;
-                    pageSize?: number;
-                    pageCount?: number;
-                    total?: number;
-                };
-            };
-        };
-        LatestInformation: {
+          };
+          children?: {
             id?: number;
             documentId?: string;
-            title: string;
-            /** Format: date */
-            date: string;
-            tag: {
-                id?: number;
-                documentId?: string;
-                name?: string;
-                /** Format: date-time */
-                createdAt?: string;
-                /** Format: date-time */
-                updatedAt?: string;
-                /** Format: date-time */
-                publishedAt?: string;
-                createdBy?: {
-                    id?: number;
-                    documentId?: string;
-                    firstname?: string;
-                    lastname?: string;
-                    username?: string;
-                    /** Format: email */
-                    email?: string;
-                    resetPasswordToken?: string;
-                    registrationToken?: string;
-                    isActive?: boolean;
-                    roles?: {
-                        id?: number;
-                        documentId?: string;
-                        name?: string;
-                        code?: string;
-                        description?: string;
-                        users?: {
-                            id?: number;
-                            documentId?: string;
-                        }[];
-                        permissions?: {
-                            id?: number;
-                            documentId?: string;
-                            action?: string;
-                            actionParameters?: unknown;
-                            subject?: string;
-                            properties?: unknown;
-                            conditions?: unknown;
-                            role?: {
-                                id?: number;
-                                documentId?: string;
-                            };
-                            /** Format: date-time */
-                            createdAt?: string;
-                            /** Format: date-time */
-                            updatedAt?: string;
-                            /** Format: date-time */
-                            publishedAt?: string;
-                            createdBy?: {
-                                id?: number;
-                                documentId?: string;
-                            };
-                            updatedBy?: {
-                                id?: number;
-                                documentId?: string;
-                            };
-                            locale?: string;
-                            localizations?: {
-                                id?: number;
-                                documentId?: string;
-                            }[];
-                        }[];
-                        /** Format: date-time */
-                        createdAt?: string;
-                        /** Format: date-time */
-                        updatedAt?: string;
-                        /** Format: date-time */
-                        publishedAt?: string;
-                        createdBy?: {
-                            id?: number;
-                            documentId?: string;
-                        };
-                        updatedBy?: {
-                            id?: number;
-                            documentId?: string;
-                        };
-                        locale?: string;
-                        localizations?: {
-                            id?: number;
-                            documentId?: string;
-                        }[];
-                    }[];
-                    blocked?: boolean;
-                    preferedLanguage?: string;
-                    /** Format: date-time */
-                    createdAt?: string;
-                    /** Format: date-time */
-                    updatedAt?: string;
-                    /** Format: date-time */
-                    publishedAt?: string;
-                    createdBy?: {
-                        id?: number;
-                        documentId?: string;
-                    };
-                    updatedBy?: {
-                        id?: number;
-                        documentId?: string;
-                    };
-                    locale?: string;
-                    localizations?: {
-                        id?: number;
-                        documentId?: string;
-                    }[];
-                };
-                updatedBy?: {
-                    id?: number;
-                    documentId?: string;
-                };
-                locale?: string;
-                localizations?: {
-                    id?: number;
-                    documentId?: string;
-                }[];
-            };
-            image?: {
-                id?: number;
-                documentId?: string;
-                name?: string;
-                alternativeText?: string;
-                caption?: string;
-                width?: number;
-                height?: number;
-                formats?: unknown;
-                hash?: string;
-                ext?: string;
-                mime?: string;
-                /** Format: float */
-                size?: number;
-                url?: string;
-                previewUrl?: string;
-                provider?: string;
-                provider_metadata?: unknown;
-                related?: {
-                    id?: number;
-                    documentId?: string;
-                }[];
-                folder?: {
-                    id?: number;
-                    documentId?: string;
-                    name?: string;
-                    pathId?: number;
-                    parent?: {
-                        id?: number;
-                        documentId?: string;
-                    };
-                    children?: {
-                        id?: number;
-                        documentId?: string;
-                    }[];
-                    files?: {
-                        id?: number;
-                        documentId?: string;
-                        name?: string;
-                        alternativeText?: string;
-                        caption?: string;
-                        width?: number;
-                        height?: number;
-                        formats?: unknown;
-                        hash?: string;
-                        ext?: string;
-                        mime?: string;
-                        /** Format: float */
-                        size?: number;
-                        url?: string;
-                        previewUrl?: string;
-                        provider?: string;
-                        provider_metadata?: unknown;
-                        related?: {
-                            id?: number;
-                            documentId?: string;
-                        }[];
-                        folder?: {
-                            id?: number;
-                            documentId?: string;
-                        };
-                        folderPath?: string;
-                        /** Format: date-time */
-                        createdAt?: string;
-                        /** Format: date-time */
-                        updatedAt?: string;
-                        /** Format: date-time */
-                        publishedAt?: string;
-                        createdBy?: {
-                            id?: number;
-                            documentId?: string;
-                        };
-                        updatedBy?: {
-                            id?: number;
-                            documentId?: string;
-                        };
-                        locale?: string;
-                        localizations?: {
-                            id?: number;
-                            documentId?: string;
-                        }[];
-                    }[];
-                    path?: string;
-                    /** Format: date-time */
-                    createdAt?: string;
-                    /** Format: date-time */
-                    updatedAt?: string;
-                    /** Format: date-time */
-                    publishedAt?: string;
-                    createdBy?: {
-                        id?: number;
-                        documentId?: string;
-                    };
-                    updatedBy?: {
-                        id?: number;
-                        documentId?: string;
-                    };
-                    locale?: string;
-                    localizations?: {
-                        id?: number;
-                        documentId?: string;
-                    }[];
-                };
-                folderPath?: string;
-                /** Format: date-time */
-                createdAt?: string;
-                /** Format: date-time */
-                updatedAt?: string;
-                /** Format: date-time */
-                publishedAt?: string;
-                createdBy?: {
-                    id?: number;
-                    documentId?: string;
-                };
-                updatedBy?: {
-                    id?: number;
-                    documentId?: string;
-                };
-                locale?: string;
-                localizations?: {
-                    id?: number;
-                    documentId?: string;
-                }[];
-            };
-            slug: string;
-            content: unknown;
-            /** Format: date-time */
-            createdAt?: string;
-            /** Format: date-time */
-            updatedAt?: string;
-            /** Format: date-time */
-            publishedAt?: string;
-            createdBy?: {
-                id?: number;
-                documentId?: string;
-            };
-            updatedBy?: {
-                id?: number;
-                documentId?: string;
-            };
-            locale?: string;
-            localizations?: {
-                id?: number;
-                documentId?: string;
-                title?: string;
-                /** Format: date */
-                date?: string;
-                tag?: {
-                    id?: number;
-                    documentId?: string;
-                };
-                image?: {
-                    id?: number;
-                    documentId?: string;
-                    name?: string;
-                    alternativeText?: string;
-                    caption?: string;
-                    width?: number;
-                    height?: number;
-                    formats?: unknown;
-                    hash?: string;
-                    ext?: string;
-                    mime?: string;
-                    /** Format: float */
-                    size?: number;
-                    url?: string;
-                    previewUrl?: string;
-                    provider?: string;
-                    provider_metadata?: unknown;
-                    related?: {
-                        id?: number;
-                        documentId?: string;
-                    }[];
-                    folder?: {
-                        id?: number;
-                        documentId?: string;
-                    };
-                    folderPath?: string;
-                    /** Format: date-time */
-                    createdAt?: string;
-                    /** Format: date-time */
-                    updatedAt?: string;
-                    /** Format: date-time */
-                    publishedAt?: string;
-                    createdBy?: {
-                        id?: number;
-                        documentId?: string;
-                    };
-                    updatedBy?: {
-                        id?: number;
-                        documentId?: string;
-                    };
-                    locale?: string;
-                    localizations?: {
-                        id?: number;
-                        documentId?: string;
-                    }[];
-                };
-                slug?: string;
-                content?: unknown;
-                /** Format: date-time */
-                createdAt?: string;
-                /** Format: date-time */
-                updatedAt?: string;
-                /** Format: date-time */
-                publishedAt?: string;
-                createdBy?: {
-                    id?: number;
-                    documentId?: string;
-                };
-                updatedBy?: {
-                    id?: number;
-                    documentId?: string;
-                };
-                locale?: string;
-                localizations?: {
-                    id?: number;
-                    documentId?: string;
-                }[];
-            }[];
-        };
-        LatestInformationResponse: {
-            data?: components["schemas"]["LatestInformation"];
-            meta?: Record<string, never>;
-        };
-        LatestInformationTagRequest: {
-            data: {
-                name: string;
-                locale?: string;
-                localizations?: (number | string)[];
-            };
-        };
-        LatestInformationTagListResponse: {
-            data?: components["schemas"]["LatestInformationTag"][];
-            meta?: {
-                pagination?: {
-                    page?: number;
-                    pageSize?: number;
-                    pageCount?: number;
-                    total?: number;
-                };
-            };
-        };
-        LatestInformationTag: {
+          }[];
+          files?: {
             id?: number;
             documentId?: string;
-            name: string;
-            /** Format: date-time */
-            createdAt?: string;
-            /** Format: date-time */
-            updatedAt?: string;
-            /** Format: date-time */
-            publishedAt?: string;
-            createdBy?: {
-                id?: number;
-                documentId?: string;
-                firstname?: string;
-                lastname?: string;
-                username?: string;
-                /** Format: email */
-                email?: string;
-                resetPasswordToken?: string;
-                registrationToken?: string;
-                isActive?: boolean;
-                roles?: {
-                    id?: number;
-                    documentId?: string;
-                    name?: string;
-                    code?: string;
-                    description?: string;
-                    users?: {
-                        id?: number;
-                        documentId?: string;
-                    }[];
-                    permissions?: {
-                        id?: number;
-                        documentId?: string;
-                        action?: string;
-                        actionParameters?: unknown;
-                        subject?: string;
-                        properties?: unknown;
-                        conditions?: unknown;
-                        role?: {
-                            id?: number;
-                            documentId?: string;
-                        };
-                        /** Format: date-time */
-                        createdAt?: string;
-                        /** Format: date-time */
-                        updatedAt?: string;
-                        /** Format: date-time */
-                        publishedAt?: string;
-                        createdBy?: {
-                            id?: number;
-                            documentId?: string;
-                        };
-                        updatedBy?: {
-                            id?: number;
-                            documentId?: string;
-                        };
-                        locale?: string;
-                        localizations?: {
-                            id?: number;
-                            documentId?: string;
-                        }[];
-                    }[];
-                    /** Format: date-time */
-                    createdAt?: string;
-                    /** Format: date-time */
-                    updatedAt?: string;
-                    /** Format: date-time */
-                    publishedAt?: string;
-                    createdBy?: {
-                        id?: number;
-                        documentId?: string;
-                    };
-                    updatedBy?: {
-                        id?: number;
-                        documentId?: string;
-                    };
-                    locale?: string;
-                    localizations?: {
-                        id?: number;
-                        documentId?: string;
-                    }[];
-                }[];
-                blocked?: boolean;
-                preferedLanguage?: string;
-                /** Format: date-time */
-                createdAt?: string;
-                /** Format: date-time */
-                updatedAt?: string;
-                /** Format: date-time */
-                publishedAt?: string;
-                createdBy?: {
-                    id?: number;
-                    documentId?: string;
-                };
-                updatedBy?: {
-                    id?: number;
-                    documentId?: string;
-                };
-                locale?: string;
-                localizations?: {
-                    id?: number;
-                    documentId?: string;
-                }[];
-            };
-            updatedBy?: {
-                id?: number;
-                documentId?: string;
-            };
-            locale?: string;
-            localizations?: {
-                id?: number;
-                documentId?: string;
-                name?: string;
-                /** Format: date-time */
-                createdAt?: string;
-                /** Format: date-time */
-                updatedAt?: string;
-                /** Format: date-time */
-                publishedAt?: string;
-                createdBy?: {
-                    id?: number;
-                    documentId?: string;
-                };
-                updatedBy?: {
-                    id?: number;
-                    documentId?: string;
-                };
-                locale?: string;
-                localizations?: {
-                    id?: number;
-                    documentId?: string;
-                }[];
-            }[];
-        };
-        LatestInformationTagResponse: {
-            data?: components["schemas"]["LatestInformationTag"];
-            meta?: Record<string, never>;
-        };
-        ProductRequest: {
-            data: {
-                name: string;
-                price?: string;
-                categories?: (number | string)[];
-                characters?: (number | string)[];
-                /** @example string or id */
-                image?: number | string;
-                storeUrl?: string;
-                slug: string;
-                locale?: string;
-                localizations?: (number | string)[];
-            };
-        };
-        ProductListResponse: {
-            data?: components["schemas"]["Product"][];
-            meta?: {
-                pagination?: {
-                    page?: number;
-                    pageSize?: number;
-                    pageCount?: number;
-                    total?: number;
-                };
-            };
-        };
-        Product: {
-            id?: number;
-            documentId?: string;
-            name: string;
-            price?: string;
-            categories?: {
-                id?: number;
-                documentId?: string;
-                name?: string;
-                /** Format: date-time */
-                createdAt?: string;
-                /** Format: date-time */
-                updatedAt?: string;
-                /** Format: date-time */
-                publishedAt?: string;
-                createdBy?: {
-                    id?: number;
-                    documentId?: string;
-                    firstname?: string;
-                    lastname?: string;
-                    username?: string;
-                    /** Format: email */
-                    email?: string;
-                    resetPasswordToken?: string;
-                    registrationToken?: string;
-                    isActive?: boolean;
-                    roles?: {
-                        id?: number;
-                        documentId?: string;
-                        name?: string;
-                        code?: string;
-                        description?: string;
-                        users?: {
-                            id?: number;
-                            documentId?: string;
-                        }[];
-                        permissions?: {
-                            id?: number;
-                            documentId?: string;
-                            action?: string;
-                            actionParameters?: unknown;
-                            subject?: string;
-                            properties?: unknown;
-                            conditions?: unknown;
-                            role?: {
-                                id?: number;
-                                documentId?: string;
-                            };
-                            /** Format: date-time */
-                            createdAt?: string;
-                            /** Format: date-time */
-                            updatedAt?: string;
-                            /** Format: date-time */
-                            publishedAt?: string;
-                            createdBy?: {
-                                id?: number;
-                                documentId?: string;
-                            };
-                            updatedBy?: {
-                                id?: number;
-                                documentId?: string;
-                            };
-                            locale?: string;
-                            localizations?: {
-                                id?: number;
-                                documentId?: string;
-                            }[];
-                        }[];
-                        /** Format: date-time */
-                        createdAt?: string;
-                        /** Format: date-time */
-                        updatedAt?: string;
-                        /** Format: date-time */
-                        publishedAt?: string;
-                        createdBy?: {
-                            id?: number;
-                            documentId?: string;
-                        };
-                        updatedBy?: {
-                            id?: number;
-                            documentId?: string;
-                        };
-                        locale?: string;
-                        localizations?: {
-                            id?: number;
-                            documentId?: string;
-                        }[];
-                    }[];
-                    blocked?: boolean;
-                    preferedLanguage?: string;
-                    /** Format: date-time */
-                    createdAt?: string;
-                    /** Format: date-time */
-                    updatedAt?: string;
-                    /** Format: date-time */
-                    publishedAt?: string;
-                    createdBy?: {
-                        id?: number;
-                        documentId?: string;
-                    };
-                    updatedBy?: {
-                        id?: number;
-                        documentId?: string;
-                    };
-                    locale?: string;
-                    localizations?: {
-                        id?: number;
-                        documentId?: string;
-                    }[];
-                };
-                updatedBy?: {
-                    id?: number;
-                    documentId?: string;
-                };
-                locale?: string;
-                localizations?: {
-                    id?: number;
-                    documentId?: string;
-                }[];
-            }[];
-            characters?: {
-                id?: number;
-                documentId?: string;
-                name?: string;
-                galleryImages?: {
-                    id?: number;
-                    documentId?: string;
-                    name?: string;
-                    alternativeText?: string;
-                    caption?: string;
-                    width?: number;
-                    height?: number;
-                    formats?: unknown;
-                    hash?: string;
-                    ext?: string;
-                    mime?: string;
-                    /** Format: float */
-                    size?: number;
-                    url?: string;
-                    previewUrl?: string;
-                    provider?: string;
-                    provider_metadata?: unknown;
-                    related?: {
-                        id?: number;
-                        documentId?: string;
-                    }[];
-                    folder?: {
-                        id?: number;
-                        documentId?: string;
-                        name?: string;
-                        pathId?: number;
-                        parent?: {
-                            id?: number;
-                            documentId?: string;
-                        };
-                        children?: {
-                            id?: number;
-                            documentId?: string;
-                        }[];
-                        files?: {
-                            id?: number;
-                            documentId?: string;
-                            name?: string;
-                            alternativeText?: string;
-                            caption?: string;
-                            width?: number;
-                            height?: number;
-                            formats?: unknown;
-                            hash?: string;
-                            ext?: string;
-                            mime?: string;
-                            /** Format: float */
-                            size?: number;
-                            url?: string;
-                            previewUrl?: string;
-                            provider?: string;
-                            provider_metadata?: unknown;
-                            related?: {
-                                id?: number;
-                                documentId?: string;
-                            }[];
-                            folder?: {
-                                id?: number;
-                                documentId?: string;
-                            };
-                            folderPath?: string;
-                            /** Format: date-time */
-                            createdAt?: string;
-                            /** Format: date-time */
-                            updatedAt?: string;
-                            /** Format: date-time */
-                            publishedAt?: string;
-                            createdBy?: {
-                                id?: number;
-                                documentId?: string;
-                            };
-                            updatedBy?: {
-                                id?: number;
-                                documentId?: string;
-                            };
-                            locale?: string;
-                            localizations?: {
-                                id?: number;
-                                documentId?: string;
-                            }[];
-                        }[];
-                        path?: string;
-                        /** Format: date-time */
-                        createdAt?: string;
-                        /** Format: date-time */
-                        updatedAt?: string;
-                        /** Format: date-time */
-                        publishedAt?: string;
-                        createdBy?: {
-                            id?: number;
-                            documentId?: string;
-                        };
-                        updatedBy?: {
-                            id?: number;
-                            documentId?: string;
-                        };
-                        locale?: string;
-                        localizations?: {
-                            id?: number;
-                            documentId?: string;
-                        }[];
-                    };
-                    folderPath?: string;
-                    /** Format: date-time */
-                    createdAt?: string;
-                    /** Format: date-time */
-                    updatedAt?: string;
-                    /** Format: date-time */
-                    publishedAt?: string;
-                    createdBy?: {
-                        id?: number;
-                        documentId?: string;
-                    };
-                    updatedBy?: {
-                        id?: number;
-                        documentId?: string;
-                    };
-                    locale?: string;
-                    localizations?: {
-                        id?: number;
-                        documentId?: string;
-                    }[];
-                }[];
-                /** Format: date-time */
-                createdAt?: string;
-                /** Format: date-time */
-                updatedAt?: string;
-                /** Format: date-time */
-                publishedAt?: string;
-                createdBy?: {
-                    id?: number;
-                    documentId?: string;
-                };
-                updatedBy?: {
-                    id?: number;
-                    documentId?: string;
-                };
-                locale?: string;
-                localizations?: {
-                    id?: number;
-                    documentId?: string;
-                }[];
-            }[];
-            image?: {
-                id?: number;
-                documentId?: string;
-                name?: string;
-                alternativeText?: string;
-                caption?: string;
-                width?: number;
-                height?: number;
-                formats?: unknown;
-                hash?: string;
-                ext?: string;
-                mime?: string;
-                /** Format: float */
-                size?: number;
-                url?: string;
-                previewUrl?: string;
-                provider?: string;
-                provider_metadata?: unknown;
-                related?: {
-                    id?: number;
-                    documentId?: string;
-                }[];
-                folder?: {
-                    id?: number;
-                    documentId?: string;
-                };
-                folderPath?: string;
-                /** Format: date-time */
-                createdAt?: string;
-                /** Format: date-time */
-                updatedAt?: string;
-                /** Format: date-time */
-                publishedAt?: string;
-                createdBy?: {
-                    id?: number;
-                    documentId?: string;
-                };
-                updatedBy?: {
-                    id?: number;
-                    documentId?: string;
-                };
-                locale?: string;
-                localizations?: {
-                    id?: number;
-                    documentId?: string;
-                }[];
-            };
-            storeUrl?: string;
-            slug: string;
-            /** Format: date-time */
-            createdAt?: string;
-            /** Format: date-time */
-            updatedAt?: string;
-            /** Format: date-time */
-            publishedAt?: string;
-            createdBy?: {
-                id?: number;
-                documentId?: string;
-            };
-            updatedBy?: {
-                id?: number;
-                documentId?: string;
-            };
-            locale?: string;
-            localizations?: {
-                id?: number;
-                documentId?: string;
-                name?: string;
-                price?: string;
-                categories?: {
-                    id?: number;
-                    documentId?: string;
-                }[];
-                characters?: {
-                    id?: number;
-                    documentId?: string;
-                }[];
-                image?: {
-                    id?: number;
-                    documentId?: string;
-                    name?: string;
-                    alternativeText?: string;
-                    caption?: string;
-                    width?: number;
-                    height?: number;
-                    formats?: unknown;
-                    hash?: string;
-                    ext?: string;
-                    mime?: string;
-                    /** Format: float */
-                    size?: number;
-                    url?: string;
-                    previewUrl?: string;
-                    provider?: string;
-                    provider_metadata?: unknown;
-                    related?: {
-                        id?: number;
-                        documentId?: string;
-                    }[];
-                    folder?: {
-                        id?: number;
-                        documentId?: string;
-                    };
-                    folderPath?: string;
-                    /** Format: date-time */
-                    createdAt?: string;
-                    /** Format: date-time */
-                    updatedAt?: string;
-                    /** Format: date-time */
-                    publishedAt?: string;
-                    createdBy?: {
-                        id?: number;
-                        documentId?: string;
-                    };
-                    updatedBy?: {
-                        id?: number;
-                        documentId?: string;
-                    };
-                    locale?: string;
-                    localizations?: {
-                        id?: number;
-                        documentId?: string;
-                    }[];
-                };
-                storeUrl?: string;
-                slug?: string;
-                /** Format: date-time */
-                createdAt?: string;
-                /** Format: date-time */
-                updatedAt?: string;
-                /** Format: date-time */
-                publishedAt?: string;
-                createdBy?: {
-                    id?: number;
-                    documentId?: string;
-                };
-                updatedBy?: {
-                    id?: number;
-                    documentId?: string;
-                };
-                locale?: string;
-                localizations?: {
-                    id?: number;
-                    documentId?: string;
-                }[];
-            }[];
-        };
-        ProductResponse: {
-            data?: components["schemas"]["Product"];
-            meta?: Record<string, never>;
-        };
-        ProductCategoryRequest: {
-            data: {
-                name: string;
-                locale?: string;
-                localizations?: (number | string)[];
-            };
-        };
-        ProductCategoryListResponse: {
-            data?: components["schemas"]["ProductCategory"][];
-            meta?: {
-                pagination?: {
-                    page?: number;
-                    pageSize?: number;
-                    pageCount?: number;
-                    total?: number;
-                };
-            };
-        };
-        ProductCategory: {
-            id?: number;
-            documentId?: string;
-            name: string;
-            /** Format: date-time */
-            createdAt?: string;
-            /** Format: date-time */
-            updatedAt?: string;
-            /** Format: date-time */
-            publishedAt?: string;
-            createdBy?: {
-                id?: number;
-                documentId?: string;
-                firstname?: string;
-                lastname?: string;
-                username?: string;
-                /** Format: email */
-                email?: string;
-                resetPasswordToken?: string;
-                registrationToken?: string;
-                isActive?: boolean;
-                roles?: {
-                    id?: number;
-                    documentId?: string;
-                    name?: string;
-                    code?: string;
-                    description?: string;
-                    users?: {
-                        id?: number;
-                        documentId?: string;
-                    }[];
-                    permissions?: {
-                        id?: number;
-                        documentId?: string;
-                        action?: string;
-                        actionParameters?: unknown;
-                        subject?: string;
-                        properties?: unknown;
-                        conditions?: unknown;
-                        role?: {
-                            id?: number;
-                            documentId?: string;
-                        };
-                        /** Format: date-time */
-                        createdAt?: string;
-                        /** Format: date-time */
-                        updatedAt?: string;
-                        /** Format: date-time */
-                        publishedAt?: string;
-                        createdBy?: {
-                            id?: number;
-                            documentId?: string;
-                        };
-                        updatedBy?: {
-                            id?: number;
-                            documentId?: string;
-                        };
-                        locale?: string;
-                        localizations?: {
-                            id?: number;
-                            documentId?: string;
-                        }[];
-                    }[];
-                    /** Format: date-time */
-                    createdAt?: string;
-                    /** Format: date-time */
-                    updatedAt?: string;
-                    /** Format: date-time */
-                    publishedAt?: string;
-                    createdBy?: {
-                        id?: number;
-                        documentId?: string;
-                    };
-                    updatedBy?: {
-                        id?: number;
-                        documentId?: string;
-                    };
-                    locale?: string;
-                    localizations?: {
-                        id?: number;
-                        documentId?: string;
-                    }[];
-                }[];
-                blocked?: boolean;
-                preferedLanguage?: string;
-                /** Format: date-time */
-                createdAt?: string;
-                /** Format: date-time */
-                updatedAt?: string;
-                /** Format: date-time */
-                publishedAt?: string;
-                createdBy?: {
-                    id?: number;
-                    documentId?: string;
-                };
-                updatedBy?: {
-                    id?: number;
-                    documentId?: string;
-                };
-                locale?: string;
-                localizations?: {
-                    id?: number;
-                    documentId?: string;
-                }[];
-            };
-            updatedBy?: {
-                id?: number;
-                documentId?: string;
-            };
-            locale?: string;
-            localizations?: {
-                id?: number;
-                documentId?: string;
-                name?: string;
-                /** Format: date-time */
-                createdAt?: string;
-                /** Format: date-time */
-                updatedAt?: string;
-                /** Format: date-time */
-                publishedAt?: string;
-                createdBy?: {
-                    id?: number;
-                    documentId?: string;
-                };
-                updatedBy?: {
-                    id?: number;
-                    documentId?: string;
-                };
-                locale?: string;
-                localizations?: {
-                    id?: number;
-                    documentId?: string;
-                }[];
-            }[];
-        };
-        ProductCategoryResponse: {
-            data?: components["schemas"]["ProductCategory"];
-            meta?: Record<string, never>;
-        };
-        TopDisplayContentRequest: {
-            data: {
-                products?: (number | string)[];
-                galleryImages: (number | string)[];
-                topImages?: (number | string)[];
-                locale?: string;
-                localizations?: (number | string)[];
-            };
-        };
-        TopDisplayContentListResponse: {
-            data?: components["schemas"]["TopDisplayContent"][];
-            meta?: {
-                pagination?: {
-                    page?: number;
-                    pageSize?: number;
-                    pageCount?: number;
-                    total?: number;
-                };
-            };
-        };
-        TopDisplayContent: {
-            id?: number;
-            documentId?: string;
-            products?: {
-                id?: number;
-                documentId?: string;
-                name?: string;
-                price?: string;
-                categories?: {
-                    id?: number;
-                    documentId?: string;
-                    name?: string;
-                    /** Format: date-time */
-                    createdAt?: string;
-                    /** Format: date-time */
-                    updatedAt?: string;
-                    /** Format: date-time */
-                    publishedAt?: string;
-                    createdBy?: {
-                        id?: number;
-                        documentId?: string;
-                        firstname?: string;
-                        lastname?: string;
-                        username?: string;
-                        /** Format: email */
-                        email?: string;
-                        resetPasswordToken?: string;
-                        registrationToken?: string;
-                        isActive?: boolean;
-                        roles?: {
-                            id?: number;
-                            documentId?: string;
-                            name?: string;
-                            code?: string;
-                            description?: string;
-                            users?: {
-                                id?: number;
-                                documentId?: string;
-                            }[];
-                            permissions?: {
-                                id?: number;
-                                documentId?: string;
-                                action?: string;
-                                actionParameters?: unknown;
-                                subject?: string;
-                                properties?: unknown;
-                                conditions?: unknown;
-                                role?: {
-                                    id?: number;
-                                    documentId?: string;
-                                };
-                                /** Format: date-time */
-                                createdAt?: string;
-                                /** Format: date-time */
-                                updatedAt?: string;
-                                /** Format: date-time */
-                                publishedAt?: string;
-                                createdBy?: {
-                                    id?: number;
-                                    documentId?: string;
-                                };
-                                updatedBy?: {
-                                    id?: number;
-                                    documentId?: string;
-                                };
-                                locale?: string;
-                                localizations?: {
-                                    id?: number;
-                                    documentId?: string;
-                                }[];
-                            }[];
-                            /** Format: date-time */
-                            createdAt?: string;
-                            /** Format: date-time */
-                            updatedAt?: string;
-                            /** Format: date-time */
-                            publishedAt?: string;
-                            createdBy?: {
-                                id?: number;
-                                documentId?: string;
-                            };
-                            updatedBy?: {
-                                id?: number;
-                                documentId?: string;
-                            };
-                            locale?: string;
-                            localizations?: {
-                                id?: number;
-                                documentId?: string;
-                            }[];
-                        }[];
-                        blocked?: boolean;
-                        preferedLanguage?: string;
-                        /** Format: date-time */
-                        createdAt?: string;
-                        /** Format: date-time */
-                        updatedAt?: string;
-                        /** Format: date-time */
-                        publishedAt?: string;
-                        createdBy?: {
-                            id?: number;
-                            documentId?: string;
-                        };
-                        updatedBy?: {
-                            id?: number;
-                            documentId?: string;
-                        };
-                        locale?: string;
-                        localizations?: {
-                            id?: number;
-                            documentId?: string;
-                        }[];
-                    };
-                    updatedBy?: {
-                        id?: number;
-                        documentId?: string;
-                    };
-                    locale?: string;
-                    localizations?: {
-                        id?: number;
-                        documentId?: string;
-                    }[];
-                }[];
-                characters?: {
-                    id?: number;
-                    documentId?: string;
-                    name?: string;
-                    galleryImages?: {
-                        id?: number;
-                        documentId?: string;
-                        name?: string;
-                        alternativeText?: string;
-                        caption?: string;
-                        width?: number;
-                        height?: number;
-                        formats?: unknown;
-                        hash?: string;
-                        ext?: string;
-                        mime?: string;
-                        /** Format: float */
-                        size?: number;
-                        url?: string;
-                        previewUrl?: string;
-                        provider?: string;
-                        provider_metadata?: unknown;
-                        related?: {
-                            id?: number;
-                            documentId?: string;
-                        }[];
-                        folder?: {
-                            id?: number;
-                            documentId?: string;
-                            name?: string;
-                            pathId?: number;
-                            parent?: {
-                                id?: number;
-                                documentId?: string;
-                            };
-                            children?: {
-                                id?: number;
-                                documentId?: string;
-                            }[];
-                            files?: {
-                                id?: number;
-                                documentId?: string;
-                                name?: string;
-                                alternativeText?: string;
-                                caption?: string;
-                                width?: number;
-                                height?: number;
-                                formats?: unknown;
-                                hash?: string;
-                                ext?: string;
-                                mime?: string;
-                                /** Format: float */
-                                size?: number;
-                                url?: string;
-                                previewUrl?: string;
-                                provider?: string;
-                                provider_metadata?: unknown;
-                                related?: {
-                                    id?: number;
-                                    documentId?: string;
-                                }[];
-                                folder?: {
-                                    id?: number;
-                                    documentId?: string;
-                                };
-                                folderPath?: string;
-                                /** Format: date-time */
-                                createdAt?: string;
-                                /** Format: date-time */
-                                updatedAt?: string;
-                                /** Format: date-time */
-                                publishedAt?: string;
-                                createdBy?: {
-                                    id?: number;
-                                    documentId?: string;
-                                };
-                                updatedBy?: {
-                                    id?: number;
-                                    documentId?: string;
-                                };
-                                locale?: string;
-                                localizations?: {
-                                    id?: number;
-                                    documentId?: string;
-                                }[];
-                            }[];
-                            path?: string;
-                            /** Format: date-time */
-                            createdAt?: string;
-                            /** Format: date-time */
-                            updatedAt?: string;
-                            /** Format: date-time */
-                            publishedAt?: string;
-                            createdBy?: {
-                                id?: number;
-                                documentId?: string;
-                            };
-                            updatedBy?: {
-                                id?: number;
-                                documentId?: string;
-                            };
-                            locale?: string;
-                            localizations?: {
-                                id?: number;
-                                documentId?: string;
-                            }[];
-                        };
-                        folderPath?: string;
-                        /** Format: date-time */
-                        createdAt?: string;
-                        /** Format: date-time */
-                        updatedAt?: string;
-                        /** Format: date-time */
-                        publishedAt?: string;
-                        createdBy?: {
-                            id?: number;
-                            documentId?: string;
-                        };
-                        updatedBy?: {
-                            id?: number;
-                            documentId?: string;
-                        };
-                        locale?: string;
-                        localizations?: {
-                            id?: number;
-                            documentId?: string;
-                        }[];
-                    }[];
-                    /** Format: date-time */
-                    createdAt?: string;
-                    /** Format: date-time */
-                    updatedAt?: string;
-                    /** Format: date-time */
-                    publishedAt?: string;
-                    createdBy?: {
-                        id?: number;
-                        documentId?: string;
-                    };
-                    updatedBy?: {
-                        id?: number;
-                        documentId?: string;
-                    };
-                    locale?: string;
-                    localizations?: {
-                        id?: number;
-                        documentId?: string;
-                    }[];
-                }[];
-                image?: {
-                    id?: number;
-                    documentId?: string;
-                    name?: string;
-                    alternativeText?: string;
-                    caption?: string;
-                    width?: number;
-                    height?: number;
-                    formats?: unknown;
-                    hash?: string;
-                    ext?: string;
-                    mime?: string;
-                    /** Format: float */
-                    size?: number;
-                    url?: string;
-                    previewUrl?: string;
-                    provider?: string;
-                    provider_metadata?: unknown;
-                    related?: {
-                        id?: number;
-                        documentId?: string;
-                    }[];
-                    folder?: {
-                        id?: number;
-                        documentId?: string;
-                    };
-                    folderPath?: string;
-                    /** Format: date-time */
-                    createdAt?: string;
-                    /** Format: date-time */
-                    updatedAt?: string;
-                    /** Format: date-time */
-                    publishedAt?: string;
-                    createdBy?: {
-                        id?: number;
-                        documentId?: string;
-                    };
-                    updatedBy?: {
-                        id?: number;
-                        documentId?: string;
-                    };
-                    locale?: string;
-                    localizations?: {
-                        id?: number;
-                        documentId?: string;
-                    }[];
-                };
-                storeUrl?: string;
-                slug?: string;
-                /** Format: date-time */
-                createdAt?: string;
-                /** Format: date-time */
-                updatedAt?: string;
-                /** Format: date-time */
-                publishedAt?: string;
-                createdBy?: {
-                    id?: number;
-                    documentId?: string;
-                };
-                updatedBy?: {
-                    id?: number;
-                    documentId?: string;
-                };
-                locale?: string;
-                localizations?: {
-                    id?: number;
-                    documentId?: string;
-                }[];
-            }[];
-            galleryImages: {
-                id?: number;
-                documentId?: string;
-                name?: string;
-                alternativeText?: string;
-                caption?: string;
-                width?: number;
-                height?: number;
-                formats?: unknown;
-                hash?: string;
-                ext?: string;
-                mime?: string;
-                /** Format: float */
-                size?: number;
-                url?: string;
-                previewUrl?: string;
-                provider?: string;
-                provider_metadata?: unknown;
-                related?: {
-                    id?: number;
-                    documentId?: string;
-                }[];
-                folder?: {
-                    id?: number;
-                    documentId?: string;
-                };
-                folderPath?: string;
-                /** Format: date-time */
-                createdAt?: string;
-                /** Format: date-time */
-                updatedAt?: string;
-                /** Format: date-time */
-                publishedAt?: string;
-                createdBy?: {
-                    id?: number;
-                    documentId?: string;
-                };
-                updatedBy?: {
-                    id?: number;
-                    documentId?: string;
-                };
-                locale?: string;
-                localizations?: {
-                    id?: number;
-                    documentId?: string;
-                }[];
-            }[];
-            topImages?: {
-                id?: number;
-                documentId?: string;
-                name?: string;
-                alternativeText?: string;
-                caption?: string;
-                width?: number;
-                height?: number;
-                formats?: unknown;
-                hash?: string;
-                ext?: string;
-                mime?: string;
-                /** Format: float */
-                size?: number;
-                url?: string;
-                previewUrl?: string;
-                provider?: string;
-                provider_metadata?: unknown;
-                related?: {
-                    id?: number;
-                    documentId?: string;
-                }[];
-                folder?: {
-                    id?: number;
-                    documentId?: string;
-                };
-                folderPath?: string;
-                /** Format: date-time */
-                createdAt?: string;
-                /** Format: date-time */
-                updatedAt?: string;
-                /** Format: date-time */
-                publishedAt?: string;
-                createdBy?: {
-                    id?: number;
-                    documentId?: string;
-                };
-                updatedBy?: {
-                    id?: number;
-                    documentId?: string;
-                };
-                locale?: string;
-                localizations?: {
-                    id?: number;
-                    documentId?: string;
-                }[];
-            }[];
-            /** Format: date-time */
-            createdAt?: string;
-            /** Format: date-time */
-            updatedAt?: string;
-            /** Format: date-time */
-            publishedAt?: string;
-            createdBy?: {
-                id?: number;
-                documentId?: string;
-            };
-            updatedBy?: {
-                id?: number;
-                documentId?: string;
-            };
-            locale?: string;
-            localizations?: {
-                id?: number;
-                documentId?: string;
-                products?: {
-                    id?: number;
-                    documentId?: string;
-                }[];
-                galleryImages?: {
-                    id?: number;
-                    documentId?: string;
-                    name?: string;
-                    alternativeText?: string;
-                    caption?: string;
-                    width?: number;
-                    height?: number;
-                    formats?: unknown;
-                    hash?: string;
-                    ext?: string;
-                    mime?: string;
-                    /** Format: float */
-                    size?: number;
-                    url?: string;
-                    previewUrl?: string;
-                    provider?: string;
-                    provider_metadata?: unknown;
-                    related?: {
-                        id?: number;
-                        documentId?: string;
-                    }[];
-                    folder?: {
-                        id?: number;
-                        documentId?: string;
-                    };
-                    folderPath?: string;
-                    /** Format: date-time */
-                    createdAt?: string;
-                    /** Format: date-time */
-                    updatedAt?: string;
-                    /** Format: date-time */
-                    publishedAt?: string;
-                    createdBy?: {
-                        id?: number;
-                        documentId?: string;
-                    };
-                    updatedBy?: {
-                        id?: number;
-                        documentId?: string;
-                    };
-                    locale?: string;
-                    localizations?: {
-                        id?: number;
-                        documentId?: string;
-                    }[];
-                }[];
-                topImages?: {
-                    id?: number;
-                    documentId?: string;
-                    name?: string;
-                    alternativeText?: string;
-                    caption?: string;
-                    width?: number;
-                    height?: number;
-                    formats?: unknown;
-                    hash?: string;
-                    ext?: string;
-                    mime?: string;
-                    /** Format: float */
-                    size?: number;
-                    url?: string;
-                    previewUrl?: string;
-                    provider?: string;
-                    provider_metadata?: unknown;
-                    related?: {
-                        id?: number;
-                        documentId?: string;
-                    }[];
-                    folder?: {
-                        id?: number;
-                        documentId?: string;
-                    };
-                    folderPath?: string;
-                    /** Format: date-time */
-                    createdAt?: string;
-                    /** Format: date-time */
-                    updatedAt?: string;
-                    /** Format: date-time */
-                    publishedAt?: string;
-                    createdBy?: {
-                        id?: number;
-                        documentId?: string;
-                    };
-                    updatedBy?: {
-                        id?: number;
-                        documentId?: string;
-                    };
-                    locale?: string;
-                    localizations?: {
-                        id?: number;
-                        documentId?: string;
-                    }[];
-                }[];
-                /** Format: date-time */
-                createdAt?: string;
-                /** Format: date-time */
-                updatedAt?: string;
-                /** Format: date-time */
-                publishedAt?: string;
-                createdBy?: {
-                    id?: number;
-                    documentId?: string;
-                };
-                updatedBy?: {
-                    id?: number;
-                    documentId?: string;
-                };
-                locale?: string;
-                localizations?: {
-                    id?: number;
-                    documentId?: string;
-                }[];
-            }[];
-        };
-        TopDisplayContentResponse: {
-            data?: components["schemas"]["TopDisplayContent"];
-            meta?: Record<string, never>;
-        };
-        UploadFile: {
-            id?: number;
             name?: string;
             alternativeText?: string;
             caption?: string;
-            /** Format: integer */
             width?: number;
-            /** Format: integer */
             height?: number;
-            formats?: number;
+            formats?: unknown;
             hash?: string;
             ext?: string;
             mime?: string;
-            /** Format: double */
+            /** Format: float */
             size?: number;
             url?: string;
             previewUrl?: string;
             provider?: string;
-            provider_metadata?: Record<string, never>;
+            provider_metadata?: unknown;
+            related?: {
+              id?: number;
+              documentId?: string;
+            }[];
+            folder?: {
+              id?: number;
+              documentId?: string;
+            };
+            folderPath?: string;
             /** Format: date-time */
             createdAt?: string;
             /** Format: date-time */
             updatedAt?: string;
-        };
-        "Users-Permissions-Role": {
+            /** Format: date-time */
+            publishedAt?: string;
+            createdBy?: {
+              id?: number;
+              documentId?: string;
+              firstname?: string;
+              lastname?: string;
+              username?: string;
+              /** Format: email */
+              email?: string;
+              resetPasswordToken?: string;
+              registrationToken?: string;
+              isActive?: boolean;
+              roles?: {
+                id?: number;
+                documentId?: string;
+                name?: string;
+                code?: string;
+                description?: string;
+                users?: {
+                  id?: number;
+                  documentId?: string;
+                }[];
+                permissions?: {
+                  id?: number;
+                  documentId?: string;
+                  action?: string;
+                  actionParameters?: unknown;
+                  subject?: string;
+                  properties?: unknown;
+                  conditions?: unknown;
+                  role?: {
+                    id?: number;
+                    documentId?: string;
+                  };
+                  /** Format: date-time */
+                  createdAt?: string;
+                  /** Format: date-time */
+                  updatedAt?: string;
+                  /** Format: date-time */
+                  publishedAt?: string;
+                  createdBy?: {
+                    id?: number;
+                    documentId?: string;
+                  };
+                  updatedBy?: {
+                    id?: number;
+                    documentId?: string;
+                  };
+                  locale?: string;
+                  localizations?: {
+                    id?: number;
+                    documentId?: string;
+                  }[];
+                }[];
+                /** Format: date-time */
+                createdAt?: string;
+                /** Format: date-time */
+                updatedAt?: string;
+                /** Format: date-time */
+                publishedAt?: string;
+                createdBy?: {
+                  id?: number;
+                  documentId?: string;
+                };
+                updatedBy?: {
+                  id?: number;
+                  documentId?: string;
+                };
+                locale?: string;
+                localizations?: {
+                  id?: number;
+                  documentId?: string;
+                }[];
+              }[];
+              blocked?: boolean;
+              preferedLanguage?: string;
+              /** Format: date-time */
+              createdAt?: string;
+              /** Format: date-time */
+              updatedAt?: string;
+              /** Format: date-time */
+              publishedAt?: string;
+              createdBy?: {
+                id?: number;
+                documentId?: string;
+              };
+              updatedBy?: {
+                id?: number;
+                documentId?: string;
+              };
+              locale?: string;
+              localizations?: {
+                id?: number;
+                documentId?: string;
+              }[];
+            };
+            updatedBy?: {
+              id?: number;
+              documentId?: string;
+            };
+            locale?: string;
+            localizations?: {
+              id?: number;
+              documentId?: string;
+            }[];
+          }[];
+          path?: string;
+          /** Format: date-time */
+          createdAt?: string;
+          /** Format: date-time */
+          updatedAt?: string;
+          /** Format: date-time */
+          publishedAt?: string;
+          createdBy?: {
             id?: number;
+            documentId?: string;
+          };
+          updatedBy?: {
+            id?: number;
+            documentId?: string;
+          };
+          locale?: string;
+          localizations?: {
+            id?: number;
+            documentId?: string;
+          }[];
+        };
+        folderPath?: string;
+        /** Format: date-time */
+        createdAt?: string;
+        /** Format: date-time */
+        updatedAt?: string;
+        /** Format: date-time */
+        publishedAt?: string;
+        createdBy?: {
+          id?: number;
+          documentId?: string;
+        };
+        updatedBy?: {
+          id?: number;
+          documentId?: string;
+        };
+        locale?: string;
+        localizations?: {
+          id?: number;
+          documentId?: string;
+        }[];
+      }[];
+      /** Format: date-time */
+      createdAt?: string;
+      /** Format: date-time */
+      updatedAt?: string;
+      /** Format: date-time */
+      publishedAt?: string;
+      createdBy?: {
+        id?: number;
+        documentId?: string;
+      };
+      updatedBy?: {
+        id?: number;
+        documentId?: string;
+      };
+      locale?: string;
+      localizations?: {
+        id?: number;
+        documentId?: string;
+        name?: string;
+        galleryImages?: {
+          id?: number;
+          documentId?: string;
+          name?: string;
+          alternativeText?: string;
+          caption?: string;
+          width?: number;
+          height?: number;
+          formats?: unknown;
+          hash?: string;
+          ext?: string;
+          mime?: string;
+          /** Format: float */
+          size?: number;
+          url?: string;
+          previewUrl?: string;
+          provider?: string;
+          provider_metadata?: unknown;
+          related?: {
+            id?: number;
+            documentId?: string;
+          }[];
+          folder?: {
+            id?: number;
+            documentId?: string;
+          };
+          folderPath?: string;
+          /** Format: date-time */
+          createdAt?: string;
+          /** Format: date-time */
+          updatedAt?: string;
+          /** Format: date-time */
+          publishedAt?: string;
+          createdBy?: {
+            id?: number;
+            documentId?: string;
+          };
+          updatedBy?: {
+            id?: number;
+            documentId?: string;
+          };
+          locale?: string;
+          localizations?: {
+            id?: number;
+            documentId?: string;
+          }[];
+        }[];
+        /** Format: date-time */
+        createdAt?: string;
+        /** Format: date-time */
+        updatedAt?: string;
+        /** Format: date-time */
+        publishedAt?: string;
+        createdBy?: {
+          id?: number;
+          documentId?: string;
+        };
+        updatedBy?: {
+          id?: number;
+          documentId?: string;
+        };
+        locale?: string;
+        localizations?: {
+          id?: number;
+          documentId?: string;
+        }[];
+      }[];
+    };
+    CharacterResponse: {
+      data?: components['schemas']['Character'];
+      meta?: Record<string, never>;
+    };
+    LatestInformationRequest: {
+      data: {
+        title: string;
+        /** Format: date */
+        date: string;
+        /** @example string or id */
+        tag: number | string;
+        /** @example string or id */
+        image?: number | string;
+        slug: string;
+        content: unknown;
+        locale?: string;
+        localizations?: (number | string)[];
+      };
+    };
+    LatestInformationListResponse: {
+      data?: components['schemas']['LatestInformation'][];
+      meta?: {
+        pagination?: {
+          page?: number;
+          pageSize?: number;
+          pageCount?: number;
+          total?: number;
+        };
+      };
+    };
+    LatestInformation: {
+      id?: number;
+      documentId?: string;
+      title: string;
+      /** Format: date */
+      date: string;
+      tag: {
+        id?: number;
+        documentId?: string;
+        name?: string;
+        /** Format: date-time */
+        createdAt?: string;
+        /** Format: date-time */
+        updatedAt?: string;
+        /** Format: date-time */
+        publishedAt?: string;
+        createdBy?: {
+          id?: number;
+          documentId?: string;
+          firstname?: string;
+          lastname?: string;
+          username?: string;
+          /** Format: email */
+          email?: string;
+          resetPasswordToken?: string;
+          registrationToken?: string;
+          isActive?: boolean;
+          roles?: {
+            id?: number;
+            documentId?: string;
             name?: string;
+            code?: string;
             description?: string;
-            type?: string;
+            users?: {
+              id?: number;
+              documentId?: string;
+            }[];
+            permissions?: {
+              id?: number;
+              documentId?: string;
+              action?: string;
+              actionParameters?: unknown;
+              subject?: string;
+              properties?: unknown;
+              conditions?: unknown;
+              role?: {
+                id?: number;
+                documentId?: string;
+              };
+              /** Format: date-time */
+              createdAt?: string;
+              /** Format: date-time */
+              updatedAt?: string;
+              /** Format: date-time */
+              publishedAt?: string;
+              createdBy?: {
+                id?: number;
+                documentId?: string;
+              };
+              updatedBy?: {
+                id?: number;
+                documentId?: string;
+              };
+              locale?: string;
+              localizations?: {
+                id?: number;
+                documentId?: string;
+              }[];
+            }[];
             /** Format: date-time */
             createdAt?: string;
             /** Format: date-time */
             updatedAt?: string;
-        };
-        "Users-Permissions-User": {
-            /** @example 1 */
+            /** Format: date-time */
+            publishedAt?: string;
+            createdBy?: {
+              id?: number;
+              documentId?: string;
+            };
+            updatedBy?: {
+              id?: number;
+              documentId?: string;
+            };
+            locale?: string;
+            localizations?: {
+              id?: number;
+              documentId?: string;
+            }[];
+          }[];
+          blocked?: boolean;
+          preferedLanguage?: string;
+          /** Format: date-time */
+          createdAt?: string;
+          /** Format: date-time */
+          updatedAt?: string;
+          /** Format: date-time */
+          publishedAt?: string;
+          createdBy?: {
             id?: number;
-            /** @example foo.bar */
-            username?: string;
-            /** @example foo.bar@strapi.io */
-            email?: string;
-            /** @example local */
+            documentId?: string;
+          };
+          updatedBy?: {
+            id?: number;
+            documentId?: string;
+          };
+          locale?: string;
+          localizations?: {
+            id?: number;
+            documentId?: string;
+          }[];
+        };
+        updatedBy?: {
+          id?: number;
+          documentId?: string;
+        };
+        locale?: string;
+        localizations?: {
+          id?: number;
+          documentId?: string;
+        }[];
+      };
+      image?: {
+        id?: number;
+        documentId?: string;
+        name?: string;
+        alternativeText?: string;
+        caption?: string;
+        width?: number;
+        height?: number;
+        formats?: unknown;
+        hash?: string;
+        ext?: string;
+        mime?: string;
+        /** Format: float */
+        size?: number;
+        url?: string;
+        previewUrl?: string;
+        provider?: string;
+        provider_metadata?: unknown;
+        related?: {
+          id?: number;
+          documentId?: string;
+        }[];
+        folder?: {
+          id?: number;
+          documentId?: string;
+          name?: string;
+          pathId?: number;
+          parent?: {
+            id?: number;
+            documentId?: string;
+          };
+          children?: {
+            id?: number;
+            documentId?: string;
+          }[];
+          files?: {
+            id?: number;
+            documentId?: string;
+            name?: string;
+            alternativeText?: string;
+            caption?: string;
+            width?: number;
+            height?: number;
+            formats?: unknown;
+            hash?: string;
+            ext?: string;
+            mime?: string;
+            /** Format: float */
+            size?: number;
+            url?: string;
+            previewUrl?: string;
             provider?: string;
-            /** @example true */
-            confirmed?: boolean;
-            /** @example false */
-            blocked?: boolean;
-            /**
-             * Format: date-time
-             * @example 2022-06-02T08:32:06.258Z
-             */
+            provider_metadata?: unknown;
+            related?: {
+              id?: number;
+              documentId?: string;
+            }[];
+            folder?: {
+              id?: number;
+              documentId?: string;
+            };
+            folderPath?: string;
+            /** Format: date-time */
             createdAt?: string;
-            /**
-             * Format: date-time
-             * @example 2022-06-02T08:32:06.267Z
-             */
+            /** Format: date-time */
             updatedAt?: string;
+            /** Format: date-time */
+            publishedAt?: string;
+            createdBy?: {
+              id?: number;
+              documentId?: string;
+            };
+            updatedBy?: {
+              id?: number;
+              documentId?: string;
+            };
+            locale?: string;
+            localizations?: {
+              id?: number;
+              documentId?: string;
+            }[];
+          }[];
+          path?: string;
+          /** Format: date-time */
+          createdAt?: string;
+          /** Format: date-time */
+          updatedAt?: string;
+          /** Format: date-time */
+          publishedAt?: string;
+          createdBy?: {
+            id?: number;
+            documentId?: string;
+          };
+          updatedBy?: {
+            id?: number;
+            documentId?: string;
+          };
+          locale?: string;
+          localizations?: {
+            id?: number;
+            documentId?: string;
+          }[];
         };
-        "Users-Permissions-UserRegistration": {
-            /** @example eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c */
-            jwt?: string;
-            user?: components["schemas"]["Users-Permissions-User"];
+        folderPath?: string;
+        /** Format: date-time */
+        createdAt?: string;
+        /** Format: date-time */
+        updatedAt?: string;
+        /** Format: date-time */
+        publishedAt?: string;
+        createdBy?: {
+          id?: number;
+          documentId?: string;
         };
-        "Users-Permissions-PermissionsTree": {
+        updatedBy?: {
+          id?: number;
+          documentId?: string;
+        };
+        locale?: string;
+        localizations?: {
+          id?: number;
+          documentId?: string;
+        }[];
+      };
+      slug: string;
+      content: unknown;
+      /** Format: date-time */
+      createdAt?: string;
+      /** Format: date-time */
+      updatedAt?: string;
+      /** Format: date-time */
+      publishedAt?: string;
+      createdBy?: {
+        id?: number;
+        documentId?: string;
+      };
+      updatedBy?: {
+        id?: number;
+        documentId?: string;
+      };
+      locale?: string;
+      localizations?: {
+        id?: number;
+        documentId?: string;
+        title?: string;
+        /** Format: date */
+        date?: string;
+        tag?: {
+          id?: number;
+          documentId?: string;
+        };
+        image?: {
+          id?: number;
+          documentId?: string;
+          name?: string;
+          alternativeText?: string;
+          caption?: string;
+          width?: number;
+          height?: number;
+          formats?: unknown;
+          hash?: string;
+          ext?: string;
+          mime?: string;
+          /** Format: float */
+          size?: number;
+          url?: string;
+          previewUrl?: string;
+          provider?: string;
+          provider_metadata?: unknown;
+          related?: {
+            id?: number;
+            documentId?: string;
+          }[];
+          folder?: {
+            id?: number;
+            documentId?: string;
+          };
+          folderPath?: string;
+          /** Format: date-time */
+          createdAt?: string;
+          /** Format: date-time */
+          updatedAt?: string;
+          /** Format: date-time */
+          publishedAt?: string;
+          createdBy?: {
+            id?: number;
+            documentId?: string;
+          };
+          updatedBy?: {
+            id?: number;
+            documentId?: string;
+          };
+          locale?: string;
+          localizations?: {
+            id?: number;
+            documentId?: string;
+          }[];
+        };
+        slug?: string;
+        content?: unknown;
+        /** Format: date-time */
+        createdAt?: string;
+        /** Format: date-time */
+        updatedAt?: string;
+        /** Format: date-time */
+        publishedAt?: string;
+        createdBy?: {
+          id?: number;
+          documentId?: string;
+        };
+        updatedBy?: {
+          id?: number;
+          documentId?: string;
+        };
+        locale?: string;
+        localizations?: {
+          id?: number;
+          documentId?: string;
+        }[];
+      }[];
+    };
+    LatestInformationResponse: {
+      data?: components['schemas']['LatestInformation'];
+      meta?: Record<string, never>;
+    };
+    LatestInformationTagRequest: {
+      data: {
+        name: string;
+        locale?: string;
+        localizations?: (number | string)[];
+      };
+    };
+    LatestInformationTagListResponse: {
+      data?: components['schemas']['LatestInformationTag'][];
+      meta?: {
+        pagination?: {
+          page?: number;
+          pageSize?: number;
+          pageCount?: number;
+          total?: number;
+        };
+      };
+    };
+    LatestInformationTag: {
+      id?: number;
+      documentId?: string;
+      name: string;
+      /** Format: date-time */
+      createdAt?: string;
+      /** Format: date-time */
+      updatedAt?: string;
+      /** Format: date-time */
+      publishedAt?: string;
+      createdBy?: {
+        id?: number;
+        documentId?: string;
+        firstname?: string;
+        lastname?: string;
+        username?: string;
+        /** Format: email */
+        email?: string;
+        resetPasswordToken?: string;
+        registrationToken?: string;
+        isActive?: boolean;
+        roles?: {
+          id?: number;
+          documentId?: string;
+          name?: string;
+          code?: string;
+          description?: string;
+          users?: {
+            id?: number;
+            documentId?: string;
+          }[];
+          permissions?: {
+            id?: number;
+            documentId?: string;
+            action?: string;
+            actionParameters?: unknown;
+            subject?: string;
+            properties?: unknown;
+            conditions?: unknown;
+            role?: {
+              id?: number;
+              documentId?: string;
+            };
+            /** Format: date-time */
+            createdAt?: string;
+            /** Format: date-time */
+            updatedAt?: string;
+            /** Format: date-time */
+            publishedAt?: string;
+            createdBy?: {
+              id?: number;
+              documentId?: string;
+            };
+            updatedBy?: {
+              id?: number;
+              documentId?: string;
+            };
+            locale?: string;
+            localizations?: {
+              id?: number;
+              documentId?: string;
+            }[];
+          }[];
+          /** Format: date-time */
+          createdAt?: string;
+          /** Format: date-time */
+          updatedAt?: string;
+          /** Format: date-time */
+          publishedAt?: string;
+          createdBy?: {
+            id?: number;
+            documentId?: string;
+          };
+          updatedBy?: {
+            id?: number;
+            documentId?: string;
+          };
+          locale?: string;
+          localizations?: {
+            id?: number;
+            documentId?: string;
+          }[];
+        }[];
+        blocked?: boolean;
+        preferedLanguage?: string;
+        /** Format: date-time */
+        createdAt?: string;
+        /** Format: date-time */
+        updatedAt?: string;
+        /** Format: date-time */
+        publishedAt?: string;
+        createdBy?: {
+          id?: number;
+          documentId?: string;
+        };
+        updatedBy?: {
+          id?: number;
+          documentId?: string;
+        };
+        locale?: string;
+        localizations?: {
+          id?: number;
+          documentId?: string;
+        }[];
+      };
+      updatedBy?: {
+        id?: number;
+        documentId?: string;
+      };
+      locale?: string;
+      localizations?: {
+        id?: number;
+        documentId?: string;
+        name?: string;
+        /** Format: date-time */
+        createdAt?: string;
+        /** Format: date-time */
+        updatedAt?: string;
+        /** Format: date-time */
+        publishedAt?: string;
+        createdBy?: {
+          id?: number;
+          documentId?: string;
+        };
+        updatedBy?: {
+          id?: number;
+          documentId?: string;
+        };
+        locale?: string;
+        localizations?: {
+          id?: number;
+          documentId?: string;
+        }[];
+      }[];
+    };
+    LatestInformationTagResponse: {
+      data?: components['schemas']['LatestInformationTag'];
+      meta?: Record<string, never>;
+    };
+    ProductRequest: {
+      data: {
+        name: string;
+        price?: string;
+        categories?: (number | string)[];
+        characters?: (number | string)[];
+        /** @example string or id */
+        image?: number | string;
+        storeUrl?: string;
+        slug: string;
+        locale?: string;
+        localizations?: (number | string)[];
+      };
+    };
+    ProductListResponse: {
+      data?: components['schemas']['Product'][];
+      meta?: {
+        pagination?: {
+          page?: number;
+          pageSize?: number;
+          pageCount?: number;
+          total?: number;
+        };
+      };
+    };
+    Product: {
+      id?: number;
+      documentId?: string;
+      name: string;
+      price?: string;
+      categories?: {
+        id?: number;
+        documentId?: string;
+        name?: string;
+        /** Format: date-time */
+        createdAt?: string;
+        /** Format: date-time */
+        updatedAt?: string;
+        /** Format: date-time */
+        publishedAt?: string;
+        createdBy?: {
+          id?: number;
+          documentId?: string;
+          firstname?: string;
+          lastname?: string;
+          username?: string;
+          /** Format: email */
+          email?: string;
+          resetPasswordToken?: string;
+          registrationToken?: string;
+          isActive?: boolean;
+          roles?: {
+            id?: number;
+            documentId?: string;
+            name?: string;
+            code?: string;
+            description?: string;
+            users?: {
+              id?: number;
+              documentId?: string;
+            }[];
+            permissions?: {
+              id?: number;
+              documentId?: string;
+              action?: string;
+              actionParameters?: unknown;
+              subject?: string;
+              properties?: unknown;
+              conditions?: unknown;
+              role?: {
+                id?: number;
+                documentId?: string;
+              };
+              /** Format: date-time */
+              createdAt?: string;
+              /** Format: date-time */
+              updatedAt?: string;
+              /** Format: date-time */
+              publishedAt?: string;
+              createdBy?: {
+                id?: number;
+                documentId?: string;
+              };
+              updatedBy?: {
+                id?: number;
+                documentId?: string;
+              };
+              locale?: string;
+              localizations?: {
+                id?: number;
+                documentId?: string;
+              }[];
+            }[];
+            /** Format: date-time */
+            createdAt?: string;
+            /** Format: date-time */
+            updatedAt?: string;
+            /** Format: date-time */
+            publishedAt?: string;
+            createdBy?: {
+              id?: number;
+              documentId?: string;
+            };
+            updatedBy?: {
+              id?: number;
+              documentId?: string;
+            };
+            locale?: string;
+            localizations?: {
+              id?: number;
+              documentId?: string;
+            }[];
+          }[];
+          blocked?: boolean;
+          preferedLanguage?: string;
+          /** Format: date-time */
+          createdAt?: string;
+          /** Format: date-time */
+          updatedAt?: string;
+          /** Format: date-time */
+          publishedAt?: string;
+          createdBy?: {
+            id?: number;
+            documentId?: string;
+          };
+          updatedBy?: {
+            id?: number;
+            documentId?: string;
+          };
+          locale?: string;
+          localizations?: {
+            id?: number;
+            documentId?: string;
+          }[];
+        };
+        updatedBy?: {
+          id?: number;
+          documentId?: string;
+        };
+        locale?: string;
+        localizations?: {
+          id?: number;
+          documentId?: string;
+        }[];
+      }[];
+      characters?: {
+        id?: number;
+        documentId?: string;
+        name?: string;
+        galleryImages?: {
+          id?: number;
+          documentId?: string;
+          name?: string;
+          alternativeText?: string;
+          caption?: string;
+          width?: number;
+          height?: number;
+          formats?: unknown;
+          hash?: string;
+          ext?: string;
+          mime?: string;
+          /** Format: float */
+          size?: number;
+          url?: string;
+          previewUrl?: string;
+          provider?: string;
+          provider_metadata?: unknown;
+          related?: {
+            id?: number;
+            documentId?: string;
+          }[];
+          folder?: {
+            id?: number;
+            documentId?: string;
+            name?: string;
+            pathId?: number;
+            parent?: {
+              id?: number;
+              documentId?: string;
+            };
+            children?: {
+              id?: number;
+              documentId?: string;
+            }[];
+            files?: {
+              id?: number;
+              documentId?: string;
+              name?: string;
+              alternativeText?: string;
+              caption?: string;
+              width?: number;
+              height?: number;
+              formats?: unknown;
+              hash?: string;
+              ext?: string;
+              mime?: string;
+              /** Format: float */
+              size?: number;
+              url?: string;
+              previewUrl?: string;
+              provider?: string;
+              provider_metadata?: unknown;
+              related?: {
+                id?: number;
+                documentId?: string;
+              }[];
+              folder?: {
+                id?: number;
+                documentId?: string;
+              };
+              folderPath?: string;
+              /** Format: date-time */
+              createdAt?: string;
+              /** Format: date-time */
+              updatedAt?: string;
+              /** Format: date-time */
+              publishedAt?: string;
+              createdBy?: {
+                id?: number;
+                documentId?: string;
+              };
+              updatedBy?: {
+                id?: number;
+                documentId?: string;
+              };
+              locale?: string;
+              localizations?: {
+                id?: number;
+                documentId?: string;
+              }[];
+            }[];
+            path?: string;
+            /** Format: date-time */
+            createdAt?: string;
+            /** Format: date-time */
+            updatedAt?: string;
+            /** Format: date-time */
+            publishedAt?: string;
+            createdBy?: {
+              id?: number;
+              documentId?: string;
+            };
+            updatedBy?: {
+              id?: number;
+              documentId?: string;
+            };
+            locale?: string;
+            localizations?: {
+              id?: number;
+              documentId?: string;
+            }[];
+          };
+          folderPath?: string;
+          /** Format: date-time */
+          createdAt?: string;
+          /** Format: date-time */
+          updatedAt?: string;
+          /** Format: date-time */
+          publishedAt?: string;
+          createdBy?: {
+            id?: number;
+            documentId?: string;
+          };
+          updatedBy?: {
+            id?: number;
+            documentId?: string;
+          };
+          locale?: string;
+          localizations?: {
+            id?: number;
+            documentId?: string;
+          }[];
+        }[];
+        /** Format: date-time */
+        createdAt?: string;
+        /** Format: date-time */
+        updatedAt?: string;
+        /** Format: date-time */
+        publishedAt?: string;
+        createdBy?: {
+          id?: number;
+          documentId?: string;
+        };
+        updatedBy?: {
+          id?: number;
+          documentId?: string;
+        };
+        locale?: string;
+        localizations?: {
+          id?: number;
+          documentId?: string;
+        }[];
+      }[];
+      image?: {
+        id?: number;
+        documentId?: string;
+        name?: string;
+        alternativeText?: string;
+        caption?: string;
+        width?: number;
+        height?: number;
+        formats?: unknown;
+        hash?: string;
+        ext?: string;
+        mime?: string;
+        /** Format: float */
+        size?: number;
+        url?: string;
+        previewUrl?: string;
+        provider?: string;
+        provider_metadata?: unknown;
+        related?: {
+          id?: number;
+          documentId?: string;
+        }[];
+        folder?: {
+          id?: number;
+          documentId?: string;
+        };
+        folderPath?: string;
+        /** Format: date-time */
+        createdAt?: string;
+        /** Format: date-time */
+        updatedAt?: string;
+        /** Format: date-time */
+        publishedAt?: string;
+        createdBy?: {
+          id?: number;
+          documentId?: string;
+        };
+        updatedBy?: {
+          id?: number;
+          documentId?: string;
+        };
+        locale?: string;
+        localizations?: {
+          id?: number;
+          documentId?: string;
+        }[];
+      };
+      storeUrl?: string;
+      slug: string;
+      /** Format: date-time */
+      createdAt?: string;
+      /** Format: date-time */
+      updatedAt?: string;
+      /** Format: date-time */
+      publishedAt?: string;
+      createdBy?: {
+        id?: number;
+        documentId?: string;
+      };
+      updatedBy?: {
+        id?: number;
+        documentId?: string;
+      };
+      locale?: string;
+      localizations?: {
+        id?: number;
+        documentId?: string;
+        name?: string;
+        price?: string;
+        categories?: {
+          id?: number;
+          documentId?: string;
+        }[];
+        characters?: {
+          id?: number;
+          documentId?: string;
+        }[];
+        image?: {
+          id?: number;
+          documentId?: string;
+          name?: string;
+          alternativeText?: string;
+          caption?: string;
+          width?: number;
+          height?: number;
+          formats?: unknown;
+          hash?: string;
+          ext?: string;
+          mime?: string;
+          /** Format: float */
+          size?: number;
+          url?: string;
+          previewUrl?: string;
+          provider?: string;
+          provider_metadata?: unknown;
+          related?: {
+            id?: number;
+            documentId?: string;
+          }[];
+          folder?: {
+            id?: number;
+            documentId?: string;
+          };
+          folderPath?: string;
+          /** Format: date-time */
+          createdAt?: string;
+          /** Format: date-time */
+          updatedAt?: string;
+          /** Format: date-time */
+          publishedAt?: string;
+          createdBy?: {
+            id?: number;
+            documentId?: string;
+          };
+          updatedBy?: {
+            id?: number;
+            documentId?: string;
+          };
+          locale?: string;
+          localizations?: {
+            id?: number;
+            documentId?: string;
+          }[];
+        };
+        storeUrl?: string;
+        slug?: string;
+        /** Format: date-time */
+        createdAt?: string;
+        /** Format: date-time */
+        updatedAt?: string;
+        /** Format: date-time */
+        publishedAt?: string;
+        createdBy?: {
+          id?: number;
+          documentId?: string;
+        };
+        updatedBy?: {
+          id?: number;
+          documentId?: string;
+        };
+        locale?: string;
+        localizations?: {
+          id?: number;
+          documentId?: string;
+        }[];
+      }[];
+    };
+    ProductResponse: {
+      data?: components['schemas']['Product'];
+      meta?: Record<string, never>;
+    };
+    ProductCategoryRequest: {
+      data: {
+        name: string;
+        locale?: string;
+        localizations?: (number | string)[];
+      };
+    };
+    ProductCategoryListResponse: {
+      data?: components['schemas']['ProductCategory'][];
+      meta?: {
+        pagination?: {
+          page?: number;
+          pageSize?: number;
+          pageCount?: number;
+          total?: number;
+        };
+      };
+    };
+    ProductCategory: {
+      id?: number;
+      documentId?: string;
+      name: string;
+      /** Format: date-time */
+      createdAt?: string;
+      /** Format: date-time */
+      updatedAt?: string;
+      /** Format: date-time */
+      publishedAt?: string;
+      createdBy?: {
+        id?: number;
+        documentId?: string;
+        firstname?: string;
+        lastname?: string;
+        username?: string;
+        /** Format: email */
+        email?: string;
+        resetPasswordToken?: string;
+        registrationToken?: string;
+        isActive?: boolean;
+        roles?: {
+          id?: number;
+          documentId?: string;
+          name?: string;
+          code?: string;
+          description?: string;
+          users?: {
+            id?: number;
+            documentId?: string;
+          }[];
+          permissions?: {
+            id?: number;
+            documentId?: string;
+            action?: string;
+            actionParameters?: unknown;
+            subject?: string;
+            properties?: unknown;
+            conditions?: unknown;
+            role?: {
+              id?: number;
+              documentId?: string;
+            };
+            /** Format: date-time */
+            createdAt?: string;
+            /** Format: date-time */
+            updatedAt?: string;
+            /** Format: date-time */
+            publishedAt?: string;
+            createdBy?: {
+              id?: number;
+              documentId?: string;
+            };
+            updatedBy?: {
+              id?: number;
+              documentId?: string;
+            };
+            locale?: string;
+            localizations?: {
+              id?: number;
+              documentId?: string;
+            }[];
+          }[];
+          /** Format: date-time */
+          createdAt?: string;
+          /** Format: date-time */
+          updatedAt?: string;
+          /** Format: date-time */
+          publishedAt?: string;
+          createdBy?: {
+            id?: number;
+            documentId?: string;
+          };
+          updatedBy?: {
+            id?: number;
+            documentId?: string;
+          };
+          locale?: string;
+          localizations?: {
+            id?: number;
+            documentId?: string;
+          }[];
+        }[];
+        blocked?: boolean;
+        preferedLanguage?: string;
+        /** Format: date-time */
+        createdAt?: string;
+        /** Format: date-time */
+        updatedAt?: string;
+        /** Format: date-time */
+        publishedAt?: string;
+        createdBy?: {
+          id?: number;
+          documentId?: string;
+        };
+        updatedBy?: {
+          id?: number;
+          documentId?: string;
+        };
+        locale?: string;
+        localizations?: {
+          id?: number;
+          documentId?: string;
+        }[];
+      };
+      updatedBy?: {
+        id?: number;
+        documentId?: string;
+      };
+      locale?: string;
+      localizations?: {
+        id?: number;
+        documentId?: string;
+        name?: string;
+        /** Format: date-time */
+        createdAt?: string;
+        /** Format: date-time */
+        updatedAt?: string;
+        /** Format: date-time */
+        publishedAt?: string;
+        createdBy?: {
+          id?: number;
+          documentId?: string;
+        };
+        updatedBy?: {
+          id?: number;
+          documentId?: string;
+        };
+        locale?: string;
+        localizations?: {
+          id?: number;
+          documentId?: string;
+        }[];
+      }[];
+    };
+    ProductCategoryResponse: {
+      data?: components['schemas']['ProductCategory'];
+      meta?: Record<string, never>;
+    };
+    TopDisplayContentRequest: {
+      data: {
+        products?: (number | string)[];
+        galleryImages: (number | string)[];
+        topImages?: (number | string)[];
+        locale?: string;
+        localizations?: (number | string)[];
+      };
+    };
+    TopDisplayContentListResponse: {
+      data?: components['schemas']['TopDisplayContent'][];
+      meta?: {
+        pagination?: {
+          page?: number;
+          pageSize?: number;
+          pageCount?: number;
+          total?: number;
+        };
+      };
+    };
+    TopDisplayContent: {
+      id?: number;
+      documentId?: string;
+      products?: {
+        id?: number;
+        documentId?: string;
+        name?: string;
+        price?: string;
+        categories?: {
+          id?: number;
+          documentId?: string;
+          name?: string;
+          /** Format: date-time */
+          createdAt?: string;
+          /** Format: date-time */
+          updatedAt?: string;
+          /** Format: date-time */
+          publishedAt?: string;
+          createdBy?: {
+            id?: number;
+            documentId?: string;
+            firstname?: string;
+            lastname?: string;
+            username?: string;
+            /** Format: email */
+            email?: string;
+            resetPasswordToken?: string;
+            registrationToken?: string;
+            isActive?: boolean;
+            roles?: {
+              id?: number;
+              documentId?: string;
+              name?: string;
+              code?: string;
+              description?: string;
+              users?: {
+                id?: number;
+                documentId?: string;
+              }[];
+              permissions?: {
+                id?: number;
+                documentId?: string;
+                action?: string;
+                actionParameters?: unknown;
+                subject?: string;
+                properties?: unknown;
+                conditions?: unknown;
+                role?: {
+                  id?: number;
+                  documentId?: string;
+                };
+                /** Format: date-time */
+                createdAt?: string;
+                /** Format: date-time */
+                updatedAt?: string;
+                /** Format: date-time */
+                publishedAt?: string;
+                createdBy?: {
+                  id?: number;
+                  documentId?: string;
+                };
+                updatedBy?: {
+                  id?: number;
+                  documentId?: string;
+                };
+                locale?: string;
+                localizations?: {
+                  id?: number;
+                  documentId?: string;
+                }[];
+              }[];
+              /** Format: date-time */
+              createdAt?: string;
+              /** Format: date-time */
+              updatedAt?: string;
+              /** Format: date-time */
+              publishedAt?: string;
+              createdBy?: {
+                id?: number;
+                documentId?: string;
+              };
+              updatedBy?: {
+                id?: number;
+                documentId?: string;
+              };
+              locale?: string;
+              localizations?: {
+                id?: number;
+                documentId?: string;
+              }[];
+            }[];
+            blocked?: boolean;
+            preferedLanguage?: string;
+            /** Format: date-time */
+            createdAt?: string;
+            /** Format: date-time */
+            updatedAt?: string;
+            /** Format: date-time */
+            publishedAt?: string;
+            createdBy?: {
+              id?: number;
+              documentId?: string;
+            };
+            updatedBy?: {
+              id?: number;
+              documentId?: string;
+            };
+            locale?: string;
+            localizations?: {
+              id?: number;
+              documentId?: string;
+            }[];
+          };
+          updatedBy?: {
+            id?: number;
+            documentId?: string;
+          };
+          locale?: string;
+          localizations?: {
+            id?: number;
+            documentId?: string;
+          }[];
+        }[];
+        characters?: {
+          id?: number;
+          documentId?: string;
+          name?: string;
+          galleryImages?: {
+            id?: number;
+            documentId?: string;
+            name?: string;
+            alternativeText?: string;
+            caption?: string;
+            width?: number;
+            height?: number;
+            formats?: unknown;
+            hash?: string;
+            ext?: string;
+            mime?: string;
+            /** Format: float */
+            size?: number;
+            url?: string;
+            previewUrl?: string;
+            provider?: string;
+            provider_metadata?: unknown;
+            related?: {
+              id?: number;
+              documentId?: string;
+            }[];
+            folder?: {
+              id?: number;
+              documentId?: string;
+              name?: string;
+              pathId?: number;
+              parent?: {
+                id?: number;
+                documentId?: string;
+              };
+              children?: {
+                id?: number;
+                documentId?: string;
+              }[];
+              files?: {
+                id?: number;
+                documentId?: string;
+                name?: string;
+                alternativeText?: string;
+                caption?: string;
+                width?: number;
+                height?: number;
+                formats?: unknown;
+                hash?: string;
+                ext?: string;
+                mime?: string;
+                /** Format: float */
+                size?: number;
+                url?: string;
+                previewUrl?: string;
+                provider?: string;
+                provider_metadata?: unknown;
+                related?: {
+                  id?: number;
+                  documentId?: string;
+                }[];
+                folder?: {
+                  id?: number;
+                  documentId?: string;
+                };
+                folderPath?: string;
+                /** Format: date-time */
+                createdAt?: string;
+                /** Format: date-time */
+                updatedAt?: string;
+                /** Format: date-time */
+                publishedAt?: string;
+                createdBy?: {
+                  id?: number;
+                  documentId?: string;
+                };
+                updatedBy?: {
+                  id?: number;
+                  documentId?: string;
+                };
+                locale?: string;
+                localizations?: {
+                  id?: number;
+                  documentId?: string;
+                }[];
+              }[];
+              path?: string;
+              /** Format: date-time */
+              createdAt?: string;
+              /** Format: date-time */
+              updatedAt?: string;
+              /** Format: date-time */
+              publishedAt?: string;
+              createdBy?: {
+                id?: number;
+                documentId?: string;
+              };
+              updatedBy?: {
+                id?: number;
+                documentId?: string;
+              };
+              locale?: string;
+              localizations?: {
+                id?: number;
+                documentId?: string;
+              }[];
+            };
+            folderPath?: string;
+            /** Format: date-time */
+            createdAt?: string;
+            /** Format: date-time */
+            updatedAt?: string;
+            /** Format: date-time */
+            publishedAt?: string;
+            createdBy?: {
+              id?: number;
+              documentId?: string;
+            };
+            updatedBy?: {
+              id?: number;
+              documentId?: string;
+            };
+            locale?: string;
+            localizations?: {
+              id?: number;
+              documentId?: string;
+            }[];
+          }[];
+          /** Format: date-time */
+          createdAt?: string;
+          /** Format: date-time */
+          updatedAt?: string;
+          /** Format: date-time */
+          publishedAt?: string;
+          createdBy?: {
+            id?: number;
+            documentId?: string;
+          };
+          updatedBy?: {
+            id?: number;
+            documentId?: string;
+          };
+          locale?: string;
+          localizations?: {
+            id?: number;
+            documentId?: string;
+          }[];
+        }[];
+        image?: {
+          id?: number;
+          documentId?: string;
+          name?: string;
+          alternativeText?: string;
+          caption?: string;
+          width?: number;
+          height?: number;
+          formats?: unknown;
+          hash?: string;
+          ext?: string;
+          mime?: string;
+          /** Format: float */
+          size?: number;
+          url?: string;
+          previewUrl?: string;
+          provider?: string;
+          provider_metadata?: unknown;
+          related?: {
+            id?: number;
+            documentId?: string;
+          }[];
+          folder?: {
+            id?: number;
+            documentId?: string;
+          };
+          folderPath?: string;
+          /** Format: date-time */
+          createdAt?: string;
+          /** Format: date-time */
+          updatedAt?: string;
+          /** Format: date-time */
+          publishedAt?: string;
+          createdBy?: {
+            id?: number;
+            documentId?: string;
+          };
+          updatedBy?: {
+            id?: number;
+            documentId?: string;
+          };
+          locale?: string;
+          localizations?: {
+            id?: number;
+            documentId?: string;
+          }[];
+        };
+        storeUrl?: string;
+        slug?: string;
+        /** Format: date-time */
+        createdAt?: string;
+        /** Format: date-time */
+        updatedAt?: string;
+        /** Format: date-time */
+        publishedAt?: string;
+        createdBy?: {
+          id?: number;
+          documentId?: string;
+        };
+        updatedBy?: {
+          id?: number;
+          documentId?: string;
+        };
+        locale?: string;
+        localizations?: {
+          id?: number;
+          documentId?: string;
+        }[];
+      }[];
+      galleryImages: {
+        id?: number;
+        documentId?: string;
+        name?: string;
+        alternativeText?: string;
+        caption?: string;
+        width?: number;
+        height?: number;
+        formats?: unknown;
+        hash?: string;
+        ext?: string;
+        mime?: string;
+        /** Format: float */
+        size?: number;
+        url?: string;
+        previewUrl?: string;
+        provider?: string;
+        provider_metadata?: unknown;
+        related?: {
+          id?: number;
+          documentId?: string;
+        }[];
+        folder?: {
+          id?: number;
+          documentId?: string;
+        };
+        folderPath?: string;
+        /** Format: date-time */
+        createdAt?: string;
+        /** Format: date-time */
+        updatedAt?: string;
+        /** Format: date-time */
+        publishedAt?: string;
+        createdBy?: {
+          id?: number;
+          documentId?: string;
+        };
+        updatedBy?: {
+          id?: number;
+          documentId?: string;
+        };
+        locale?: string;
+        localizations?: {
+          id?: number;
+          documentId?: string;
+        }[];
+      }[];
+      topImages?: {
+        id?: number;
+        documentId?: string;
+        name?: string;
+        alternativeText?: string;
+        caption?: string;
+        width?: number;
+        height?: number;
+        formats?: unknown;
+        hash?: string;
+        ext?: string;
+        mime?: string;
+        /** Format: float */
+        size?: number;
+        url?: string;
+        previewUrl?: string;
+        provider?: string;
+        provider_metadata?: unknown;
+        related?: {
+          id?: number;
+          documentId?: string;
+        }[];
+        folder?: {
+          id?: number;
+          documentId?: string;
+        };
+        folderPath?: string;
+        /** Format: date-time */
+        createdAt?: string;
+        /** Format: date-time */
+        updatedAt?: string;
+        /** Format: date-time */
+        publishedAt?: string;
+        createdBy?: {
+          id?: number;
+          documentId?: string;
+        };
+        updatedBy?: {
+          id?: number;
+          documentId?: string;
+        };
+        locale?: string;
+        localizations?: {
+          id?: number;
+          documentId?: string;
+        }[];
+      }[];
+      /** Format: date-time */
+      createdAt?: string;
+      /** Format: date-time */
+      updatedAt?: string;
+      /** Format: date-time */
+      publishedAt?: string;
+      createdBy?: {
+        id?: number;
+        documentId?: string;
+      };
+      updatedBy?: {
+        id?: number;
+        documentId?: string;
+      };
+      locale?: string;
+      localizations?: {
+        id?: number;
+        documentId?: string;
+        products?: {
+          id?: number;
+          documentId?: string;
+        }[];
+        galleryImages?: {
+          id?: number;
+          documentId?: string;
+          name?: string;
+          alternativeText?: string;
+          caption?: string;
+          width?: number;
+          height?: number;
+          formats?: unknown;
+          hash?: string;
+          ext?: string;
+          mime?: string;
+          /** Format: float */
+          size?: number;
+          url?: string;
+          previewUrl?: string;
+          provider?: string;
+          provider_metadata?: unknown;
+          related?: {
+            id?: number;
+            documentId?: string;
+          }[];
+          folder?: {
+            id?: number;
+            documentId?: string;
+          };
+          folderPath?: string;
+          /** Format: date-time */
+          createdAt?: string;
+          /** Format: date-time */
+          updatedAt?: string;
+          /** Format: date-time */
+          publishedAt?: string;
+          createdBy?: {
+            id?: number;
+            documentId?: string;
+          };
+          updatedBy?: {
+            id?: number;
+            documentId?: string;
+          };
+          locale?: string;
+          localizations?: {
+            id?: number;
+            documentId?: string;
+          }[];
+        }[];
+        topImages?: {
+          id?: number;
+          documentId?: string;
+          name?: string;
+          alternativeText?: string;
+          caption?: string;
+          width?: number;
+          height?: number;
+          formats?: unknown;
+          hash?: string;
+          ext?: string;
+          mime?: string;
+          /** Format: float */
+          size?: number;
+          url?: string;
+          previewUrl?: string;
+          provider?: string;
+          provider_metadata?: unknown;
+          related?: {
+            id?: number;
+            documentId?: string;
+          }[];
+          folder?: {
+            id?: number;
+            documentId?: string;
+          };
+          folderPath?: string;
+          /** Format: date-time */
+          createdAt?: string;
+          /** Format: date-time */
+          updatedAt?: string;
+          /** Format: date-time */
+          publishedAt?: string;
+          createdBy?: {
+            id?: number;
+            documentId?: string;
+          };
+          updatedBy?: {
+            id?: number;
+            documentId?: string;
+          };
+          locale?: string;
+          localizations?: {
+            id?: number;
+            documentId?: string;
+          }[];
+        }[];
+        /** Format: date-time */
+        createdAt?: string;
+        /** Format: date-time */
+        updatedAt?: string;
+        /** Format: date-time */
+        publishedAt?: string;
+        createdBy?: {
+          id?: number;
+          documentId?: string;
+        };
+        updatedBy?: {
+          id?: number;
+          documentId?: string;
+        };
+        locale?: string;
+        localizations?: {
+          id?: number;
+          documentId?: string;
+        }[];
+      }[];
+    };
+    TopDisplayContentResponse: {
+      data?: components['schemas']['TopDisplayContent'];
+      meta?: Record<string, never>;
+    };
+    UploadFile: {
+      id?: number;
+      name?: string;
+      alternativeText?: string;
+      caption?: string;
+      /** Format: integer */
+      width?: number;
+      /** Format: integer */
+      height?: number;
+      formats?: number;
+      hash?: string;
+      ext?: string;
+      mime?: string;
+      /** Format: double */
+      size?: number;
+      url?: string;
+      previewUrl?: string;
+      provider?: string;
+      provider_metadata?: Record<string, never>;
+      /** Format: date-time */
+      createdAt?: string;
+      /** Format: date-time */
+      updatedAt?: string;
+    };
+    'Users-Permissions-Role': {
+      id?: number;
+      name?: string;
+      description?: string;
+      type?: string;
+      /** Format: date-time */
+      createdAt?: string;
+      /** Format: date-time */
+      updatedAt?: string;
+    };
+    'Users-Permissions-User': {
+      /** @example 1 */
+      id?: number;
+      /** @example foo.bar */
+      username?: string;
+      /** @example foo.bar@strapi.io */
+      email?: string;
+      /** @example local */
+      provider?: string;
+      /** @example true */
+      confirmed?: boolean;
+      /** @example false */
+      blocked?: boolean;
+      /**
+       * Format: date-time
+       * @example 2022-06-02T08:32:06.258Z
+       */
+      createdAt?: string;
+      /**
+       * Format: date-time
+       * @example 2022-06-02T08:32:06.267Z
+       */
+      updatedAt?: string;
+    };
+    'Users-Permissions-UserRegistration': {
+      /** @example eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c */
+      jwt?: string;
+      user?: components['schemas']['Users-Permissions-User'];
+    };
+    'Users-Permissions-PermissionsTree': {
+      [key: string]: {
+        /** @description every controller of the api */
+        controllers?: {
+          [key: string]: {
             [key: string]: {
-                /** @description every controller of the api */
-                controllers?: {
-                    [key: string]: {
-                        [key: string]: {
-                            enabled?: boolean;
-                            policy?: string;
-                        };
-                    };
-                };
+              enabled?: boolean;
+              policy?: string;
             };
+          };
         };
+      };
     };
-    responses: never;
-    parameters: never;
-    requestBodies: {
-        "Users-Permissions-RoleRequest": {
-            content: {
-                /** @example {
-                 *       "name": "foo",
-                 *       "description": "role foo",
-                 *       "permissions": {
-                 *         "api::content-type.content-type": {
-                 *           "controllers": {
-                 *             "controllerA": {
-                 *               "find": {
-                 *                 "enabled": true
-                 *               }
-                 *             }
-                 *           }
-                 *         }
-                 *       }
-                 *     } */
-                "application/json": {
-                    name?: string;
-                    description?: string;
-                    type?: string;
-                    permissions?: components["schemas"]["Users-Permissions-PermissionsTree"];
-                };
-            };
+  };
+  responses: never;
+  parameters: never;
+  requestBodies: {
+    'Users-Permissions-RoleRequest': {
+      content: {
+        /** @example {
+         *       "name": "foo",
+         *       "description": "role foo",
+         *       "permissions": {
+         *         "api::content-type.content-type": {
+         *           "controllers": {
+         *             "controllerA": {
+         *               "find": {
+         *                 "enabled": true
+         *               }
+         *             }
+         *           }
+         *         }
+         *       }
+         *     } */
+        'application/json': {
+          name?: string;
+          description?: string;
+          type?: string;
+          permissions?: components['schemas']['Users-Permissions-PermissionsTree'];
         };
+      };
     };
-    headers: never;
-    pathItems: never;
+  };
+  headers: never;
+  pathItems: never;
 }
 export type $defs = Record<string, never>;
 export interface operations {
-    "get/characters": {
-        parameters: {
-            query?: {
-                /** @description Sort by attributes ascending (asc) or descending (desc) */
-                sort?: string;
-                /** @description Return page/pageSize (default: true) */
-                "pagination[withCount]"?: boolean;
-                /** @description Page number (default: 0) */
-                "pagination[page]"?: number;
-                /** @description Page size (default: 25) */
-                "pagination[pageSize]"?: number;
-                /** @description Offset value (default: 0) */
-                "pagination[start]"?: number;
-                /** @description Number of entities to return (default: 25) */
-                "pagination[limit]"?: number;
-                /** @description Fields to return (ex: title,author) */
-                fields?: string;
-                /** @description Relations to return */
-                populate?: string;
-                /** @description Filters to apply */
-                filters?: {
-                    [key: string]: unknown;
-                };
-                /** @description Locale to apply */
-                locale?: string;
-            };
-            header?: never;
-            path?: never;
-            cookie?: never;
+  'get/characters': {
+    parameters: {
+      query?: {
+        /** @description Sort by attributes ascending (asc) or descending (desc) */
+        sort?: string;
+        /** @description Return page/pageSize (default: true) */
+        'pagination[withCount]'?: boolean;
+        /** @description Page number (default: 0) */
+        'pagination[page]'?: number;
+        /** @description Page size (default: 25) */
+        'pagination[pageSize]'?: number;
+        /** @description Offset value (default: 0) */
+        'pagination[start]'?: number;
+        /** @description Number of entities to return (default: 25) */
+        'pagination[limit]'?: number;
+        /** @description Fields to return (ex: title,author) */
+        fields?: string;
+        /** @description Relations to return */
+        populate?: string;
+        /** @description Filters to apply */
+        filters?: {
+          [key: string]: unknown;
         };
-        requestBody?: never;
-        responses: {
-            /** @description OK */
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["CharacterListResponse"];
-                };
-            };
-            /** @description Bad Request */
-            400: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Unauthorized */
-            401: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Forbidden */
-            403: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Not Found */
-            404: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Internal Server Error */
-            500: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-        };
+        /** @description Locale to apply */
+        locale?: string;
+      };
+      header?: never;
+      path?: never;
+      cookie?: never;
     };
-    "post/characters": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
+    requestBody?: never;
+    responses: {
+      /** @description OK */
+      200: {
+        headers: {
+          [name: string]: unknown;
         };
-        requestBody: {
-            content: {
-                "application/json": components["schemas"]["CharacterRequest"];
-            };
+        content: {
+          'application/json': components['schemas']['CharacterListResponse'];
         };
-        responses: {
-            /** @description OK */
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["CharacterResponse"];
-                };
-            };
-            /** @description Bad Request */
-            400: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Unauthorized */
-            401: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Forbidden */
-            403: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Not Found */
-            404: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Internal Server Error */
-            500: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
+      };
+      /** @description Bad Request */
+      400: {
+        headers: {
+          [name: string]: unknown;
         };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Unauthorized */
+      401: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Forbidden */
+      403: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Not Found */
+      404: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Internal Server Error */
+      500: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
     };
-    "get/characters/{id}": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                id: number;
-            };
-            cookie?: never;
-        };
-        requestBody?: never;
-        responses: {
-            /** @description OK */
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["CharacterResponse"];
-                };
-            };
-            /** @description Bad Request */
-            400: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Unauthorized */
-            401: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Forbidden */
-            403: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Not Found */
-            404: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Internal Server Error */
-            500: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-        };
+  };
+  'post/characters': {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
     };
-    "put/characters/{id}": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                id: number;
-            };
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": components["schemas"]["CharacterRequest"];
-            };
-        };
-        responses: {
-            /** @description OK */
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["CharacterResponse"];
-                };
-            };
-            /** @description Bad Request */
-            400: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Unauthorized */
-            401: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Forbidden */
-            403: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Not Found */
-            404: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Internal Server Error */
-            500: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-        };
+    requestBody: {
+      content: {
+        'application/json': components['schemas']['CharacterRequest'];
+      };
     };
-    "delete/characters/{id}": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                id: number;
-            };
-            cookie?: never;
+    responses: {
+      /** @description OK */
+      200: {
+        headers: {
+          [name: string]: unknown;
         };
-        requestBody?: never;
-        responses: {
-            /** @description OK */
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": number;
-                };
-            };
-            /** @description Bad Request */
-            400: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Unauthorized */
-            401: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Forbidden */
-            403: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Not Found */
-            404: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Internal Server Error */
-            500: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
+        content: {
+          'application/json': components['schemas']['CharacterResponse'];
         };
+      };
+      /** @description Bad Request */
+      400: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Unauthorized */
+      401: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Forbidden */
+      403: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Not Found */
+      404: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Internal Server Error */
+      500: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
     };
-    "get/latest-informations": {
-        parameters: {
-            query?: {
-                /** @description Sort by attributes ascending (asc) or descending (desc) */
-                sort?: string;
-                /** @description Return page/pageSize (default: true) */
-                "pagination[withCount]"?: boolean;
-                /** @description Page number (default: 0) */
-                "pagination[page]"?: number;
-                /** @description Page size (default: 25) */
-                "pagination[pageSize]"?: number;
-                /** @description Offset value (default: 0) */
-                "pagination[start]"?: number;
-                /** @description Number of entities to return (default: 25) */
-                "pagination[limit]"?: number;
-                /** @description Fields to return (ex: title,author) */
-                fields?: string;
-                /** @description Relations to return */
-                populate?: string;
-                /** @description Filters to apply */
-                filters?: {
-                    [key: string]: unknown;
-                };
-                /** @description Locale to apply */
-                locale?: string;
-            };
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody?: never;
-        responses: {
-            /** @description OK */
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["LatestInformationListResponse"];
-                };
-            };
-            /** @description Bad Request */
-            400: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Unauthorized */
-            401: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Forbidden */
-            403: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Not Found */
-            404: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Internal Server Error */
-            500: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-        };
+  };
+  'get/characters/{id}': {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        id: number;
+      };
+      cookie?: never;
     };
-    "post/latest-informations": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
+    requestBody?: never;
+    responses: {
+      /** @description OK */
+      200: {
+        headers: {
+          [name: string]: unknown;
         };
-        requestBody: {
-            content: {
-                "application/json": components["schemas"]["LatestInformationRequest"];
-            };
+        content: {
+          'application/json': components['schemas']['CharacterResponse'];
         };
-        responses: {
-            /** @description OK */
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["LatestInformationResponse"];
-                };
-            };
-            /** @description Bad Request */
-            400: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Unauthorized */
-            401: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Forbidden */
-            403: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Not Found */
-            404: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Internal Server Error */
-            500: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
+      };
+      /** @description Bad Request */
+      400: {
+        headers: {
+          [name: string]: unknown;
         };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Unauthorized */
+      401: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Forbidden */
+      403: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Not Found */
+      404: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Internal Server Error */
+      500: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
     };
-    "get/latest-informations/{id}": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                id: number;
-            };
-            cookie?: never;
-        };
-        requestBody?: never;
-        responses: {
-            /** @description OK */
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["LatestInformationResponse"];
-                };
-            };
-            /** @description Bad Request */
-            400: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Unauthorized */
-            401: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Forbidden */
-            403: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Not Found */
-            404: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Internal Server Error */
-            500: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-        };
+  };
+  'put/characters/{id}': {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        id: number;
+      };
+      cookie?: never;
     };
-    "put/latest-informations/{id}": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                id: number;
-            };
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": components["schemas"]["LatestInformationRequest"];
-            };
-        };
-        responses: {
-            /** @description OK */
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["LatestInformationResponse"];
-                };
-            };
-            /** @description Bad Request */
-            400: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Unauthorized */
-            401: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Forbidden */
-            403: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Not Found */
-            404: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Internal Server Error */
-            500: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-        };
+    requestBody: {
+      content: {
+        'application/json': components['schemas']['CharacterRequest'];
+      };
     };
-    "delete/latest-informations/{id}": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                id: number;
-            };
-            cookie?: never;
+    responses: {
+      /** @description OK */
+      200: {
+        headers: {
+          [name: string]: unknown;
         };
-        requestBody?: never;
-        responses: {
-            /** @description OK */
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": number;
-                };
-            };
-            /** @description Bad Request */
-            400: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Unauthorized */
-            401: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Forbidden */
-            403: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Not Found */
-            404: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Internal Server Error */
-            500: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
+        content: {
+          'application/json': components['schemas']['CharacterResponse'];
         };
+      };
+      /** @description Bad Request */
+      400: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Unauthorized */
+      401: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Forbidden */
+      403: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Not Found */
+      404: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Internal Server Error */
+      500: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
     };
-    "get/latest-information-tags": {
-        parameters: {
-            query?: {
-                /** @description Sort by attributes ascending (asc) or descending (desc) */
-                sort?: string;
-                /** @description Return page/pageSize (default: true) */
-                "pagination[withCount]"?: boolean;
-                /** @description Page number (default: 0) */
-                "pagination[page]"?: number;
-                /** @description Page size (default: 25) */
-                "pagination[pageSize]"?: number;
-                /** @description Offset value (default: 0) */
-                "pagination[start]"?: number;
-                /** @description Number of entities to return (default: 25) */
-                "pagination[limit]"?: number;
-                /** @description Fields to return (ex: title,author) */
-                fields?: string;
-                /** @description Relations to return */
-                populate?: string;
-                /** @description Filters to apply */
-                filters?: {
-                    [key: string]: unknown;
-                };
-                /** @description Locale to apply */
-                locale?: string;
-            };
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody?: never;
-        responses: {
-            /** @description OK */
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["LatestInformationTagListResponse"];
-                };
-            };
-            /** @description Bad Request */
-            400: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Unauthorized */
-            401: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Forbidden */
-            403: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Not Found */
-            404: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Internal Server Error */
-            500: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-        };
+  };
+  'delete/characters/{id}': {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        id: number;
+      };
+      cookie?: never;
     };
-    "post/latest-information-tags": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
+    requestBody?: never;
+    responses: {
+      /** @description OK */
+      200: {
+        headers: {
+          [name: string]: unknown;
         };
-        requestBody: {
-            content: {
-                "application/json": components["schemas"]["LatestInformationTagRequest"];
-            };
+        content: {
+          'application/json': number;
         };
-        responses: {
-            /** @description OK */
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["LatestInformationTagResponse"];
-                };
-            };
-            /** @description Bad Request */
-            400: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Unauthorized */
-            401: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Forbidden */
-            403: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Not Found */
-            404: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Internal Server Error */
-            500: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
+      };
+      /** @description Bad Request */
+      400: {
+        headers: {
+          [name: string]: unknown;
         };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Unauthorized */
+      401: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Forbidden */
+      403: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Not Found */
+      404: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Internal Server Error */
+      500: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
     };
-    "get/latest-information-tags/{id}": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                id: number;
-            };
-            cookie?: never;
+  };
+  'get/latest-informations': {
+    parameters: {
+      query?: {
+        /** @description Sort by attributes ascending (asc) or descending (desc) */
+        sort?: string;
+        /** @description Return page/pageSize (default: true) */
+        'pagination[withCount]'?: boolean;
+        /** @description Page number (default: 0) */
+        'pagination[page]'?: number;
+        /** @description Page size (default: 25) */
+        'pagination[pageSize]'?: number;
+        /** @description Offset value (default: 0) */
+        'pagination[start]'?: number;
+        /** @description Number of entities to return (default: 25) */
+        'pagination[limit]'?: number;
+        /** @description Fields to return (ex: title,author) */
+        fields?: string;
+        /** @description Relations to return */
+        populate?: string;
+        /** @description Filters to apply */
+        filters?: {
+          [key: string]: unknown;
         };
-        requestBody?: never;
-        responses: {
-            /** @description OK */
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["LatestInformationTagResponse"];
-                };
-            };
-            /** @description Bad Request */
-            400: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Unauthorized */
-            401: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Forbidden */
-            403: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Not Found */
-            404: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Internal Server Error */
-            500: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-        };
+        /** @description Locale to apply */
+        locale?: string;
+      };
+      header?: never;
+      path?: never;
+      cookie?: never;
     };
-    "put/latest-information-tags/{id}": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                id: number;
-            };
-            cookie?: never;
+    requestBody?: never;
+    responses: {
+      /** @description OK */
+      200: {
+        headers: {
+          [name: string]: unknown;
         };
-        requestBody: {
-            content: {
-                "application/json": components["schemas"]["LatestInformationTagRequest"];
-            };
+        content: {
+          'application/json': components['schemas']['LatestInformationListResponse'];
         };
-        responses: {
-            /** @description OK */
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["LatestInformationTagResponse"];
-                };
-            };
-            /** @description Bad Request */
-            400: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Unauthorized */
-            401: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Forbidden */
-            403: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Not Found */
-            404: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Internal Server Error */
-            500: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
+      };
+      /** @description Bad Request */
+      400: {
+        headers: {
+          [name: string]: unknown;
         };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Unauthorized */
+      401: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Forbidden */
+      403: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Not Found */
+      404: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Internal Server Error */
+      500: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
     };
-    "delete/latest-information-tags/{id}": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                id: number;
-            };
-            cookie?: never;
-        };
-        requestBody?: never;
-        responses: {
-            /** @description OK */
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": number;
-                };
-            };
-            /** @description Bad Request */
-            400: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Unauthorized */
-            401: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Forbidden */
-            403: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Not Found */
-            404: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Internal Server Error */
-            500: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-        };
+  };
+  'post/latest-informations': {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
     };
-    "get/products": {
-        parameters: {
-            query?: {
-                /** @description Sort by attributes ascending (asc) or descending (desc) */
-                sort?: string;
-                /** @description Return page/pageSize (default: true) */
-                "pagination[withCount]"?: boolean;
-                /** @description Page number (default: 0) */
-                "pagination[page]"?: number;
-                /** @description Page size (default: 25) */
-                "pagination[pageSize]"?: number;
-                /** @description Offset value (default: 0) */
-                "pagination[start]"?: number;
-                /** @description Number of entities to return (default: 25) */
-                "pagination[limit]"?: number;
-                /** @description Fields to return (ex: title,author) */
-                fields?: string;
-                /** @description Relations to return */
-                populate?: string;
-                /** @description Filters to apply */
-                filters?: {
-                    [key: string]: unknown;
-                };
-                /** @description Locale to apply */
-                locale?: string;
-            };
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody?: never;
-        responses: {
-            /** @description OK */
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["ProductListResponse"];
-                };
-            };
-            /** @description Bad Request */
-            400: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Unauthorized */
-            401: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Forbidden */
-            403: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Not Found */
-            404: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Internal Server Error */
-            500: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-        };
+    requestBody: {
+      content: {
+        'application/json': components['schemas']['LatestInformationRequest'];
+      };
     };
-    "post/products": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
+    responses: {
+      /** @description OK */
+      200: {
+        headers: {
+          [name: string]: unknown;
         };
-        requestBody: {
-            content: {
-                "application/json": components["schemas"]["ProductRequest"];
-            };
+        content: {
+          'application/json': components['schemas']['LatestInformationResponse'];
         };
-        responses: {
-            /** @description OK */
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["ProductResponse"];
-                };
-            };
-            /** @description Bad Request */
-            400: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Unauthorized */
-            401: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Forbidden */
-            403: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Not Found */
-            404: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Internal Server Error */
-            500: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
+      };
+      /** @description Bad Request */
+      400: {
+        headers: {
+          [name: string]: unknown;
         };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Unauthorized */
+      401: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Forbidden */
+      403: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Not Found */
+      404: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Internal Server Error */
+      500: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
     };
-    "get/products/{id}": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                id: number;
-            };
-            cookie?: never;
-        };
-        requestBody?: never;
-        responses: {
-            /** @description OK */
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["ProductResponse"];
-                };
-            };
-            /** @description Bad Request */
-            400: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Unauthorized */
-            401: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Forbidden */
-            403: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Not Found */
-            404: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Internal Server Error */
-            500: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-        };
+  };
+  'get/latest-informations/{id}': {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        id: number;
+      };
+      cookie?: never;
     };
-    "put/products/{id}": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                id: number;
-            };
-            cookie?: never;
+    requestBody?: never;
+    responses: {
+      /** @description OK */
+      200: {
+        headers: {
+          [name: string]: unknown;
         };
-        requestBody: {
-            content: {
-                "application/json": components["schemas"]["ProductRequest"];
-            };
+        content: {
+          'application/json': components['schemas']['LatestInformationResponse'];
         };
-        responses: {
-            /** @description OK */
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["ProductResponse"];
-                };
-            };
-            /** @description Bad Request */
-            400: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Unauthorized */
-            401: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Forbidden */
-            403: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Not Found */
-            404: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Internal Server Error */
-            500: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
+      };
+      /** @description Bad Request */
+      400: {
+        headers: {
+          [name: string]: unknown;
         };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Unauthorized */
+      401: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Forbidden */
+      403: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Not Found */
+      404: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Internal Server Error */
+      500: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
     };
-    "delete/products/{id}": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                id: number;
-            };
-            cookie?: never;
-        };
-        requestBody?: never;
-        responses: {
-            /** @description OK */
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": number;
-                };
-            };
-            /** @description Bad Request */
-            400: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Unauthorized */
-            401: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Forbidden */
-            403: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Not Found */
-            404: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Internal Server Error */
-            500: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-        };
+  };
+  'put/latest-informations/{id}': {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        id: number;
+      };
+      cookie?: never;
     };
-    "get/product-categories": {
-        parameters: {
-            query?: {
-                /** @description Sort by attributes ascending (asc) or descending (desc) */
-                sort?: string;
-                /** @description Return page/pageSize (default: true) */
-                "pagination[withCount]"?: boolean;
-                /** @description Page number (default: 0) */
-                "pagination[page]"?: number;
-                /** @description Page size (default: 25) */
-                "pagination[pageSize]"?: number;
-                /** @description Offset value (default: 0) */
-                "pagination[start]"?: number;
-                /** @description Number of entities to return (default: 25) */
-                "pagination[limit]"?: number;
-                /** @description Fields to return (ex: title,author) */
-                fields?: string;
-                /** @description Relations to return */
-                populate?: string;
-                /** @description Filters to apply */
-                filters?: {
-                    [key: string]: unknown;
-                };
-                /** @description Locale to apply */
-                locale?: string;
-            };
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody?: never;
-        responses: {
-            /** @description OK */
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["ProductCategoryListResponse"];
-                };
-            };
-            /** @description Bad Request */
-            400: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Unauthorized */
-            401: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Forbidden */
-            403: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Not Found */
-            404: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Internal Server Error */
-            500: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-        };
+    requestBody: {
+      content: {
+        'application/json': components['schemas']['LatestInformationRequest'];
+      };
     };
-    "post/product-categories": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
+    responses: {
+      /** @description OK */
+      200: {
+        headers: {
+          [name: string]: unknown;
         };
-        requestBody: {
-            content: {
-                "application/json": components["schemas"]["ProductCategoryRequest"];
-            };
+        content: {
+          'application/json': components['schemas']['LatestInformationResponse'];
         };
-        responses: {
-            /** @description OK */
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["ProductCategoryResponse"];
-                };
-            };
-            /** @description Bad Request */
-            400: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Unauthorized */
-            401: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Forbidden */
-            403: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Not Found */
-            404: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Internal Server Error */
-            500: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
+      };
+      /** @description Bad Request */
+      400: {
+        headers: {
+          [name: string]: unknown;
         };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Unauthorized */
+      401: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Forbidden */
+      403: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Not Found */
+      404: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Internal Server Error */
+      500: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
     };
-    "get/product-categories/{id}": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                id: number;
-            };
-            cookie?: never;
-        };
-        requestBody?: never;
-        responses: {
-            /** @description OK */
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["ProductCategoryResponse"];
-                };
-            };
-            /** @description Bad Request */
-            400: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Unauthorized */
-            401: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Forbidden */
-            403: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Not Found */
-            404: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Internal Server Error */
-            500: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-        };
+  };
+  'delete/latest-informations/{id}': {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        id: number;
+      };
+      cookie?: never;
     };
-    "put/product-categories/{id}": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                id: number;
-            };
-            cookie?: never;
+    requestBody?: never;
+    responses: {
+      /** @description OK */
+      200: {
+        headers: {
+          [name: string]: unknown;
         };
-        requestBody: {
-            content: {
-                "application/json": components["schemas"]["ProductCategoryRequest"];
-            };
+        content: {
+          'application/json': number;
         };
-        responses: {
-            /** @description OK */
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["ProductCategoryResponse"];
-                };
-            };
-            /** @description Bad Request */
-            400: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Unauthorized */
-            401: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Forbidden */
-            403: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Not Found */
-            404: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Internal Server Error */
-            500: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
+      };
+      /** @description Bad Request */
+      400: {
+        headers: {
+          [name: string]: unknown;
         };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Unauthorized */
+      401: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Forbidden */
+      403: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Not Found */
+      404: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Internal Server Error */
+      500: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
     };
-    "delete/product-categories/{id}": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                id: number;
-            };
-            cookie?: never;
+  };
+  'get/latest-information-tags': {
+    parameters: {
+      query?: {
+        /** @description Sort by attributes ascending (asc) or descending (desc) */
+        sort?: string;
+        /** @description Return page/pageSize (default: true) */
+        'pagination[withCount]'?: boolean;
+        /** @description Page number (default: 0) */
+        'pagination[page]'?: number;
+        /** @description Page size (default: 25) */
+        'pagination[pageSize]'?: number;
+        /** @description Offset value (default: 0) */
+        'pagination[start]'?: number;
+        /** @description Number of entities to return (default: 25) */
+        'pagination[limit]'?: number;
+        /** @description Fields to return (ex: title,author) */
+        fields?: string;
+        /** @description Relations to return */
+        populate?: string;
+        /** @description Filters to apply */
+        filters?: {
+          [key: string]: unknown;
         };
-        requestBody?: never;
-        responses: {
-            /** @description OK */
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": number;
-                };
-            };
-            /** @description Bad Request */
-            400: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Unauthorized */
-            401: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Forbidden */
-            403: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Not Found */
-            404: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Internal Server Error */
-            500: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-        };
+        /** @description Locale to apply */
+        locale?: string;
+      };
+      header?: never;
+      path?: never;
+      cookie?: never;
     };
-    "get/top-display-content": {
-        parameters: {
-            query?: {
-                /** @description Sort by attributes ascending (asc) or descending (desc) */
-                sort?: string;
-                /** @description Return page/pageSize (default: true) */
-                "pagination[withCount]"?: boolean;
-                /** @description Page number (default: 0) */
-                "pagination[page]"?: number;
-                /** @description Page size (default: 25) */
-                "pagination[pageSize]"?: number;
-                /** @description Offset value (default: 0) */
-                "pagination[start]"?: number;
-                /** @description Number of entities to return (default: 25) */
-                "pagination[limit]"?: number;
-                /** @description Fields to return (ex: title,author) */
-                fields?: string;
-                /** @description Relations to return */
-                populate?: string;
-                /** @description Filters to apply */
-                filters?: {
-                    [key: string]: unknown;
-                };
-                /** @description Locale to apply */
-                locale?: string;
-            };
-            header?: never;
-            path?: never;
-            cookie?: never;
+    requestBody?: never;
+    responses: {
+      /** @description OK */
+      200: {
+        headers: {
+          [name: string]: unknown;
         };
-        requestBody?: never;
-        responses: {
-            /** @description OK */
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["TopDisplayContentResponse"];
-                };
-            };
-            /** @description Bad Request */
-            400: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Unauthorized */
-            401: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Forbidden */
-            403: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Not Found */
-            404: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Internal Server Error */
-            500: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
+        content: {
+          'application/json': components['schemas']['LatestInformationTagListResponse'];
         };
+      };
+      /** @description Bad Request */
+      400: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Unauthorized */
+      401: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Forbidden */
+      403: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Not Found */
+      404: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Internal Server Error */
+      500: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
     };
-    "put/top-display-content": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": components["schemas"]["TopDisplayContentRequest"];
-            };
-        };
-        responses: {
-            /** @description OK */
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["TopDisplayContentResponse"];
-                };
-            };
-            /** @description Bad Request */
-            400: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Unauthorized */
-            401: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Forbidden */
-            403: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Not Found */
-            404: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Internal Server Error */
-            500: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-        };
+  };
+  'post/latest-information-tags': {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
     };
-    "delete/top-display-content": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody?: never;
-        responses: {
-            /** @description OK */
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": number;
-                };
-            };
-            /** @description Bad Request */
-            400: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Unauthorized */
-            401: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Forbidden */
-            403: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Not Found */
-            404: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-            /** @description Internal Server Error */
-            500: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["Error"];
-                };
-            };
-        };
+    requestBody: {
+      content: {
+        'application/json': components['schemas']['LatestInformationTagRequest'];
+      };
     };
+    responses: {
+      /** @description OK */
+      200: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['LatestInformationTagResponse'];
+        };
+      };
+      /** @description Bad Request */
+      400: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Unauthorized */
+      401: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Forbidden */
+      403: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Not Found */
+      404: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Internal Server Error */
+      500: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+    };
+  };
+  'get/latest-information-tags/{id}': {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        id: number;
+      };
+      cookie?: never;
+    };
+    requestBody?: never;
+    responses: {
+      /** @description OK */
+      200: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['LatestInformationTagResponse'];
+        };
+      };
+      /** @description Bad Request */
+      400: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Unauthorized */
+      401: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Forbidden */
+      403: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Not Found */
+      404: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Internal Server Error */
+      500: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+    };
+  };
+  'put/latest-information-tags/{id}': {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        id: number;
+      };
+      cookie?: never;
+    };
+    requestBody: {
+      content: {
+        'application/json': components['schemas']['LatestInformationTagRequest'];
+      };
+    };
+    responses: {
+      /** @description OK */
+      200: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['LatestInformationTagResponse'];
+        };
+      };
+      /** @description Bad Request */
+      400: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Unauthorized */
+      401: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Forbidden */
+      403: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Not Found */
+      404: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Internal Server Error */
+      500: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+    };
+  };
+  'delete/latest-information-tags/{id}': {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        id: number;
+      };
+      cookie?: never;
+    };
+    requestBody?: never;
+    responses: {
+      /** @description OK */
+      200: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': number;
+        };
+      };
+      /** @description Bad Request */
+      400: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Unauthorized */
+      401: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Forbidden */
+      403: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Not Found */
+      404: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Internal Server Error */
+      500: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+    };
+  };
+  'get/products': {
+    parameters: {
+      query?: {
+        /** @description Sort by attributes ascending (asc) or descending (desc) */
+        sort?: string;
+        /** @description Return page/pageSize (default: true) */
+        'pagination[withCount]'?: boolean;
+        /** @description Page number (default: 0) */
+        'pagination[page]'?: number;
+        /** @description Page size (default: 25) */
+        'pagination[pageSize]'?: number;
+        /** @description Offset value (default: 0) */
+        'pagination[start]'?: number;
+        /** @description Number of entities to return (default: 25) */
+        'pagination[limit]'?: number;
+        /** @description Fields to return (ex: title,author) */
+        fields?: string;
+        /** @description Relations to return */
+        populate?: string;
+        /** @description Filters to apply */
+        filters?: {
+          [key: string]: unknown;
+        };
+        /** @description Locale to apply */
+        locale?: string;
+      };
+      header?: never;
+      path?: never;
+      cookie?: never;
+    };
+    requestBody?: never;
+    responses: {
+      /** @description OK */
+      200: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['ProductListResponse'];
+        };
+      };
+      /** @description Bad Request */
+      400: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Unauthorized */
+      401: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Forbidden */
+      403: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Not Found */
+      404: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Internal Server Error */
+      500: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+    };
+  };
+  'post/products': {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
+    };
+    requestBody: {
+      content: {
+        'application/json': components['schemas']['ProductRequest'];
+      };
+    };
+    responses: {
+      /** @description OK */
+      200: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['ProductResponse'];
+        };
+      };
+      /** @description Bad Request */
+      400: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Unauthorized */
+      401: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Forbidden */
+      403: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Not Found */
+      404: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Internal Server Error */
+      500: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+    };
+  };
+  'get/products/{id}': {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        id: number;
+      };
+      cookie?: never;
+    };
+    requestBody?: never;
+    responses: {
+      /** @description OK */
+      200: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['ProductResponse'];
+        };
+      };
+      /** @description Bad Request */
+      400: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Unauthorized */
+      401: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Forbidden */
+      403: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Not Found */
+      404: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Internal Server Error */
+      500: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+    };
+  };
+  'put/products/{id}': {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        id: number;
+      };
+      cookie?: never;
+    };
+    requestBody: {
+      content: {
+        'application/json': components['schemas']['ProductRequest'];
+      };
+    };
+    responses: {
+      /** @description OK */
+      200: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['ProductResponse'];
+        };
+      };
+      /** @description Bad Request */
+      400: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Unauthorized */
+      401: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Forbidden */
+      403: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Not Found */
+      404: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Internal Server Error */
+      500: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+    };
+  };
+  'delete/products/{id}': {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        id: number;
+      };
+      cookie?: never;
+    };
+    requestBody?: never;
+    responses: {
+      /** @description OK */
+      200: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': number;
+        };
+      };
+      /** @description Bad Request */
+      400: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Unauthorized */
+      401: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Forbidden */
+      403: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Not Found */
+      404: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Internal Server Error */
+      500: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+    };
+  };
+  'get/product-categories': {
+    parameters: {
+      query?: {
+        /** @description Sort by attributes ascending (asc) or descending (desc) */
+        sort?: string;
+        /** @description Return page/pageSize (default: true) */
+        'pagination[withCount]'?: boolean;
+        /** @description Page number (default: 0) */
+        'pagination[page]'?: number;
+        /** @description Page size (default: 25) */
+        'pagination[pageSize]'?: number;
+        /** @description Offset value (default: 0) */
+        'pagination[start]'?: number;
+        /** @description Number of entities to return (default: 25) */
+        'pagination[limit]'?: number;
+        /** @description Fields to return (ex: title,author) */
+        fields?: string;
+        /** @description Relations to return */
+        populate?: string;
+        /** @description Filters to apply */
+        filters?: {
+          [key: string]: unknown;
+        };
+        /** @description Locale to apply */
+        locale?: string;
+      };
+      header?: never;
+      path?: never;
+      cookie?: never;
+    };
+    requestBody?: never;
+    responses: {
+      /** @description OK */
+      200: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['ProductCategoryListResponse'];
+        };
+      };
+      /** @description Bad Request */
+      400: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Unauthorized */
+      401: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Forbidden */
+      403: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Not Found */
+      404: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Internal Server Error */
+      500: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+    };
+  };
+  'post/product-categories': {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
+    };
+    requestBody: {
+      content: {
+        'application/json': components['schemas']['ProductCategoryRequest'];
+      };
+    };
+    responses: {
+      /** @description OK */
+      200: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['ProductCategoryResponse'];
+        };
+      };
+      /** @description Bad Request */
+      400: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Unauthorized */
+      401: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Forbidden */
+      403: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Not Found */
+      404: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Internal Server Error */
+      500: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+    };
+  };
+  'get/product-categories/{id}': {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        id: number;
+      };
+      cookie?: never;
+    };
+    requestBody?: never;
+    responses: {
+      /** @description OK */
+      200: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['ProductCategoryResponse'];
+        };
+      };
+      /** @description Bad Request */
+      400: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Unauthorized */
+      401: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Forbidden */
+      403: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Not Found */
+      404: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Internal Server Error */
+      500: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+    };
+  };
+  'put/product-categories/{id}': {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        id: number;
+      };
+      cookie?: never;
+    };
+    requestBody: {
+      content: {
+        'application/json': components['schemas']['ProductCategoryRequest'];
+      };
+    };
+    responses: {
+      /** @description OK */
+      200: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['ProductCategoryResponse'];
+        };
+      };
+      /** @description Bad Request */
+      400: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Unauthorized */
+      401: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Forbidden */
+      403: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Not Found */
+      404: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Internal Server Error */
+      500: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+    };
+  };
+  'delete/product-categories/{id}': {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        id: number;
+      };
+      cookie?: never;
+    };
+    requestBody?: never;
+    responses: {
+      /** @description OK */
+      200: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': number;
+        };
+      };
+      /** @description Bad Request */
+      400: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Unauthorized */
+      401: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Forbidden */
+      403: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Not Found */
+      404: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Internal Server Error */
+      500: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+    };
+  };
+  'get/top-display-content': {
+    parameters: {
+      query?: {
+        /** @description Sort by attributes ascending (asc) or descending (desc) */
+        sort?: string;
+        /** @description Return page/pageSize (default: true) */
+        'pagination[withCount]'?: boolean;
+        /** @description Page number (default: 0) */
+        'pagination[page]'?: number;
+        /** @description Page size (default: 25) */
+        'pagination[pageSize]'?: number;
+        /** @description Offset value (default: 0) */
+        'pagination[start]'?: number;
+        /** @description Number of entities to return (default: 25) */
+        'pagination[limit]'?: number;
+        /** @description Fields to return (ex: title,author) */
+        fields?: string;
+        /** @description Relations to return */
+        populate?: string;
+        /** @description Filters to apply */
+        filters?: {
+          [key: string]: unknown;
+        };
+        /** @description Locale to apply */
+        locale?: string;
+      };
+      header?: never;
+      path?: never;
+      cookie?: never;
+    };
+    requestBody?: never;
+    responses: {
+      /** @description OK */
+      200: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['TopDisplayContentResponse'];
+        };
+      };
+      /** @description Bad Request */
+      400: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Unauthorized */
+      401: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Forbidden */
+      403: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Not Found */
+      404: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Internal Server Error */
+      500: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+    };
+  };
+  'put/top-display-content': {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
+    };
+    requestBody: {
+      content: {
+        'application/json': components['schemas']['TopDisplayContentRequest'];
+      };
+    };
+    responses: {
+      /** @description OK */
+      200: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['TopDisplayContentResponse'];
+        };
+      };
+      /** @description Bad Request */
+      400: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Unauthorized */
+      401: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Forbidden */
+      403: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Not Found */
+      404: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Internal Server Error */
+      500: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+    };
+  };
+  'delete/top-display-content': {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
+    };
+    requestBody?: never;
+    responses: {
+      /** @description OK */
+      200: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': number;
+        };
+      };
+      /** @description Bad Request */
+      400: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Unauthorized */
+      401: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Forbidden */
+      403: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Not Found */
+      404: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+      /** @description Internal Server Error */
+      500: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['Error'];
+        };
+      };
+    };
+  };
 }
